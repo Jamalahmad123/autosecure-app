@@ -15,7 +15,13 @@ const MeetingVideo = () => {
   return (
     <Wrapper className="px-4 py-6 relative">
       <div className="relative">
-        <video muted poster={poster} ref={ref} controls={!isPlaying}>
+        <video
+          preload="none"
+          muted
+          poster={poster}
+          ref={ref}
+          controls={!isPlaying}
+        >
           <source src="auto_secure_meeting.mp4" type="video/mp4" />
           Sorry, your browser doesn't support videos.
         </video>
