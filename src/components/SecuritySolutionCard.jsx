@@ -19,7 +19,9 @@ const SecuritySolutionCard = ({
           autoPlay
           muted
           preload="metadata"
-          className="max-w-4xl border-none"
+          className="lg:max-w-4xl border-none"
+          width="100%"
+          height="100%"
         >
           <source src={videoPath} type="video/mp4" />
           Sorry, your browser doesn't support videos.
