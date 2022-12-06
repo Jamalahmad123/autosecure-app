@@ -31,6 +31,8 @@ const ParticlesBackground = lazy(() =>
 // import Contact from "./pages/company/Contact";
 
 const IndustrySectors = lazy(() => import("./pages/industry/IndustrySectors"));
+import AutomobileAndMobility from "./pages/industry/AutomobileAndMobility";
+import AgriculturAndForming from "./pages/industry/AgriculturAndForming";
 const Solutions = lazy(() => import("./pages/solutions/Solutions"));
 const Compnay = lazy(() => import("./pages/company/Compnay"));
 const AboutUs = lazy(() => import("./pages/company/AboutUs"));
@@ -44,7 +46,7 @@ const Footer = lazy(() => import("./components/Footer"));
 const BookAppointment = lazy(() => import("./components/BookAppointment"));
 
 const options = {
-  fpsLimit: 120,
+  fpsLimit: 60,
   fullScreen: {
     enable: false,
     zIndex: -1,
@@ -124,6 +126,22 @@ function App() {
           element={
             <Suspense fallback={<div />}>
               <IndustrySectors />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/industry/automobile-mobility"
+          element={
+            <Suspense fallback={<div />}>
+              <AutomobileAndMobility />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/industry/agriculture-formings"
+          element={
+            <Suspense fallback={<div />}>
+              <AgriculturAndForming />
             </Suspense>
           }
         />

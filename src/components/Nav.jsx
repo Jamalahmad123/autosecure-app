@@ -29,7 +29,7 @@ const Nav = () => {
   const legals = ["imprint", "privacy", "conditions"];
 
   return (
-    <nav className="bg-white">
+    <nav className="bg-white z-50">
       <Wrapper className="navbar justify-between px-4">
         <div>
           <Link to="/">
@@ -42,23 +42,27 @@ const Nav = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
-            {navLinks.map((obj) => (
-              <li tabIndex={obj.id} key={obj.id} className="group nav-link">
+            {navLinks.map((item) => (
+              <li
+                tabIndex={item.id}
+                key={item.id}
+                className="group nav-link z-50"
+              >
                 <NavLink
-                  to={`/${obj.link}`}
+                  to={`/${item.link}`}
                   className="text-clrPrimary font-semibold relative hover:bg-transparent smooth group-hover:text-clrSky capitalize"
                 >
-                  {obj.name}
+                  {item.name}
                   <FaCaretDown />
                 </NavLink>
                 <ul className="bg-white">
-                  {obj.links.map((item, i) => (
-                    <li key={i} className="hover:bg-clrSky">
+                  {item.subPages.map((item) => (
+                    <li key={item.id} className="hover:bg-clrSky">
                       <NavLink
-                        to={`/${obj.link}/${item}`}
-                        className="text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white"
+                        to={`/${item.link}`}
+                        className="text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white z-50"
                       >
-                        {item}
+                        {item.name}
                       </NavLink>
                     </li>
                   ))}
@@ -68,7 +72,7 @@ const Nav = () => {
           </ul>
         </div>
         <div className={`${styles.flex} gap-4 sm:gap-8`}>
-          <NavLink className="text-clrDarkGray hover:text-clrSky text-base sm:text-lg md:text-2xl">
+          <NavLink className="text-clrDarkGray hover:text-clrSky text-base sm:text-lg md:text-2xl z-50">
             <FaAt />
           </NavLink>
           <NavLink className="text-clrDarkGray block hover:text-clrSky text-base sm:text-lg md:text-2xl">
@@ -94,24 +98,24 @@ const Nav = () => {
           } smooth overflow-auto flex items-start`}
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 px-10 relative w-full items-stretch py-20 gap-6">
-            {navLinks.map((obj) => (
-              <div key={obj.id} className="text-center">
+            {navLinks.map((item) => (
+              <div key={item.id} className="text-center">
                 <NavLink
-                  to={`/${obj.link}`}
+                  to={`/${item.link}`}
                   className="text-lg font-semibold text-clrPrimary text-center inline-block mb-4"
                   ref={navRef}
                 >
-                  {obj.name}
+                  {item.name}
                 </NavLink>
                 <div className="flex flex-col gap-2">
-                  {obj.links.map((link, i) => (
+                  {item.subPages.map((item) => (
                     <NavLink
-                      to={`/${obj.link}/${link}`}
+                      to={`/${item.link}`}
                       className="text-clrPrimary text-center bg-gray-50 p-2 hover:bg-white smooth"
-                      key={i}
+                      key={item.id}
                       ref={navRef}
                     >
-                      {link}
+                      {item.name}
                     </NavLink>
                   ))}
                 </div>

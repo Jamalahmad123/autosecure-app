@@ -4,10 +4,12 @@ import { styles } from "../Styles";
 import { autosecureMobile, autosecureTower } from "../assets/images";
 import { Link } from "react-router-dom";
 import TypeWriter from "./ui/TypeWriter";
-import ParticlesBackground from "./ui/ParticlesBackground";
+// import ParticlesBackground from "./ui/ParticlesBackground";
+import { lazy, Suspense } from "react";
+const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
 
 const options = {
-  fpsLimit: 120,
+  fpsLimit: 60,
   fullScreen: {
     enable: false,
     zIndex: -999,
@@ -29,7 +31,7 @@ const options = {
       color: "#D1D1D6",
       distance: 250,
       enable: true,
-      opacity: 0.4,
+      opacity: 0.3,
       width: 1,
     },
     collisions: {
@@ -53,13 +55,13 @@ const options = {
       value: 30,
     },
     opacity: {
-      value: 0.4,
+      value: 0.3,
     },
     shape: {
       type: "circle",
     },
     size: {
-      value: { min: 1, max: 2 },
+      value: { min: 1, max: 1 },
     },
   },
 };
@@ -68,7 +70,9 @@ const About = () => {
   return (
     <>
       <section className="py-14 relative">
-        <ParticlesBackground id="about" options={options} />
+        <Suspense fallback={<div />}>
+          <ParticlesBackground id="about" options={options} />
+        </Suspense>
         <Wrapper className="px-4 z-50">
           <TypeWriter />
           <header>
@@ -141,7 +145,11 @@ const About = () => {
             </div>
 
             <figure>
-              <img src={autosecureMobile} alt="autosecure-mobile" loading="lazy"/>
+              <img
+                src={autosecureMobile}
+                alt="autosecure-mobile"
+                loading="lazy"
+              />
             </figure>
           </div>
         </Wrapper>

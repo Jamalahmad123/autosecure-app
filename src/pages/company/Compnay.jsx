@@ -4,7 +4,7 @@ import { navLinks } from "../../data/constantData";
 import { styles } from "../../Styles";
 
 const Compnay = () => {
-  const [companyData] = navLinks.filter((item) => item.name === "company");
+  const [companyLinks] = navLinks.filter((item) => item.name === "company");
 
   return (
     <>
@@ -14,12 +14,13 @@ const Compnay = () => {
             Company
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 mt-16">
-            {companyData.links.map((link, i) => (
+            {companyLinks.subPages.map((item, i) => (
               <Link
+                to={`/${item.link}`}
                 className="btn bg-clrPrimary text-white px-4 py-2 rounded-none"
                 key={i}
               >
-                {link}
+                {item.name}
               </Link>
             ))}
           </div>

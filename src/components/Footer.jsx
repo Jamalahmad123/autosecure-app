@@ -43,7 +43,12 @@ const Footer = () => {
         <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 place-items-center md:gap-16">
           {awards.map((award, i) => (
             <figure key={i}>
-              <img src={award} alt={awards} className="w-64 md:max-w-[200px]" loading="lazy" />
+              <img
+                src={award}
+                alt={awards}
+                className="w-64 md:max-w-[200px]"
+                loading="lazy"
+              />
             </figure>
           ))}
         </div>
@@ -53,9 +58,13 @@ const Footer = () => {
               <h3 className="text-lg font-semibold text-clrPrimary text-center">
                 {item.name}
               </h3>
-              {item.links.map((link, i) => (
-                <Link className="text-clrPrimary text-center" key={i}>
-                  {link}
+              {item.subPages.map((item) => (
+                <Link
+                  to={`/${item.link}`}
+                  className="text-clrPrimary text-center"
+                  key={item.id}
+                >
+                  {item.name}
                 </Link>
               ))}
             </div>

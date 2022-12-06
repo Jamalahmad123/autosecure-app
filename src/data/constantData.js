@@ -16,28 +16,87 @@ export const navLinks = [
     id: 1,
     name: "solutions",
     link: "solutions",
-    links: [
-      "security solutions",
-      "scanner solutions",
-      "localization solutions",
+    subPages: [
+      {
+        id: 1,
+        name: "security solutions",
+        link: "solution/security-solutions",
+      },
+      {
+        id: 2,
+        name: "scanner solutions",
+        link: "solution/scanner-solutions",
+      },
+      {
+        id: 3,
+        name: "localization solutions",
+        link: "solution/localization-solutions",
+      },
     ],
   },
   {
     id: 2,
     name: "industry sectors",
     link: "industry",
-    links: [
-      "automobile & mobility",
-      "agriculture & formings",
-      "construction & construction vehicles",
-      "logistics & goods",
+    subPages: [
+      {
+        id: 1,
+        name: "automobile & mobility",
+        link: "industry/automobile-mobility",
+      },
+      {
+        id: 2,
+        name: "agriculture & formings",
+        link: "industry/agriculture-formings",
+      },
+      {
+        id: 3,
+        name: "construction & construction vehicles",
+        link: "industry/construction",
+      },
+      {
+        id: 4,
+        name: "logistics & goods",
+        link: "industry/logistics-goods",
+      },
     ],
   },
   {
     id: 3,
     name: "company",
     link: "company",
-    links: ["about", "news", "career", "values", "vision", "contact"],
+    subPages: [
+      {
+        id: 1,
+        name: "about us",
+        link: "company/about-us",
+      },
+      {
+        id: 2,
+        name: "news",
+        link: "company/news",
+      },
+      {
+        id: 3,
+        name: "career",
+        link: "company/career",
+      },
+      {
+        id: 4,
+        name: "values",
+        link: "company/values",
+      },
+      {
+        id: 5,
+        name: "mission and vision",
+        link: "company/mission-vision",
+      },
+      {
+        id: 6,
+        name: "contact",
+        link: "company/contact",
+      },
+    ],
   },
 ];
 
@@ -145,4 +204,56 @@ export const acheivements = [
     image: autosecureHikvision,
   },
 ];
-//
+
+export const ecosystemAndExpertise = {
+  id: 1,
+  title1: "Eco system",
+  title2: "expertise",
+  desc1: [
+    "High-end web platform for integrating all autosecure services",
+    "Software for the maximum simplification of business processes",
+    "Cloud-based user account",
+    "Considerable reduction of e-mail correspondence, telephone calls or search effort",
+    "Centralized provision of information and vehicle documentation",
+    "Maximum transparency and simplification of vehicle search processes",
+  ],
+  desc2: [
+    "10+ years of know-how",
+    "Leading in the development of software and future-oriented technologies",
+    "Highly qualified staff",
+    "Regular training and further education",
+    "24/7 monitoring & service control center",
+    "State-of-the-art video technology & IoT",
+    "Interfaces for customer-specific ERP systems",
+    "Specialized in leasing and financing models as well as insurance protection",
+    "Data protection security",
+    "Certified HIKVISION Platinum Partner",
+    "Approval as a security company according to § 34a GewO",
+  ],
+};
+
+export const savingsAndExpertise = {
+  id: 1,
+  title1: "potential savings",
+  title2: "expertise",
+  desc1: [
+    "At least 50% reduction in security costs compared to personnel-based monitoring solutions.",
+    "20% faster vehicle and customer processes.",
+    "Investment security due to the most modern and future-oriented technology solutions.",
+    "Medium-term reduction of insurance premiums due to the absence of theft and damage events.",
+    "Significant savings in time and research effort for events to be clarified on the company premises.",
+    "Up to 5 years warranty on the hardware used.",
+  ],
+
+  desc2: [
+    "10+ years of know-how",
+    "Leading in the development of software and future-oriented technologies",
+    "Highly qualified staff",
+    "Regular training and further education",
+    "24/7 monitoring & service control center",
+    "State-of-the-art video technology & IoT",
+    "Interfaces for customer-specific ERP systems",
+    "Specialized in leasing and financing models as well as insurance protection",
+    "Data protection security",
+  ],
+};

@@ -8,6 +8,7 @@ import Features from "../components/Features";
 import AutosecureCareerDialoge from "../components/AutosecureCareerDialoge";
 import AutoSecureNewsDialoge from "../components/AutoSecureNewsDialoge";
 import MeetingVideo from "../components/ui/MeetingVideo";
+import { ecosystemAndExpertise } from "../data/constantData";
 
 const Home = () => {
   const title = "Trust. Integrity.";
@@ -21,7 +22,7 @@ const Home = () => {
       <Features />
       <About />
       <IndustrySectorSolutions />
-      <AutosecureEcosystem />
+      <AutosecureEcosystem {...ecosystemAndExpertise} isStyled />
       <MeetingVideo />
       <AutosecureValues />
       <AutosecureCareerDialoge />

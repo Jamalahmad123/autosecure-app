@@ -20,6 +20,7 @@ module.exports = {
         clrSkyDark: "#0A84FF91",
         clrDarkGray: "#333",
         clrLightGray: "#f5f5f5",
+        clrVeryLightGray: "#f2f2f7",
       },
     },
   },
