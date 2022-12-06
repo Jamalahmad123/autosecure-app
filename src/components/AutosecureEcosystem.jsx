@@ -35,7 +35,7 @@ const AutosecureEcosystem = () => {
         <div className="card bg-white">
           <div className="card-body items-start justify-start">
             <div className="flex flex-col items-start justify-start gap-4">
-              <img src={logo} alt="logo" className="w-36" />
+              <img src={logo} alt="logo" className="w-36" loading="lazy" />
               <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
                 Eco system
               </h2>
@@ -56,7 +56,7 @@ const AutosecureEcosystem = () => {
         <div className="card bg-white">
           <div className="card-body items-start justify-start">
             <div className="flex flex-col items-start justify-start gap-4">
-              <img src={logo} alt="logo" className="w-36" />
+              <img src={logo} alt="logo" className="w-36" loading="lazy" />
               <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
                 expertise
               </h2>

@@ -41,7 +41,7 @@ const Achievements = () => {
               key={item.id}
             >
               <figure>
-                <img src={item.image} alt={item.title} />
+                <img src={item.image} alt={item.title} loading="lazy" />
               </figure>
               <div className="card-body items-start">
                 <h2 className="card-title text-base font-bold lg:text-xl text-clrPrimary">

@@ -14,6 +14,7 @@ const BookAppointment = () => {
               src={booking}
               alt="book an appointment"
               className="rounded-xl"
+              loading="lazy"
             />
           </figure>
           <div className="card-body justiy-start items-start">

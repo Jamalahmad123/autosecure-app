@@ -54,7 +54,7 @@ const IndustrySectorSolutions = () => {
                 key={item.id}
               >
                 <figure>
-                  <img src={item.image} alt={item.name} />
+                  <img src={item.image} alt={item.name} loading="lazy" />
                 </figure>
                 <div className="card-body items-start">
                   <h2 className="card-title text-lg font-semibold lg:text-xl text-clrPrimary">

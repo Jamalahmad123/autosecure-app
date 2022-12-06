@@ -85,6 +85,7 @@ const About = () => {
                 src={autosecureTower}
                 alt="autosecure-mobile"
                 className="h-[60vh]"
+                loading="lazy"
               />
             </figure>
             <div className="space-y-10">
@@ -140,7 +141,7 @@ const About = () => {
             </div>
 
             <figure>
-              <img src={autosecureMobile} alt="autosecure-mobile" />
+              <img src={autosecureMobile} alt="autosecure-mobile" loading="lazy"/>
             </figure>
           </div>
         </Wrapper>
