@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 
+import Hero from "./Hero";
 import { logo_sm } from "../assets/images";
 import { industrySector } from "../data/constantData";
 import Wrapper from "./ui/Wrapper";
-import Hero from "./Hero";
 
 const IndustrySectorSolutions = () => {
   const title = "Industry sectors. Solutions.";

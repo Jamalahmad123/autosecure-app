@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { FaCalendarCheck } from "react-icons/fa";
 import { booking } from "../assets/images";
 import Wrapper from "./ui/Wrapper";
-import { styles } from "../Styles";
 
 const BookAppointment = () => {
   return (

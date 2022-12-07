@@ -21,8 +21,13 @@ const ParticlesBackground = lazy(() =>
   import("./components/ui/ParticlesBackground")
 );
 
-// import Solutions from "./pages/solutions/Solutions";
-// import IndustrySectors from "./pages/industry/IndustrySectors";
+import Solutions from "./pages/solutions/Solutions";
+import IndustrySectors from "./pages/industry/IndustrySectors";
+import AutomobileAndMobility from "./pages/industry/AutomobileAndMobility";
+import AgriculturAndForming from "./pages/industry/AgriculturAndForming";
+import LocalizationSolutions from "./pages/solutions/LocalizationSolutions";
+import Constructions from "./pages/industry/Constructions";
+import LogisticsAndGoods from "./pages/industry/LogisticsAndGoods";
 // import Compnay from "./pages/company/Compnay";
 // import AboutUs from "./pages/company/AboutUs";
 // import News from "./pages/company/News";
@@ -30,10 +35,10 @@ const ParticlesBackground = lazy(() =>
 // import Vision from "./pages/company/Vision";
 // import Contact from "./pages/company/Contact";
 
-const IndustrySectors = lazy(() => import("./pages/industry/IndustrySectors"));
-import AutomobileAndMobility from "./pages/industry/AutomobileAndMobility";
-import AgriculturAndForming from "./pages/industry/AgriculturAndForming";
-const Solutions = lazy(() => import("./pages/solutions/Solutions"));
+// const IndustrySectors = lazy(() => import("./pages/industry/IndustrySectors"));
+// import AutomobileAndMobility from "./pages/industry/AutomobileAndMobility";
+// import AgriculturAndForming from "./pages/industry/AgriculturAndForming";
+// const Solutions = lazy(() => import("./pages/solutions/Solutions"));
 const Compnay = lazy(() => import("./pages/company/Compnay"));
 const AboutUs = lazy(() => import("./pages/company/AboutUs"));
 const News = lazy(() => import("./pages/company/News"));
@@ -113,37 +118,25 @@ function App() {
       </Suspense>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/solutions" element={<Solutions />} />
         <Route
-          path="/solutions"
-          element={
-            <Suspense fallback={<div />}>
-              <Solutions />
-            </Suspense>
-          }
+          path="/solutions/localization-solutions"
+          element={<LocalizationSolutions />}
         />
-        <Route
-          path="/industry"
-          element={
-            <Suspense fallback={<div />}>
-              <IndustrySectors />
-            </Suspense>
-          }
-        />
+
+        <Route path="/industry" element={<IndustrySectors />} />
         <Route
           path="/industry/automobile-mobility"
-          element={
-            <Suspense fallback={<div />}>
-              <AutomobileAndMobility />
-            </Suspense>
-          }
+          element={<AutomobileAndMobility />}
         />
         <Route
           path="/industry/agriculture-formings"
-          element={
-            <Suspense fallback={<div />}>
-              <AgriculturAndForming />
-            </Suspense>
-          }
+          element={<AgriculturAndForming />}
+        />
+        <Route path="/industry/construction" element={<Constructions />} />
+        <Route
+          path="/industry/logistics-goods"
+          element={<LogisticsAndGoods />}
         />
         <Route
           path="/company"
@@ -154,7 +147,7 @@ function App() {
           }
         />
         <Route
-          path="/company/about"
+          path="/company/about-us"
           element={
             <Suspense fallback={<div />}>
               <AboutUs />
@@ -186,7 +179,7 @@ function App() {
           }
         />
         <Route
-          path="/company/vision"
+          path="company/mission-vision"
           element={
             <Suspense fallback={<div />}>
               <Vision />

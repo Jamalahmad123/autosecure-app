@@ -48,14 +48,14 @@ const Features = () => {
               key={item.id}
             >
               <video autoPlay muted preload="metadata">
-                <source src={video} type="video/mp4" />
+                <source src={item.videoPath} type="video/mp4" />
                 Sorry, your browser doesn't support videos.
               </video>
               <div className="card-body items-start">
                 <h2
                   className={`${styles.headingSecondary} text-clrPrimary capitalize`}
                 >
-                  {item.name}
+                  {item.title}
                 </h2>
                 <p className="text-black">{item.desc}</p>
                 <div className="mt-4 space-y-3">

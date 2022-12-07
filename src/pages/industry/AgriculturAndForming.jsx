@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { savingsAndExpertise } from "../../data/constantData";
 import { autosecureFarming } from "../../assets/images";
 import {
@@ -5,13 +6,17 @@ import {
   autoScanVideo,
   autoLocateVideo,
 } from "../../assets/videos";
-import { lazy, Suspense } from "react";
+import PagesHero from "../../components/PagesHero";
 
 // import IndustrySectorSolutions from "../../components/IndustrySectorSolutions";
-import PagesHero from "../../components/PagesHero";
-import SecuritySolutionCard from "../../components/SecuritySolutionCard";
+// import SecuritySolutionCard from "../../components/SecuritySolutionCard";
 // import AutosecureEcosystem from "../../components/AutosecureEcosystem";
 // import Features from "../../components/Features";
+
+// Lazy Imports
+const SecuritySolutionCard = lazy(() =>
+  import("../../components/SecuritySolutionCard")
+);
 const IndustrySectorSolutions = lazy(() =>
   import("../../components/IndustrySectorSolutions")
 );
@@ -61,9 +66,9 @@ const AgriculturAndForming = () => {
     <>
       <PagesHero {...heroContent} />
       <Suspense fallback={<div />}>
-        <AutosecureEcosystem {...savingsAndExpertise} />
+        <AutosecureEcosystem {...savingsAndExpertise} hasLogo />
         {solutions.map((item) => (
-          <SecuritySolutionCard {...item} />
+          <SecuritySolutionCard {...item} key={item.id} />
         ))}
         <Features />
         <IndustrySectorSolutions />

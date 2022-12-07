@@ -10,6 +10,11 @@ import {
   autosecurePartnerZukunftswerkstatt,
   autosecureVehicle,
 } from "../assets/images";
+import {
+  autoSecurityVideo,
+  autoScanVideo,
+  autoLocateVideo,
+} from "../assets/videos";
 
 export const navLinks = [
   {
@@ -20,17 +25,17 @@ export const navLinks = [
       {
         id: 1,
         name: "security solutions",
-        link: "solution/security-solutions",
+        link: "solutions/security-solutions",
       },
       {
         id: 2,
         name: "scanner solutions",
-        link: "solution/scanner-solutions",
+        link: "solutions/scanner-solutions",
       },
       {
         id: 3,
         name: "localization solutions",
-        link: "solution/localization-solutions",
+        link: "solutions/localization-solutions",
       },
     ],
   },
@@ -144,30 +149,33 @@ export const features = [
   {
     id: 1,
     link: "#",
-    name: "safe",
+    title: "safe",
     desc: "Active video surveillance with live perpetrator address according to the SAVE principle.",
     benefit1: "50% less security costs",
     benefit2: "100% less claims",
     btnTitle: "security solutions",
+    videoPath: autoSecurityVideo,
   },
   {
     id: 2,
     link: "#",
-    name: "scan",
+    title: "scan",
     desc: "Digital condition control, damage detection and documentation in real time.",
     benefit1: "100% condition detection of all vehicles",
     benefit2: "No discussions with customers",
     btnTitle: "Scanner solutions",
+    videoPath: autoScanVideo,
   },
 
   {
     id: 3,
     link: "#",
-    name: "locate",
+    title: "locate",
     desc: "Precise real-time indoor and outdoor localization of goods or vehicles.",
     benefit1: "20% faster processes",
     benefit2: "More sales at less cost",
     btnTitle: "locate solutions",
+    videoPath: autoLocateVideo,
   },
 ];
 
@@ -255,5 +263,39 @@ export const savingsAndExpertise = {
     "Interfaces for customer-specific ERP systems",
     "Specialized in leasing and financing models as well as insurance protection",
     "Data protection security",
+  ],
+};
+
+export const ecosystemAndParkingSystem = {
+  id: 1,
+  title1: "Eco system",
+  title2: "parking management.",
+  desc1: [
+    "High-end web platform for integrating all autosecure services",
+    "Software for the maximum simplification of business processes",
+    "Cloud-based user account",
+    "Considerable reduction of e-mail correspondence, telephone calls or search effort",
+    "Centralized provision of information and vehicle documentation",
+    "Maximum transparency and simplification of vehicle search processes",
+  ],
+  desc2: [
+    "Vehicles with and without license plates can be found more quickly",
+    "Automated parking & vehicle management with easy search function",
+    "Optional positioning of FindMyCar terminals",
+  ],
+};
+
+export const vehicleAndPlateRecognition = {
+  id: 1,
+  title1: "Vehicle movement monitoring.",
+  title2: "Automatic license plate recognition.",
+  desc1: [
+    "Avoid stationary damage by recording vehicle movements with an automated warning function based on the dwell time of vehicles",
+    "Service life monitoring to increase efficiency in the car dealership process ",
+  ],
+  desc2: [
+    "Automatic notification of your employees and assignment of the customer file when a customer visits for a personal greeting",
+    "Blacklist alert and VIP notification",
+    "penalties for parking violations",
   ],
 };

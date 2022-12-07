@@ -8,6 +8,7 @@ import IndustrySectorSolutions from "../../components/IndustrySectorSolutions";
 import Achievements from "../../components/Achievements";
 import AutoSecureNewsDialoge from "../../components/AutoSecureNewsDialoge";
 import AutosecureCareerDialoge from "../../components/AutosecureCareerDialoge";
+import { ecosystemAndExpertise } from "../../data/constantData";
 
 const AboutUs = () => {
   return (
@@ -71,7 +72,7 @@ const AboutUs = () => {
           </div>
         </Wrapper>
       </header>
-      <AutosecureEcosystem />
+      <AutosecureEcosystem {...ecosystemAndExpertise} hasLogo />
       <Features />
       <IndustrySectorSolutions />
       <AutoSecureNewsDialoge />

@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import PagesHero from "../../components/PagesHero";
 import { savingsAndExpertise } from "../../data/constantData";
 import { autosecureVehicle } from "../../assets/images";
@@ -13,8 +14,8 @@ import {
 // import IndustrySectorSolutions from "../../components/IndustrySectorSolutions";
 
 // import SecuritySolutionCard from "../../components/SecuritySolutionCard";
-import { lazy, Suspense } from "react";
 
+// Lazy Imports
 const AutosecureEcosystem = lazy(() =>
   import("../../components/AutosecureEcosystem")
 );
@@ -65,7 +66,7 @@ const AutomobileAndMobility = () => {
     <>
       <PagesHero {...heroContent} />
       <Suspense fallback={<div />}>
-        <AutosecureEcosystem {...savingsAndExpertise} />
+        <AutosecureEcosystem {...savingsAndExpertise} hasLogo />
         {solutions.map((item) => (
           <SecuritySolutionCard {...item} key={item.id} />
         ))}

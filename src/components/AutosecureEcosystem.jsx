@@ -3,7 +3,14 @@ import Wrapper from "./ui/Wrapper";
 import { logo } from "../assets/images";
 import { styles } from "../Styles";
 
-const AutosecureEcosystem = ({ title1, title2, desc1, desc2, isStyled }) => {
+const AutosecureEcosystem = ({
+  title1,
+  title2,
+  desc1,
+  desc2,
+  isStyled,
+  hasLogo,
+}) => {
   return (
     <section className="py-14 bg-clrLightGray">
       <Wrapper
@@ -16,7 +23,9 @@ const AutosecureEcosystem = ({ title1, title2, desc1, desc2, isStyled }) => {
             }`}
           >
             <div className="flex flex-col items-start justify-start gap-4">
-              <img src={logo} alt="logo" className="w-36" loading="lazy" />
+              {hasLogo && (
+                <img src={logo} alt="logo" className="w-36" loading="lazy" />
+              )}
               <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
                 {title1}
               </h2>
@@ -43,7 +52,9 @@ const AutosecureEcosystem = ({ title1, title2, desc1, desc2, isStyled }) => {
             }`}
           >
             <div className="flex flex-col items-start justify-start gap-4">
-              <img src={logo} alt="logo" className="w-36" loading="lazy" />
+              {hasLogo && (
+                <img src={logo} alt="logo" className="w-36" loading="lazy" />
+              )}
               <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
                 {title2}
               </h2>
