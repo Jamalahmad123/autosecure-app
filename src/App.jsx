@@ -28,6 +28,13 @@ import AgriculturAndForming from "./pages/industry/AgriculturAndForming";
 import LocalizationSolutions from "./pages/solutions/LocalizationSolutions";
 import Constructions from "./pages/industry/Constructions";
 import LogisticsAndGoods from "./pages/industry/LogisticsAndGoods";
+import Legal from "./pages/legal/Legal";
+import Imprint from "./pages/legal/Imprint";
+import Privacy from "./pages/legal/Privacy";
+import Conditions from "./pages/legal/Conditions";
+import Career from "./pages/company/Career";
+import JobDetails from "./pages/company/JobDetails";
+import SecuritySolutions from "./pages/solutions/SecuritySolutions";
 // import Compnay from "./pages/company/Compnay";
 // import AboutUs from "./pages/company/AboutUs";
 // import News from "./pages/company/News";
@@ -120,6 +127,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route
+          path="/solutions/security-solutions"
+          element={<SecuritySolutions />}
+        />
+        <Route
           path="/solutions/localization-solutions"
           element={<LocalizationSolutions />}
         />
@@ -171,6 +182,22 @@ function App() {
           }
         />
         <Route
+          path="/company/career"
+          element={
+            <Suspense fallback={<div />}>
+              <Career />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/company/career/job/:id"
+          element={
+            <Suspense fallback={<div />}>
+              <JobDetails />
+            </Suspense>
+          }
+        />
+        <Route
           path="/company/values"
           element={
             <Suspense fallback={<div />}>
@@ -179,13 +206,17 @@ function App() {
           }
         />
         <Route
-          path="company/mission-vision"
+          path="/company/mission-vision"
           element={
             <Suspense fallback={<div />}>
               <Vision />
             </Suspense>
           }
         />
+        <Route path="/legal" element={<Legal />} />
+        <Route path="/legal/imprint" element={<Imprint />} />
+        <Route path="/legal/privacy" element={<Privacy />} />
+        <Route path="/legal/conditions" element={<Conditions />} />
       </Routes>
       <Suspense fallback={<div />}>
         <Partners />

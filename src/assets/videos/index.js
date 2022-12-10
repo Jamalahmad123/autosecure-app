@@ -1,5 +1,11 @@
 import autoSecurityVideo from "../../assets/videos/autosecure_secure_video_white.mp4";
 import autoScanVideo from "../../assets/videos/autosecure_scan_video.mp4";
 import autoLocateVideo from "../../assets/videos/autosecure_locate_video.mp4";
+import auto_secure_meeting from "../videos/auto_secure_meeting.mp4";
 
-export { autoSecurityVideo, autoScanVideo, autoLocateVideo };
+export {
+  autoSecurityVideo,
+  autoScanVideo,
+  autoLocateVideo,
+  auto_secure_meeting,
+};

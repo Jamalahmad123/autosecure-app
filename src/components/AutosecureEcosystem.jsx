@@ -4,6 +4,7 @@ import { logo } from "../assets/images";
 import { styles } from "../Styles";
 
 const AutosecureEcosystem = ({
+  children,
   title1,
   title2,
   desc1,
@@ -16,7 +17,7 @@ const AutosecureEcosystem = ({
       <Wrapper
         className={`${styles.flexBtw} gap-6 flex-col lg:flex-row items-stretch px-4`}
       >
-        <div className={`card ${isStyled && "bg-white"}`}>
+        <div className={`card flex-1 ${isStyled && "bg-white"}`}>
           <div
             className={`card-body items-start justify-start ${
               !isStyled && "p-0"
@@ -29,6 +30,7 @@ const AutosecureEcosystem = ({
               <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
                 {title1}
               </h2>
+              {children}
             </div>
             <div className="mt-10">
               {desc1.map((text, i) => (
@@ -45,7 +47,7 @@ const AutosecureEcosystem = ({
             </div>
           </div>
         </div>
-        <div className={`card ${isStyled && "bg-white"}`}>
+        <div className={`card flex-1 ${isStyled && "bg-white"}`}>
           <div
             className={`card-body items-start justify-start ${
               !isStyled && "p-0"
@@ -58,6 +60,7 @@ const AutosecureEcosystem = ({
               <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
                 {title2}
               </h2>
+              {children}
             </div>
             <div className="mt-10">
               {desc2.map((text, i) => (

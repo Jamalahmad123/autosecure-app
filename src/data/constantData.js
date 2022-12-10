@@ -299,3 +299,155 @@ export const vehicleAndPlateRecognition = {
     "penalties for parking violations",
   ],
 };
+
+export const systemTakeoverAndSystemArc = {
+  id: 1,
+  title1: "system takeover.",
+  titleOneDesc:
+    "Seamless integration of your existing camera system into the autosecure ecosystem.",
+  title2: "State-of-the-art system architecture.",
+  titleTwoDesc: "Security made in Germany.",
+  desc1: [
+    "Upgrade your existing camera intelligence with autosecure AI technology.",
+    "Free takeover and integration of existing camera infrastructure.",
+    "Optimizing or closing gaps in your current camera system.",
+  ],
+  desc2: [
+    "Cloud hosting and German data centers – with geo-redundancy if required.",
+    "On-site NVR (Network Video Recorder) as a local storage medium with a completely variable storage period (30 / 60 / 90 days depending on customer requirements).",
+    "Dual transmission paths (DSL, LTE).",
+  ],
+};
+
+export const deepLearningAndQualityImgs = {
+  id: 1,
+  title1: "deep learning",
+  titleOneDesc: "Intelligence in the cameras.",
+  feature1: "> 95% real alarm rate",
+  title2: "Brilliant image quality. Saturated colors.",
+  titleTwoDesc: "Even in complete darkness.",
+  feature2: "> Real color rendering from as little as 0.01 lux.",
+  desc1: [
+    "Innovative DeepLearning algorithm for alarm generation.",
+    "The magic behind it all: important events are put in the spotlight.",
+    "As the name suggests, the technology used offers the lowest false alarm rate . This reduces the effort in the alarm center and forms the basis for security services of the highest quality.",
+    "Precise alarm: Thanks to deep learning algorithms, the technology distinguishes people and vehicles from other moving targets.",
+    "False alarms caused by light reflections, small animals, dogs, cats, martens, etc. are a thing of the past in 95% of cases.",
+  ],
+  desc2: [
+    "What's the challenge?",
+    "The darkness provides protection for theft, trespassing and other crimes.",
+    "When a traditional camera with infrared illumination is used for night surveillance, people, vehicles or other important objects are blurred and fade into the background, making it difficult to see details.",
+    "Color-related information is crucial for many scenarios and represents a great enrichment for data and analysis. However, conventional cameras often lose important details when only displaying black-and-white images. Our technology is our solution to this common challenge faced by many security system users.",
+  ],
+};
+
+export const packages = [
+  {
+    id: 1,
+    title: "financing",
+    benefits: [
+      "Flexible leasing options or purchase",
+      "Free, tailored investment advice from financing partners",
+    ],
+  },
+  {
+    id: 2,
+    title: "products",
+    benefits: [
+      "Trend awareness in hardware and software development",
+      "Sustainably constant product availability",
+    ],
+  },
+  {
+    id: 3,
+    title: "Installation according to VDE 0100",
+    benefits: [
+      "Highest execution quality through decades of experience with camera surveillance and ELA systems",
+    ],
+  },
+  {
+    id: 4,
+    title: "service",
+    benefits: [
+      "Proactive troubleshooting and service promise",
+      "Individual service packages, reliable routine checks = optimal failure prevention and longevity",
+    ],
+  },
+  {
+    id: 5,
+    title: "security center",
+    benefits: [
+      "Operational and alarm monitoring by emergency and service control center 24/7",
+      "Certification according to VdS 2172: 2005-12",
+    ],
+  },
+  {
+    id: 6,
+    title: "insurance",
+    benefits: [
+      "Security only with insurance",
+      "Option to have an insurance quote tailored to your investment in security",
+    ],
+  },
+];
+
+export const jobs = [
+  {
+    id: 1,
+    title: "Area Sales Manager North",
+    jobDesc: "Permanent position / full-time",
+    location: "Germany North",
+    starting: "From now on",
+  },
+  {
+    id: 2,
+    title: "Area Sales Manager South",
+    jobDesc: "Permanent position / full-time",
+    location: " Germany-South",
+    starting: "From now on",
+  },
+  {
+    id: 3,
+    title: "App developer iOS & Android",
+    jobDesc: "Permanent position / full-time",
+    location: "Muenster",
+    starting: "From now on",
+  },
+  {
+    id: 4,
+    title: "Frontend Developer Laravel, PHP",
+    jobDesc: "Permanent position / full-time",
+    location: "Muenster",
+    starting: "From now on",
+  },
+  {
+    id: 5,
+    title: "IT support",
+    jobDesc: "Permanent position / full-time",
+    location: "Muenster",
+    starting: "From now on",
+  },
+  {
+    id: 6,
+    title: "Junior Account Manager",
+    jobDesc: "Permanent position / full-time",
+    location: "Muenster",
+    starting: "From now on",
+  },
+
+  {
+    id: 7,
+    title: "System engineer / IT technology in the field",
+    jobDesc: "Permanent position / full-time",
+    location: "Muenster",
+    starting: "From now on",
+  },
+  {
+    id: 8,
+    title: "Business Development Intern",
+    jobDesc: "Permanent position / full-time",
+    location: "Muenster",
+    starting: "From now on",
+  },
+];

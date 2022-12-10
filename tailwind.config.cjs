@@ -21,6 +21,7 @@ module.exports = {
         clrDarkGray: "#333",
         clrLightGray: "#f5f5f5",
         clrVeryLightGray: "#f2f2f7",
+        clrLightblue: "#466B8C",
       },
     },
   },

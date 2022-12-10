@@ -1,5 +1,4 @@
 import { FaCheck } from "react-icons/fa";
-import video from "../assets/videos/autosecure_secure_web_white_mobile_neu.mp4";
 import { Link } from "react-router-dom";
 import Wrapper from "./ui/Wrapper";
 import { Swiper, SwiperSlide } from "swiper/react";

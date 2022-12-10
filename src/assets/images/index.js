@@ -13,6 +13,7 @@ import autosecureneumuenster from "./autosecure_news_sueverkruep_neumuenster.jpg
 import autosecurePartnerZukunftswerkstatt from "./autosecure_partner_zukunftswerkstatt.jpg";
 import autosecureHikvision from "./autosecure_news_hikvision.jpg";
 import poster from "./autosecure_video_poster.jpg";
+import prinzipVideoPoster from "./autosecure_save_prinzip_video_poster.jpg";
 
 // Partners
 import autosecure_customer1 from "./autosecure_customer-1.jpg";
@@ -34,6 +35,12 @@ import hikvision_logo from "./hikvision-logo.png";
 import premium_leaders_club_logo from "./premium_leaders_club_logo.png";
 import zukunftswerkstatt_logo from "./zukunftswerkstatt-ogo.png";
 import autosecure_hipe_award from "./autosecure_hipe_award.jpg";
+import autosecure_slide_theif_1 from "./autosecure_slide_theif_1.jpg";
+import autosecure_slide_theif_2 from "./autosecure_slide_theif_2.jpg";
+import autosecure_slide_theif_3 from "./autosecure_slide_theif_3.jpg";
+import autosecure_slide_repair_1 from "./autosecure_slide_repair_1.jpg";
+import autosecure_slide_repair_2 from "./autosecure_slide__repair_2.jpg";
+import autosecure_slide_repair_3 from "./autosecure_slide_repair_3.jpg";
 
 export {
   logo,
@@ -70,4 +77,11 @@ export {
   zukunftswerkstatt_logo,
   autosecure_hipe_award,
   poster,
+  prinzipVideoPoster,
+  autosecure_slide_theif_1,
+  autosecure_slide_theif_2,
+  autosecure_slide_theif_3,
+  autosecure_slide_repair_1,
+  autosecure_slide_repair_2,
+  autosecure_slide_repair_3,
 };

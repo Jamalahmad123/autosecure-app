@@ -1,8 +1,7 @@
 import Wrapper from "./ui/Wrapper";
 import { FaCheck } from "react-icons/fa";
-import { autosecureVehicle } from "../assets/images";
 
-const AutosecureFeaturesList = ({ benefits }) => {
+const AutosecureFeaturesList = ({ children, benefits }) => {
   return (
     <Wrapper className="px-4 py-10 space-y-12">
       <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -15,13 +14,7 @@ const AutosecureFeaturesList = ({ benefits }) => {
           </li>
         ))}
       </ul>
-      <figure>
-        <img
-          src={autosecureVehicle}
-          alt="autosecure-vehicle-parking"
-          className="w-full h-auto rounded-xl"
-        />
-      </figure>
+      {children}
     </Wrapper>
   );
 };

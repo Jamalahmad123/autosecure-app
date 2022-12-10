@@ -6,6 +6,7 @@ import {
 } from "../../data/constantData";
 import { lazy, Suspense } from "react";
 import AutosecureFeaturesList from "../../components/AutosecureFeaturesList";
+import { autosecureVehicle } from "../../assets/images";
 
 // Lazy import
 const AutosecureEcosystem = lazy(() =>
@@ -27,7 +28,15 @@ const LocalizationSolutions = () => {
       <Hero {...locate} />
 
       <Suspense fallback={<div />}>
-        <AutosecureFeaturesList benefits={benefits} />
+        <AutosecureFeaturesList benefits={benefits}>
+          <figure>
+            <img
+              src={autosecureVehicle}
+              alt="autosecure-vehicle-parking"
+              className="w-full h-auto rounded-xl"
+            />
+          </figure>
+        </AutosecureFeaturesList>
         <AutosecureEcosystem {...ecosystemAndParkingSystem} />
         <AutosecureEcosystem {...vehicleAndPlateRecognition} />
       </Suspense>

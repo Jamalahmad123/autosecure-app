@@ -70,11 +70,18 @@ const Footer = () => {
             </div>
           ))}
           <div>
-            <h3 className="text-lg font-semibold text-clrPrimary text-center">
+            <Link
+              to="/legal"
+              className="text-lg font-semibold text-clrPrimary text-center"
+            >
               legal
-            </h3>
+            </Link>
             {legals.map((legal, i) => (
-              <Link className="text-clrPrimary text-center" key={i}>
+              <Link
+                to={`legal/${legal}`}
+                className="text-clrPrimary text-center"
+                key={i}
+              >
                 {legal}
               </Link>
             ))}
