@@ -1,24 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectCoverflow } from "swiper";
-import {
-  autosecure_slide_theif_1,
-  autosecure_slide_theif_2,
-  autosecure_slide_theif_3,
-  autosecure_slide_repair_1,
-  autosecure_slide_repair_2,
-  autosecure_slide_repair_3,
-} from "../assets/images";
 
-const AutosecureFullSlider = () => {
-  const slideImages = [
-    autosecure_slide_theif_1,
-    autosecure_slide_theif_2,
-    autosecure_slide_repair_1,
-    autosecure_slide_repair_2,
-    autosecure_slide_theif_3,
-    autosecure_slide_repair_3,
-  ];
-
+const AutosecureFullSlider = ({ slideImages }) => {
   return (
     <section>
       <Swiper

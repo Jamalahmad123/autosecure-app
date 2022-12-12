@@ -15,7 +15,7 @@ const IndustrySectorSolutions = () => {
   return (
     <>
       <Hero title={title} desc={desc} isLink />
-      <div className="py-10">
+      <section className="py-10 relative">
         <Wrapper className="px-14 relative">
           <Swiper
             spaceBetween={25}
@@ -83,7 +83,7 @@ const IndustrySectorSolutions = () => {
             ))}
           </Swiper>
         </Wrapper>
-      </div>
+      </section>
     </>
   );
 };

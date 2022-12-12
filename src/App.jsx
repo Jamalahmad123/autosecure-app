@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 
 // Swiper css
 import "swiper/css";
@@ -17,9 +22,11 @@ import Home from "./pages/Home";
 
 import { lazy, Suspense } from "react";
 
-const ParticlesBackground = lazy(() =>
-  import("./components/ui/ParticlesBackground")
-);
+// const ParticlesBackground = lazy(() =>
+//   import("./components/ui/ParticlesBackground")
+// );
+
+import ParticlesBackground from "./components/ui/ParticlesBackground";
 
 import Solutions from "./pages/solutions/Solutions";
 import IndustrySectors from "./pages/industry/IndustrySectors";
@@ -35,6 +42,7 @@ import Conditions from "./pages/legal/Conditions";
 import Career from "./pages/company/Career";
 import JobDetails from "./pages/company/JobDetails";
 import SecuritySolutions from "./pages/solutions/SecuritySolutions";
+import ScanSolutions from "./pages/solutions/ScanSolutions";
 // import Compnay from "./pages/company/Compnay";
 // import AboutUs from "./pages/company/AboutUs";
 // import News from "./pages/company/News";
@@ -58,18 +66,22 @@ const Footer = lazy(() => import("./components/Footer"));
 const BookAppointment = lazy(() => import("./components/BookAppointment"));
 
 const options = {
+  background: {
+    color: {
+      value: "#f5f5f5",
+    },
+    opacity: 1,
+  },
   fpsLimit: 60,
   fullScreen: {
     enable: false,
     zIndex: -1,
   },
-  background: {
-    color: "#f5f5f5",
-  },
   interactivity: {
     detectsOn: "canvas",
     events: {
       resize: true,
+      onHover: {},
     },
   },
   particles: {
@@ -120,15 +132,20 @@ function App() {
   return (
     <Router>
       <Nav />
-      <Suspense fallback={<div />}>
+      {/* <Suspense fallback={<div />}>
         <ParticlesBackground options={options} />
-      </Suspense>
+      </Suspense> */}
+      <ParticlesBackground options={options} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route
           path="/solutions/security-solutions"
           element={<SecuritySolutions />}
+        />
+        <Route
+          path="/solutions/scanner-solutions"
+          element={<ScanSolutions />}
         />
         <Route
           path="/solutions/localization-solutions"

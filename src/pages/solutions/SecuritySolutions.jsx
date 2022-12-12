@@ -19,6 +19,15 @@ import AutosecureFullSlider from "../../components/AutosecureFullSlider";
 import AutosecureQoute from "../../components/ui/AutosecureQoute";
 import AutosecureApplications from "../../components/AutosecureApplications";
 
+import {
+  autosecure_slide_theif_1,
+  autosecure_slide_theif_2,
+  autosecure_slide_theif_3,
+  autosecure_slide_repair_1,
+  autosecure_slide_repair_2,
+  autosecure_slide_repair_3,
+} from "../../assets/images";
+
 const benefits = [
   "Precise real-time indoor and outdoor localization of goods and goods for profitable business applications with innovative analyses.",
   `Examples of use cases are "Find My Car Terminals", vehicle tagging, digital vehicle files/order folders.`,
@@ -27,8 +36,18 @@ const benefits = [
   "Significant reduction of search and assignment costs.",
 ];
 
+const slideImages = [
+  autosecure_slide_theif_1,
+  autosecure_slide_theif_2,
+  autosecure_slide_repair_1,
+  autosecure_slide_repair_2,
+  autosecure_slide_theif_3,
+  autosecure_slide_repair_3,
+];
+
 const SecuritySolutions = () => {
   const [safe] = features.filter((item) => item.title === "safe");
+
   return (
     <>
       <Hero {...safe} />
@@ -86,7 +105,7 @@ const SecuritySolutions = () => {
       </MeetingVideo>
       <AutosecureSystemArc {...systemTakeoverAndSystemArc} />
       <AutosecureSystemArc {...deepLearningAndQualityImgs} isFeature />
-      <AutosecureFullSlider />
+      <AutosecureFullSlider slideImages={slideImages} />
       <About />
       <AutosecureApplications />
       {/* <AutosecureQoute /> */}

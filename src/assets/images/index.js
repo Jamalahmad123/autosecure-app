@@ -41,6 +41,12 @@ import autosecure_slide_theif_3 from "./autosecure_slide_theif_3.jpg";
 import autosecure_slide_repair_1 from "./autosecure_slide_repair_1.jpg";
 import autosecure_slide_repair_2 from "./autosecure_slide__repair_2.jpg";
 import autosecure_slide_repair_3 from "./autosecure_slide_repair_3.jpg";
+import autosecureMeetingGirl from "./autoseucre_meeting_girl.jpg";
+import autosecure_gallery_01 from "./autosecure_autoscanner_gallery_01.jpg";
+import autosecure_gallery_02 from "./autosecure_autoscanner_gallery_02.jpg";
+import autosecure_gallery_03 from "./autosecure_autoscanner_gallery_03.jpg";
+import autosecure_gallery_04 from "./autosecure_autoscanner_gallery_04.jpg";
+import autosecure_gallery_05 from "./autosecure_autoscanner_gallery_05.jpg";
 
 export {
   logo,
@@ -72,6 +78,7 @@ export {
   autosecure_customer15,
   autosecure_customer16,
   booking,
+  autosecureMeetingGirl,
   hikvision_logo,
   premium_leaders_club_logo,
   zukunftswerkstatt_logo,
@@ -84,4 +91,9 @@ export {
   autosecure_slide_repair_1,
   autosecure_slide_repair_2,
   autosecure_slide_repair_3,
+  autosecure_gallery_01,
+  autosecure_gallery_02,
+  autosecure_gallery_03,
+  autosecure_gallery_04,
+  autosecure_gallery_05,
 };

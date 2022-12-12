@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Wrapper from "./ui/Wrapper";
@@ -9,8 +10,8 @@ import { logo_sm } from "../assets/images";
 
 const Features = () => {
   return (
-    <section className="py-14">
-      <Wrapper className="px-4">
+    <section className="py-14 relative">
+      <Wrapper className="px-4 z-50">
         <Swiper
           spaceBetween={30}
           pagination={{

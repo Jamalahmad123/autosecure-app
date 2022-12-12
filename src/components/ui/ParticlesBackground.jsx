@@ -10,7 +10,18 @@ const ParticlesBackground = ({ options, id }) => {
     await loadFull(engine);
   }, []);
 
-  return <Particles id={id} init={particlesInit} options={options} />;
+  const particlesLoaded = useCallback(async (container) => {
+    container.smooth = true;
+  }, []);
+
+  return (
+    <Particles
+      options={options}
+      init={particlesInit}
+      loaded={particlesLoaded}
+      id={id}
+    />
+  );
 };
 
 export default ParticlesBackground;
