@@ -91,7 +91,6 @@ const Save = () => {
             </div>
           ))}
         </div>
-        <MeetingVideo />
       </Wrapper>
     </section>
   );

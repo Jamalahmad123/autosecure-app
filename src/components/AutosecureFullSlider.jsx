@@ -1,15 +1,17 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, EffectCoverflow } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 
 const AutosecureFullSlider = ({ slideImages }) => {
   return (
     <section>
       <Swiper
         navigation={true}
-        modules={[Navigation, EffectCoverflow]}
+        loop
+        autoplay={{
+          disableOnInteraction: false,
+        }}
+        modules={[Navigation, Autoplay]}
         className="mySwiper"
-        effect="coverflow"
-        speed={500}
         style={{
           "--swiper-navigation-color": "#f2f2f2",
         }}

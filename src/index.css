@@ -152,3 +152,13 @@ body::-webkit-scrollbar {
   background-color: transparent;
   color: #0a84ff;
 }
+
+/* Html styles */
+.htmlContainer a {
+  font-weight: bold;
+  transition: all 0.35s ease;
+}
+
+.htmlContainer a:hover {
+  opacity: 0.8;
+}

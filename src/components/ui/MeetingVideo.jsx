@@ -1,10 +1,8 @@
 import { useRef, useState } from "react";
 import { FaRegPlayCircle } from "react-icons/fa";
-import { poster } from "../../assets/images";
-import { auto_secure_meeting } from "../../assets/videos";
 import Wrapper from "./Wrapper";
 
-const MeetingVideo = ({ children }) => {
+const MeetingVideo = ({ videoPath, poster }) => {
   const [isPlaying, setIsPlaying] = useState(true);
   const ref = useRef();
 
@@ -15,7 +13,6 @@ const MeetingVideo = ({ children }) => {
 
   return (
     <Wrapper className="px-4 py-6 relative">
-      {children}
       <div className="relative">
         <video
           preload="none"
@@ -24,7 +21,7 @@ const MeetingVideo = ({ children }) => {
           ref={ref}
           controls={!isPlaying}
         >
-          <source src={auto_secure_meeting} type="video/mp4" />
+          <source src={videoPath} type="video/mp4" />
           Sorry, your browser doesn't support videos.
         </video>
         {isPlaying && (

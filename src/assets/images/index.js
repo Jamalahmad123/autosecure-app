@@ -47,6 +47,7 @@ import autosecure_gallery_02 from "./autosecure_autoscanner_gallery_02.jpg";
 import autosecure_gallery_03 from "./autosecure_autoscanner_gallery_03.jpg";
 import autosecure_gallery_04 from "./autosecure_autoscanner_gallery_04.jpg";
 import autosecure_gallery_05 from "./autosecure_autoscanner_gallery_05.jpg";
+import autosecure_save_scan_poster from "./autosecure_save_scan_poster.jpg";
 
 export {
   logo,
@@ -84,6 +85,7 @@ export {
   zukunftswerkstatt_logo,
   autosecure_hipe_award,
   poster,
+  autosecure_save_scan_poster,
   prinzipVideoPoster,
   autosecure_slide_theif_1,
   autosecure_slide_theif_2,

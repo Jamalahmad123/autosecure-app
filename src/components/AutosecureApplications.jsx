@@ -29,6 +29,7 @@ const privacy = {
     "The protection of personal data is a central feature of professional services.",
     "The data recorded by the cameras is consistently protected and used in accordance with data protection regulations via jointly agreed order data processing contracts.",
     "Signage on your premises ensures GDPR-compliant visibility of your security solution. This gives you and your customers legal certainty.",
+    "This gives you and your customers legal certainty .",
   ],
 };
 

@@ -16,10 +16,10 @@ const AutosecureSystemArc = ({
   return (
     <section className="py-14 bg-clrLightGray">
       <Wrapper
-        className={`${styles.flexBtw} gap-6 flex-col lg:flex-row items-stretch px-4`}
+        className={`${styles.flexBtw} gap-12 flex-col lg:flex-row items-stretch px-4`}
       >
         <div className={`card flex-1`}>
-          <div className={`card-body items-start justify-start`}>
+          <div className={`card-body p-0 items-start justify-start`}>
             <div className="flex flex-col items-start justify-start gap-4">
               <h2
                 className={`text-2xl md:text-3xl lg:text-4xl text-clrPrimary font-AllianceBold font-bold`}
@@ -49,7 +49,7 @@ const AutosecureSystemArc = ({
           </div>
         </div>
         <div className={`card flex-1`}>
-          <div className={`card-body items-start justify-start`}>
+          <div className={`card-body p-0 items-start justify-start`}>
             <div className="flex flex-col items-start justify-start gap-4">
               <h2
                 className={`text-2xl md:text-3xl lg:text-4xl text-clrPrimary font-AllianceBold font-bold`}

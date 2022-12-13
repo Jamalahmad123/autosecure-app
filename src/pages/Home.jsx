@@ -29,6 +29,8 @@ const AutoSecureNewsDialoge = lazy(() =>
   import("../components/AutoSecureNewsDialoge")
 );
 const MeetingVideo = lazy(() => import("../components/ui/MeetingVideo"));
+import { poster } from "../assets/images";
+import { auto_secure_meeting } from "../assets/videos";
 
 import { ecosystemAndExpertise } from "../data/constantData";
 
@@ -46,7 +48,7 @@ const Home = () => {
         <About />
         <IndustrySectorSolutions />
         <AutosecureEcosystem {...ecosystemAndExpertise} isStyled hasLogo />
-        <MeetingVideo />
+        <MeetingVideo videoPath={auto_secure_meeting} poster={poster} />
         <AutosecureValues />
         <AutosecureCareerDialoge />
         <AutoSecureNewsDialoge />

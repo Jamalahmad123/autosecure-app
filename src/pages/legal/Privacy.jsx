@@ -1,11 +1,16 @@
 import Hero from "./Hero";
+import AccordionList from "../../components/ui/AccordionList";
+import { privacyList } from "./accordionData";
 
 const title = "privacy";
-const desc = "";
-const list = [];
 
 const Privacy = () => {
-  return <Hero />;
+  return (
+    <>
+      <Hero title={title} />
+      <AccordionList list={privacyList} />
+    </>
+  );
 };
 
 export default Privacy;
