@@ -159,6 +159,23 @@ body::-webkit-scrollbar {
   transition: all 0.35s ease;
 }
 
+.htmlContainer ul {
+  list-style: disc;
+  list-style-position: outside;
+  padding-left: 2rem;
+}
+
+.htmlContainer ul > li {
+  margin-top: 1.5rem;
+}
+
+.htmlContainer img {
+  width: 50%;
+  max-width: 50%;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
 .htmlContainer a:hover {
   opacity: 0.8;
 }

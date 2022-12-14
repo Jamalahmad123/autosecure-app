@@ -11,7 +11,10 @@ const AutoSecureNewsDialoge = () => {
           News about our projects and <br className="hidden lg:block" /> our
           company.
         </h2>
-        <Link className="text-xl border-b p-4 border-clrPrimary text-clrPrimary hover:bg-white">
+        <Link
+          to="/company/news"
+          className="text-xl border-b p-4 border-clrPrimary text-clrPrimary hover:bg-white"
+        >
           show all news
           <FaChevronRight className="inline-block text-clrPrimary ml-2" />
         </Link>

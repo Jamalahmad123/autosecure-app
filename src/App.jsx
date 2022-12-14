@@ -43,6 +43,7 @@ import Career from "./pages/company/Career";
 import JobDetails from "./pages/company/JobDetails";
 import SecuritySolutions from "./pages/solutions/SecuritySolutions";
 import ScanSolutions from "./pages/solutions/ScanSolutions";
+import NewsDetail from "./pages/company/NewsDetail";
 // import Compnay from "./pages/company/Compnay";
 // import AboutUs from "./pages/company/AboutUs";
 // import News from "./pages/company/News";
@@ -195,6 +196,14 @@ function App() {
           element={
             <Suspense fallback={<div />}>
               <News />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/news/:id"
+          element={
+            <Suspense fallback={<div />}>
+              <NewsDetail />
             </Suspense>
           }
         />
