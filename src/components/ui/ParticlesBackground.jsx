@@ -20,6 +20,12 @@ const ParticlesBackground = ({ options, id }) => {
       init={particlesInit}
       loaded={particlesLoaded}
       id={id}
+      style={{
+        width: "100%",
+        height: "100%",
+        backgroundColor: "transparent",
+        pointerEvents: "none",
+      }}
     />
   );
 };

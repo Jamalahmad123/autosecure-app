@@ -48,6 +48,15 @@ import autosecure_gallery_03 from "./autosecure_autoscanner_gallery_03.jpg";
 import autosecure_gallery_04 from "./autosecure_autoscanner_gallery_04.jpg";
 import autosecure_gallery_05 from "./autosecure_autoscanner_gallery_05.jpg";
 import autosecure_save_scan_poster from "./autosecure_save_scan_poster.jpg";
+import autosecure_cam2 from "./autosecure_Cam2_.png";
+import autosecure_cam3 from "./autosecure_Cam3.png";
+import autosecure_cam4 from "./autosecure_Cam4.png";
+import autosecure_cenima from "./autosecure_cinema_.png";
+import autosecure_mobile_security_tower1 from "./autosecure_mobile_security_tower1.png";
+import autosecure_mobile_security_tower2 from "./autosecure_mobile_security_tower.png";
+import autosecure_mobile_transport from "./autosecure_mobile_transport.png";
+import mobile_security_tower4 from "./mobile_security_tower4.png";
+import laptop_screen_view from "./laptop_screen_view.png";
 
 export {
   logo,
@@ -55,6 +64,15 @@ export {
   autosecureMobile,
   autosecureTower,
   autosecureVehicle,
+  autosecure_cam2,
+  autosecure_cam3,
+  autosecure_cenima,
+  autosecure_cam4,
+  autosecure_mobile_security_tower2,
+  autosecure_mobile_security_tower1,
+  mobile_security_tower4,
+  autosecure_mobile_transport,
+  laptop_screen_view,
   autosecureConstruction,
   autosecureFarming,
   autosecureLogistic,

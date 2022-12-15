@@ -45,7 +45,7 @@ const Home = () => {
       <Hero title={title} desc={desc} promise={promise} />
       <Suspense fallback={<div />}>
         <Features />
-        <About />
+        <About link="/mobile-security" />
         <IndustrySectorSolutions />
         <AutosecureEcosystem {...ecosystemAndExpertise} isStyled hasLogo />
         <MeetingVideo videoPath={auto_secure_meeting} poster={poster} />

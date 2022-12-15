@@ -14,9 +14,7 @@ const options = {
     enable: false,
     zIndex: -999,
   },
-  background: {
-    color: "#000",
-  },
+
   interactivity: {
     detectsOn: "canvas",
     events: {
@@ -66,10 +64,14 @@ const options = {
   },
 };
 
-const About = () => {
+const About = ({ link, isAnimated }) => {
   return (
     <>
-      <section className="py-14 relative">
+      <section
+        className={`py-14 relative ${
+          isAnimated && "gradient-animation"
+        } z-[999]`}
+      >
         <Suspense fallback={<div />}>
           <ParticlesBackground id="about" options={options} />
         </Suspense>
@@ -109,7 +111,10 @@ const About = () => {
                   <FaChevronRight className="inline-block text-clrSky" /> 100%
                   configurable.
                 </p>
-                <Link className="btn text-white btn-lg gap-2 border-none bg-clrSkyDark hover:bg-clrSky">
+                <Link
+                  to={link}
+                  className="btn text-white btn-lg gap-2 border-none bg-clrSkyDark hover:bg-clrSky"
+                >
                   learn more
                   <FaChevronRight />
                 </Link>

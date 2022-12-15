@@ -9,12 +9,7 @@ const Hero = ({ title, desc, benefit1, benefit2, videoPath, isAssist }) => {
     <header className="py-10">
       <Wrapper className="px-4">
         <div className="card lg:items-stretch lg:flex-row bg-transparent gap-6 flex-1">
-          <video
-            autoPlay
-            muted
-            preload="metadata"
-            className="max-w-lg bg-transparent smooth"
-          >
+          <video autoPlay muted className="max-w-lg bg-transparent smooth">
             <source src={videoPath} type="video/mp4" />
             Sorry, your browser doesn't support videos.
           </video>
