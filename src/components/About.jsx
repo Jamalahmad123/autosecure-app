@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import TypeWriter from "./ui/TypeWriter";
 // import ParticlesBackground from "./ui/ParticlesBackground";
 import { lazy, Suspense } from "react";
+import AnimatedTower from "./ui/AnimatedTower";
 const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
 
 const options = {
@@ -68,32 +69,23 @@ const About = ({ link, isAnimated }) => {
   return (
     <>
       <section
-        className={`py-14 relative ${
-          isAnimated && "gradient-animation"
+        className={`pt-20 relative ${
+          isAnimated ? "gradient-animation" : "bg-black"
         } z-[999]`}
       >
         <Suspense fallback={<div />}>
           <ParticlesBackground id="about" options={options} />
         </Suspense>
         <Wrapper className="px-4 z-50">
-          <TypeWriter />
+          {/* <TypeWriter /> */}
           <header>
             <h2 className={`${styles.headingSecondary} text-white`}>
               Active mobile video surveillance of the{" "}
               <span className="text-clrSky">latest generation.</span>
             </h2>
           </header>
-          <div
-            className={`${styles.flexCenter} flex-col gap-8 lg:gap-32 lg:flex-row mt-4`}
-          >
-            <figure>
-              <img
-                src={autosecureTower}
-                alt="autosecure-mobile"
-                className="h-[60vh]"
-                loading="lazy"
-              />
-            </figure>
+          <div className="flex justify-center items-center flex-col gap-10 lg:flex-row lg:justify-evenly mt-10">
+            <AnimatedTower />
             <div className="space-y-10">
               <h2 className={`${styles.headingSecondary} text-white mt-5`}>
                 Mobile <br /> Security <br /> Tower
@@ -122,7 +114,7 @@ const About = ({ link, isAnimated }) => {
             </div>
           </div>
           <div className={`${styles.flexBtw} flex-col lg:flex-row gap-8 mt-12`}>
-            <div className="space-y-8">
+            <div className="space-y-8 pb-14">
               <div className="flex gap-3">
                 <FaCheck className="text-clrSky min-w-[25px]" />
                 <p className="text-lg font-medium lg:text-xl text-white flex-shrink">
@@ -149,7 +141,7 @@ const About = ({ link, isAnimated }) => {
               </div>
             </div>
 
-            <figure>
+            <figure className="flex self-end">
               <img
                 src={autosecureMobile}
                 alt="autosecure-mobile"

@@ -31,6 +31,8 @@ import {
   featureindivisuals,
   quality,
 } from "../data/constantData2";
+import AnimatedTower from "./ui/AnimatedTower";
+import AnimatedRouter from "./ui/AnimatedRouter";
 
 const { outDoor, fencedArea, cenimaWeb, smartTracking, monitoringCenter } =
   data;
@@ -63,14 +65,8 @@ const MobileSecurity = () => {
               <span className="text-clrSky lg:block">Reimagined.</span>
             </h2>
           </header>
-          <SplitContainer style="py-20">
-            <figure className="flex-1">
-              <img
-                src={autosecureMobile}
-                alt="autosecure-mobile-tower"
-                className="w-full"
-              />
-            </figure>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 py-20 items-stretch">
+            <AnimatedRouter />
             <div className="flex-1 space-y-10">
               <p className="text-white text-xl lg:text-2xl">
                 With our mobile security towers, you get maximum security, even
@@ -82,7 +78,7 @@ const MobileSecurity = () => {
                 request a quote <FaChevronRight size={20} className="ml-4" />
               </Link>
             </div>
-          </SplitContainer>
+          </div>
           <div className="py-14">
             <h2
               className={`${styles.headingSecondary} leading-[2.8rem] text-white lg:leading-[3.8rem]`}
@@ -475,14 +471,10 @@ const MobileSecurity = () => {
             <span className="text-clrSky lg:block">Rent now!</span>
           </h2>
           <div className="flex items-center justify-center flex-col gap-10 lg:flex-row">
-            <figure className="flex-1 flex items-center justify-center">
-              <img
-                src={autosecureTower}
-                alt="autosecure-tower"
-                className="max-h-[60vh]"
-              />
-            </figure>
-            <div className="flex-1 space-y-8">
+            <div className="hidden w-[35%] lg:flex items-center justify-center">
+              <AnimatedTower />
+            </div>
+            <div className="w-[65%] space-y-8">
               <p className="text-white text-xl lg:text-2xl mt-8">
                 Rent your individually configured autosecure Mobile Security
                 Tower. Start your inquiry and we will contact you immediately

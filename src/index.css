@@ -76,10 +76,12 @@ body::-webkit-scrollbar {
 .bg-theif {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("./assets/images/autosecure_slide_theif_1.jpg");
-  background-position: center;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  animation: animate 10s linear infinite;
+  transition: all 10s linear;
+  background-attachment: fixed;
 }
 
 .bg-building {
@@ -218,6 +220,111 @@ canvas {
 .menu :where(li:not(.menu-title):not(:empty)) > :where(*:not(ul):active) {
   background-color: transparent;
   color: #0a84ff;
+}
+
+/* Animated Images styles */
+.animated-tower-img-container {
+  position: relative;
+}
+
+.tower-img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  animation-name: replace;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.router-img {
+  object-fit: cover;
+  animation-name: replace;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.router-container img:nth-last-of-type(1) {
+  animation-delay: 15s;
+}
+.router-container img:nth-last-of-type(2) {
+  animation-delay: 13s;
+}
+.router-container img:nth-last-of-type(3) {
+  animation-delay: 11s;
+}
+.router-container img:nth-last-of-type(4) {
+  animation-delay: 9s;
+}
+.router-container img:nth-last-of-type(5) {
+  animation-delay: 7s;
+}
+.router-container img:nth-last-of-type(6) {
+  animation-delay: 5s;
+}
+.router-container img:nth-last-of-type(7) {
+  animation-delay: 3s;
+}
+.router-container img:nth-last-of-type(8) {
+  animation-delay: 2s;
+}
+.router-container img:nth-last-of-type(9) {
+  animation-delay: 1s;
+}
+
+.animated-tower-img-container .img-1 {
+  animation-delay: 1s;
+}
+.animated-tower-img-container .img-2 {
+  animation-delay: 2s;
+}
+.animated-tower-img-container .img-3 {
+  animation-delay: 3s;
+}
+.animated-tower-img-container .img-4 {
+  animation-delay: 4s;
+}
+.animated-tower-img-container .img-5 {
+  animation-delay: 5s;
+}
+.animated-tower-img-container .img-6 {
+  animation-delay: 6s;
+}
+
+@keyframes FadeInOut {
+  /* distributing times evenly */
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes replace {
+  0% {
+    visibility: visible;
+  }
+  15% {
+    visibility: hidden;
+  }
+  84% {
+    visibility: hidden;
+  }
+  85% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
 
 /* Html styles */
