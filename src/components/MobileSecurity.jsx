@@ -65,7 +65,7 @@ const MobileSecurity = () => {
               <span className="text-clrSky lg:block">Reimagined.</span>
             </h2>
           </header>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 py-20 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 py-20">
             <AnimatedRouter />
             <div className="flex-1 space-y-10">
               <p className="text-white text-xl lg:text-2xl">

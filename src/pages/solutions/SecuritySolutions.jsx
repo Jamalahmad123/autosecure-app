@@ -123,7 +123,7 @@ const SecuritySolutions = () => {
       <AutosecureSystemArc {...deepLearningAndQualityImgs} isFeature />
       <VisualWarnings />
       <AutosecureFullSlider slideImages={slideImages} />
-      <About />
+      <About link="/solutions/security-solutions/mobile-security" />
       <AutosecureApplications />
       {/* <AutosecureQoute /> */}
     </>

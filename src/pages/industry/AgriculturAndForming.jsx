@@ -31,7 +31,7 @@ const solutions = [
     title: "Theft and burglary problems on the company premises.",
     desc: "Machinery and goods theft in agriculture is a big problem. Almost every agricultural business encounters permanent theft. autosecure offers sensible and intelligent security solutions and ensures 100% protection for your valuables. By the way, with autosecure you achieve savings of at least 50% compared to personnel-based monitoring.",
     btnTitle: "security solutions",
-    path: "#",
+    path: "/solutions/security-solutions",
     videoPath: autoSecurityVideo,
   },
   {
@@ -39,7 +39,7 @@ const solutions = [
     title: "Automated entry and exit control.",
     desc: "Automated harvest and fruit inspection (shape, color, size) is still a dream of the future in many agricultural businesses. A large number of employees are often entrusted with these tasks. The new autosecure scan solution and the latest machine vision technology ensure that your harvest inspection runs automatically and securely.",
     btnTitle: "Scanner solutions",
-    path: "#",
+    path: "/solutions/scanner-solutions",
     videoPath: autoScanVideo,
   },
   {
@@ -48,7 +48,7 @@ const solutions = [
       "Goods and goods leave the property unnoticed or simply cannot be found again.",
     desc: "It not only costs time and nerves - but at the end of the day also hard cash. Long search times for finding goods and goods that have left the property unnoticed or unintentionally or simply can no longer be found. With the new autosecure Locate solution, goods and goods can be located to within a few meters and also perfectly protected against theft.",
     btnTitle: "Locate solutions",
-    path: "#",
+    path: "/solutions/localization-solutions",
     videoPath: autoLocateVideo,
   },
 ];

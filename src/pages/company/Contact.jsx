@@ -7,7 +7,7 @@ import { styles } from "../../Styles";
 const Contact = () => {
   return (
     <>
-      <section className="pt-24 pb-14">
+      <section className="pt-24 pb-14 bg-clrLightGray">
         <Wrapper className="px-4">
           <header className="space-y-8">
             <h1 className={`${styles.headingPrimary} text-clrPrimary`}>
@@ -69,37 +69,37 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Company *"
-                    className="bg-white text-clrPrimary input w-full rounded-none"
+                    className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                   />
                   <input
                     type="text"
                     placeholder="Surname *"
-                    className="bg-white text-clrPrimary input w-full rounded-none"
+                    className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                   />
                   <input
                     type="email"
                     placeholder="Email *"
-                    className="bg-white text-clrPrimary input w-full rounded-none"
+                    className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                   />
                   <input
                     type="tel"
                     placeholder="Phone number. *"
-                    className="bg-white text-clrPrimary input w-full rounded-none"
+                    className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                   />
                   <div className="flex items-center flex-col gap-5 sm:flex-row">
                     <input
                       type="text"
                       placeholder="POSTCODE *"
-                      className="bg-white text-clrPrimary input w-full rounded-none"
+                      className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                     />
                     <input
                       type="text"
                       placeholder="Location *"
-                      className="bg-white text-clrPrimary input w-full rounded-none"
+                      className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                     />
                   </div>
                   <textarea
-                    className="textarea w-full bg-white text-clrPrimary"
+                    className="textarea w-full bg-white text-clrPrimary focus:outline-none focus:shadow-inputShadow "
                     placeholder="Your Message *"
                   ></textarea>
                 </div>

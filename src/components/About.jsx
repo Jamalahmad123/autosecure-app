@@ -71,7 +71,7 @@ const About = ({ link, isAnimated }) => {
       <section
         className={`pt-20 relative ${
           isAnimated ? "gradient-animation" : "bg-black"
-        } z-[999]`}
+        } z-[1]`}
       >
         <Suspense fallback={<div />}>
           <ParticlesBackground id="about" options={options} />

@@ -25,7 +25,10 @@ const BookAppointment = () => {
               Arrange your free consultation appointment now.
             </p>
             <div className="card-actions mt-6 lg:mt-0">
-              <Link className="btn lowercase bg-clrSky text-white border-none hover:bg-clrPrimary lg:text-lg font-normal">
+              <Link
+                to="/company/contact"
+                className="btn lowercase bg-clrSky text-white border-none hover:bg-clrPrimary lg:text-lg font-normal"
+              >
                 make an appointment{" "}
                 <FaCalendarCheck size={20} className="ml-5" />
               </Link>

@@ -29,43 +29,66 @@ const AboutUs = () => {
               We help car dealerships, car parks, vehicle rental companies and
               logistics companies to optimize processes on the company premises
               and significantly reduce cost structures with our future-oriented{" "}
-              <Link className="font-bold text-xl hover:opacity-90">
+              <Link to="/" className="font-bold text-xl hover:opacity-90">
                 automation solutions.
               </Link>
             </p>
             <p className="text-base text-clrPrimary md:max-w-2xl leading-6 md:text-lg">
               With our{" "}
-              <Link className="font-bold text-xl hover:opacity-90">
+              <Link
+                to="/solutions/security-solutions"
+                className="font-bold text-xl hover:opacity-90"
+              >
                 autosecure SAVE principle
               </Link>{" "}
               and our innovative technology, we ensure that your valuables are
               not damaged. So you do not have to worry about the security of
               your company and save costs at the same time. autosecure assumes
               responsibility for{" "}
-              <Link className="font-bold text-xl hover:opacity-90">
+              <Link
+                to="/solutions/security-solutions"
+                className="font-bold text-xl hover:opacity-90"
+              >
                 security
               </Link>{" "}
               on company premises for its customers and offers{" "}
-              <Link className="font-bold text-xl hover:opacity-90">
+              <Link
+                to="/solutions/security-solutions"
+                className="font-bold text-xl hover:opacity-90"
+              >
                 100% protection for its customers' assets.
               </Link>
             </p>
             <p className="text-base text-clrPrimary md:max-w-2xl leading-6 md:text-lg">
               In addition to{" "}
-              <Link className="font-bold text-xl hover:opacity-90">
+              <Link
+                to="/solutions/security-solutions"
+                className="font-bold text-xl hover:opacity-90"
+              >
                 technology-based security
               </Link>{" "}
               solutions, autosecure also offers smart solutions in the area of{" "}
-              <Link className="font-bold text-xl hover:opacity-90">​​scan</Link>{" "}
+              <Link
+                to="/solutions/scanner-solutions"
+                className="font-bold text-xl hover:opacity-90"
+              >
+                ​​scan
+              </Link>{" "}
               and{" "}
-              <Link className="font-bold text-xl hover:opacity-90">
+              <Link
+                to="/solutions/localization-solutions"
+                className="font-bold text-xl hover:opacity-90"
+              >
                 localization technologies.
               </Link>
             </p>
             <p className="font-bold text-lg md:text-xl text-clrPrimary">
               We lower your costs. And increase your sales. Promised.
             </p>
-            <Link className="link link-neutral text-lg inline-block text-clrPrimary">
+            <Link
+              to="/company-contact"
+              className="link link-neutral text-lg inline-block text-clrPrimary"
+            >
               <FaCalendarAlt className="inline-block mr-4" />
               Arrange a consultation
             </Link>

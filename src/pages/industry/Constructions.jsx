@@ -29,7 +29,7 @@ const solutions = [
     title: "Theft and burglary problems on the construction site.",
     desc: "Theft of machinery or recyclable materials on construction sites is a major problem for construction companies. Not only the associated loss of value, but also the resulting downtimes lead to considerable economic difficulties. autosecure offers sensible and intelligent security solutions and ensures 100% protection for your valuables.",
     btnTitle: "security solutions",
-    path: "#",
+    path: "/solutions/security-solutions",
     videoPath: autoSecurityVideo,
   },
   {
@@ -38,7 +38,7 @@ const solutions = [
       "Automated documentation of delivery and removal processes on the construction site.",
     desc: "Which authorized or unauthorized persons enter the construction site and when? On many construction sites, this topic leads to numerous discussions, insurance problems, attendance and time recording problems and much more. The autosecure scan solution offers ideal options for automated access control.",
     btnTitle: "Scanner solutions",
-    path: "#",
+    path: "/solutions/scanner-solutions",
     videoPath: autoScanVideo,
   },
   {
@@ -47,7 +47,7 @@ const solutions = [
       "Goods and building materials leave the construction site unnoticed or simply cannot be found again.",
     desc: "It not only costs time and nerves - but at the end of the day also hard cash. Long search times for finding goods and building materials that have left the construction site unnoticed or unintentionally or simply can no longer be found. With the new autosecure-Locate solution, goods and building materials can be located to within a few meters and, incidentally, perfectly protected against theft.",
     btnTitle: "Locate solutions",
-    path: "#",
+    path: "/solutions/localization-solutions",
     videoPath: autoLocateVideo,
   },
 ];

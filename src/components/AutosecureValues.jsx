@@ -16,7 +16,10 @@ const AutosecureValues = () => {
             solutions, but also a sincere partner that you can rely on at all
             times.
           </p>
-          <Link className="text-xl border-b p-4 border-clrPrimary text-clrPrimary hover:bg-white font-light">
+          <Link
+            to="/company/values"
+            className="text-xl border-b p-4 border-clrPrimary text-clrPrimary hover:bg-white font-light"
+          >
             Our values
             <FaChevronRight className="inline-block ml-2" />
           </Link>

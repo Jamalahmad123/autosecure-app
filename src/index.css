@@ -237,42 +237,66 @@ canvas {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-.router-img {
+/* .router-img {
   object-fit: cover;
-  animation-name: replace;
-  animation-duration: 15s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
+  animation: fadeInOut 30s linear infinite;
+} */
 
-.router-container img:nth-last-of-type(1) {
-  animation-delay: 15s;
+/* .router-container img:nth-child(1) {
+  animation-delay: 0s;
 }
-.router-container img:nth-last-of-type(2) {
-  animation-delay: 13s;
-}
-.router-container img:nth-last-of-type(3) {
-  animation-delay: 11s;
-}
-.router-container img:nth-last-of-type(4) {
-  animation-delay: 9s;
-}
-.router-container img:nth-last-of-type(5) {
-  animation-delay: 7s;
-}
-.router-container img:nth-last-of-type(6) {
+.router-container img:nth-child(2) {
   animation-delay: 5s;
 }
-.router-container img:nth-last-of-type(7) {
-  animation-delay: 3s;
+.router-container img:nth-child(3) {
+  animation-delay: 10s;
 }
-.router-container img:nth-last-of-type(8) {
-  animation-delay: 2s;
+.router-container img:nth-child(4) {
+  animation-delay: 15s;
 }
-.router-container img:nth-last-of-type(9) {
-  animation-delay: 1s;
+.router-container img:nth-child(5) {
+  animation-delay: 20s;
 }
+.router-container img:nth-child(6) {
+  animation-delay: 25s;
+}
+/* .router-container img:nth-child(7) {
+  animation-delay: 12s;
+}
+.router-container img:nth-child(8) {
+  animation-delay: 14s;
+}
+.router-container img:nth-child(9) {
+  animation-delay: 16s;
+}
+.router-container img:nth-child(10) {
+  animation-delay: 18s;
+} */
+
+/*@keyframes FadeInOut {
+  
+  0% {
+    visibility: hidden;
+  }
+  3.33% {
+    visibility: visible;
+  }
+  6.66% {
+    visibility: visible;
+  }
+  9.99% {
+    visibility: visible;
+  }
+  13.33% {
+    visibility: visible;
+  }
+  16.65% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+} */
 
 .animated-tower-img-container .img-1 {
   animation-delay: 1s;
@@ -291,22 +315,6 @@ canvas {
 }
 .animated-tower-img-container .img-6 {
   animation-delay: 6s;
-}
-
-@keyframes FadeInOut {
-  /* distributing times evenly */
-  0% {
-    visibility: visible;
-  }
-  25% {
-    visibility: hidden;
-  }
-  75% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
-  }
 }
 
 @keyframes replace {

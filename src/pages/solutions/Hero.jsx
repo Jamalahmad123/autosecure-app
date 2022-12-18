@@ -39,14 +39,20 @@ const Hero = ({ title, desc, benefit1, benefit2, videoPath, isAssist }) => {
                   <p className="text-lg lg:text-xl font-AllianceBold font-bold">
                     Arrange your online appointment with Marina Eiling now.
                   </p>
-                  <Link className="btn btn-xl text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular">
+                  <Link
+                    to="/company/contact"
+                    className="btn btn-xl text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular"
+                  >
                     make an appointment{" "}
                     <FaCalendarCheck size={20} className="ml-5" />
                   </Link>
                 </div>
               </div>
             ) : (
-              <Link className="btn btn-xl text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular">
+              <Link
+                to="/company/contact"
+                className="btn btn-xl text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular"
+              >
                 make an appointment{" "}
                 <FaCalendarCheck size={20} className="ml-5" />
               </Link>

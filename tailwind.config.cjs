@@ -23,6 +23,9 @@ module.exports = {
         clrVeryLightGray: "#f2f2f7",
         clrLightblue: "#466B8C",
       },
+      boxShadow: {
+        inputShadow: "inset 0 0 0 1px rgb(0 0 0 / 10%)",
+      },
     },
   },
   plugins: [require("daisyui")],

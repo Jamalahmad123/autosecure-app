@@ -89,12 +89,18 @@ const Hero = ({ title, desc, promise, isLink }) => {
             </p>
           )}
           {isLink ? (
-            <Link className="link link-neutral text-lg items-center inline-flex text-clrPrimary">
+            <Link
+              to="/company/contact"
+              className="link link-neutral text-lg items-center inline-flex text-clrPrimary"
+            >
               <FaCalendarAlt className="inline-block mr-4  font-AllianceRegular" />
               Arrange a consultation
             </Link>
           ) : (
-            <Link className="btn text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular">
+            <Link
+              to="/company/contact"
+              className="btn text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular"
+            >
               make an appointment <FaCalendarCheck size={20} className="ml-5" />
             </Link>
           )}

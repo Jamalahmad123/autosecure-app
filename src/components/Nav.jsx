@@ -29,7 +29,7 @@ const Nav = () => {
   const legals = ["imprint", "privacy", "conditions"];
 
   return (
-    <nav className="bg-white z-50">
+    <nav className="bg-white z-[999]">
       <Wrapper className="navbar justify-between px-4">
         <div>
           <Link to="/">
@@ -41,12 +41,12 @@ const Nav = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal p-0">
+          <ul className="menu menu-horizontal p-0 z-[999]">
             {navLinks.map((item) => (
               <li
                 tabIndex={item.id}
                 key={item.id}
-                className="group nav-link z-50"
+                className="group nav-link z-[999]"
               >
                 <NavLink
                   to={`/${item.link}`}
@@ -60,7 +60,7 @@ const Nav = () => {
                     <li key={item.id} className="hover:bg-clrSky">
                       <NavLink
                         to={`/${item.link}`}
-                        className="text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white z-50"
+                        className="text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white z-[999]"
                       >
                         {item.name}
                       </NavLink>
@@ -72,10 +72,23 @@ const Nav = () => {
           </ul>
         </div>
         <div className={`${styles.flex} gap-4 sm:gap-8`}>
-          <NavLink className="text-clrDarkGray hover:text-clrSky text-base sm:text-lg md:text-2xl z-50">
+          <Link
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "mailto:info@autosecure.net";
+              // location.pathname = "mailto:info@autosecure.net";
+            }}
+            className="text-clrDarkGray hover:text-clrSky text-base sm:text-lg md:text-2xl z-[999]"
+          >
             <FaAt />
-          </NavLink>
-          <NavLink className="text-clrDarkGray block hover:text-clrSky text-base sm:text-lg md:text-2xl">
+          </Link>
+          <NavLink
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "tel:+492512373370";
+            }}
+            className="text-clrDarkGray block hover:text-clrSky text-base sm:text-lg md:text-2xl"
+          >
             <FaPhoneVolume />
           </NavLink>
           <NavLink className="text-clrDarkGray hover:text-clrSky text-base sm:text-lg md:text-2xl lg:hidden">
@@ -94,7 +107,7 @@ const Nav = () => {
         </div>
         <div
           className={`fixed top-0 left-0 bg-white w-full h-[0%] ${
-            toggle ? "h-[100%] z-50 example" : "h-[0%] -z-50"
+            toggle ? "h-[100%] z-[999] example" : "h-[0%] -z-50"
           } smooth overflow-auto flex items-start`}
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 px-10 relative w-full items-stretch py-20 gap-6">

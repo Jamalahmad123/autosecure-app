@@ -17,7 +17,10 @@ const Values = () => {
             solutions, but also a sincere partner that you can rely on at all
             times.
           </p>
-          <Link className="link link-neutral text-lg inline-block text-clrPrimary">
+          <Link
+            to="/company/contact"
+            className="link link-neutral text-lg inline-block text-clrPrimary"
+          >
             <FaCalendarAlt className="inline-block mr-4" />
             Arrange a consultation
           </Link>

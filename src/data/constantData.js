@@ -109,7 +109,7 @@ export const navLinks = [
 export const industrySector = [
   {
     id: 1,
-    link: "#",
+    link: "/industry/automobile-mobility",
     name: "Automobiles & Mobility",
     desc: "Automation solutions for car dealerships, car parks and vehicle rental companies.",
     benefit1: "50% less security costs",
@@ -118,7 +118,7 @@ export const industrySector = [
   },
   {
     id: 2,
-    link: "#",
+    link: "/industry/construction",
     name: "Construction & construction vehicles",
     desc: "Automation solutions for the construction site of the future.",
     benefit1: "50% less security costs",
@@ -127,7 +127,7 @@ export const industrySector = [
   },
   {
     id: 3,
-    link: "#",
+    link: "/industry/agriculture-formings",
     name: "Agriculturing & Farming",
     desc: "Technology-based solutions for the farmer of tomorrow.",
     benefit1: "Digital entry and exit control",
@@ -136,7 +136,7 @@ export const industrySector = [
   },
   {
     id: 4,
-    link: "#",
+    link: "/industry/logistics-goods",
     name: "Logistics & Goods",
     desc: "Automation solutions for logistics processes and goods tracking.",
     benefit1: "50% less security costs",
@@ -148,7 +148,7 @@ export const industrySector = [
 export const features = [
   {
     id: 1,
-    link: "#",
+    link: "/solutions/security-solutions",
     title: "safe",
     desc: "Active video surveillance with live perpetrator address according to the SAVE principle.",
     benefit1: "50% less security costs",
@@ -158,7 +158,7 @@ export const features = [
   },
   {
     id: 2,
-    link: "#",
+    link: "/solutions/scanner-solutions",
     title: "scan",
     desc: "Digital condition control, damage detection and documentation in real time.",
     benefit1: "100% condition detection of all vehicles",
@@ -169,7 +169,7 @@ export const features = [
 
   {
     id: 3,
-    link: "#",
+    link: "/solutions/localization-solutions",
     title: "locate",
     desc: "Precise real-time indoor and outdoor localization of goods or vehicles.",
     benefit1: "20% faster processes",

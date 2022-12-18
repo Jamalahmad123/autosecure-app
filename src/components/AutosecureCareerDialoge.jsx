@@ -15,7 +15,10 @@ const AutosecureCareerDialoge = () => {
           Support our team and our clients with leading solutions to achieve
           real added value.
         </p>
-        <Link className="text-xl border-b p-4 border-clrPrimary text-clrPrimary hover:bg-white">
+        <Link
+          to="/company/career"
+          className="text-xl border-b p-4 border-clrPrimary text-clrPrimary hover:bg-white"
+        >
           start career
           <FaChevronRight className="inline-block ml-2" />
         </Link>

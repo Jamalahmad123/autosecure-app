@@ -27,7 +27,10 @@ const PagesHero = ({ title, desc, benefit1, benefit2, img }) => {
             <p className="text-xl text-clrPrimary lg:text-2xl font-bold">
               <FaChevronRight className="inline-block text-clrSky" /> {benefit2}
             </p>
-            <Link className="btn text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular">
+            <Link
+              to="/company/contact"
+              className="btn text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular"
+            >
               make an appointment <FaCalendarCheck size={20} className="ml-5" />
             </Link>
           </div>

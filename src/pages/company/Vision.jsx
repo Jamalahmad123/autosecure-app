@@ -18,7 +18,10 @@ const Vision = () => {
               We want to be the leading ecosystem for automation solutions for
               the automotive and mobility industry.
             </h1>
-            <Link className="link text-clrPrimary link-neutral text-lg inline-block">
+            <Link
+              to="/company/contact"
+              className="link text-clrPrimary link-neutral text-lg inline-block"
+            >
               <FaCalendarAlt className="inline-block mr-4" />
               Arrange a consultation
             </Link>
@@ -31,7 +34,10 @@ const Vision = () => {
               With our automation solutions, we help our customers to optimize
               their processes and significantly reduce cost structures.
             </h1>
-            <Link className="link text-clrPrimary link-neutral text-lg inline-block">
+            <Link
+              to="/company/contact"
+              className="link text-clrPrimary link-neutral text-lg inline-block"
+            >
               <FaCalendarAlt className="inline-block mr-4" />
               Arrange a consultation
             </Link>

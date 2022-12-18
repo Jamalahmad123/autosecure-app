@@ -137,7 +137,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/solutions" element={<Solutions />} />
-          <Route path="/mobile-security" element={<MobileSecurity />} />
+          <Route
+            path="/solutions/security-solutions/mobile-security"
+            element={<MobileSecurity />}
+          />
           <Route
             path="/solutions/security-solutions"
             element={<SecuritySolutions />}

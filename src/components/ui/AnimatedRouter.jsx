@@ -1,9 +1,11 @@
+import { useEffect, useRef, useState } from "react";
 import {
   autosecure_mobile_router_one,
   autosecure_mobile_router_two,
   autosecure_mobile_router_three,
   autosecure_mobile_router_four,
   autosecure_mobile_router_five,
+  autosecure_mobile_router_six,
   autosecure_mobile_router_seven,
   autosecure_mobile_router_eight,
   autosecure_mobile_router_nine,
@@ -16,6 +18,7 @@ const images = [
   autosecure_mobile_router_three,
   autosecure_mobile_router_four,
   autosecure_mobile_router_five,
+  autosecure_mobile_router_six,
   autosecure_mobile_router_seven,
   autosecure_mobile_router_eight,
   autosecure_mobile_router_nine,
@@ -23,17 +26,22 @@ const images = [
 ];
 
 const AnimatedRouter = () => {
+  const [index, setIndex] = useState(0);
+
+  function switchSrc() {
+    setInterval(() => {
+      setIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    }, 1200);
+  }
+
+  useEffect(() => {
+    switchSrc();
+  }, []);
+
   return (
-    <div className="router-container relative w-full h-[400px]">
-      {images.map((img, i) => (
-        <img
-          src={img}
-          alt="autosecure-mobile-tower"
-          className="router-img absolute left-0 w-full h-auto"
-          key={i}
-        />
-      ))}
-    </div>
+    <figure>
+      <img src={images[index]} alt="autosecure-tower" className="w-full" />
+    </figure>
   );
 };
 

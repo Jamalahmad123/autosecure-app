@@ -33,7 +33,7 @@ const solutions = [
     title: "Theft and burglary problems on the company premises.",
     desc: "Vehicle theft is a big problem for car dealerships, car parks and vehicle rental companies. Almost every company encounters permanent partial and total thefts. autosecure offers sensible and intelligent security solutions and ensures 100% protection for your valuables.",
     btnTitle: "security solutions",
-    path: "#",
+    path: "/solutions/security-solutions",
     videoPath: autoSecurityVideo,
   },
   {
@@ -41,7 +41,7 @@ const solutions = [
     title: "Automated condition documentation of vehicles on the site.",
     desc: "Discussion with customers about the condition of the vehicle at what time or the quick detection of damage to the vehicle during the condition assessment. The new autosecure scanner solves these problems and automatically records every vehicle on the company premises.",
     btnTitle: "Scanner solutions",
-    path: "#",
+    path: "/solutions/scanner-solutions",
     videoPath: autoScanVideo,
   },
   {
@@ -49,7 +49,7 @@ const solutions = [
     title: "Long search times for finding vehicles on the premises.",
     desc: "It not only costs time and nerves - but at the end of the day also hard cash. Long search times for finding vehicles on the company premises are a time-consuming problem for many car dealerships, car parks and vehicle rental companies. With the new autosecure locate solution, your vehicles can be located to within a few meters.",
     btnTitle: "Locate solutions",
-    path: "#",
+    path: "/solutions/localization-solutions",
     videoPath: autoLocateVideo,
   },
 ];
