@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   FaChevronRight,
   FaMapMarkerAlt,
@@ -16,6 +17,10 @@ const JobDetails = () => {
   const { id } = useParams();
   const [job] = jobs.filter((job) => job.id === +id);
   const { title, details } = job;
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
   return (
     <>
       <main className="py-20">

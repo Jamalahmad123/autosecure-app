@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { savingsAndExpertise } from "../../data/constantData";
 import { autosecureFarming } from "../../assets/images";
 import {
@@ -6,7 +6,8 @@ import {
   autoScanVideo,
   autoLocateVideo,
 } from "../../assets/videos";
-import PagesHero from "../../components/PagesHero";
+import Spinner from "../../components/ui/Spinner";
+// import PagesHero from "../../components/PagesHero";
 
 // import IndustrySectorSolutions from "../../components/IndustrySectorSolutions";
 // import SecuritySolutionCard from "../../components/SecuritySolutionCard";
@@ -14,6 +15,7 @@ import PagesHero from "../../components/PagesHero";
 // import Features from "../../components/Features";
 
 // Lazy Imports
+const PagesHero = lazy(() => import("../../components/PagesHero"));
 const SecuritySolutionCard = lazy(() =>
   import("../../components/SecuritySolutionCard")
 );
@@ -62,10 +64,13 @@ const heroContent = {
 };
 
 const AgriculturAndForming = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
   return (
     <>
-      <PagesHero {...heroContent} />
-      <Suspense fallback={<div />}>
+      <Suspense fallback={<Spinner />}>
+        <PagesHero {...heroContent} />
         <AutosecureEcosystem {...savingsAndExpertise} hasLogo />
         {solutions.map((item) => (
           <SecuritySolutionCard {...item} key={item.id} />

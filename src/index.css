@@ -222,116 +222,49 @@ canvas {
   color: #0a84ff;
 }
 
-/* Animated Images styles */
-.animated-tower-img-container {
+/* Spinner */
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
   position: relative;
+  animation: rotate 1s linear infinite;
 }
-
-.tower-img {
+.loader::before,
+.loader::after {
+  content: "";
+  box-sizing: border-box;
   position: absolute;
-  left: 0;
-  width: 100%;
-  object-fit: cover;
-  animation-name: replace;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #162529;
+  animation: prixClipFix 2s linear infinite;
 }
-/* .router-img {
-  object-fit: cover;
-  animation: fadeInOut 30s linear infinite;
-} */
+.loader::after {
+  inset: 8px;
+  transform: rotate3d(90, 90, 0, 180deg);
+  border-color: #0a84ff;
+}
 
-/* .router-container img:nth-child(1) {
-  animation-delay: 0s;
-}
-.router-container img:nth-child(2) {
-  animation-delay: 5s;
-}
-.router-container img:nth-child(3) {
-  animation-delay: 10s;
-}
-.router-container img:nth-child(4) {
-  animation-delay: 15s;
-}
-.router-container img:nth-child(5) {
-  animation-delay: 20s;
-}
-.router-container img:nth-child(6) {
-  animation-delay: 25s;
-}
-/* .router-container img:nth-child(7) {
-  animation-delay: 12s;
-}
-.router-container img:nth-child(8) {
-  animation-delay: 14s;
-}
-.router-container img:nth-child(9) {
-  animation-delay: 16s;
-}
-.router-container img:nth-child(10) {
-  animation-delay: 18s;
-} */
-
-/*@keyframes FadeInOut {
-  
+@keyframes rotate {
   0% {
-    visibility: hidden;
-  }
-  3.33% {
-    visibility: visible;
-  }
-  6.66% {
-    visibility: visible;
-  }
-  9.99% {
-    visibility: visible;
-  }
-  13.33% {
-    visibility: visible;
-  }
-  16.65% {
-    visibility: hidden;
+    transform: rotate(0deg);
   }
   100% {
-    visibility: hidden;
+    transform: rotate(360deg);
   }
-} */
-
-.animated-tower-img-container .img-1 {
-  animation-delay: 1s;
-}
-.animated-tower-img-container .img-2 {
-  animation-delay: 2s;
-}
-.animated-tower-img-container .img-3 {
-  animation-delay: 3s;
-}
-.animated-tower-img-container .img-4 {
-  animation-delay: 4s;
-}
-.animated-tower-img-container .img-5 {
-  animation-delay: 5s;
-}
-.animated-tower-img-container .img-6 {
-  animation-delay: 6s;
 }
 
-@keyframes replace {
+@keyframes prixClipFix {
   0% {
-    visibility: visible;
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
   }
-  15% {
-    visibility: hidden;
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
   }
-  84% {
-    visibility: hidden;
-  }
-  85% {
-    visibility: visible;
-  }
+  75%,
   100% {
-    visibility: hidden;
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
   }
 }
 

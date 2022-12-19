@@ -1,16 +1,21 @@
-import Hero from "./Hero";
+import { lazy, Suspense, useEffect } from "react";
 import {
   features,
   ecosystemAndParkingSystem,
   vehicleAndPlateRecognition,
 } from "../../data/constantData";
-import { lazy, Suspense } from "react";
-import AutosecureFeaturesList from "../../components/AutosecureFeaturesList";
 import { autosecureVehicle } from "../../assets/images";
+import Spinner from "../../components/ui/Spinner";
+// import Hero from "./Hero";
+// import AutosecureFeaturesList from "../../components/AutosecureFeaturesList";
 
 // Lazy import
+const Hero = lazy(() => import("./Hero"));
 const AutosecureEcosystem = lazy(() =>
   import("../../components/AutosecureEcosystem")
+);
+const AutosecureFeaturesList = lazy(() =>
+  import("../../components/AutosecureFeaturesList")
 );
 
 const benefits = [
@@ -22,12 +27,16 @@ const benefits = [
 ];
 
 const LocalizationSolutions = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
   const [locate] = features.filter((item) => item.title === "locate");
+
   return (
     <>
-      <Hero {...locate} />
-
-      <Suspense fallback={<div />}>
+      <Suspense fallback={<Spinner />}>
+        <Hero {...locate} />
         <AutosecureFeaturesList benefits={benefits}>
           <figure>
             <img

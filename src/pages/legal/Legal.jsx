@@ -1,25 +1,31 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
 
+const legals = [
+  {
+    id: 2,
+    name: "imprint",
+    link: "legal/imprint",
+  },
+  {
+    id: 3,
+    name: "privacy",
+    link: "legal/privacy",
+  },
+  {
+    id: 4,
+    name: "conditions",
+    link: "legal/conditions",
+  },
+];
+
 const Legal = () => {
-  const legals = [
-    {
-      id: 2,
-      name: "imprint",
-      link: "legal/imprint",
-    },
-    {
-      id: 3,
-      name: "privacy",
-      link: "legal/privacy",
-    },
-    {
-      id: 4,
-      name: "conditions",
-      link: "legal/conditions",
-    },
-  ];
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
   return (
     <header className="pt-28 pb-14">
       <Wrapper className="md:px-10 px-4">

@@ -7,6 +7,7 @@ import Hero from "./Hero";
 import { logo_sm } from "../assets/images";
 import { industrySector } from "../data/constantData";
 import Wrapper from "./ui/Wrapper";
+import LazyImage from "./ui/LazyImage";
 
 const IndustrySectorSolutions = () => {
   const title = "Industry sectors. Solutions.";
@@ -54,7 +55,14 @@ const IndustrySectorSolutions = () => {
                 key={item.id}
               >
                 <figure>
-                  <img src={item.image} alt={item.name} loading="lazy" />
+                  {/* <img src={item.image} alt={item.name} loading="lazy" /> */}
+                  <LazyImage
+                    image={{
+                      src: item.image,
+                      alt: item.name,
+                      style: "object-cover w-[480px] h-[250px]",
+                    }}
+                  />
                 </figure>
                 <div className="card-body items-start">
                   <h2 className="card-title text-lg font-semibold lg:text-xl text-clrPrimary">

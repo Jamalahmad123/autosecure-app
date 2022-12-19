@@ -1,8 +1,15 @@
-import Achievements from "../../components/Achievements";
+import { lazy, Suspense, useEffect } from "react";
+import Spinner from "../../components/ui/Spinner";
+// import Achievements from "../../components/Achievements";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
 
+const Achievements = lazy(() => import("../../components/Achievements"));
+
 const News = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
   return (
     <>
       <header className="pt-24 pb-14">
@@ -13,7 +20,9 @@ const News = () => {
           </h1>
         </Wrapper>
       </header>
-      <Achievements />
+      <Suspense fallback={<Spinner />}>
+        <Achievements />
+      </Suspense>
     </>
   );
 };

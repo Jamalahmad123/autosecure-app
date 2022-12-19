@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import { acheivements } from "../data/constantData";
 import Wrapper from "./ui/Wrapper";
+import LazyImage from "./ui/LazyImage";
 
 const Achievements = () => {
   const navigate = useNavigate();
@@ -18,16 +19,34 @@ const Achievements = () => {
           navigation={true}
           modules={[Pagination, Navigation]}
           className="mySwiper py-8 static"
+          // breakpoints={{
+          //   668: {
+          //     // width: 576,
+          //     slidesPerView: 1,
+          //   },
+          //   920: {
+          //     // width: 768,
+          //     slidesPerView: 2,
+          //   },
+          //   1280: {
+          //     // width: 768,
+          //     slidesPerView: 3,
+          //   },
+          // }}
           breakpoints={{
-            668: {
+            480: {
               // width: 576,
               slidesPerView: 1,
             },
-            920: {
+            768: {
+              // width: 576,
+              slidesPerView: 2,
+            },
+            980: {
               // width: 768,
               slidesPerView: 2,
             },
-            1280: {
+            1200: {
               // width: 768,
               slidesPerView: 3,
             },
@@ -43,9 +62,13 @@ const Achievements = () => {
               key={item.id}
             >
               <Link to={`/news/${item.id}`}>
-                <figure>
-                  <img src={item.image} alt={item.title} loading="lazy" />
-                </figure>
+                <LazyImage
+                  image={{
+                    src: item.image,
+                    alt: item.title,
+                    style: "w-full h-[300px] object-cover",
+                  }}
+                />
                 <div className="card-body items-start">
                   <h2 className="card-title text-base font-bold lg:text-xl text-clrPrimary">
                     {item.title}

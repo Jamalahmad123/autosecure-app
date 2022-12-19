@@ -1,11 +1,22 @@
+import { lazy, Suspense, useEffect } from "react";
 import { FaCalendarAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Features from "../../components/Features";
-import IndustrySectorSolutions from "../../components/IndustrySectorSolutions";
+// import Features from "../../components/Features";
+// import IndustrySectorSolutions from "../../components/IndustrySectorSolutions";
+
+// lazy imports
+const Features = lazy(() => import("../../components/Features"));
+const IndustrySectorSolutions = lazy(() =>
+  import("../../components/IndustrySectorSolutions")
+);
+
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
 
 const Vision = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
   return (
     <>
       <header className="pt-24 pb-14">
@@ -44,8 +55,10 @@ const Vision = () => {
           </div>
         </Wrapper>
       </header>
-      <Features />
-      <IndustrySectorSolutions />
+      <Suspense fallback={<div className="min-h-screen" />}>
+        <Features />
+        <IndustrySectorSolutions />
+      </Suspense>
     </>
   );
 };

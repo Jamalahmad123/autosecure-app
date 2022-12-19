@@ -1,9 +1,17 @@
+import { lazy, Suspense, useEffect } from "react";
 import { FaFileAlt } from "react-icons/fa";
+import Spinner from "../../components/ui/Spinner";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
-import JobsList from "./JobsList";
+
+// import JobsList from "./JobsList";
+// Lazy Component
+const JobsList = lazy(() => import("./JobsList"));
 
 const Career = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
   return (
     <>
       <header className="pt-24 pb-14">
@@ -28,7 +36,9 @@ const Career = () => {
           </a>
         </Wrapper>
       </header>
-      <JobsList />
+      <Suspense fallback={<div className="min-h-screen" />}>
+        <JobsList />
+      </Suspense>
     </>
   );
 };

@@ -11,6 +11,7 @@ import { styles } from "../Styles";
 import { navLinks } from "../data/constantData";
 
 import Wrapper from "./ui/Wrapper";
+import LazyImage from "./ui/LazyImage";
 
 const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
 
@@ -111,14 +112,21 @@ const Footer = () => {
             automation solutions for the automotive and mobility industry.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 place-items-center md:gap-16">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 place-items-center md:gap-16">
           {awards.map((award, i) => (
             <figure key={i}>
-              <img
+              {/* <img
                 src={award}
                 alt={awards}
                 className="w-64 md:max-w-[200px]"
                 loading="lazy"
+              /> */}
+              <LazyImage
+                image={{
+                  src: award,
+                  alt: "autosecure awards",
+                  style: "w-64 md:max-w-[200px] object-cover",
+                }}
               />
             </figure>
           ))}
@@ -126,9 +134,12 @@ const Footer = () => {
         <div className="footer">
           {navLinks.map((item) => (
             <div key={item.id}>
-              <h3 className="text-lg font-semibold text-clrPrimary text-center">
+              <Link
+                to={item.link}
+                className="text-lg font-semibold text-clrPrimary text-center"
+              >
                 {item.name}
-              </h3>
+              </Link>
               {item.subPages.map((item) => (
                 <Link
                   to={`/${item.link}`}

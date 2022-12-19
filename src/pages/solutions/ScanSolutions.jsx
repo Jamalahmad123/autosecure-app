@@ -1,11 +1,25 @@
+import { lazy, Suspense, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaCalendarCheck } from "react-icons/fa";
 
-import { autosecure_scan_01, autosecure_scan_02 } from "../../assets/videos";
-import Hero from "./Hero";
-import AutosecureFeaturesList from "../../components/AutosecureFeaturesList";
-import AutosecureSystemApplication from "../../components/ui/AutosecureSystemApplication";
-import AutosecureFullSlider from "../../components/AutosecureFullSlider";
+// import Hero from "./Hero";
+// import AutosecureFeaturesList from "../../components/AutosecureFeaturesList";
+// import AutosecureSystemApplication from "../../components/ui/AutosecureSystemApplication";
+// import AutosecureFullSlider from "../../components/AutosecureFullSlider";
+import Wrapper from "../../components/ui/Wrapper";
+import Spinner from "../../components/ui/Spinner";
+
+// Lazy Imports
+const Hero = lazy(() => import("./Hero"));
+const AutosecureFeaturesList = lazy(() =>
+  import("../../components/AutosecureFeaturesList")
+);
+const AutosecureSystemApplication = lazy(() =>
+  import("../../components/ui/AutosecureSystemApplication")
+);
+const AutosecureFullSlider = lazy(() =>
+  import("../../components/AutosecureFullSlider")
+);
 
 import {
   autosecure_gallery_01,
@@ -15,7 +29,7 @@ import {
   autosecure_gallery_05,
   zukunftswerkstatt_logo,
 } from "../../assets/images";
-import Wrapper from "../../components/ui/Wrapper";
+import { autosecure_scan_01, autosecure_scan_02 } from "../../assets/videos";
 import { styles } from "../../Styles";
 
 const checkPionts = [
@@ -98,43 +112,49 @@ const desc =
   "Tailored to your requirements in the logistics process: Discover the autosecure 360° automation concept for logistics and goods.";
 
 const ScanSolutions = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
   return (
     <>
-      <Hero {...heroContent} isAssist />
-      <AutosecureFeaturesList benefits={checkPionts} />
-      <video autoPlay preload="meta" muted width="100%" height="100%">
-        <source src={autosecure_scan_02} type="video/mp4" />
-        Sorry, your browser doesn't support videos.
-      </video>
-      <AutosecureSystemApplication application={checkPionts01} />
-      <AutosecureSystemApplication application={checkPionts02} />
-      <AutosecureSystemApplication application={checkPionts03} />
-      <AutosecureSystemApplication application={checkPionts04} />
-      <AutosecureFullSlider slideImages={slideImages} />
-      <section className="py-14">
-        <Wrapper className="px- flex items-center justify-center flex-col gap-12">
-          <figure>
-            <img
-              src={zukunftswerkstatt_logo}
-              alt="zukunftswerkstatt_logo"
-              className="w-full md:w-1/2 mx-auto"
-            />
-          </figure>
-          <h2
-            className={`${styles.headingSecondary} text-clrPrimary text-center`}
-          >
-            Digital condition control, damage detection and documentation in
-            real time. Experience the autosecure car scanner live in the
-            workshop of the future 4.0.
-          </h2>
-          <Link
-            to="/company/contact"
-            className="btn btn-xl text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular"
-          >
-            make an appointment <FaCalendarCheck size={20} className="ml-5" />
-          </Link>
-        </Wrapper>
-      </section>
+      <Suspense fallback={<Spinner />}>
+        <Hero {...heroContent} isAssist />
+        <AutosecureFeaturesList benefits={checkPionts} />
+        <video autoPlay preload="meta" muted width="100%" height="100%">
+          <source src={autosecure_scan_02} type="video/mp4" />
+          Sorry, your browser doesn't support videos.
+        </video>
+        <AutosecureSystemApplication application={checkPionts01} />
+        <AutosecureSystemApplication application={checkPionts02} />
+        <AutosecureSystemApplication application={checkPionts03} />
+        <AutosecureSystemApplication application={checkPionts04} />
+        <AutosecureFullSlider slideImages={slideImages} />
+        <section className="py-14">
+          <Wrapper className="px- flex items-center justify-center flex-col gap-12">
+            <figure>
+              <img
+                src={zukunftswerkstatt_logo}
+                alt="zukunftswerkstatt_logo"
+                className="w-full md:w-1/2 mx-auto"
+              />
+            </figure>
+            <h2
+              className={`${styles.headingSecondary} text-clrPrimary text-center`}
+            >
+              Digital condition control, damage detection and documentation in
+              real time. Experience the autosecure car scanner live in the
+              workshop of the future 4.0.
+            </h2>
+            <Link
+              to="/company/contact"
+              className="btn btn-xl text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular"
+            >
+              make an appointment <FaCalendarCheck size={20} className="ml-5" />
+            </Link>
+          </Wrapper>
+        </section>
+      </Suspense>
     </>
   );
 };

@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Wrapper from "../../components/ui/Wrapper";
 import { navLinks } from "../../data/constantData";
 import { styles } from "../../Styles";
 
 const Compnay = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
   const [companyLinks] = navLinks.filter((item) => item.name === "company");
 
   return (

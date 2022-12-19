@@ -7,6 +7,8 @@ import TypeWriter from "./ui/TypeWriter";
 // import ParticlesBackground from "./ui/ParticlesBackground";
 import { lazy, Suspense } from "react";
 import AnimatedTower from "./ui/AnimatedTower";
+import LazyImage from "./ui/LazyImage";
+
 const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
 
 const options = {
@@ -141,11 +143,20 @@ const About = ({ link, isAnimated }) => {
               </div>
             </div>
 
-            <figure className="flex self-end">
+            {/* <figure className="flex self-end">
               <img
-                src={autosecureMobile}
+                src={}
                 alt="autosecure-mobile"
                 loading="lazy"
+              />
+            </figure> */}
+            <figure className="flex self-end">
+              <LazyImage
+                image={{
+                  src: autosecureMobile,
+                  alt: "autosecure-mobile",
+                  style: "w-full h-full object-cover",
+                }}
               />
             </figure>
           </div>

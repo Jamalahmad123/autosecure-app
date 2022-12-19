@@ -1,16 +1,38 @@
+import { lazy, Suspense, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaCalendarAlt } from "react-icons/fa";
 import Wrapper from "../../components/ui/Wrapper";
-import { styles } from "../../Styles";
-import AutosecureEcosystem from "../../components/AutosecureEcosystem";
-import Features from "../../components/Features";
-import IndustrySectorSolutions from "../../components/IndustrySectorSolutions";
-import Achievements from "../../components/Achievements";
-import AutoSecureNewsDialoge from "../../components/AutoSecureNewsDialoge";
-import AutosecureCareerDialoge from "../../components/AutosecureCareerDialoge";
+// import AutosecureEcosystem from "../../components/AutosecureEcosystem";
+// import Features from "../../components/Features";
+// import IndustrySectorSolutions from "../../components/IndustrySectorSolutions";
+// import Achievements from "../../components/Achievements";
+// import AutoSecureNewsDialoge from "../../components/AutoSecureNewsDialoge";
+// import AutosecureCareerDialoge from "../../components/AutosecureCareerDialoge";
+
+// Lazy components
+const AutosecureEcosystem = lazy(() =>
+  import("../../components/AutosecureEcosystem")
+);
+const Features = lazy(() => import("../../components/Features"));
+const IndustrySectorSolutions = lazy(() =>
+  import("../../components/IndustrySectorSolutions")
+);
+const Achievements = lazy(() => import("../../components/Achievements"));
+const AutoSecureNewsDialoge = lazy(() =>
+  import("../../components/AutoSecureNewsDialoge")
+);
+const AutosecureCareerDialoge = lazy(() =>
+  import("../../components/AutosecureCareerDialoge")
+);
+
 import { ecosystemAndExpertise } from "../../data/constantData";
+import { styles } from "../../Styles";
+import Spinner from "../../components/ui/Spinner";
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
   return (
     <>
       <header className="pt-24 pb-14">
@@ -95,12 +117,14 @@ const AboutUs = () => {
           </div>
         </Wrapper>
       </header>
-      <AutosecureEcosystem {...ecosystemAndExpertise} hasLogo />
-      <Features />
-      <IndustrySectorSolutions />
-      <AutoSecureNewsDialoge />
-      <Achievements />
-      <AutosecureCareerDialoge />
+      <Suspense fallback={<Spinner />}>
+        <AutosecureEcosystem {...ecosystemAndExpertise} hasLogo />
+        <Features />
+        <IndustrySectorSolutions />
+        <AutoSecureNewsDialoge />
+        <Achievements />
+        <AutosecureCareerDialoge />
+      </Suspense>
     </>
   );
 };

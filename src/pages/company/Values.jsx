@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaCalendarAlt } from "react-icons/fa";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
 
 const Values = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
   return (
     <>
       <header className="pt-24 pb-14">

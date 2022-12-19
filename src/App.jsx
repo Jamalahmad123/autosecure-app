@@ -12,50 +12,68 @@ import "swiper/css/navigation";
 
 // Components
 import Nav from "./components/Nav";
-// import Footer from "./components/Footer";
 import Home from "./pages/Home";
+
+import { lazy, Suspense, useEffect } from "react";
+import Spinner from "./components/ui/Spinner";
 
 // import Partners from "./components/Partners";
 // import Employes from "./components/Employes";
 // import BookAppointment from "./components/BookAppointment";
 // import ParticlesBackground from "./components/ui/ParticlesBackground";
+// import ParticlesBackground from "./components/ui/ParticlesBackground";
+// import Footer from "./components/Footer";
 
-import { lazy, Suspense } from "react";
+// import IndustrySectors from "./pages/industry/IndustrySectors";
+// import AutomobileAndMobility from "./pages/industry/AutomobileAndMobility";
+// import AgriculturAndForming from "./pages/industry/AgriculturAndForming";
+// import LocalizationSolutions from "./pages/solutions/LocalizationSolutions";
+// import NewsDetail from "./pages/company/NewsDetail";
+// import MobileSecurity from "./components/MobileSecurity";
+// import Constructions from "./pages/industry/Constructions";
+// import Solutions from "./pages/solutions/Solutions";
+// import LogisticsAndGoods from "./pages/industry/LogisticsAndGoods";
+// import Legal from "./pages/legal/Legal";
+// import Imprint from "./pages/legal/Imprint";
+// import Privacy from "./pages/legal/Privacy";
+// import Conditions from "./pages/legal/Conditions";
+// import Career from "./pages/company/Career";
+// import JobDetails from "./pages/company/JobDetails";
+// import SecuritySolutions from "./pages/solutions/SecuritySolutions";
+// import ScanSolutions from "./pages/solutions/ScanSolutions";
 
 const ParticlesBackground = lazy(() =>
   import("./components/ui/ParticlesBackground")
 );
 
-// import ParticlesBackground from "./components/ui/ParticlesBackground";
-
-import Solutions from "./pages/solutions/Solutions";
-import IndustrySectors from "./pages/industry/IndustrySectors";
-import AutomobileAndMobility from "./pages/industry/AutomobileAndMobility";
-import AgriculturAndForming from "./pages/industry/AgriculturAndForming";
-import LocalizationSolutions from "./pages/solutions/LocalizationSolutions";
-import Constructions from "./pages/industry/Constructions";
-import LogisticsAndGoods from "./pages/industry/LogisticsAndGoods";
-import Legal from "./pages/legal/Legal";
-import Imprint from "./pages/legal/Imprint";
-import Privacy from "./pages/legal/Privacy";
-import Conditions from "./pages/legal/Conditions";
-import Career from "./pages/company/Career";
-import JobDetails from "./pages/company/JobDetails";
-import SecuritySolutions from "./pages/solutions/SecuritySolutions";
-import ScanSolutions from "./pages/solutions/ScanSolutions";
-import NewsDetail from "./pages/company/NewsDetail";
-import MobileSecurity from "./components/MobileSecurity";
-// import Compnay from "./pages/company/Compnay";
-// import AboutUs from "./pages/company/AboutUs";
-// import News from "./pages/company/News";
-// import Values from "./pages/company/Values";
-// import Vision from "./pages/company/Vision";
-// import Contact from "./pages/company/Contact";
-
-// const IndustrySectors = lazy(() => import("./pages/industry/IndustrySectors"));
-// import AutomobileAndMobility from "./pages/industry/AutomobileAndMobility";
-// import AgriculturAndForming from "./pages/industry/AgriculturAndForming";
-// const Solutions = lazy(() => import("./pages/solutions/Solutions"));
+// Pages
+const Solutions = lazy(() => import("./pages/solutions/Solutions"));
+const IndustrySectors = lazy(() => import("./pages/industry/IndustrySectors"));
+const AutomobileAndMobility = lazy(() =>
+  import("./pages/industry/AutomobileAndMobility")
+);
+const AgriculturAndForming = lazy(() =>
+  import("./pages/industry/AgriculturAndForming")
+);
+const LocalizationSolutions = lazy(() =>
+  import("./pages/solutions/LocalizationSolutions")
+);
+const Constructions = lazy(() => import("./pages/industry/Constructions"));
+const LogisticsAndGoods = lazy(() =>
+  import("./pages/industry/LogisticsAndGoods")
+);
+const Legal = lazy(() => import("./pages/legal/Legal"));
+const Imprint = lazy(() => import("./pages/legal/Imprint"));
+const Privacy = lazy(() => import("./pages/legal/Privacy"));
+const Conditions = lazy(() => import("./pages/legal/Conditions"));
+const Career = lazy(() => import("./pages/company/Career"));
+const JobDetails = lazy(() => import("./pages/company/JobDetails"));
+const SecuritySolutions = lazy(() =>
+  import("./pages/solutions/SecuritySolutions")
+);
+const ScanSolutions = lazy(() => import("./pages/solutions/ScanSolutions"));
+const NewsDetail = lazy(() => import("./pages/company/NewsDetail"));
+const MobileSecurity = lazy(() => import("./components/MobileSecurity"));
 const Compnay = lazy(() => import("./pages/company/Compnay"));
 const AboutUs = lazy(() => import("./pages/company/AboutUs"));
 const News = lazy(() => import("./pages/company/News"));
@@ -126,6 +144,9 @@ const options = {
 };
 
 function App() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
   return (
     <>
       {/* <ParticlesBackground id="tsparticles" options={options} /> */}
@@ -136,42 +157,91 @@ function App() {
         </Suspense> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/solutions" element={<Solutions />} />
+          <Route
+            path="/solutions"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <Solutions />
+              </Suspense>
+            }
+          />
           <Route
             path="/solutions/security-solutions/mobile-security"
-            element={<MobileSecurity />}
+            element={
+              <Suspense fallback={<Spinner />}>
+                <MobileSecurity />
+              </Suspense>
+            }
           />
           <Route
             path="/solutions/security-solutions"
-            element={<SecuritySolutions />}
+            element={
+              <Suspense fallback={<Spinner />}>
+                <SecuritySolutions />
+              </Suspense>
+            }
           />
           <Route
             path="/solutions/scanner-solutions"
-            element={<ScanSolutions />}
+            element={
+              <Suspense fallback={<Spinner />}>
+                <ScanSolutions />
+              </Suspense>
+            }
           />
           <Route
             path="/solutions/localization-solutions"
-            element={<LocalizationSolutions />}
+            element={
+              <Suspense fallback={<Spinner />}>
+                <LocalizationSolutions />
+              </Suspense>
+            }
           />
 
-          <Route path="/industry" element={<IndustrySectors />} />
+          <Route
+            path="/industry"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <IndustrySectors />
+              </Suspense>
+            }
+          />
           <Route
             path="/industry/automobile-mobility"
-            element={<AutomobileAndMobility />}
+            element={
+              <Suspense fallback={<Spinner />}>
+                <AutomobileAndMobility />
+              </Suspense>
+            }
           />
           <Route
             path="/industry/agriculture-formings"
-            element={<AgriculturAndForming />}
+            element={
+              <Suspense fallback={<Spinner />}>
+                <AgriculturAndForming />
+              </Suspense>
+            }
           />
-          <Route path="/industry/construction" element={<Constructions />} />
+          <Route
+            path="/industry/construction"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <Constructions />
+              </Suspense>
+            }
+          />
           <Route
             path="/industry/logistics-goods"
-            element={<LogisticsAndGoods />}
+            element={
+              <Suspense fallback={<Spinner />}>
+                <LogisticsAndGoods />
+              </Suspense>
+            }
           />
           <Route
             path="/company"
             element={
-              <Suspense fallback={<div />}>
+              <Suspense fallback={<Spinner />}>
                 <Compnay />
               </Suspense>
             }
@@ -179,7 +249,7 @@ function App() {
           <Route
             path="/company/about-us"
             element={
-              <Suspense fallback={<div />}>
+              <Suspense fallback={<Spinner />}>
                 <AboutUs />
               </Suspense>
             }
@@ -187,7 +257,7 @@ function App() {
           <Route
             path="/company/contact"
             element={
-              <Suspense fallback={<div />}>
+              <Suspense fallback={<Spinner />}>
                 <Contact />
               </Suspense>
             }
@@ -195,7 +265,7 @@ function App() {
           <Route
             path="/company/news"
             element={
-              <Suspense fallback={<div />}>
+              <Suspense fallback={<Spinner />}>
                 <News />
               </Suspense>
             }
@@ -203,7 +273,7 @@ function App() {
           <Route
             path="/news/:id"
             element={
-              <Suspense fallback={<div />}>
+              <Suspense fallback={<Spinner />}>
                 <NewsDetail />
               </Suspense>
             }
@@ -211,7 +281,7 @@ function App() {
           <Route
             path="/company/career"
             element={
-              <Suspense fallback={<div />}>
+              <Suspense fallback={<Spinner />}>
                 <Career />
               </Suspense>
             }
@@ -219,7 +289,7 @@ function App() {
           <Route
             path="/company/career/job/:id"
             element={
-              <Suspense fallback={<div />}>
+              <Suspense fallback={<Spinner />}>
                 <JobDetails />
               </Suspense>
             }
@@ -227,7 +297,7 @@ function App() {
           <Route
             path="/company/values"
             element={
-              <Suspense fallback={<div />}>
+              <Suspense fallback={<Spinner />}>
                 <Values />
               </Suspense>
             }
@@ -235,15 +305,43 @@ function App() {
           <Route
             path="/company/mission-vision"
             element={
-              <Suspense fallback={<div />}>
+              <Suspense fallback={<Spinner />}>
                 <Vision />
               </Suspense>
             }
           />
-          <Route path="/legal" element={<Legal />} />
-          <Route path="/legal/imprint" element={<Imprint />} />
-          <Route path="/legal/privacy" element={<Privacy />} />
-          <Route path="/legal/conditions" element={<Conditions />} />
+          <Route
+            path="/legal"
+            element={
+              <Suspense fallback={<div />}>
+                <Legal />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/legal/imprint"
+            element={
+              <Suspense fallback={<div />}>
+                <Imprint />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/legal/privacy"
+            element={
+              <Suspense fallback={<div />}>
+                <Privacy />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/legal/conditions"
+            element={
+              <Suspense fallback={<div />}>
+                <Conditions />
+              </Suspense>
+            }
+          />
         </Routes>
         <Suspense fallback={<div />}>
           <Partners />

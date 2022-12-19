@@ -1,26 +1,60 @@
+import { lazy, Suspense, useEffect } from "react";
 import { FaCheck } from "react-icons/fa";
-import Hero from "./Hero";
-import AutosecureFeaturesList from "../../components/AutosecureFeaturesList";
-import AutosecureEcosystem from "../../components/AutosecureEcosystem";
+import Wrapper from "../../components/ui/Wrapper";
+import Spinner from "../../components/ui/Spinner";
+// import Hero from "./Hero";
+// import AutosecureFeaturesList from "../../components/AutosecureFeaturesList";
+// import AutosecureEcosystem from "../../components/AutosecureEcosystem";
 import {
   deepLearningAndQualityImgs,
   features,
   savingsAndExpertise,
   systemTakeoverAndSystemArc,
 } from "../../data/constantData";
-import { poster, prinzipVideoPoster } from "../../assets/images";
-import Save from "../../components/Save";
-import AutosecureSlider from "../../components/AutosecureSlider";
-import AutosecureProcess from "../../components/AutosecureProcess";
-import About from "../../components/About";
-import MeetingVideo from "../../components/ui/MeetingVideo";
-import { styles } from "../../Styles";
-import AutosecureSystemArc from "../../components/AutosecureSystemArc";
-import AutosecureFullSlider from "../../components/AutosecureFullSlider";
-import AutosecureQoute from "../../components/ui/AutosecureQoute";
-import AutosecureApplications from "../../components/AutosecureApplications";
+
+// import MeetingVideo from "../../components/ui/MeetingVideo";
+// import Save from "../../components/Save";
+// import AutosecureSlider from "../../components/AutosecureSlider";
+// import AutosecureProcess from "../../components/AutosecureProcess";
+// import About from "../../components/About";
+// import AutosecureSystemArc from "../../components/AutosecureSystemArc";
+// import AutosecureFullSlider from "../../components/AutosecureFullSlider";
+// import AutosecureQoute from "../../components/ui/AutosecureQoute";
+// import AutosecureApplications from "../../components/AutosecureApplications";
+// import Hero from "./Hero";
+// import AutosecureFeaturesList from "../../components/AutosecureFeaturesList";
+// import AutosecureEcosystem from "../../components/AutosecureEcosystem";
+
+// Lazy Imports
+const Hero = lazy(() => import("./Hero"));
+const AutosecureFeaturesList = lazy(() =>
+  import("../../components/AutosecureFeaturesList")
+);
+const Save = lazy(() => import("../../components/Save"));
+const AutosecureEcosystem = lazy(() =>
+  import("../../components/AutosecureEcosystem")
+);
+const AutosecureApplications = lazy(() =>
+  import("../../components/AutosecureApplications")
+);
+const AutosecureSystemArc = lazy(() =>
+  import("../../components/AutosecureSystemArc")
+);
+const AutosecureFullSlider = lazy(() =>
+  import("../../components/AutosecureFullSlider")
+);
+const AutosecureSlider = lazy(() =>
+  import("../../components/AutosecureSlider")
+);
+const AutosecureProcess = lazy(() =>
+  import("../../components/AutosecureProcess")
+);
+const About = lazy(() => import("../../components/About"));
+const MeetingVideo = lazy(() => import("../../components/ui/MeetingVideo"));
 
 import {
+  poster,
+  prinzipVideoPoster,
   autosecure_slide_theif_1,
   autosecure_slide_theif_2,
   autosecure_slide_theif_3,
@@ -33,7 +67,6 @@ import {
   autosecure_save_scan,
   autosecure_2021_Technologie,
 } from "../../assets/videos";
-import Wrapper from "../../components/ui/Wrapper";
 
 const benefits = [
   "Precise real-time indoor and outdoor localization of goods and goods for profitable business applications with innovative analyses.",
@@ -65,67 +98,73 @@ const technologyContent = {
 };
 
 const SecuritySolutions = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
   const [safe] = features.filter((item) => item.title === "safe");
 
   return (
     <>
-      <Hero {...safe} />
-      <AutosecureFeaturesList benefits={benefits}>
-        <div className="flex items-stretch gap-6">
-          <div className="group card w-80 shadow-xl overflow-hidden cursor-pointer">
-            <figure>
-              <img
-                src={prinzipVideoPoster}
-                alt="prinzip-video-poster"
-                className="w-full h-full group-hover:scale-110 smooth"
-              />
-            </figure>
-            <div className="card-body p-2 lg:p-8 bg-white">
-              <h3
-                className={`text-base md:text-2xl font-light text-clrPrimary`}
-              >
-                Get to know our SAVE principle.
-              </h3>
+      <Suspense fallback={<Spinner />}>
+        <Hero {...safe} />
+        <AutosecureFeaturesList benefits={benefits}>
+          <div className="flex items-stretch gap-6">
+            <div className="group card w-80 shadow-xl overflow-hidden cursor-pointer">
+              <figure>
+                <img
+                  src={prinzipVideoPoster}
+                  alt="prinzip-video-poster"
+                  className="w-full h-full group-hover:scale-110 smooth"
+                />
+              </figure>
+              <div className="card-body p-2 lg:p-8 bg-white">
+                <h3
+                  className={`text-base md:text-2xl font-light text-clrPrimary`}
+                >
+                  Get to know our SAVE principle.
+                </h3>
+              </div>
+            </div>
+            <div className="group card w-80 shadow-xl overflow-hidden cursor-pointer">
+              <figure>
+                <img
+                  src={poster}
+                  alt="prinzip-video-poster"
+                  className="w-full h-full group-hover:scale-110 smooth"
+                />
+              </figure>
+              <div className="card-body p-2 lg:p-8 bg-white">
+                <h3
+                  className={`text-base md:text-2xl font-light text-clrPrimary`}
+                >
+                  Get to know our SAVE principle.
+                </h3>
+              </div>
             </div>
           </div>
-          <div className="group card w-80 shadow-xl overflow-hidden cursor-pointer">
-            <figure>
-              <img
-                src={poster}
-                alt="prinzip-video-poster"
-                className="w-full h-full group-hover:scale-110 smooth"
-              />
-            </figure>
-            <div className="card-body p-2 lg:p-8 bg-white">
-              <h3
-                className={`text-base md:text-2xl font-light text-clrPrimary`}
-              >
-                Get to know our SAVE principle.
-              </h3>
-            </div>
-          </div>
-        </div>
-      </AutosecureFeaturesList>
-      <AutosecureEcosystem {...savingsAndExpertise} hasLogo />
-      <Save />
-      <MeetingVideo
-        videoPath={autosecure_save_scan}
-        poster={autosecure_save_scan_poster}
-      />
-      <AutosecureSlider />
-      <AutosecureProcess {...processContent} />
-      <AutosecureProcess {...technologyContent} hasSpace />
-      <MeetingVideo
-        videoPath={autosecure_2021_Technologie}
-        poster={autosecure_slide_repair_3}
-      />
-      <AutosecureSystemArc {...systemTakeoverAndSystemArc} />
-      <AutosecureSystemArc {...deepLearningAndQualityImgs} isFeature />
-      <VisualWarnings />
-      <AutosecureFullSlider slideImages={slideImages} />
-      <About link="/solutions/security-solutions/mobile-security" />
-      <AutosecureApplications />
-      {/* <AutosecureQoute /> */}
+        </AutosecureFeaturesList>
+        <AutosecureEcosystem {...savingsAndExpertise} hasLogo />
+        <Save />
+        <MeetingVideo
+          videoPath={autosecure_save_scan}
+          poster={autosecure_save_scan_poster}
+        />
+        <AutosecureSlider />
+        <AutosecureProcess {...processContent} />
+        <AutosecureProcess {...technologyContent} hasSpace />
+        <MeetingVideo
+          videoPath={autosecure_2021_Technologie}
+          poster={autosecure_slide_repair_3}
+        />
+        <AutosecureSystemArc {...systemTakeoverAndSystemArc} />
+        <AutosecureSystemArc {...deepLearningAndQualityImgs} isFeature />
+        <VisualWarnings />
+        <AutosecureFullSlider slideImages={slideImages} />
+        <About link="/solutions/security-solutions/mobile-security" />
+        <AutosecureApplications />
+        {/* <AutosecureQoute /> */}
+      </Suspense>
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 
 import {
   autoLocateVideo,
@@ -8,10 +8,12 @@ import {
 import { autosecureLogistic } from "../../assets/images";
 
 import { savingsAndExpertise } from "../../data/constantData";
+import Spinner from "../../components/ui/Spinner";
 
-import PagesHero from "../../components/PagesHero";
+// import PagesHero from "../../components/PagesHero";
 
 // Lazy Imports
+const PagesHero = lazy(() => import("../../components/PagesHero"));
 const SecuritySolutionCard = lazy(() =>
   import("../../components/SecuritySolutionCard")
 );
@@ -58,10 +60,13 @@ const heroContent = {
 };
 
 const LogisticsAndGoods = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
   return (
     <>
-      <PagesHero {...heroContent} />
-      <Suspense fallback={<div />}>
+      <Suspense fallback={<Spinner />}>
+        <PagesHero {...heroContent} />
         <AutosecureEcosystem {...savingsAndExpertise} hasLogo />
         {solutions.map((item) => (
           <SecuritySolutionCard {...item} key={item.id} />

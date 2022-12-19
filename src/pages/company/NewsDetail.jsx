@@ -1,11 +1,23 @@
+import { lazy, Suspense, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import AutoSecureNewsDialoge from "../../components/AutoSecureNewsDialoge";
-import Achievements from "../../components/Achievements";
+// import AutoSecureNewsDialoge from "../../components/AutoSecureNewsDialoge";
+// import Achievements from "../../components/Achievements";
+
+// Lazy Imports
+const AutoSecureNewsDialoge = lazy(() =>
+  import("../../components/AutoSecureNewsDialoge")
+);
+const Achievements = lazy(() => import("../../components/Achievements"));
+
 import { acheivements } from "../../data/constantData";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
 
 const NewsDetail = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
   const { id } = useParams();
   const [news] = acheivements.filter((item) => item.id === id);
   const { title, image, details } = news;
@@ -33,8 +45,10 @@ const NewsDetail = () => {
           />
         </Wrapper>
       </main>
-      <AutoSecureNewsDialoge />
-      <Achievements />
+      <Suspense fallback={<div className="min-h-screen" />}>
+        <AutoSecureNewsDialoge />
+        <Achievements />
+      </Suspense>
     </>
   );
 };

@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
+import LazyImage from "./ui/LazyImage";
 
 import {
   autosecure_customer1,
@@ -46,9 +47,11 @@ const Partners = () => {
             clickable: true,
             dynamicBullets: true,
           }}
+          autoplay={{
+            disableOnInteraction: false,
+          }}
           loop={true}
-          autoplay={true}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           className="mySwiper py-8"
           breakpoints={{
             440: {
@@ -82,8 +85,15 @@ const Partners = () => {
           }}
         >
           {partners.map((partner, i) => (
-            <SwiperSlide key={i}>
-              <img src={partner} alt={`partner-${i}`} loading="lazy" />
+            <SwiperSlide key={i} className="flex items-center justify-center">
+              {/* <img src={partner} alt={`partner-${i}`} loading="lazy" /> */}
+              <LazyImage
+                image={{
+                  src: partner,
+                  alt: "autosecure partner",
+                  style: "w-[250px] h-[126px] object-cover",
+                }}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

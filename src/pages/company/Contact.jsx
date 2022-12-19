@@ -1,10 +1,13 @@
+import { useEffect } from "react";
 import { FaAt, FaBuilding, FaPhoneVolume } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import { logo } from "../../assets/images";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
   return (
     <>
       <section className="pt-24 pb-14 bg-clrLightGray">
