@@ -538,7 +538,7 @@ export const jobs = [
   {
     id: 2,
     title: "Area Sales Manager South",
-    jobDesc: "Permanent position / full-time",
+    type: "Permanent position / full-time",
     location: " Germany-South",
     starting: "From now on",
     details: {
@@ -572,7 +572,7 @@ export const jobs = [
   {
     id: 3,
     title: "App developer iOS & Android",
-    jobDesc: "Permanent position / full-time",
+    type: "Permanent position / full-time",
     location: "Muenster",
     starting: "From now on",
     details: {
@@ -610,7 +610,7 @@ export const jobs = [
   {
     id: 4,
     title: "Frontend Developer Laravel, PHP",
-    jobDesc: "Permanent position / full-time",
+    type: "Permanent position / full-time",
     location: "Muenster",
     starting: "From now on",
     details: {
@@ -653,7 +653,7 @@ export const jobs = [
   {
     id: 5,
     title: "IT support",
-    jobDesc: "Permanent position / full-time",
+    type: "Permanent position / full-time",
     location: "Muenster",
     starting: "From now on",
     details: {
@@ -684,7 +684,7 @@ export const jobs = [
   {
     id: 6,
     title: "Junior Account Manager",
-    jobDesc: "Permanent position / full-time",
+    type: "Permanent position / full-time",
     location: "Muenster",
     starting: "From now on",
     details: {
@@ -720,7 +720,7 @@ export const jobs = [
   {
     id: 7,
     title: "System engineer / IT technology in the field",
-    jobDesc: "Permanent position / full-time",
+    type: "Permanent position / full-time",
     location: "Muenster",
     starting: "From now on",
     details: {
@@ -750,7 +750,7 @@ export const jobs = [
   {
     id: 8,
     title: "Business Development Intern",
-    jobDesc: "Permanent position / full-time",
+    type: "Permanent position / full-time",
     location: "Muenster",
     starting: "From now on",
     details: {
