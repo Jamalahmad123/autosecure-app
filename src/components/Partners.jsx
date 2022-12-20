@@ -91,7 +91,7 @@ const Partners = () => {
                 image={{
                   src: partner,
                   alt: "autosecure partner",
-                  style: "w-[250px] h-[126px] object-cover",
+                  style: "w-full h-auto object-cover",
                 }}
               />
             </SwiperSlide>

@@ -14,9 +14,65 @@ const ParticlesBackground = ({ options, id }) => {
     container.smooth = true;
   }, []);
 
+  const defaultOptions = {
+    fpsLimit: 60,
+    fullScreen: {
+      enable: false,
+      zIndex: -999,
+    },
+
+    interactivity: {
+      detectsOn: "canvas",
+      events: {
+        resize: true,
+      },
+    },
+    particles: {
+      color: {
+        value: "#0A84FF",
+      },
+      links: {
+        color: "#EB212E",
+        distance: 250,
+        enable: true,
+        opacity: 0.3,
+        width: 1,
+      },
+      collisions: {
+        enable: true,
+      },
+      move: {
+        directions: "none",
+        enable: true,
+        outModes: {
+          default: "bounce",
+        },
+        random: false,
+        speed: 1,
+        straight: false,
+      },
+      number: {
+        density: {
+          enable: true,
+          area: 800,
+        },
+        value: 30,
+      },
+      opacity: {
+        value: 0.3,
+      },
+      shape: {
+        type: "circle",
+      },
+      size: {
+        value: { min: 1, max: 1 },
+      },
+    },
+  };
+
   return (
     <Particles
-      options={options}
+      options={options || defaultOptions}
       init={particlesInit}
       loaded={particlesLoaded}
       id={id}

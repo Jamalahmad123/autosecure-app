@@ -8,9 +8,16 @@ import { features } from "../data/constantData";
 import { styles } from "../Styles";
 import { logo_sm } from "../assets/images";
 
+// Lazy Imports
+// const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
+import ParticlesBackground from "./ui/ParticlesBackground";
+
 const Features = () => {
   return (
-    <section className="py-14 relative">
+    <section className="py-14 relative bg-clrVeryLightGray z-[1]">
+      <ParticlesBackground id="features-particles" />
+      {/* <Suspense fallback={<div />}>
+      </Suspense> */}
       <Wrapper className="px-4 z-50">
         <Swiper
           spaceBetween={30}

@@ -4,68 +4,12 @@ import { styles } from "../Styles";
 import { autosecureMobile, autosecureTower } from "../assets/images";
 import { Link } from "react-router-dom";
 import TypeWriter from "./ui/TypeWriter";
-// import ParticlesBackground from "./ui/ParticlesBackground";
+import ParticlesBackground from "./ui/ParticlesBackground";
 import { lazy, Suspense } from "react";
 import AnimatedTower from "./ui/AnimatedTower";
 import LazyImage from "./ui/LazyImage";
 
-const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
-
-const options = {
-  fpsLimit: 60,
-  fullScreen: {
-    enable: false,
-    zIndex: -999,
-  },
-
-  interactivity: {
-    detectsOn: "canvas",
-    events: {
-      resize: true,
-    },
-  },
-  particles: {
-    color: {
-      value: "#0A84FF",
-    },
-    links: {
-      color: "#D1D1D6",
-      distance: 250,
-      enable: true,
-      opacity: 0.3,
-      width: 1,
-    },
-    collisions: {
-      enable: true,
-    },
-    move: {
-      directions: "none",
-      enable: true,
-      outModes: {
-        default: "bounce",
-      },
-      random: false,
-      speed: 1,
-      straight: false,
-    },
-    number: {
-      density: {
-        enable: true,
-        area: 800,
-      },
-      value: 30,
-    },
-    opacity: {
-      value: 0.3,
-    },
-    shape: {
-      type: "circle",
-    },
-    size: {
-      value: { min: 1, max: 1 },
-    },
-  },
-};
+// const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
 
 const About = ({ link, isAnimated }) => {
   return (
@@ -75,11 +19,10 @@ const About = ({ link, isAnimated }) => {
           isAnimated ? "gradient-animation" : "bg-black"
         } z-[1]`}
       >
-        <Suspense fallback={<div />}>
-          <ParticlesBackground id="about" options={options} />
-        </Suspense>
+        <ParticlesBackground id="about" />
+        {/* <Suspense fallback={<div />}>
+        </Suspense> */}
         <Wrapper className="px-4 z-50">
-          {/* <TypeWriter /> */}
           <header>
             <h2 className={`${styles.headingSecondary} text-white`}>
               Active mobile video surveillance of the{" "}

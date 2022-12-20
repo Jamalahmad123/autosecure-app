@@ -1,22 +1,45 @@
-import { FaCheck } from "react-icons/fa";
+import { FaCheck, FaCalendarAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 
-import Hero from "./Hero";
 import { logo_sm } from "../assets/images";
 import { industrySector } from "../data/constantData";
 import Wrapper from "./ui/Wrapper";
 import LazyImage from "./ui/LazyImage";
+import { styles } from "../Styles";
+import { lazy, Suspense } from "react";
+
+const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
 
 const IndustrySectorSolutions = () => {
-  const title = "Industry sectors. Solutions.";
-  const desc =
-    "Tailored to your industry. Find out what solutions and added value the new autosecure ecosystem has to offer you.";
   return (
     <>
-      <Hero title={title} desc={desc} isLink />
-      <section className="py-10 relative">
+      <section className="py-10 z-[1] relative bg-clrVeryLightGray">
+        <Suspense fallback={<div />}>
+          <ParticlesBackground id="industry-particles" />
+        </Suspense>
+        <header className="pt-28 pb-14">
+          <Wrapper className="space-y-10 md:space-y-12 px-4">
+            <h1
+              className={`${styles.headingPrimary} text-clrPrimary font-AllianceBold`}
+            >
+              Industry sectors. Solutions.
+            </h1>
+            <p className={`${styles.textPrimary} text-clrPrimary`}>
+              Tailored to your industry. Find out what solutions and added value
+              the new autosecure ecosystem has to offer you.
+            </p>
+
+            <Link
+              to="/company/contact"
+              className="link link-neutral text-lg items-center inline-flex text-clrPrimary"
+            >
+              <FaCalendarAlt className="inline-block mr-4  font-AllianceRegular" />
+              Arrange a consultation
+            </Link>
+          </Wrapper>
+        </header>
         <Wrapper className="px-14 relative">
           <Swiper
             spaceBetween={25}

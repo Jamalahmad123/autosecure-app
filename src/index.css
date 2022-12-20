@@ -116,7 +116,7 @@ canvas {
   top: 0;
   transform: scale(1);
   opacity: 1;
-  animation: appear 1.4s 1;
+  animation: appear 8s 1;
   animation-fill-mode: forwards;
 }
 
@@ -154,10 +154,7 @@ canvas {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   z-index: -1;
 }
 
@@ -165,10 +162,14 @@ canvas {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
+  z-index: -1;
+}
+#industry-particles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
   z-index: -1;
 }
 
