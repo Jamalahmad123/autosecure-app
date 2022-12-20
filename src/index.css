@@ -20,6 +20,7 @@
 
 body {
   position: relative;
+  background-color: #f2f2f7;
 }
 
 /* .bg-qoute {
@@ -131,15 +132,12 @@ canvas {
   }
 }
 
-#tsparticles {
+#hero {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding: 0;
-  margin: 0;
-  z-index: -1; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+  inset: 0;
+  z-index: -1;
 }
 
 #about {
@@ -172,17 +170,29 @@ canvas {
   inset: 0;
   z-index: -1;
 }
+#footer-particles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
 
-.canvas {
+/* .canvas {
   background-color: none;
+} */
+
+.swiper {
+  position: static !important;
 }
 
 .swiper-wrapper {
-  align-items: stretch;
+  align-items: stretch !important;
+  padding: 3rem 0;
 }
 
 .swiper-slide {
-  height: auto;
+  height: auto !important;
 }
 
 .swiper-pagination-bullets {

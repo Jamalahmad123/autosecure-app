@@ -35,7 +35,7 @@ const AboutUs = () => {
   }, []);
   return (
     <>
-      <header className="pt-24 pb-14">
+      <header className="pt-24 pb-14 bg-clrVeryLightGray">
         <Wrapper className="px-4">
           <p className="text-clrPrimary text-lg mb-2">About us.</p>
           <h1 className={`text-clrPrimary ${styles.headingPrimary}`}>

@@ -1,6 +1,7 @@
 import Particles from "react-tsparticles";
+import { lazy, Suspense, useCallback, useState } from "react";
 import { loadFull } from "tsparticles";
-import { useCallback } from "react";
+// const Particles = lazy(() => import("react-tsparticles"));
 
 const ParticlesBackground = ({ options, id }) => {
   const particlesInit = useCallback(async (engine) => {
@@ -11,7 +12,7 @@ const ParticlesBackground = ({ options, id }) => {
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    container.smooth = true;
+    // container.smooth = true;
   }, []);
 
   const defaultOptions = {
@@ -20,7 +21,9 @@ const ParticlesBackground = ({ options, id }) => {
       enable: false,
       zIndex: -999,
     },
-
+    background: {
+      color: "tansparent",
+    },
     interactivity: {
       detectsOn: "canvas",
       events: {
@@ -32,7 +35,7 @@ const ParticlesBackground = ({ options, id }) => {
         value: "#0A84FF",
       },
       links: {
-        color: "#EB212E",
+        color: "#FF4500",
         distance: 250,
         enable: true,
         opacity: 0.3,
@@ -72,16 +75,10 @@ const ParticlesBackground = ({ options, id }) => {
 
   return (
     <Particles
-      options={options || defaultOptions}
+      options={defaultOptions}
       init={particlesInit}
       loaded={particlesLoaded}
       id={id}
-      style={{
-        width: "100%",
-        height: "100%",
-        backgroundColor: "transparent",
-        pointerEvents: "none",
-      }}
     />
   );
 };

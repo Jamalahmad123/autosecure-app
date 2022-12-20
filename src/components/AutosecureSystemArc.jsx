@@ -14,7 +14,7 @@ const AutosecureSystemArc = ({
   isFeature,
 }) => {
   return (
-    <section className="py-14 bg-clrLightGray">
+    <section className="py-14 bg-clrVeryLightGray">
       <Wrapper
         className={`${styles.flexBtw} gap-12 flex-col lg:flex-row items-stretch px-4`}
       >

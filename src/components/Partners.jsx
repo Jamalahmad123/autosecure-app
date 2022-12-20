@@ -39,7 +39,7 @@ const Partners = () => {
   ];
 
   return (
-    <section className="py-14 bg-clrLightGray z-50">
+    <section className="py-14 bg-clrVeryLightGray z-50">
       <Wrapper className="px-4">
         <Swiper
           spaceBetween={35}

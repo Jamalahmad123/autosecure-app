@@ -3,7 +3,9 @@ import { styles } from "../Styles";
 
 const AutosecureProcess = ({ title, desc, hasSpace }) => {
   return (
-    <section className={`${hasSpace ? "pt-14 pb-6" : "py-14"}`}>
+    <section
+      className={`bg-clrVeryLightGray ${hasSpace ? "pt-14 pb-6" : "py-14"}`}
+    >
       <Wrapper className="px-4">
         <h2
           className={`${styles.headingSecondary} text-clrPrimary mb-8 capitalize`}

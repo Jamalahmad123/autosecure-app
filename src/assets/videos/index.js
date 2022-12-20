@@ -1,6 +1,6 @@
 import autoSecurityVideo from "../../assets/videos/autosecure_secure_video_white.mp4";
 import autoScanVideo from "../../assets/videos/autosecure_scan_video.mp4";
-import autoLocateVideo from "../../assets/videos/autosecure_locate_video.mp4";
+import autoLocateVideo from "../videos/autosecure_locate_video.mp4";
 import auto_secure_meeting from "../videos/auto_secure_meeting.mp4";
 import autosecure_scan_01 from "../videos/autosecure_scan_01.mp4";
 import autosecure_scan_02 from "../videos/autosecure_scan_02.mp4";

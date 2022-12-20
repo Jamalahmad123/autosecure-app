@@ -35,7 +35,7 @@ const privacy = {
 
 const AutosecureApplications = () => {
   return (
-    <section className="py-14">
+    <section className="py-14 bg-clrVeryLightGray">
       <Wrapper className="px-4 space-y-16">
         <header>
           <h2

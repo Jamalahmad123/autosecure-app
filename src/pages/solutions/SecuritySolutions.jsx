@@ -161,7 +161,10 @@ const SecuritySolutions = () => {
         <AutosecureSystemArc {...deepLearningAndQualityImgs} isFeature />
         <VisualWarnings />
         <AutosecureFullSlider slideImages={slideImages} />
-        <About link="/solutions/security-solutions/mobile-security" />
+        <About
+          link="/solutions/security-solutions/mobile-security"
+          style="bg-black"
+        />
         <AutosecureApplications />
         {/* <AutosecureQoute /> */}
       </Suspense>
@@ -189,35 +192,45 @@ const VisualWarnings = () => {
     visualWarningsContent;
   return (
     <>
-      <Wrapper className="py-14 px-4">
-        <div className="max-w-xl">
-          <div className="flex flex-col items-start justify-start gap-4">
-            <h2
-              className={`text-2xl md:text-3xl lg:text-4xl text-clrPrimary font-AllianceBold font-bold`}
-            >
-              {mainTitle}
-            </h2>
-            <p className="text-lg md:text-xl text-clrPrimary">{subTitle1}</p>
+      <section className="py-14 bg-clrVeryLightGray">
+        <Wrapper className="px-4">
+          <div className="max-w-xl">
+            <div className="flex flex-col items-start justify-start gap-4">
+              <h2
+                className={`text-2xl md:text-3xl lg:text-4xl text-clrPrimary font-AllianceBold font-bold`}
+              >
+                {mainTitle}
+              </h2>
+              <p className="text-lg md:text-xl text-clrPrimary">{subTitle1}</p>
+            </div>
+            <ul className="space-y-4 mt-10">
+              {features1.map((text, i) => (
+                <li
+                  className={`flex items-start text-clrPrimary gap-2`}
+                  key={i}
+                >
+                  <FaCheck className="min-w-[25px]" />
+                  <p>{text}</p>
+                </li>
+              ))}
+            </ul>
+            <p className="text-lg md:text-xl text-clrPrimary my-6">
+              {subTitle2}
+            </p>
+            <ul className="space-y-4">
+              {features2.map((text, i) => (
+                <li
+                  className={`flex items-start text-clrPrimary gap-2`}
+                  key={i}
+                >
+                  <FaCheck className="min-w-[25px]" />
+                  <p>{text}</p>
+                </li>
+              ))}
+            </ul>
           </div>
-          <ul className="space-y-4 mt-10">
-            {features1.map((text, i) => (
-              <li className={`flex items-start text-clrPrimary gap-2`} key={i}>
-                <FaCheck className="min-w-[25px]" />
-                <p>{text}</p>
-              </li>
-            ))}
-          </ul>
-          <p className="text-lg md:text-xl text-clrPrimary my-6">{subTitle2}</p>
-          <ul className="space-y-4">
-            {features2.map((text, i) => (
-              <li className={`flex items-start text-clrPrimary gap-2`} key={i}>
-                <FaCheck className="min-w-[25px]" />
-                <p>{text}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </Wrapper>
+        </Wrapper>
+      </section>
     </>
   );
 };

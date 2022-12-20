@@ -12,7 +12,7 @@ const Hero = ({ title, desc, promise, isLink }) => {
     <>
       <header className="pt-28 pb-14 relative bg-clrVeryLightGray z-[1]">
         <Suspense fallback={<div />}>
-          <ParticlesBackground id="particles-container" />
+          <ParticlesBackground id="hero" />
         </Suspense>
         <Wrapper className="space-y-10 md:space-y-12 px-4">
           <h1

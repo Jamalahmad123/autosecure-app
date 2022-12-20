@@ -13,7 +13,7 @@ const Compnay = () => {
 
   return (
     <>
-      <header className="pt-28 pb-14">
+      <header className="pt-28 pb-14 bg-clrVeryLightGray">
         <Wrapper className="md:px-10 px-4">
           <h1 className={`${styles.headingPrimary} text-clrPrimary`}>
             Company

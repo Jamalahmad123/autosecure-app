@@ -48,7 +48,7 @@ const IndustrySectorSolutions = () => {
             }}
             navigation={true}
             modules={[Pagination, Navigation]}
-            className="mySwiper py-8 static"
+            className="mySwiper static"
             breakpoints={{
               480: {
                 // width: 576,

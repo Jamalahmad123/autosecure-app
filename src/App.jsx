@@ -85,76 +85,14 @@ const Employes = lazy(() => import("./components/Employes"));
 const Footer = lazy(() => import("./components/Footer"));
 const BookAppointment = lazy(() => import("./components/BookAppointment"));
 
-const options = {
-  fpsLimit: 60,
-  fullScreen: {
-    enable: false,
-    zIndex: -999,
-  },
-  background: {
-    color: "#f9f9f9",
-  },
-  interactivity: {
-    detectsOn: "canvas",
-    events: {
-      resize: true,
-    },
-  },
-  particles: {
-    color: {
-      value: "#0A84FF",
-    },
-    links: {
-      color: "#D1D1D6",
-      distance: 250,
-      enable: true,
-      opacity: 0.3,
-      width: 1,
-    },
-    collisions: {
-      enable: true,
-    },
-    move: {
-      directions: "none",
-      enable: true,
-      outModes: {
-        default: "bounce",
-      },
-      random: false,
-      speed: 1,
-      straight: false,
-    },
-    number: {
-      density: {
-        enable: true,
-        area: 800,
-      },
-      value: 30,
-    },
-    opacity: {
-      value: 0.3,
-    },
-    shape: {
-      type: "circle",
-    },
-    size: {
-      value: { min: 1, max: 1 },
-    },
-  },
-};
-
 function App() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);
   return (
     <>
-      {/* <ParticlesBackground id="tsparticles" options={options} /> */}
       <Router>
         <Nav />
-        {/* <Suspense fallback={<div />}>
-          <ParticlesBackground id="tsparticles" options={options} />
-        </Suspense> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
@@ -343,7 +281,7 @@ function App() {
             }
           />
         </Routes>
-        <Suspense fallback={<div />}>
+        <Suspense fallback={<div className="min-h-screen" />}>
           <Partners />
           <Employes />
           <BookAppointment />

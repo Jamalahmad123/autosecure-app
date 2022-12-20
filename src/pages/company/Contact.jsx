@@ -1,13 +1,63 @@
-import { useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { FaAt, FaBuilding, FaPhoneVolume } from "react-icons/fa";
 import { logo } from "../../assets/images";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
 
 const Contact = () => {
+  // const [formData, setFormData] = useState({
+  //   company: "",
+  //   name: "",
+  //   email: "",
+  //   phoneNo: null,
+  //   postalNo: null,
+  //   location: "",
+  //   message: "",
+  // });
+  // const formRef = useRef();
+
+  // const { company, name, location, email, postalNo, message, phoneNo } =
+  //   formData;
+
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);
+
+  // const onChange = (e) => {
+  //   setFormData((prevState) => {
+  //     return {
+  //       ...prevState,
+  //       [e.target.name]: e.target.value,
+  //     };
+  //   });
+  // };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_a27wr8c",
+        "template_6oi5kwi",
+        e.target,
+        "qzECbrX8N9XRbZUFW"
+      )
+      .then(
+        (result) => {
+          // if (
+          //   (company && email && name && phoneNo && location, postalNo, message)
+          // ) {
+          //   console.log(formData);
+          // }
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <>
       <section className="pt-24 pb-14 bg-clrLightGray">
@@ -67,43 +117,64 @@ const Contact = () => {
               <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
                 Make an appointment now.
               </h2>
-              <form>
+              <form onSubmit={sendEmail}>
                 <div className="space-y-5">
                   <input
                     type="text"
                     placeholder="Company *"
                     className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
+                    name="company"
+                    // value={company}
+                    // onChange={onChange}
                   />
                   <input
                     type="text"
                     placeholder="Surname *"
                     className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
+                    name="name"
+                    // value={name}
+                    // onChange={onChange}
                   />
                   <input
                     type="email"
                     placeholder="Email *"
                     className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
+                    name="email"
+                    // value={email}
+                    // onChange={onChange}
                   />
                   <input
                     type="tel"
                     placeholder="Phone number. *"
                     className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
+                    name="phoneNo"
+                    // value={phoneNo}
+                    // onChange={onChange}
                   />
                   <div className="flex items-center flex-col gap-5 sm:flex-row">
                     <input
                       type="text"
                       placeholder="POSTCODE *"
                       className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
+                      name="postalNo"
+                      // value={postalNo}
+                      // onChange={onChange}
                     />
                     <input
                       type="text"
                       placeholder="Location *"
                       className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
+                      name="location"
+                      // value={location}
+                      // onChange={onChange}
                     />
                   </div>
                   <textarea
                     className="textarea w-full bg-white text-clrPrimary focus:outline-none focus:shadow-inputShadow "
                     placeholder="Your Message *"
+                    name="message"
+                    // value={message}
+                    // onChange={onChange}
                   ></textarea>
                 </div>
                 <div className="form-control">
@@ -124,7 +195,10 @@ const Contact = () => {
                     </span>
                   </label>
                 </div>
-                <button className="btn text-white border-none hover:bg-clrPrimary bg-clrSky w-full mt-8">
+                <button
+                  type="submit"
+                  className="btn text-white border-none hover:bg-clrPrimary bg-clrSky w-full mt-8"
+                >
                   Send inquiry now
                 </button>
               </form>

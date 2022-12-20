@@ -9,7 +9,7 @@ import LazyImage from "./ui/LazyImage";
 const Achievements = () => {
   const navigate = useNavigate();
   return (
-    <section className="py-14 bg-clrLightGray">
+    <section className="py-14 bg-clrVeryLightGray">
       <Wrapper className="px-14 relative">
         <Swiper
           spaceBetween={35}

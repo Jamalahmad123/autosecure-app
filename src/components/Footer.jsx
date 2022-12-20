@@ -15,71 +15,6 @@ import LazyImage from "./ui/LazyImage";
 
 const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
 
-const options = {
-  fpsLimit: 60,
-  fullScreen: {
-    enable: false,
-    zIndex: -1,
-  },
-  background: {
-    color: {
-      value: {
-        r: 245,
-        g: 245,
-        b: 245,
-      },
-    },
-  },
-  interactivity: {
-    detectsOn: "canvas",
-    events: {
-      resize: true,
-    },
-  },
-  particles: {
-    color: {
-      value: "#0A84FF",
-    },
-    links: {
-      color: "#D1D1D6",
-      distance: 250,
-      enable: true,
-      opacity: 0.4,
-      width: 1,
-    },
-    collisions: {
-      enable: true,
-    },
-    move: {
-      directions: "none",
-      enable: true,
-      outModes: {
-        default: "bounce",
-      },
-      random: false,
-      speed: 1,
-      straight: false,
-    },
-    number: {
-      density: {
-        enable: true,
-        area: 800,
-      },
-      value: 30,
-    },
-    opacity: {
-      value: 0.4,
-    },
-    shape: {
-      type: "circle",
-    },
-    size: {
-      value: { min: 1, max: 2 },
-    },
-  },
-  detectRetina: true,
-};
-
 const Footer = () => {
   const awards = [
     hikvision_logo,
@@ -91,10 +26,10 @@ const Footer = () => {
   const legals = ["imprint", "privacy", "conditions"];
 
   return (
-    <footer className="py-14 relative">
-      {/* <Suspense fallback={<div />}>
-        <ParticlesBackground options={options} />
-      </Suspense> */}
+    <footer className="py-14 relative z-[1] bg-clrVeryLightGray">
+      <Suspense fallback={<div />}>
+        <ParticlesBackground id="footer-particles" />
+      </Suspense>
       <Wrapper className="space-y-20 px-4">
         <div className={`${styles.flexCenter} flex-col gap-8`}>
           <figure>

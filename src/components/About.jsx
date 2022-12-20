@@ -1,28 +1,24 @@
 import { FaChevronRight, FaCheck } from "react-icons/fa";
 import Wrapper from "./ui/Wrapper";
 import { styles } from "../Styles";
-import { autosecureMobile, autosecureTower } from "../assets/images";
+import { autosecureMobile } from "../assets/images";
 import { Link } from "react-router-dom";
 import TypeWriter from "./ui/TypeWriter";
-import ParticlesBackground from "./ui/ParticlesBackground";
+// import ParticlesBackground from "./ui/ParticlesBackground";
 import { lazy, Suspense } from "react";
 import AnimatedTower from "./ui/AnimatedTower";
 import LazyImage from "./ui/LazyImage";
 
-// const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
+const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
 
-const About = ({ link, isAnimated }) => {
+const About = ({ link, style }) => {
   return (
     <>
-      <section
-        className={`pt-20 relative ${
-          isAnimated ? "gradient-animation" : "bg-black"
-        } z-[1]`}
-      >
-        <ParticlesBackground id="about" />
-        {/* <Suspense fallback={<div />}>
-        </Suspense> */}
-        <Wrapper className="px-4 z-50">
+      <section className={`pt-20 z-[1] relative ${style}`}>
+        <Suspense fallback={<div />}>
+          <ParticlesBackground id="about" />
+        </Suspense>
+        <Wrapper className="px-4">
           <header>
             <h2 className={`${styles.headingSecondary} text-white`}>
               Active mobile video surveillance of the{" "}

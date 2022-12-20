@@ -23,7 +23,6 @@ import {
   autosecure_mobile_transport,
   autosecure_mobile_security_tower1,
   autosecure_mobile_security_tower2,
-  autosecure_slide_theif_1,
 } from "../assets/images";
 import { auto_secure_timelaps } from "../assets/videos";
 import {
@@ -47,8 +46,8 @@ const MobileSecurity = () => {
   }, []);
   return (
     <>
-      <Suspense fallback={<div className="min-h-screen" />}>
-        <About link="" isAnimated />
+      <Suspense fallback={<Spinner />}>
+        <About link="" isAnimated style="gradient-animation" />
         <section className="py-16 bg-theif">
           <Wrapper className="px-4 space-y-24">
             <h2

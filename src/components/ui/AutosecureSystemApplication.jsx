@@ -2,7 +2,7 @@ import { FaCheck } from "react-icons/fa";
 import Wrapper from "./Wrapper";
 const AutosecureSystemApplication = ({ application }) => {
   return (
-    <section className="py-14">
+    <section className="py-14 bg-clrVeryLightGray">
       <Wrapper className="px-4">
         <div className="flex justify-start items-start md:gap-6 flex-col lg:flex-row lg:justify-between lg:items-start">
           <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold flex-1">

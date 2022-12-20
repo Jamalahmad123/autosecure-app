@@ -56,7 +56,7 @@ const saveDetails = [
 
 const Save = () => {
   return (
-    <section className="py-14">
+    <section className="py-14 bg-clrVeryLightGray">
       <Wrapper className="px-4 space-y-12">
         <header className="space-y-8">
           <h2 className={`${styles.headingPrimary} text-clrPrimary`}>

@@ -5,7 +5,7 @@ import Wrapper from "./ui/Wrapper";
 
 const AutosecureCareerDialoge = () => {
   return (
-    <section className="py-14 bg-clrLightGray">
+    <section className="py-14 bg-clrVeryLightGray">
       <Wrapper className="px-4">
         <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
           Technology and process <br className="hidden lg:block" /> automation

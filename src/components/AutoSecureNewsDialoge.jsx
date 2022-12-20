@@ -5,7 +5,7 @@ import Wrapper from "./ui/Wrapper";
 
 const AutoSecureNewsDialoge = () => {
   return (
-    <section className="py-14 bg-clrLightGray">
+    <section className="py-14 bg-clrVeryLightGray">
       <Wrapper className="px-4">
         <h2 className={`${styles.headingSecondary} text-clrPrimary mb-8`}>
           News about our projects and <br className="hidden lg:block" /> our

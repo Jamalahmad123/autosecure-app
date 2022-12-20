@@ -9,23 +9,23 @@ import { styles } from "../Styles";
 import { logo_sm } from "../assets/images";
 
 // Lazy Imports
-// const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
-import ParticlesBackground from "./ui/ParticlesBackground";
+const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
+// import ParticlesBackground from "./ui/ParticlesBackground";
 
 const Features = () => {
   return (
-    <section className="py-14 relative bg-clrVeryLightGray z-[1]">
-      <ParticlesBackground id="features-particles" />
-      {/* <Suspense fallback={<div />}>
-      </Suspense> */}
-      <Wrapper className="px-4 z-50">
+    <section className="py-14 bg-clrVeryLightGray z-[1] relative">
+      <Suspense fallback={<div />}>
+        <ParticlesBackground id="features-particles" />
+      </Suspense>
+      <Wrapper className="px-4 relative">
         <Swiper
           spaceBetween={30}
           pagination={{
             clickable: true,
           }}
           modules={[Pagination]}
-          className="mySwiper py-8"
+          className="mySwiper static"
           breakpoints={{
             480: {
               // width: 576,
@@ -51,7 +51,7 @@ const Features = () => {
         >
           {features.map((item) => (
             <SwiperSlide
-              className="mySlide card shadow-xl items-stretch cursor-grab bg-white"
+              className="mySlide card shadow-xl cursor-grab bg-white"
               key={item.id}
             >
               <video autoPlay muted preload="metadata">

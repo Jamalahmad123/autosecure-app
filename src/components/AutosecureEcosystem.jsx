@@ -13,7 +13,7 @@ const AutosecureEcosystem = ({
   hasLogo,
 }) => {
   return (
-    <section className="py-14 bg-clrLightGray">
+    <section className="py-14 bg-clrVeryLightGray">
       <Wrapper
         className={`${styles.flexBtw} gap-6 flex-col lg:flex-row items-stretch px-4`}
       >

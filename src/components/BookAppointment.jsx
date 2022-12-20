@@ -6,7 +6,7 @@ import LazyImage from "./ui/LazyImage";
 
 const BookAppointment = () => {
   return (
-    <section className="py-20 bg-clrLightGray">
+    <section className="py-20 bg-clrVeryLightGray">
       <Wrapper className="px-4">
         <div className="card lg:card-side bg-white shadow-xl">
           <figure className="p-2">

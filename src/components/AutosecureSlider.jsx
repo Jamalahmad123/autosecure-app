@@ -7,7 +7,7 @@ import { styles } from "../Styles";
 
 const AutosecureSlider = () => {
   return (
-    <section className="py-14 bg-clrLightGray">
+    <section className="py-14 bg-clrVeryLightGray">
       <Wrapper className="px-4">
         <header className="space-y-6">
           <h2 className={`${styles.headingSecondary} text-clrPrimary`}>

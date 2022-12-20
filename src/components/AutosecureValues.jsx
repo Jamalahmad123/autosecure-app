@@ -5,7 +5,7 @@ import Wrapper from "./ui/Wrapper";
 
 const AutosecureValues = () => {
   return (
-    <section className="py-14 bg-clrLightGray">
+    <section className="py-14 bg-clrVeryLightGray">
       <Wrapper className="space-y-24 px-4">
         <div>
           <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
