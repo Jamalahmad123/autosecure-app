@@ -132,7 +132,7 @@ const options = {
       value: 30,
     },
     opacity: {
-      value: 0.3,
+      value: 0.5,
     },
     shape: {
       type: "circle",
@@ -167,7 +167,7 @@ function App() {
     <>
       <Router>
         <Nav />
-        <Suspense fallback={<div />}>
+        <Suspense fallback={<div className="bg-clrVeryLightGray" />}>
           {playAnimation && <ParticlesBackground options={options} />}
         </Suspense>
         <Routes>
