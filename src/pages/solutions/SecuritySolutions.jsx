@@ -161,10 +161,7 @@ const SecuritySolutions = () => {
         <AutosecureSystemArc {...deepLearningAndQualityImgs} isFeature />
         <VisualWarnings />
         <AutosecureFullSlider slideImages={slideImages} />
-        <About
-          link="/solutions/security-solutions/mobile-security"
-          style="bg-black"
-        />
+        <About link="/solutions/mobile-security" style="bg-black" />
         <AutosecureApplications />
         {/* <AutosecureQoute /> */}
       </Suspense>
