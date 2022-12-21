@@ -149,18 +149,17 @@ function App() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-  }, []);
 
-  useEffect(() => {
-    const onPageLoad = () => setPlayAnimation(true);
+    const onPageLoad = () => {
+      setPlayAnimation(true);
+    };
 
     if (document.readyState === "complete") {
       onPageLoad();
     } else {
       window.addEventListener("load", onPageLoad);
-
-      return () => window.removeEventListener("load", onPageLoad);
     }
+    return () => window.removeEventListener("load", onPageLoad);
   }, []);
 
   return (
@@ -170,6 +169,7 @@ function App() {
         <Suspense fallback={<div className="bg-clrVeryLightGray" />}>
           {playAnimation && <ParticlesBackground options={options} />}
         </Suspense>
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
@@ -181,7 +181,7 @@ function App() {
             }
           />
           <Route
-            path="/solutions/security-solutions/mobile-security"
+            path="/solutions/mobile-security"
             element={
               <Suspense fallback={<Spinner />}>
                 <MobileSecurity />
