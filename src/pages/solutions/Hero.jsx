@@ -3,18 +3,10 @@ import { FaChevronRight, FaCalendarCheck } from "react-icons/fa";
 import { autosecureMeetingGirl } from "../../assets/images";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
-import { lazy, Suspense } from "react";
-
-const ParticlesBackground = lazy(() =>
-  import("../../components/ui/ParticlesBackground")
-);
 
 const Hero = ({ title, desc, benefit1, benefit2, videoPath, isAssist }) => {
   return (
-    <header className="py-10 bg-white relative z-[1]">
-      <Suspense fallback={<div />}>
-        <ParticlesBackground />
-      </Suspense>
+    <header className="py-10">
       <Wrapper className="px-4">
         <div className="card lg:items-stretch lg:flex-row bg-transparent gap-6 flex-1">
           <video autoPlay muted className="max-w-lg bg-transparent smooth">

@@ -13,8 +13,6 @@ import { navLinks } from "../data/constantData";
 import Wrapper from "./ui/Wrapper";
 import LazyImage from "./ui/LazyImage";
 
-const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
-
 const Footer = () => {
   const awards = [
     hikvision_logo,
@@ -26,10 +24,7 @@ const Footer = () => {
   const legals = ["imprint", "privacy", "conditions"];
 
   return (
-    <footer className="py-14 relative z-[1] bg-clrVeryLightGray">
-      <Suspense fallback={<div />}>
-        <ParticlesBackground id="footer-particles" />
-      </Suspense>
+    <footer className="py-14">
       <Wrapper className="space-y-20 px-4">
         <div className={`${styles.flexCenter} flex-col gap-8`}>
           <figure>

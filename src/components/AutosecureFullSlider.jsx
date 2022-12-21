@@ -3,7 +3,7 @@ import { Navigation, Autoplay } from "swiper";
 
 const AutosecureFullSlider = ({ slideImages }) => {
   return (
-    <section>
+    <section className="relative">
       <Swiper
         navigation={true}
         loop

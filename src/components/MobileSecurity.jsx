@@ -12,8 +12,6 @@ import {
 import Wrapper from "./ui/Wrapper";
 import { styles } from "../Styles";
 import {
-  autosecureMobile,
-  autosecureTower,
   mobile_security_tower4,
   autosecure_cam2,
   autosecure_cam3,
@@ -47,7 +45,7 @@ const MobileSecurity = () => {
   return (
     <>
       <Suspense fallback={<Spinner />}>
-        <About link="" isAnimated style="gradient-animation" />
+        <About link="rent" linkTitle="Rent Now" style="gradient-animation" />
         <section className="py-16 bg-theif">
           <Wrapper className="px-4 space-y-24">
             <h2
@@ -481,7 +479,7 @@ const MobileSecurity = () => {
             </SplitContainer>
           </Wrapper>
         </section>
-        <section className="py-16 bg-black">
+        <section id="rent" className="py-16 bg-black">
           <Wrapper className="px-4 space-y-20">
             <h2
               className={`${styles.headingSecondary} leading-[2.8rem] text-white lg:leading-[3.8rem]`}
@@ -499,7 +497,7 @@ const MobileSecurity = () => {
                   Tower. Start your inquiry and we will contact you immediately
                   and make you our offer.
                 </p>
-                <div className="space-y-6">
+                <form className="space-y-6">
                   <div className="w-full bg-clrPrimary overflow-hidden">
                     <div className="w-1/4 h-full bg-clrSky text-white text-right pr-4 text-sm">
                       20%
@@ -528,7 +526,7 @@ const MobileSecurity = () => {
                   <span className="text-sm text-[#3a3a3c] inline-block">
                     * Please fill out fields marked with *.
                   </span>
-                </div>
+                </form>
               </div>
             </div>
           </Wrapper>

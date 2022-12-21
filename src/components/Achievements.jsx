@@ -10,7 +10,7 @@ const Achievements = () => {
   const navigate = useNavigate();
   return (
     <section className="py-14 bg-clrVeryLightGray">
-      <Wrapper className="px-14 relative">
+      <Wrapper className="px-14 relative py-8">
         <Swiper
           spaceBetween={35}
           pagination={{
@@ -18,7 +18,7 @@ const Achievements = () => {
           }}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="mySwiper py-8 static"
+          className="mySwiper static"
           // breakpoints={{
           //   668: {
           //     // width: 576,

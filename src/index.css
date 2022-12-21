@@ -18,11 +18,6 @@
   }
 }
 
-body {
-  position: relative;
-  background-color: #f2f2f7;
-}
-
 /* .bg-qoute {
   background-image: url("/autosecure_qoute.jpg");
   background-position: center;
@@ -113,10 +108,8 @@ body::-webkit-scrollbar {
 }
 
 canvas {
-  position: absolute;
-  top: 0;
+  position: absolute !important;
   transform: scale(1);
-  opacity: 1;
   animation: appear 8s 1;
   animation-fill-mode: forwards;
 }
@@ -132,21 +125,25 @@ canvas {
   }
 }
 
-#hero {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-}
-
 #about {
   width: 100%;
   height: 100%;
   position: absolute;
   inset: 0;
   z-index: -1;
+  /* background-color: #dadada; */
 }
+
+/* #tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+} */
+
+/* 
 
 #particles-container {
   width: 100%;
@@ -176,19 +173,15 @@ canvas {
   position: absolute;
   inset: 0;
   z-index: -1;
-}
-
-/* .canvas {
-  background-color: none;
 } */
 
 .swiper {
   position: static !important;
+  /* background-color: rgb(242, 242, 247); */
 }
 
 .swiper-wrapper {
   align-items: stretch !important;
-  padding: 3rem 0;
 }
 
 .swiper-slide {

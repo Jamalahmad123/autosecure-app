@@ -14,14 +14,14 @@ import "swiper/css/navigation";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
 
-import { lazy, Suspense, useEffect } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import Spinner from "./components/ui/Spinner";
 
 // import Partners from "./components/Partners";
 // import Employes from "./components/Employes";
 // import BookAppointment from "./components/BookAppointment";
 // import ParticlesBackground from "./components/ui/ParticlesBackground";
-// import ParticlesBackground from "./components/ui/ParticlesBackground";
+import ParticlesBackground from "./components/ui/ParticlesBackground";
 // import Footer from "./components/Footer";
 
 // import IndustrySectors from "./pages/industry/IndustrySectors";
@@ -42,9 +42,9 @@ import Spinner from "./components/ui/Spinner";
 // import SecuritySolutions from "./pages/solutions/SecuritySolutions";
 // import ScanSolutions from "./pages/solutions/ScanSolutions";
 
-const ParticlesBackground = lazy(() =>
-  import("./components/ui/ParticlesBackground")
-);
+// const ParticlesBackground = lazy(() =>
+//   import("./components/ui/ParticlesBackground")
+// );
 
 // Pages
 const Solutions = lazy(() => import("./pages/solutions/Solutions"));
@@ -85,14 +85,91 @@ const Employes = lazy(() => import("./components/Employes"));
 const Footer = lazy(() => import("./components/Footer"));
 const BookAppointment = lazy(() => import("./components/BookAppointment"));
 
+const options = {
+  fpsLimit: 60,
+  fullScreen: {
+    enable: true,
+    zIndex: -999,
+  },
+  background: {
+    color: "#f2f2f7",
+  },
+  interactivity: {
+    detectsOn: "canvas",
+    events: {
+      resize: true,
+    },
+  },
+  particles: {
+    color: {
+      value: "#0A84FF",
+    },
+    links: {
+      color: "#dadada",
+      distance: 250,
+      enable: true,
+      opacity: 0.3,
+      width: 1,
+    },
+    collisions: {
+      enable: true,
+    },
+    move: {
+      directions: "none",
+      enable: true,
+      outModes: {
+        default: "bounce",
+      },
+      random: false,
+      speed: 1,
+      straight: false,
+    },
+    number: {
+      density: {
+        enable: true,
+        area: 800,
+      },
+      value: 30,
+    },
+    opacity: {
+      value: 0.3,
+    },
+    shape: {
+      type: "circle",
+    },
+    size: {
+      value: { min: 1, max: 1 },
+    },
+  },
+  retina_detect: true,
+};
+
 function App() {
+  const [playAnimation, setPlayAnimation] = useState(false);
+
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);
+
+  useEffect(() => {
+    const onPageLoad = () => setPlayAnimation(true);
+
+    if (document.readyState === "complete") {
+      onPageLoad();
+    } else {
+      window.addEventListener("load", onPageLoad);
+
+      return () => window.removeEventListener("load", onPageLoad);
+    }
+  }, []);
+
   return (
     <>
       <Router>
         <Nav />
+        <Suspense fallback={<div />}>
+          {playAnimation && <ParticlesBackground options={options} />}
+        </Suspense>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route

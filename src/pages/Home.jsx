@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 // import Hero from "../components/Hero";
 
 // import About from "../components/About";
@@ -30,6 +30,9 @@ const AutoSecureNewsDialoge = lazy(() =>
   import("../components/AutoSecureNewsDialoge")
 );
 const MeetingVideo = lazy(() => import("../components/ui/MeetingVideo"));
+const ParticlesBackground = lazy(() =>
+  import("../components/ui/ParticlesBackground")
+);
 
 // Assets
 import { poster } from "../assets/images";
@@ -48,23 +51,21 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      <Suspense fallback={<Spinner />}>
-        <Hero title={title} desc={desc} promise={promise} />
-        <Features />
-        <About
-          link="/solutions/security-solutions/mobile-security"
-          style="bg-black"
-        />
-        <IndustrySectorSolutions />
-        <AutosecureEcosystem {...ecosystemAndExpertise} isStyled hasLogo />
-        <MeetingVideo videoPath={auto_secure_meeting} poster={poster} />
-        <AutosecureValues />
-        <AutosecureCareerDialoge />
-        <AutoSecureNewsDialoge />
-        <Achievements />
-      </Suspense>
-    </>
+    <Suspense fallback={<Spinner />}>
+      <Hero title={title} desc={desc} promise={promise} />
+      <Features />
+      <About
+        link="/solutions/security-solutions/mobile-security"
+        style="bg-black"
+      />
+      <IndustrySectorSolutions />
+      <AutosecureEcosystem {...ecosystemAndExpertise} isStyled hasLogo />
+      <MeetingVideo videoPath={auto_secure_meeting} poster={poster} />
+      <AutosecureValues />
+      <AutosecureCareerDialoge />
+      <AutoSecureNewsDialoge />
+      <Achievements />
+    </Suspense>
   );
 };
 

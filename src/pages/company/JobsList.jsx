@@ -7,7 +7,7 @@ import JobItem from "./JobItem";
 const JobsList = () => {
   return (
     <>
-      <Wrapper className="px-4 py-14">
+      <Wrapper className="px-4 py-14 bg-clrVeryLightGray">
         <h2
           className={`text-xl md:text-2xl font-bold font-AllianceBold text-clrPrimary`}
         >

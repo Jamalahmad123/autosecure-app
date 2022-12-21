@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState, useEffect } from "react";
 import { FaCheck } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Wrapper from "./ui/Wrapper";
@@ -8,24 +8,17 @@ import { features } from "../data/constantData";
 import { styles } from "../Styles";
 import { logo_sm } from "../assets/images";
 
-// Lazy Imports
-const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
-// import ParticlesBackground from "./ui/ParticlesBackground";
-
 const Features = () => {
   return (
-    <section className="py-14 bg-clrVeryLightGray z-[1] relative">
-      <Suspense fallback={<div />}>
-        <ParticlesBackground id="features-particles" />
-      </Suspense>
-      <Wrapper className="px-4 relative">
+    <section className="py-14">
+      <Wrapper className="px-4 relative py-8">
         <Swiper
           spaceBetween={30}
           pagination={{
             clickable: true,
           }}
           modules={[Pagination]}
-          className="mySwiper static"
+          className="mySwiper"
           breakpoints={{
             480: {
               // width: 576,

@@ -10,15 +10,10 @@ import LazyImage from "./ui/LazyImage";
 import { styles } from "../Styles";
 import { lazy, Suspense } from "react";
 
-const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
-
 const IndustrySectorSolutions = () => {
   return (
     <>
-      <section className="py-10 z-[1] relative bg-clrVeryLightGray">
-        <Suspense fallback={<div />}>
-          <ParticlesBackground id="industry-particles" />
-        </Suspense>
+      <section className="py-10">
         <header className="pt-28 pb-14">
           <Wrapper className="space-y-10 md:space-y-12 px-4">
             <h1
@@ -40,7 +35,7 @@ const IndustrySectorSolutions = () => {
             </Link>
           </Wrapper>
         </header>
-        <Wrapper className="px-14 relative">
+        <Wrapper className="px-14 relative py-8">
           <Swiper
             spaceBetween={25}
             pagination={{

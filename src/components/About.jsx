@@ -4,19 +4,78 @@ import { styles } from "../Styles";
 import { autosecureMobile } from "../assets/images";
 import { Link } from "react-router-dom";
 import TypeWriter from "./ui/TypeWriter";
-// import ParticlesBackground from "./ui/ParticlesBackground";
+import ParticlesBackground from "./ui/ParticlesBackground";
 import { lazy, Suspense } from "react";
 import AnimatedTower from "./ui/AnimatedTower";
 import LazyImage from "./ui/LazyImage";
 
-const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
+// const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
 
-const About = ({ link, style }) => {
+const options = {
+  fpsLimit: 60,
+  fullScreen: {
+    enable: false,
+    zIndex: -999,
+  },
+  background: {
+    color: "transparent",
+  },
+  interactivity: {
+    detectsOn: "canvas",
+    events: {
+      resize: true,
+    },
+  },
+  particles: {
+    color: {
+      value: "#0A84FF",
+    },
+    links: {
+      color: "#dadada",
+      distance: 250,
+      enable: true,
+      opacity: 0.3,
+      width: 1,
+    },
+    collisions: {
+      enable: true,
+    },
+    move: {
+      directions: "none",
+      enable: true,
+      outModes: {
+        default: "bounce",
+      },
+      random: false,
+      speed: 1,
+      straight: false,
+    },
+    number: {
+      density: {
+        enable: true,
+        area: 800,
+      },
+      value: 30,
+    },
+    opacity: {
+      value: 0.3,
+    },
+    shape: {
+      type: "circle",
+    },
+    size: {
+      value: { min: 1, max: 1 },
+    },
+  },
+  retina_detect: true,
+};
+
+const About = ({ link, linkTitle = "Learn More", style }) => {
   return (
     <>
-      <section className={`pt-20 z-[1] relative ${style}`}>
+      <section className={`pt-20 ${style} relative z-[1]`}>
         <Suspense fallback={<div />}>
-          <ParticlesBackground id="about" />
+          <ParticlesBackground id="about" options={options} />
         </Suspense>
         <Wrapper className="px-4">
           <header>
@@ -48,7 +107,7 @@ const About = ({ link, style }) => {
                   to={link}
                   className="btn text-white btn-lg gap-2 border-none bg-clrSkyDark hover:bg-clrSky"
                 >
-                  learn more
+                  {linkTitle}
                   <FaChevronRight />
                 </Link>
               </div>

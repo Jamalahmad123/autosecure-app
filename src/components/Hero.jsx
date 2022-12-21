@@ -4,16 +4,10 @@ import { FaCalendarCheck, FaCalendarAlt } from "react-icons/fa";
 import Wrapper from "./ui/Wrapper";
 import { styles } from "../Styles";
 
-const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
-// import ParticlesBackground from "./ui/ParticlesBackground";
-
 const Hero = ({ title, desc, promise, isLink }) => {
   return (
     <>
-      <header className="pt-28 pb-14 relative bg-clrVeryLightGray z-[1]">
-        <Suspense fallback={<div />}>
-          <ParticlesBackground id="hero" />
-        </Suspense>
+      <header className="pt-28 pb-14">
         <Wrapper className="space-y-10 md:space-y-12 px-4">
           <h1
             className={`${styles.headingPrimary} text-clrPrimary font-AllianceBold`}

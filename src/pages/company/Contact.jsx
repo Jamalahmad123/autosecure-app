@@ -60,7 +60,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className="pt-24 pb-14 bg-clrLightGray">
+      <section className="pt-24 pb-14">
         <Wrapper className="px-4">
           <header className="space-y-8">
             <h1 className={`${styles.headingPrimary} text-clrPrimary`}>
@@ -75,7 +75,7 @@ const Contact = () => {
               advise you individually.
             </p>
           </header>
-          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-12 pt-20">
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-12 pt-20 bg-clrVeryLightGray">
             <div className="space-y-8">
               <figure>
                 <img src={logo} alt="logo" className="w-36" />

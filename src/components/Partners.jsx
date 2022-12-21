@@ -40,7 +40,7 @@ const Partners = () => {
 
   return (
     <section className="py-14 bg-clrVeryLightGray z-50">
-      <Wrapper className="px-4">
+      <Wrapper className="px-4 relative py-8">
         <Swiper
           spaceBetween={35}
           pagination={{
@@ -52,7 +52,7 @@ const Partners = () => {
           }}
           loop={true}
           modules={[Pagination, Autoplay]}
-          className="mySwiper py-8"
+          className="mySwiper"
           breakpoints={{
             440: {
               // width: 576,

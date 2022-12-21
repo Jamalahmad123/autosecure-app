@@ -1,9 +1,9 @@
-import Particles from "react-tsparticles";
-import { lazy, Suspense, useCallback, useState } from "react";
+// import Particles from "react-tsparticles";
+import { lazy, Suspense, useCallback, useState, useEffect } from "react";
 import { loadFull } from "tsparticles";
-// const Particles = lazy(() => import("react-tsparticles"));
+const Particles = lazy(() => import("react-tsparticles"));
 
-const ParticlesBackground = ({ options, id }) => {
+const ParticlesBackground = ({ options, id, bgColor }) => {
   const particlesInit = useCallback(async (engine) => {
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -12,17 +12,17 @@ const ParticlesBackground = ({ options, id }) => {
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    // container.smooth = true;
+    container.smooth = true;
   }, []);
 
   const defaultOptions = {
     fpsLimit: 60,
     fullScreen: {
-      enable: false,
+      enable: true,
       zIndex: -999,
     },
     background: {
-      color: "tansparent",
+      color: "#f2f2f7",
     },
     interactivity: {
       detectsOn: "canvas",
@@ -71,15 +71,18 @@ const ParticlesBackground = ({ options, id }) => {
         value: { min: 1, max: 1 },
       },
     },
+    retina_detect: true,
   };
 
   return (
-    <Particles
-      options={defaultOptions}
-      init={particlesInit}
-      loaded={particlesLoaded}
-      id={id}
-    />
+    <Suspense fallback={<div />}>
+      <Particles
+        options={options}
+        init={particlesInit}
+        loaded={particlesLoaded}
+        id={id}
+      />
+    </Suspense>
   );
 };
 
