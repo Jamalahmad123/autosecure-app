@@ -30,6 +30,7 @@ import {
 } from "../data/constantData2";
 import AnimatedTower from "./ui/AnimatedTower";
 import AnimatedRouter from "./ui/AnimatedRouter";
+import MultiStepForm from "./ui/MultiStepForm";
 
 const { outDoor, fencedArea, cenimaWeb, smartTracking, monitoringCenter } =
   data;
@@ -476,36 +477,7 @@ const ProductComponent = () => {
                 Tower. Start your inquiry and we will contact you immediately
                 and make you our offer.
               </p>
-              <form className="space-y-6">
-                <div className="w-full bg-clrPrimary overflow-hidden">
-                  <div className="w-1/4 h-full bg-clrSky text-white text-right pr-4 text-sm">
-                    20%
-                  </div>
-                </div>
-                <input
-                  type="text"
-                  placeholder="Company *"
-                  className="bg-white text-clrPrimary input w-full text-lg lg:text-2xl py-2 min-h-[60px]"
-                />
-                <div className="flex items-center flex-col gap-5 lg:flex-row">
-                  <input
-                    type="text"
-                    placeholder="first name"
-                    className="bg-white text-clrPrimary input w-full text-lg lg:text-2xl py-2 min-h-[60px]"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Surname *"
-                    className="bg-white text-clrPrimary input w-full text-lg lg:text-2xl py-2 min-h-[60px]"
-                  />
-                </div>
-                <button className="btn p-8 text-xl text-white border-none bg-clrSky w-full mt-8 lg:text-2xl font-bold flex-nowrap capitalize hover:opacity-80 hover:bg-clrSky">
-                  Continue
-                </button>
-                <span className="text-sm text-[#3a3a3c] inline-block">
-                  * Please fill out fields marked with *.
-                </span>
-              </form>
+              <MultiStepForm />
             </div>
           </div>
         </Wrapper>
