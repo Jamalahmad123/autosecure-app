@@ -6,7 +6,7 @@ const MultiStepForm = () => {
     company: "",
     firstName: "",
     lastName: "",
-    quatity: "",
+    quatity: "don't know yet",
     startDate: "",
     lastDate: "",
     email: "",
@@ -168,10 +168,10 @@ const NumberOfTowers = ({ prev, next, handleChange, quantity }) => {
       <select
         className="select w-full bg-white py-2 text-xl font-AllianceRegular"
         id="quantity"
-        onChange={handleChange}
         defaultValue={quantity}
+        onChange={handleChange}
       >
-        <option selected>I don't no yet</option>
+        <option>I don't no yet</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
