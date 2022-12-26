@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-const words = ["Developer", "Programmer."];
+const words = ["Developer", "Programmer.", "Programmer."];
 
 const TypeWriter = () => {
   const [index, setIndex] = useState(0);
@@ -45,7 +45,13 @@ const TypeWriter = () => {
 
   return (
     <>
-      <p>{`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}</p>
+      <div className="min-h-[8rem]">
+        <p className="text-white text-xl">{`${words[index].substring(
+          0,
+          subIndex
+        )}`}</p>{" "}
+        {blink ? "|" : " "}
+      </div>
     </>
   );
 };

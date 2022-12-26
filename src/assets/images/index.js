@@ -57,6 +57,7 @@ import autosecure_mobile_security_tower2 from "./autosecure_mobile_security_towe
 import autosecure_mobile_transport from "./autosecure_mobile_transport.png";
 import mobile_security_tower4 from "./mobile_security_tower4.png";
 import laptop_screen_view from "./laptop_screen_view.png";
+import autosecure_mobile_emergency from "./autosecure_mobile_emergency.jpg";
 
 export {
   logo,
@@ -116,4 +117,5 @@ export {
   autosecure_gallery_03,
   autosecure_gallery_04,
   autosecure_gallery_05,
+  autosecure_mobile_emergency,
 };

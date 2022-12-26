@@ -73,7 +73,10 @@ const JobDetails = () => {
             <div className="space-y-12">
               <h2 className={`${styles.headingSecondary}`}>Apply now</h2>
               <div className="space-y-10">
-                <Link className="btn py-8 h-0 px-4 text-lg font-mdeium capitalize text-white bg-clrPrimary hover:bg-clrSky border-none gap-2 w-full rounded-none flex-nowrap">
+                <Link
+                  to="/company/career/job/apply-now"
+                  className="btn py-8 h-0 px-4 text-lg font-mdeium capitalize text-white bg-clrPrimary hover:bg-clrSky border-none gap-2 w-full rounded-none flex-nowrap"
+                >
                   <img src={logo_sm} alt="logo" className="w-4" />
                   <span>Start the online application process</span>
                 </Link>

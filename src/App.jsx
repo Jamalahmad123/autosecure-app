@@ -22,6 +22,7 @@ import Spinner from "./components/ui/Spinner";
 // import BookAppointment from "./components/BookAppointment";
 // import ParticlesBackground from "./components/ui/ParticlesBackground";
 import ParticlesBackground from "./components/ui/ParticlesBackground";
+// import ApplyForm from "./pages/company/ApplyForm";
 // import Footer from "./components/Footer";
 
 // import IndustrySectors from "./pages/industry/IndustrySectors";
@@ -68,6 +69,7 @@ const Privacy = lazy(() => import("./pages/legal/Privacy"));
 const Conditions = lazy(() => import("./pages/legal/Conditions"));
 const Career = lazy(() => import("./pages/company/Career"));
 const JobDetails = lazy(() => import("./pages/company/JobDetails"));
+const ApplyForm = lazy(() => import("./pages/company/ApplyForm"));
 const SecuritySolutions = lazy(() =>
   import("./pages/solutions/SecuritySolutions")
 );
@@ -306,6 +308,14 @@ function App() {
             element={
               <Suspense fallback={<Spinner />}>
                 <JobDetails />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/company/career/job/apply-now"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <ApplyForm />
               </Suspense>
             }
           />

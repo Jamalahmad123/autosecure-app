@@ -170,7 +170,7 @@ const Contact = () => {
                     />
                   </div>
                   <textarea
-                    className="textarea w-full bg-white text-clrPrimary focus:outline-none focus:shadow-inputShadow "
+                    className="textarea box-border h-[200px] w-full bg-white text-clrPrimary focus:outline-none focus:shadow-inputShadow "
                     placeholder="Your Message *"
                     name="message"
                     // value={message}

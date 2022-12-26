@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect } from "react";
 import { FaFileAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import Spinner from "../../components/ui/Spinner";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
@@ -30,10 +31,13 @@ const Career = () => {
             Support our team in Münster and our nationwide clients with leading
             solutions to achieve real added value.
           </h2>
-          <a className="link link-neutral text-lg inline-block text-clrPrimary">
+          <Link
+            to="/company/career/job/apply-now"
+            className="link link-neutral text-lg inline-block text-clrPrimary"
+          >
             <FaFileAlt className="inline-block mr-4" />
             To the application form
-          </a>
+          </Link>
         </Wrapper>
       </header>
       <Suspense fallback={<div className="min-h-screen" />}>

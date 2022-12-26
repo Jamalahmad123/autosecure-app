@@ -163,7 +163,6 @@ const SecuritySolutions = () => {
         <AutosecureFullSlider slideImages={slideImages} />
         <About link="/solutions/mobile-security" style="bg-black" />
         <AutosecureApplications />
-        {/* <AutosecureQoute /> */}
       </Suspense>
     </>
   );

@@ -1,6 +1,7 @@
 import { FaChevronRight } from "react-icons/fa";
 import Wrapper from "./ui/Wrapper";
 import { styles } from "../Styles";
+import AutosecureQoute from "./ui/AutosecureQoute";
 
 const monitering = {
   id: 1,
@@ -24,7 +25,7 @@ const improveRisk = {
 
 const privacy = {
   id: 1,
-  title: "privacy",
+  title: "data protection",
   features: [
     "The protection of personal data is a central feature of professional services.",
     "The data recorded by the cameras is consistently protected and used in accordance with data protection regulations via jointly agreed order data processing contracts.",
@@ -72,7 +73,7 @@ const AutosecureApplications = () => {
             off-peak times to save costs.
           </p>
         </div>
-        <div className="flex justify-start items-start md:gap-6 flex-col lg:flex-row lg:justify-between lg:items-start">
+        <div className="flex justify-start items-start md:gap-6 flex-col lg:flex-row lg:justify-between lg:items-start pb-20">
           <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold flex-1">
             Queue detection - better customer experience.
           </h2>
@@ -84,6 +85,9 @@ const AutosecureApplications = () => {
             checkouts can be opened.
           </p>
         </div>
+      </Wrapper>
+      <AutosecureQoute />
+      <Wrapper className="px-4 pt-20 space-y-16">
         <div className="flex justify-start items-start md:gap-6 flex-col lg:flex-row lg:justify-between lg:items-start">
           <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold flex-1">
             {monitering.title}
@@ -101,7 +105,7 @@ const AutosecureApplications = () => {
           </div>
         </div>
         <div className="flex justify-start items-start md:gap-6 flex-col lg:flex-row lg:justify-between lg:items-start">
-          <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold flex-1 pr-8">
+          <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold flex-1">
             {improveRisk.title}
           </h2>
           <div className="space-y-4 flex-1">
