@@ -1,12 +1,19 @@
 import { FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { styles } from "../Styles";
+import TypeWriter from "./ui/TypeWriter";
 import Wrapper from "./ui/Wrapper";
+import { jobs } from "../data/constantData";
 
 const AutosecureCareerDialoge = () => {
+  const labels = jobs.map((job) => job.title);
+  console.log(labels);
+  // const labels = ["News from autosecure"];
+
   return (
     <section className="py-14 bg-clrVeryLightGray">
       <Wrapper className="px-4">
+        <TypeWriter labels={labels} />
         <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
           Technology and process <br className="hidden lg:block" /> automation
           are in our DNA.

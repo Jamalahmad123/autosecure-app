@@ -28,26 +28,6 @@
   background-attachment: fixed;
 }
 
-/* .bg-qoute {
-  position: relative;
-  overflow: hidden;
-}
-
-.bg-qoute::before {
-  background-image: url("/autosecure_qoute.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  content: "";
-  height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  will-change: transform;
-  z-index: -1;
-} */
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;
