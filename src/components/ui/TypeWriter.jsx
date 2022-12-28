@@ -1,16 +1,16 @@
 import { useState, useEffect, useRef } from "react";
 
-const TypeWriter = ({ labels }) => {
+const TypeWriter = ({ width, labels, hasStyle }) => {
   const [index, setindex] = useState(0);
   const textContainerRef = useRef();
 
   function switchText() {
     let decreasing = true;
-    let currentWidth = 140;
+    let currentWidth = width;
     let deltaWidth = 20;
 
     return setInterval(() => {
-      if (decreasing) {
+      if (decreasing && textContainerRef.current) {
         currentWidth -= deltaWidth;
 
         textContainerRef.current.style.width = `${currentWidth}px`;
@@ -20,10 +20,10 @@ const TypeWriter = ({ labels }) => {
           );
           decreasing = false;
         }
-      } else {
+      } else if (!decreasing && textContainerRef.current) {
         currentWidth += deltaWidth;
         textContainerRef.current.style.width = `${currentWidth}px`;
-        if (currentWidth >= 160) {
+        if (currentWidth >= width) {
           decreasing = true;
         }
       }
@@ -31,20 +31,50 @@ const TypeWriter = ({ labels }) => {
   }
 
   useEffect(() => {
+    // let id;
+    // const observer = new IntersectionObserver(
+    //   (entries) => {
+    //     const [entry] = entries;
+    //     setIsVisible(entry.isIntersecting);
+    //     if (entry.isIntersecting && intersectContainer.current) {
+    //       id = switchText();
+    //     } else {
+    //       clearInterval(id);
+    //     }
+    //   },
+    //   {
+    //     root: null,
+    //     rootMargin: "0px",
+    //     threshold: 1.0,
+    //   }
+    // );
+
+    // observer.observe(intersectContainer.current);
     const id = switchText();
+
     return () => {
       clearInterval(id);
     };
   }, []);
 
+  // if (loading) {
+  //   return <></>;
+  // }
+
   return (
     <>
       <div
-        className="border-r-2 border-black inline-block animated-text"
+        className={`border-r-2 inline-block animated-text ${
+          hasStyle ? "border-clrSky" : "border-black"
+        }`}
         ref={textContainerRef}
-        style={{ overflow: "hidden", transition: "width 400ms linear" }}
+        style={{ overflow: "hidden", transition: "all 300ms linear" }}
       >
-        <h2 className="text-clrPrimary text-2xl inline-block">
+        <h2
+          className={`${
+            hasStyle ? "text-clrSky" : "text-clrPrimary"
+          } text-2xl inline-block`}
+        >
           {labels[index]}
         </h2>
       </div>

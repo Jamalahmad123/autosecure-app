@@ -67,6 +67,7 @@ import {
   autosecure_save_scan,
   autosecure_2021_Technologie,
 } from "../../assets/videos";
+import TypeWriter from "../../components/ui/TypeWriter";
 
 const benefits = [
   "Precise real-time indoor and outdoor localization of goods and goods for profitable business applications with innovative analyses.",
@@ -103,6 +104,15 @@ const SecuritySolutions = () => {
   }, []);
 
   const [safe] = features.filter((item) => item.title === "safe");
+  const labelsProcess = [
+    "Holistic advice.",
+    "Nationwide installations.",
+    "Certified surveillance.",
+  ];
+  const labelsTech = [
+    "Lowest error alert rate on the market.",
+    "State-of-the-art hardware and software.",
+  ];
 
   return (
     <>
@@ -151,8 +161,12 @@ const SecuritySolutions = () => {
           poster={autosecure_save_scan_poster}
         />
         <AutosecureSlider />
-        <AutosecureProcess {...processContent} />
-        <AutosecureProcess {...technologyContent} hasSpace />
+        <AutosecureProcess {...processContent}>
+          <TypeWriter width={160} labels={labelsProcess} />
+        </AutosecureProcess>
+        <AutosecureProcess {...technologyContent} hasSpace>
+          <TypeWriter width={120} labels={labelsTech} />
+        </AutosecureProcess>
         <MeetingVideo
           videoPath={autosecure_2021_Technologie}
           poster={autosecure_slide_repair_3}

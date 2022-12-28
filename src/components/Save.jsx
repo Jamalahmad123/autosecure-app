@@ -2,6 +2,7 @@ import { FaCheck } from "react-icons/fa";
 import { styles } from "../Styles";
 import Wrapper from "./ui/Wrapper";
 import MeetingVideo from "./ui/MeetingVideo";
+import TypeWriter from "./ui/TypeWriter";
 
 const saveDetails = [
   {
@@ -55,10 +56,16 @@ const saveDetails = [
 ];
 
 const Save = () => {
+  const labels = [
+    "The autosecure SAVE principle.",
+    "360° automated security.",
+    "100% security for your valuables.",
+  ];
   return (
     <section className="py-14 bg-clrVeryLightGray">
       <Wrapper className="px-4 space-y-12">
-        <header className="space-y-8">
+        <header className="space-y-6">
+          <TypeWriter width={140} labels={labels} />
           <h2 className={`${styles.headingPrimary} text-clrPrimary`}>
             Alarm & Monitoring Center.
           </h2>

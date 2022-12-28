@@ -71,6 +71,15 @@ const options = {
 };
 
 const About = ({ link, linkTitle = "Learn More", style }) => {
+  const labels = [
+    "Rent flexibly.",
+    "Immediate contact with the perpetrator.",
+    "Maximum configurable.",
+    "Latest technology.",
+    "Autonomous operation.",
+    "24/7 live stream.",
+    "Unlimited data volume.",
+  ];
   return (
     <>
       <section className={`pt-20 ${style} relative z-[1]`}>
@@ -78,6 +87,7 @@ const About = ({ link, linkTitle = "Learn More", style }) => {
           <ParticlesBackground id="about" options={options} />
         </Suspense>
         <Wrapper className="px-4">
+          <TypeWriter width={140} labels={labels} hasStyle />
           <header>
             <h2 className={`${styles.headingSecondary} text-white`}>
               Active mobile video surveillance of the{" "}

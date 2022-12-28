@@ -4,12 +4,15 @@ import { FaCheck } from "react-icons/fa";
 import { packages } from "../data/constantData";
 import Wrapper from "./ui/Wrapper";
 import { styles } from "../Styles";
+import TypeWriter from "./ui/TypeWriter";
 
 const AutosecureSlider = () => {
+  const labels = ["Security by design", "Tailor-made for your requirements"];
   return (
     <section className="py-14 bg-clrVeryLightGray">
       <Wrapper className="px-4">
         <header className="space-y-6">
+          <TypeWriter width={140} labels={labels} />
           <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
             Enjoy our 360° security package.
           </h2>
