@@ -108,7 +108,7 @@ const AboutUs = () => {
               We lower your costs. And increase your sales. Promised.
             </p>
             <Link
-              to="/company-contact"
+              to="/company/contact"
               className="link link-neutral text-lg inline-block text-clrPrimary"
             >
               <FaCalendarAlt className="inline-block mr-4" />
