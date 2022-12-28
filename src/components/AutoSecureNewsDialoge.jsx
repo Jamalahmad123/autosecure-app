@@ -11,7 +11,7 @@ const AutoSecureNewsDialoge = () => {
   return (
     <section className="py-14 bg-clrVeryLightGray">
       <Wrapper className="px-4">
-        <TypeWriter labels={labels} />
+        <TypeWriter width={140} labels={labels} />
         <h2 className={`${styles.headingSecondary} text-clrPrimary mb-8`}>
           News about our projects and <br className="hidden lg:block" /> our
           company.

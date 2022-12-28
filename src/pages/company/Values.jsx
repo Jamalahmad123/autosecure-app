@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { FaCalendarAlt } from "react-icons/fa";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
+import MeetingVideo from "../../components/ui/MeetingVideo";
+import { poster, booking } from "../../assets/images";
+import { auto_secure_meeting } from "../../assets/videos";
 
 const Values = () => {
   useEffect(() => {
@@ -11,7 +14,7 @@ const Values = () => {
   return (
     <>
       <header className="pt-24 pb-14">
-        <Wrapper className="px-4">
+        <Wrapper className="px-4 mb-6">
           <p className="text-lg text-clrPrimary">Our Values.</p>
           <h1 className={`${styles.headingPrimary} text-clrPrimary`}>
             Trust. Integrity.
@@ -29,6 +32,7 @@ const Values = () => {
             Arrange a consultation
           </Link>
         </Wrapper>
+        <MeetingVideo videoPath={auto_secure_meeting} poster={booking} />
       </header>
     </>
   );
