@@ -10,7 +10,7 @@ const Achievements = () => {
   const navigate = useNavigate();
   return (
     <section className="py-14 bg-clrVeryLightGray">
-      <Wrapper className="px-14 relative py-8">
+      <Wrapper className="px-2 md:px-14 relative py-8">
         <Swiper
           spaceBetween={35}
           pagination={{

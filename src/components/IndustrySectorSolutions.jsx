@@ -35,7 +35,7 @@ const IndustrySectorSolutions = () => {
             </Link>
           </Wrapper>
         </header>
-        <Wrapper className="px-14 relative py-8">
+        <Wrapper className="px-2 md:px-14 relative py-8">
           <Swiper
             spaceBetween={25}
             pagination={{

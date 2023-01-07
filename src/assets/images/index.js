@@ -59,6 +59,33 @@ import mobile_security_tower4 from "./mobile_security_tower4.png";
 import laptop_screen_view from "./laptop_screen_view.png";
 import autosecure_mobile_emergency from "./autosecure_mobile_emergency.jpg";
 
+// Digital Gate Keeper images
+import gateHero from "./gate-hero.png";
+import gkScreen1 from "./screen1.png";
+import gkScreen2 from "./screen2.png";
+import gkScreen3 from "./screen3.png";
+import gkScreen4 from "./screen4.png";
+import gkSliderImg1 from "./Shot_06.png";
+import gkSliderImg2 from "./Shot_07.png";
+import gkSliderImg3 from "./Shot_08.png";
+import gkSliderImg4 from "./Shot_09.png";
+
+// gps Tracker Images
+import warrentyImg from "./warrenty.png";
+import canBus from "./can_bus.png";
+import certifiedImg from "./certified.png";
+import europMap from "./europe.png";
+import odbMeter from "./odb_meter.png";
+import plug from "./plug.png";
+import tracker from "./tracker.png";
+import failure from "./failure.png";
+import warrentyIcon from "./warrenty_icon.png";
+import locateMockup from "./autosecure_product_morckup.png";
+import macSlider1 from "./mac1.png";
+import macSlider2 from "./mac2.png";
+import macSlider3 from "./mac3.png";
+import macSlider4 from "./mc4.png";
+
 export {
   logo,
   logo_sm,
@@ -118,4 +145,27 @@ export {
   autosecure_gallery_04,
   autosecure_gallery_05,
   autosecure_mobile_emergency,
+  gateHero,
+  gkScreen1,
+  gkScreen2,
+  gkScreen3,
+  gkScreen4,
+  gkSliderImg1,
+  gkSliderImg2,
+  gkSliderImg3,
+  gkSliderImg4,
+  warrentyImg,
+  plug,
+  europMap,
+  canBus,
+  certifiedImg,
+  odbMeter,
+  tracker,
+  locateMockup,
+  failure,
+  warrentyIcon,
+  macSlider1,
+  macSlider2,
+  macSlider3,
+  macSlider4,
 };

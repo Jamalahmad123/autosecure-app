@@ -8,4 +8,6 @@ export const styles = {
     "text-3xl md:text-4xl lg:text-5xl font-bold font-AllianceBold",
   textPrimary:
     "text-lg font-normal md:text-[22px] md:leading-[3rem] lg:text-[35px] md:max-w-2xl font-AllianceRegular",
+  textSecondary:
+    "text-lg font-normal md:text-[20px] lg:leading-[2rem] lg:text-[24px] font-AllianceRegular",
 };

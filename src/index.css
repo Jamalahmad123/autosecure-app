@@ -33,6 +33,42 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* Google Translator */
+
+#google_translate_element select {
+  background: #f6edfd;
+  color: #383ffa;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 8px;
+  position: fixed;
+  right: 0;
+  bottom: 4rem;
+}
+
+/*google translate link | logo */
+.goog-logo-link {
+  display: none !important;
+}
+.goog-te-gadget {
+  color: transparent !important;
+}
+
+/* google translate banner-frame */
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+.goog-text-highlight {
+  background: none !important;
+  box-shadow: none !important;
+}
+
 /* Hide scrollbar for IE, Edge and Firefox */
 
 .gradient-animation {
@@ -113,47 +149,6 @@ canvas {
   z-index: -1;
 }
 
-/* #tsparticles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-} */
-
-/* 
-
-#particles-container {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-}
-
-#features-particles {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-}
-#industry-particles {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-}
-#footer-particles {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-} */
-
 .swiper {
   position: static !important;
   /* background-color: rgb(242, 242, 247); */
@@ -171,10 +166,22 @@ canvas {
   bottom: 0 !important;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex !important;
+  }
 }
 
 /* Link hover */

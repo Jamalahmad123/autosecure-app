@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 const TypeWriter = ({ width, labels, hasStyle }) => {
+  const [playAnimation, setPlayAnimation] = useState(false);
   const [index, setindex] = useState(0);
   const textContainerRef = useRef();
 
@@ -31,6 +32,13 @@ const TypeWriter = ({ width, labels, hasStyle }) => {
   }
 
   useEffect(() => {
+    const onPageLoad = () => setPlayAnimation(true);
+
+    if (document.readyState === "complete") {
+      onPageLoad();
+    } else {
+      window.addEventListener("load", onPageLoad);
+    }
     // let id;
     // const observer = new IntersectionObserver(
     //   (entries) => {
@@ -54,6 +62,7 @@ const TypeWriter = ({ width, labels, hasStyle }) => {
 
     return () => {
       clearInterval(id);
+      window.removeEventListener("load", onPageLoad);
     };
   }, []);
 
@@ -63,21 +72,23 @@ const TypeWriter = ({ width, labels, hasStyle }) => {
 
   return (
     <>
-      <div
-        className={`border-r-2 inline-block animated-text ${
-          hasStyle ? "border-clrSky" : "border-black"
-        }`}
-        ref={textContainerRef}
-        style={{ overflow: "hidden", transition: "all 300ms linear" }}
-      >
-        <h2
-          className={`${
-            hasStyle ? "text-clrSky" : "text-clrPrimary"
-          } text-2xl inline-block`}
+      {playAnimation && (
+        <div
+          className={`border-r-2 inline-block animated-text ${
+            hasStyle ? "border-clrSky" : "border-black"
+          }`}
+          ref={textContainerRef}
+          style={{ overflow: "hidden", transition: "all 300ms linear" }}
         >
-          {labels[index]}
-        </h2>
-      </div>
+          <h2
+            className={`${
+              hasStyle ? "text-clrSky" : "text-clrPrimary"
+            } text-2xl inline-block`}
+          >
+            {labels[index]}
+          </h2>
+        </div>
+      )}
     </>
   );
 };

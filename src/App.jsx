@@ -74,6 +74,9 @@ const SecuritySolutions = lazy(() =>
   import("./pages/solutions/SecuritySolutions")
 );
 const ScanSolutions = lazy(() => import("./pages/solutions/ScanSolutions"));
+const DigitalGate = lazy(() => import("./pages/solutions/DigitalGate"));
+const GpsTracker = lazy(() => import("./pages/solutions/GpsTracker"));
+const LocateApp = lazy(() => import("./pages/solutions/LocateApp"));
 const NewsDetail = lazy(() => import("./pages/company/NewsDetail"));
 const MobileSecurity = lazy(() => import("./components/MobileSecurity"));
 const Compnay = lazy(() => import("./pages/company/Compnay"));
@@ -207,10 +210,26 @@ function App() {
             }
           />
           <Route
-            path="/solutions/localization-solutions"
+            path="/solutions/digital-gate-keeper"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <DigitalGate />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/solutions/locate-solutions"
             element={
               <Suspense fallback={<Spinner />}>
                 <LocalizationSolutions />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/solutions/gps-tracker"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <LocateApp />
               </Suspense>
             }
           />

@@ -16,29 +16,90 @@ import {
   autoLocateVideo,
 } from "../assets/videos";
 
+export const solutionsDropdownLinks = {
+  id: 1,
+  name: "solutions",
+  link: "/solutions",
+  pages: [
+    {
+      id: 1,
+      name: "security solutions",
+      subPages: [
+        {
+          id: 1,
+          name: "active video surveillance",
+          link: "solutions/security-solutions",
+        },
+        {
+          id: 2,
+          name: "mobile security tower",
+          link: "solutions/mobile-security",
+        },
+        {
+          id: 3,
+          name: "wireless in & Outdoor",
+          link: "solutions/wireless-in-and-outdoor",
+        },
+      ],
+    },
+    {
+      id: 2,
+      name: "scanner solutions",
+      subPages: [
+        {
+          id: 1,
+          name: "autosecure scanner",
+          link: "solutions/scanner-solutions",
+        },
+        {
+          id: 2,
+          name: "digital Gatekeeper",
+          link: "solutions/digital-gate-keeper",
+        },
+      ],
+    },
+    {
+      id: 3,
+      name: "localization solutions",
+      subPages: [
+        {
+          id: 1,
+          name: "locate solutions",
+          link: "solutions/locate-solutions",
+        },
+        {
+          id: 2,
+          name: "autosecure gps tracker",
+          link: "solutions/gps-tracker",
+        },
+      ],
+    },
+  ],
+};
+
 export const navLinks = [
-  {
-    id: 1,
-    name: "solutions",
-    link: "solutions",
-    subPages: [
-      {
-        id: 1,
-        name: "security solutions",
-        link: "solutions/security-solutions",
-      },
-      {
-        id: 2,
-        name: "scanner solutions",
-        link: "solutions/scanner-solutions",
-      },
-      {
-        id: 3,
-        name: "localization solutions",
-        link: "solutions/localization-solutions",
-      },
-    ],
-  },
+  // {
+  //   id: 1,
+  //   name: "solutions",
+  //   link: "solutions",
+  //   subPages: [
+  //     {
+  //       id: 1,
+  //       name: "security solutions",
+  //       link: "solutions/security-solutions",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "scanner solutions",
+  //       link: "solutions/scanner-solutions",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "localization solutions",
+  //       link: "solutions/localization-solutions",
+  //     },
+  //   ],
+  // },
   {
     id: 2,
     name: "industry sectors",

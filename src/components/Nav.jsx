@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import Wrapper from "./ui/Wrapper";
 import { logo } from "../assets/images";
-import { navLinks } from "../data/constantData";
+import { navLinks, solutionsDropdownLinks } from "../data/constantData";
 import { styles } from "../Styles";
 import { useEffect, useRef, useState } from "react";
 
@@ -42,6 +42,46 @@ const Nav = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0 z-[999]">
+            <li
+              tabIndex={solutionsDropdownLinks.id}
+              className="group nav-link z-[999]"
+            >
+              <NavLink
+                to="/solutions"
+                className="text-clrPrimary font-semibold relative hover:bg-transparent smooth group-hover:text-clrSky capitalize"
+              >
+                {solutionsDropdownLinks.name}
+                <FaCaretDown />
+              </NavLink>
+              <ul className="bg-white menu menu-normal">
+                {solutionsDropdownLinks.pages.map((item) => (
+                  <li
+                    key={item.id}
+                    tabIndex={item.id}
+                    className="hover:bg-clrSky"
+                  >
+                    <h3 className="text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white relative z-[999]">
+                      {item.name}
+                      <FaCaretDown />
+                    </h3>
+                    <ul className="bg-white w-full px-0">
+                      {item.subPages.map((item) => (
+                        <li key={item.id} className="hover:bg-clrSky">
+                          <NavLink
+                            to={`/${item.link}`}
+                            className="text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white relative z-[999]"
+                          >
+                            {item.name}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          </ul>
+          <ul className="menu menu-horizontal p-0 z-[999]">
             {navLinks.map((item) => (
               <li
                 tabIndex={item.id}
@@ -60,7 +100,7 @@ const Nav = () => {
                     <li key={item.id} className="hover:bg-clrSky">
                       <NavLink
                         to={`/${item.link}`}
-                        className="text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white z-[999]"
+                        className="text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white relative z-[999]"
                       >
                         {item.name}
                       </NavLink>
