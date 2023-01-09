@@ -94,7 +94,7 @@ import wireless_center_unit from "./wireless_center_unit.png";
 import wireless_door_protection from "./wireless_door_protection.png";
 import wireless_fire_prt from "./wireless_fire_prt.png";
 import wireless_glass_protect from "./wireless_glass_protect.png";
-import wireless_indoor_siren from "./wireless_indoor_siren.png";
+import wireless_indoor_siren from "./wireless_Indoor_siren.png";
 import wireless_keypad_plus from "./wireless_keypad_plus.png";
 import wireless_motion_cam from "./wireless_motion_cam.png";
 import wireless_protection_plus from "./wireless_protection_plus.png";
