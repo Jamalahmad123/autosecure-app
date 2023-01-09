@@ -86,6 +86,34 @@ import macSlider2 from "./mac2.png";
 import macSlider3 from "./mac3.png";
 import macSlider4 from "./mc4.png";
 
+// Wireless In- and Outdoor
+import wireless_slide_1 from "./wireless_slide_1.png";
+import wireless_slide_2 from "./wireless_slide_2.png";
+import wireless_btn from "./wireless_btn.png";
+import wireless_center_unit from "./wireless_center_unit.png";
+import wireless_door_protection from "./wireless_door_protection.png";
+import wireless_fire_prt from "./wireless_fire_prt.png";
+import wireless_glass_protect from "./wireless_glass_protect.png";
+import wireless_indoor_siren from "./wireless_indoor_siren.png";
+import wireless_keypad_plus from "./wireless_keypad_plus.png";
+import wireless_motion_cam from "./wireless_motion_cam.png";
+import wireless_protection_plus from "./wireless_protection_plus.png";
+import wireless_radio from "./wireless_radio.png";
+import wireless_relay from "./wireless_relay.png";
+import wireless_siren from "./wireless_siren.png";
+import wireless_space_ctr from "./wireless_space_ctr.png";
+import wirlessIcon1 from "./icon1.svg";
+import wirlessIcon2 from "./icon2.svg";
+import wirlessIcon3 from "./icon3.svg";
+import wirlessIcon4 from "./icon4.svg";
+import wirlessIcon5 from "./icon5.svg";
+import wirlessIcon6 from "./icon4.svg";
+import grade2 from "./grade-2.png";
+import CE2 from "./CE-2.png";
+import CE from "./CE.png";
+import autosecure_mobile_app from "./autosecure_mobile_app.png";
+import wirless_vds from "./VdS.jpg";
+
 export {
   logo,
   logo_sm,
@@ -168,4 +196,30 @@ export {
   macSlider2,
   macSlider3,
   macSlider4,
+  wireless_slide_1,
+  wireless_slide_2,
+  wireless_btn,
+  wireless_center_unit,
+  wireless_door_protection,
+  wireless_fire_prt,
+  wireless_glass_protect,
+  wireless_indoor_siren,
+  wireless_keypad_plus,
+  wireless_motion_cam,
+  wireless_protection_plus,
+  wireless_radio,
+  wireless_relay,
+  wireless_siren,
+  wireless_space_ctr,
+  wirlessIcon1,
+  wirlessIcon2,
+  wirlessIcon3,
+  wirlessIcon4,
+  wirlessIcon5,
+  wirlessIcon6,
+  grade2,
+  CE,
+  CE2,
+  autosecure_mobile_app,
+  wirless_vds,
 };

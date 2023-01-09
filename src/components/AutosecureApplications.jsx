@@ -86,7 +86,7 @@ const AutosecureApplications = () => {
           </p>
         </div>
       </Wrapper>
-      <AutosecureQoute />
+      <AutosecureQoute qoute="Leave the premises immediately - the police have already been alerted!" />
       <Wrapper className="px-4 pt-20 space-y-16">
         <div className="flex justify-start items-start md:gap-6 flex-col lg:flex-row lg:justify-between lg:items-start">
           <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold flex-1">

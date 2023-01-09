@@ -52,7 +52,7 @@ const LocateApp = () => {
         </Wrapper>
       </header>
       <section className="py-20">
-        <Wrapper className="px-2 flex flex-col lg:flex-row gap-10 justify-between">
+        <Wrapper className="px-2 flex items-center justify-center flex-col lg:flex-row gap-10 lg:gap-20">
           <p className={`max-w-2xl ${styles.textSecondary} text-clrPrimary`}>
             Experience the future of vehicle management with the "autosecure
             Locate App"! With our user-friendly app and integrated "autosecure
@@ -67,7 +67,7 @@ const LocateApp = () => {
               preload="meta"
               muted
               playsInline
-              className="rounded-xl object-cover mx-auto max-h-[30rem]"
+              className="rounded-xl shadow-xl object-cover mx-auto max-h-[30rem]"
             >
               <source src={locate_app} type="video/mp4" />
               Sorry, your browser doesn't support videos.
@@ -76,11 +76,12 @@ const LocateApp = () => {
         </Wrapper>
       </section>
       <section className="py-20">
-        <Wrapper className="px-2 flex flex-col-reverse lg:flex-row">
-          <div className="flex-1 lg:max-w-xl">
+        <Wrapper className="px-2 flex flex-col-reverse lg:flex-row gap-10">
+          <div className="lg:max-w-xl">
             <Swiper
               autoplay={{
                 disableOnInteraction: false,
+                reverseDirection: true,
               }}
               modules={[Autoplay]}
               loop={true}

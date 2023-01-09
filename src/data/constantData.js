@@ -53,7 +53,7 @@ export const solutionsDropdownLinks = {
         },
         {
           id: 2,
-          name: "digital Gatekeeper",
+          name: "digital Gate keeper",
           link: "solutions/digital-gate-keeper",
         },
       ],
@@ -69,6 +69,11 @@ export const solutionsDropdownLinks = {
         },
         {
           id: 2,
+          name: "autosecure locate app",
+          link: "solutions/locate-app",
+        },
+        {
+          id: 3,
           name: "autosecure gps tracker",
           link: "solutions/gps-tracker",
         },

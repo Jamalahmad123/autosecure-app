@@ -75,6 +75,9 @@ const SecuritySolutions = lazy(() =>
 );
 const ScanSolutions = lazy(() => import("./pages/solutions/ScanSolutions"));
 const DigitalGate = lazy(() => import("./pages/solutions/DigitalGate"));
+const WirelessInAndOutdoor = lazy(() =>
+  import("./pages/solutions/WirelessInAndOutdoor")
+);
 const GpsTracker = lazy(() => import("./pages/solutions/GpsTracker"));
 const LocateApp = lazy(() => import("./pages/solutions/LocateApp"));
 const NewsDetail = lazy(() => import("./pages/company/NewsDetail"));
@@ -186,6 +189,14 @@ function App() {
             }
           />
           <Route
+            path="/solutions/security-solutions"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <SecuritySolutions />
+              </Suspense>
+            }
+          />
+          <Route
             path="/solutions/mobile-security"
             element={
               <Suspense fallback={<Spinner />}>
@@ -194,10 +205,10 @@ function App() {
             }
           />
           <Route
-            path="/solutions/security-solutions"
+            path="/solutions/wireless-in-and-outdoor"
             element={
               <Suspense fallback={<Spinner />}>
-                <SecuritySolutions />
+                <WirelessInAndOutdoor />
               </Suspense>
             }
           />
@@ -226,10 +237,18 @@ function App() {
             }
           />
           <Route
-            path="/solutions/gps-tracker"
+            path="/solutions/locate-app"
             element={
               <Suspense fallback={<Spinner />}>
                 <LocateApp />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/solutions/gps-tracker"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <GpsTracker />
               </Suspense>
             }
           />

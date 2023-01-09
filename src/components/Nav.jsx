@@ -53,7 +53,7 @@ const Nav = () => {
                 {solutionsDropdownLinks.name}
                 <FaCaretDown />
               </NavLink>
-              <ul className="bg-white menu menu-normal">
+              <ul className="bg-white menu">
                 {solutionsDropdownLinks.pages.map((item) => (
                   <li
                     key={item.id}
@@ -64,7 +64,7 @@ const Nav = () => {
                       {item.name}
                       <FaCaretDown />
                     </h3>
-                    <ul className="bg-white w-full px-0">
+                    <ul className="bg-white w-full p-0">
                       {item.subPages.map((item) => (
                         <li key={item.id} className="hover:bg-clrSky">
                           <NavLink
@@ -118,7 +118,7 @@ const Nav = () => {
               window.location.href = "mailto:info@autosecure.net";
               // location.pathname = "mailto:info@autosecure.net";
             }}
-            className="text-clrDarkGray hover:text-clrSky text-base sm:text-lg md:text-2xl z-[999]"
+            className="text-clrDarkGray hover:text-clrSky text-base sm:text-lg md:text-2xl"
           >
             <FaAt />
           </Link>

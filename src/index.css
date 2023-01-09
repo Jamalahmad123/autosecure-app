@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 
 /* Google Translator */
 
-#google_translate_element select {
+/* #google_translate_element select {
   background: #f6edfd;
   color: #383ffa;
   border: none;
@@ -44,19 +44,19 @@ body::-webkit-scrollbar {
   position: fixed;
   right: 0;
   bottom: 4rem;
-}
+} */
 
 /*google translate link | logo */
-.goog-logo-link {
+/* .goog-logo-link {
   display: none !important;
 }
 .goog-te-gadget {
   color: transparent !important;
-}
+} */
 
 /* google translate banner-frame */
 
-.goog-te-banner-frame {
+/* .goog-te-banner-frame {
   display: none !important;
 }
 
@@ -67,7 +67,7 @@ body::-webkit-scrollbar {
 .goog-text-highlight {
   background: none !important;
   box-shadow: none !important;
-}
+} */
 
 /* Hide scrollbar for IE, Edge and Firefox */
 
@@ -402,4 +402,22 @@ canvas {
   margin-bottom: 15px;
   text-align: center;
   display: block;
+}
+
+/* YouTube Video top and bottom bar */
+.youtube-container {
+  overflow: hidden;
+  width: 100%;
+  /* Keep it the right aspect-ratio */
+  aspect-ratio: 16/9;
+  /* No clicking/hover effects */
+  pointer-events: none;
+}
+
+.youtube-container iframe {
+  /* Extend it beyond the viewport... */
+  width: 300%;
+  height: 100%;
+  /* ...and bring it back again */
+  margin-left: -100%;
 }

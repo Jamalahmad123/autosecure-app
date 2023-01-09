@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay } from "swiper";
 import { FaCheck, FaChevronRight } from "react-icons/fa";
 import Wrapper from "../../components/ui/Wrapper";
 import TypeWriter from "../../components/ui/TypeWriter";
@@ -128,11 +128,11 @@ const DigitalGate = () => {
           </div>
         </Wrapper>
       </section>
-      <section className="py-20 bg-black">
+      <section className="py-20">
         <Wrapper className="px-2 space-y-12">
           <header>
             <h2
-              className={`text-2xl md:text-3xl lg:text-4xl font-AllianceBold font-bold text-white`}
+              className={`text-2xl md:text-3xl lg:text-4xl font-AllianceBold font-bold text-clrPrimary`}
             >
               The autosecure Gatekeeper includes the following modules <br />
               <span className="text-clrSky">
@@ -140,23 +140,23 @@ const DigitalGate = () => {
               </span>
             </h2>
           </header>
-          <div className="flex justify-between flex-col lg:flex-row gap-14">
-            <div className="space-y-10 flex-1">
+          <div className="flex flex-col-reverse lg:flex-row gap-14">
+            <div className="flex-1 space-y-10">
               <div className="space-y-6">
-                <p className="flex items-start gap-2 text-lg text-white lg:text-2xl font-bold">
+                <p className="flex items-start gap-2 text-lg text-clrPrimary lg:text-2xl font-bold">
                   <FaChevronRight className="text-clrSky min-w-[25px]" />{" "}
                   Digital gate unit for a digital self-service check-in.
                 </p>
-                <p className="flex items-start gap-2 text-lg text-white lg:text-2xl font-bold">
+                <p className="flex items-start gap-2 text-lg text-clrPrimary lg:text-2xl font-bold">
                   <FaChevronRight className="text-clrSky min-w-[25px]" />{" "}
                   Registration app in the local gate
                 </p>
-                <p className="flex items-start gap-2 text-lg text-white lg:text-2xl font-bold">
+                <p className="flex items-start gap-2 text-lg text-clrPrimary lg:text-2xl font-bold">
                   <FaChevronRight className="text-clrSky min-w-[25px]" />{" "}
                   Pre-order scheduling portal for pre-registration of pick-up
                   and delivery appointments
                 </p>
-                <p className="flex items-start gap-2 text-lg text-white lg:text-2xl font-bold">
+                <p className="flex items-start gap-2 text-lg text-clrPrimary lg:text-2xl font-bold">
                   <FaChevronRight className="text-clrSky min-w-[25px]" />{" "}
                   Digital visitor badge creation
                 </p>
@@ -168,7 +168,7 @@ const DigitalGate = () => {
                 Request a consultation
               </Link>
             </div>
-            <div className="lg:max-w-xl">
+            <div className="max-w-xl">
               <Swiper
                 autoplay={{
                   disableOnInteraction: false,

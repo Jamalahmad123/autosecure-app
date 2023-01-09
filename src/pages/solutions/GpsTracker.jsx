@@ -43,7 +43,7 @@ const GpsTracker = () => {
                 className="w-full lg:w-[45rem] h-auto rounded-lg object-cover"
               />
             </figure>
-            <div className="flex-1 card-body justify-start items-start">
+            <div className="flex-1 card-body justify-start items-start p-0">
               <TypeWriter width={100} labels={labels} />
               <div className="space-y-10">
                 <h1 className={`${styles.headingPrimary} text-clrPrimary`}>

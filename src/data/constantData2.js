@@ -1,3 +1,17 @@
+import {
+  wireless_btn,
+  wireless_center_unit,
+  wireless_door_protection,
+  wireless_fire_prt,
+  wireless_glass_protect,
+  wireless_keypad_plus,
+  wireless_motion_cam,
+  wireless_protection_plus,
+  wireless_radio,
+  wireless_relay,
+  wireless_space_ctr,
+} from "../assets/images";
+
 export const data = {
   outDoor: {
     id: 1,
@@ -102,3 +116,86 @@ export const quality = {
     "Color-related information is crucial for many scenarios and represents a great enrichment for data and analysis. However, conventional cameras often lose important details when only displaying black-and-white images. Our technology is our solution to this common challenge faced by many security system users.",
   ],
 };
+
+// Wireless in- & out door
+
+export const wirelessSlidesData = [
+  {
+    id: 1,
+    titleOneRight: "central",
+    titleTwoRight: "unit",
+    titleOneLeft: "radio",
+    titleTwoLeft: "repeater",
+    desc1:
+      "Advanced central unit with the support of alarm photo confirmation.",
+    desc2: "Radio repeater for range extension up to 2,000 meters.",
+    img1: wireless_center_unit,
+    img2: wireless_radio,
+  },
+  {
+    id: 2,
+    titleOneRight: "motionCam",
+    titleTwoRight: "outdoor",
+    titleOneLeft: "motionProtect",
+    titleTwoLeft: "Plus",
+    desc1:
+      "Wireless, battery-powered motion detector with visual alarm verification and pet immunity. Equipped with coverage monitoring system and tamper detection.",
+    desc2:
+      "Wireless motion detector with microwave sensor and pet immunity. Also available in white.",
+    img1: wireless_motion_cam,
+    img2: wireless_protection_plus,
+  },
+  {
+    id: 3,
+    titleOneRight: "doorProtect",
+    titleTwoRight: "plus",
+    titleOneLeft: "glass",
+    titleTwoLeft: "protect",
+    desc1:
+      "Wireless opening detector with vibration and tilt sensor. Also available in white.",
+    desc2: "Wireless glass breakage detector.",
+    img1: wireless_door_protection,
+    img2: wireless_glass_protect,
+  },
+  {
+    id: 4,
+    titleOneRight: "keyPad",
+    titleTwoRight: "plus",
+    titleOneLeft: "",
+    titleTwoLeft: "Button",
+    title1Op: "space",
+    title2Op: "control",
+    descOp:
+      "Wireless remote control for controlling the security system with emergency button.",
+    desc1:
+      "Wireless touch keypad with support for contactless cards and tags. Also available in white.",
+    desc2:
+      "Wireless emergency button / remote control for individually configurable scenario control.",
+    img1: wireless_keypad_plus,
+    img2: wireless_btn,
+    imgOp: wireless_space_ctr,
+  },
+  {
+    id: 5,
+    titleOneRight: "fire",
+    titleTwoRight: "Protect",
+    titleOneLeft: "",
+    titleTwoLeft: "relay",
+    desc1: "Wireless smoke, heat and carbon monoxide detector with siren.",
+    desc2:
+      "Radio low voltage relay for remote control of barriers, gates, doors etc. with potential free contacts.",
+    img1: wireless_fire_prt,
+    img2: wireless_relay,
+  },
+  {
+    id: 6,
+    titleOneRight: "Street",
+    titleTwoRight: "Siren",
+    titleOneLeft: "Indoor",
+    titleTwoLeft: "Siren",
+    desc1: "Wireless siren with LED flashing light for outdoor use.",
+    desc2: "wireless siren for indoor use.",
+    img1: wireless_fire_prt,
+    img2: wireless_relay,
+  },
+];
