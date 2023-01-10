@@ -214,7 +214,7 @@ export const industrySector = [
 export const features = [
   {
     id: 1,
-    link: "/solutions/security-solutions",
+    link: "/solutions/security-solutions/active-video-surveillance",
     title: "safe",
     desc: "Active video surveillance with live perpetrator address according to the SAVE principle.",
     benefit1: "50% less security costs",
@@ -224,7 +224,7 @@ export const features = [
   },
   {
     id: 2,
-    link: "/solutions/scanner-solutions",
+    link: "/solutions/scanner-solutions/scan",
     title: "scan",
     desc: "Digital condition control, damage detection and documentation in real time.",
     benefit1: "100% condition detection of all vehicles",
@@ -235,7 +235,7 @@ export const features = [
 
   {
     id: 3,
-    link: "/solutions/localization-solutions",
+    link: "/solutions/scanner-solutions/locate",
     title: "locate",
     desc: "Precise real-time indoor and outdoor localization of goods or vehicles.",
     benefit1: "20% faster processes",
