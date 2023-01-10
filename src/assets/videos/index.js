@@ -9,6 +9,7 @@ import autosecure_2021_Technologie from "../videos/autosecure-2021-Technologie.m
 import auto_secure_timelaps from "../videos/autosecure_baustellen_zeitraffer.mp4";
 import digital_wellen from "../videos/digitale-wellen.mp4";
 import locate_app from "../videos/autosecure_locate_app.mp4";
+import autosecure_ajax from "../videos/autosecure_ajax.mp4";
 
 export {
   autoSecurityVideo,
@@ -22,4 +23,5 @@ export {
   auto_secure_timelaps,
   digital_wellen,
   locate_app,
+  autosecure_ajax,
 };

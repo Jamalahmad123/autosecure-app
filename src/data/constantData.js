@@ -28,17 +28,17 @@ export const solutionsDropdownLinks = {
         {
           id: 1,
           name: "active video surveillance",
-          link: "solutions/security-solutions",
+          link: "solutions/security-solutions/active-video-surveillance",
         },
         {
           id: 2,
           name: "mobile security tower",
-          link: "solutions/mobile-security",
+          link: "solutions/security-solutions/mobile-security",
         },
         {
           id: 3,
           name: "wireless in & Outdoor",
-          link: "solutions/wireless-in-and-outdoor",
+          link: "solutions/security-solutions/wireless-in-and-outdoor",
         },
       ],
     },
@@ -49,12 +49,12 @@ export const solutionsDropdownLinks = {
         {
           id: 1,
           name: "autosecure scanner",
-          link: "solutions/scanner-solutions",
+          link: "solutions/scanner-solutions/scan",
         },
         {
           id: 2,
           name: "digital Gate keeper",
-          link: "solutions/digital-gate-keeper",
+          link: "solutions/scanner-solutions/digital-gate-keeper",
         },
       ],
     },
@@ -65,17 +65,17 @@ export const solutionsDropdownLinks = {
         {
           id: 1,
           name: "locate solutions",
-          link: "solutions/locate-solutions",
+          link: "solutions/localization-solutions/locate",
         },
         {
           id: 2,
           name: "autosecure locate app",
-          link: "solutions/locate-app",
+          link: "solutions/localization-solutions/locate-app",
         },
         {
           id: 3,
           name: "autosecure gps tracker",
-          link: "solutions/gps-tracker",
+          link: "solutions/localization-solutions/gps-tracker",
         },
       ],
     },

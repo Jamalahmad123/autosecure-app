@@ -119,44 +119,48 @@ const GpsTracker = () => {
           </div>
         </Wrapper>
       </section>
-      <section className="py-20">
+      <section className="py-20 bg-white">
         <Wrapper className="px-2 space-y-10">
           <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
             Quality
           </h2>
           <div className="flex flex-col items-center lg:flex-row gap-10 lg:gap-20">
             <div className="flex-1 grid grid-cols-1 gap-4 lg:grid-cols-2">
-              <figure className="bg-clrVeryLightGray shadow-lg p-6 rounded-lg flex items-center justify-center gap-3 flex-col">
-                <img src={europMap} alt="euope map" className="max-w-[8rem]" />
+              <figure className="shadow-lg px-6 py-10 rounded-lg flex items-center justify-center gap-3 flex-col">
+                <img
+                  src={europMap}
+                  alt="euope map"
+                  className="max-w-[4.2rem]"
+                />
                 <figcaption className="text-clrPrimary font-AllianceBold font-semibold">
                   MADE IN EUROPE
                 </figcaption>
               </figure>
-              <figure className="bg-clrVeryLightGray shadow-lg p-6 rounded-lg flex items-center justify-center gap-3 flex-col">
+              <figure className="shadow-lg px-6 py-10 rounded-lg flex items-center justify-center gap-3 flex-col">
                 <img
                   src={failure}
                   alt="failure icon"
-                  className="max-w-[8rem]"
+                  className="max-w-[4.2rem]"
                 />
                 <figcaption className="text-clrPrimary font-AllianceBold font-semibold">
                   {`<0.1% failure rate`}
                 </figcaption>
               </figure>
-              <figure className="bg-clrVeryLightGray shadow-lg p-6 rounded-lg flex items-center justify-center gap-3 flex-col">
+              <figure className="shadow-lg px-6 py-10 rounded-lg flex items-center justify-center gap-3 flex-col">
                 <img
                   src={certifiedImg}
                   alt="certified"
-                  className="max-w-[8rem]"
+                  className="max-w-[4.2rem]"
                 />
                 <figcaption className="text-clrPrimary font-AllianceBold font-semibold">
                   ISO 9001 certified
                 </figcaption>
               </figure>
-              <figure className="bg-clrVeryLightGray shadow-lg p-6 rounded-lg flex items-center justify-center gap-3 flex-col">
+              <figure className="shadow-lg px-6 py-10 rounded-lg flex items-center justify-center gap-3 flex-col">
                 <img
                   src={warrentyIcon}
                   alt="warrenty icon"
-                  className="max-w-[8rem]"
+                  className="max-w-[4.2rem]"
                 />
                 <figcaption className="text-clrPrimary font-AllianceBold font-semibold">
                   2 YEAR WARRANTY
@@ -187,7 +191,7 @@ const GpsTracker = () => {
               technology
             </h2>
             <Link
-              to="/autosecure-locate-app"
+              to="/solutions/locate-app"
               className="btn text-white md:text-xl gap-2 border-none bg-clrSky hover:bg-clrPrimary capitalize"
             >
               Read More

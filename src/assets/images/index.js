@@ -108,11 +108,18 @@ import wirlessIcon3 from "./icon3.svg";
 import wirlessIcon4 from "./icon4.svg";
 import wirlessIcon5 from "./icon5.svg";
 import wirlessIcon6 from "./icon4.svg";
+import wireless_desktop_icon from "./wireless_desktop_icon.svg";
 import grade2 from "./grade-2.png";
 import CE2 from "./CE-2.png";
 import CE from "./CE.png";
 import autosecure_mobile_app from "./autosecure_mobile_app.png";
 import wirless_vds from "./VdS.jpg";
+import wirless_automation from "./automation.svg";
+import wirless_fire_alarm from "./fire_alarm_icon.svg";
+import wirless_flood_alarm from "./flood_alarm_icon.svg";
+import wirless_motion_cam from "./motioncam_icon.svg";
+import wirless_burglar_alarm from "./burglar_alarm_icon.svg";
+import wirless_vid_survelance from "./vid_survelance.svg";
 
 export {
   logo,
@@ -222,4 +229,11 @@ export {
   CE2,
   autosecure_mobile_app,
   wirless_vds,
+  wirless_automation,
+  wirless_fire_alarm,
+  wirless_flood_alarm,
+  wirless_motion_cam,
+  wirless_burglar_alarm,
+  wirless_vid_survelance,
+  wireless_desktop_icon,
 };

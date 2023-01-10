@@ -42,25 +42,6 @@ const Footer = () => {
             automation solutions for the automotive and mobility industry.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 place-items-center md:gap-16">
-          {awards.map((award, i) => (
-            <figure key={i}>
-              {/* <img
-                src={award}
-                alt={awards}
-                className="w-64 md:max-w-[200px]"
-                loading="lazy"
-              /> */}
-              <LazyImage
-                image={{
-                  src: award,
-                  alt: "autosecure awards",
-                  style: "w-64 md:max-w-[200px] object-cover",
-                }}
-              />
-            </figure>
-          ))}
-        </div>
         <div className="footer">
           {navLinks.map((item) => (
             <div key={item.id}>

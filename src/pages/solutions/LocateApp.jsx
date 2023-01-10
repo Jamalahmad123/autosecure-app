@@ -42,10 +42,7 @@ const LocateApp = () => {
               Locate and simplify handover and takeover processes in the blink
               of an eye. Simple, fast and secure. Try it out now!
             </p>
-            <Link
-              to="/company/contact"
-              className="btn text-white md:text-xl font-AllianceBold font-semibold py-4 lg:px-8 flex-nowrap border-none bg-clrSky hover:bg-clrPrimary capitalize"
-            >
+            <Link className="btn text-white md:text-xl font-AllianceBold font-semibold py-4 lg:px-8 flex-nowrap border-none bg-clrSky hover:bg-clrPrimary capitalize">
               try locate app
             </Link>
           </div>
@@ -66,6 +63,7 @@ const LocateApp = () => {
               autoPlay
               preload="meta"
               muted
+              loop
               playsInline
               className="rounded-xl shadow-xl object-cover mx-auto max-h-[30rem]"
             >
@@ -120,10 +118,7 @@ const LocateApp = () => {
               experience 100% process intelligence combined with innovative
               technology
             </h2>
-            <Link
-              to="/autosecure-locate-app"
-              className="btn text-white md:text-xl gap-2 lg:gap-5 flex-nowrap px-6 py-4 border-none bg-clrSky hover:bg-clrPrimary capitalize"
-            >
+            <Link className="btn text-white md:text-xl gap-2 lg:gap-5 flex-nowrap px-6 py-4 border-none bg-clrSky hover:bg-clrPrimary capitalize">
               Read More
               <FaChevronRight />
             </Link>

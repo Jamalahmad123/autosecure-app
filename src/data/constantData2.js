@@ -4,11 +4,13 @@ import {
   wireless_door_protection,
   wireless_fire_prt,
   wireless_glass_protect,
+  wireless_indoor_siren,
   wireless_keypad_plus,
   wireless_motion_cam,
   wireless_protection_plus,
   wireless_radio,
   wireless_relay,
+  wireless_siren,
   wireless_space_ctr,
 } from "../assets/images";
 
@@ -195,7 +197,7 @@ export const wirelessSlidesData = [
     titleTwoLeft: "Siren",
     desc1: "Wireless siren with LED flashing light for outdoor use.",
     desc2: "wireless siren for indoor use.",
-    img1: wireless_fire_prt,
-    img2: wireless_relay,
+    img1: wireless_siren,
+    img2: wireless_indoor_siren,
   },
 ];

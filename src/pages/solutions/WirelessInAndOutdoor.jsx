@@ -14,6 +14,7 @@ import {
   CE2,
   grade2,
   wireless_center_unit,
+  wireless_desktop_icon,
   wireless_radio,
   wireless_slide_1,
   wireless_slide_2,
@@ -23,10 +24,16 @@ import {
   wirlessIcon4,
   wirlessIcon5,
   wirlessIcon6,
+  wirless_automation,
+  wirless_burglar_alarm,
+  wirless_fire_alarm,
+  wirless_flood_alarm,
   wirless_vds,
+  wirless_vid_survelance,
 } from "../../assets/images";
 import { features } from "../../data/constantData";
 import { wirelessSlidesData } from "../../data/constantData2";
+import { autosecure_ajax } from "../../assets/videos";
 
 const WirelessInAndOutdoor = () => {
   const qoute =
@@ -52,7 +59,7 @@ const WirelessInAndOutdoor = () => {
             <span className="text-clrSky"> for the ultimate protection</span>
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14">
-            <div className="p-8">
+            <div className="max-w-xl">
               <Swiper
                 autoplay={{
                   disableOnInteraction: false,
@@ -60,25 +67,16 @@ const WirelessInAndOutdoor = () => {
                 }}
                 loop={true}
                 modules={[Autoplay]}
-                autoHeight={true}
                 className="mySwiper"
               >
-                <SwiperSlide className="mySlide">
+                <SwiperSlide className="mySlide p-8">
                   <figure>
-                    <img
-                      src={wireless_slide_1}
-                      alt="wireless ajax"
-                      className="mx-auto"
-                    />
+                    <img src={wireless_slide_1} alt="wireless ajax" />
                   </figure>
                 </SwiperSlide>
-                <SwiperSlide className="mySlide">
+                <SwiperSlide className="mySlide p-8">
                   <figure>
-                    <img
-                      src={wireless_slide_2}
-                      alt="wireless ajax"
-                      className="mx-auto"
-                    />
+                    <img src={wireless_slide_2} alt="wireless ajax" />
                   </figure>
                 </SwiperSlide>
               </Swiper>
@@ -104,24 +102,73 @@ const WirelessInAndOutdoor = () => {
           </div>
         </Wrapper>
       </header>
-      {/* <section className=""> */}
-      {/* <div className="youtube-container">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/Zqkkc7BNVvI?controls=0&autoplay=1&loop=1"
-            allowFullScreen
-          ></iframe>
-          
+      <section className="w-screen h-screen overflow-hidden relative flex items-end justify-end">
+        <video
+          autoPlay
+          preload="meta"
+          muted
+          loop
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover"
+        >
+          <source src={autosecure_ajax} type="video/mp4" />
+          Sorry, your browser doesn't support videos.
+        </video>
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center backdrop-blur-[6px] bg-black/10 py-6 sm:py-12 px-4 relative left-0 bottom-0 h-auto w-full">
+          <div className="flex flex-col place-items-center gap-4">
+            <img
+              src={wirless_vid_survelance}
+              alt="wirless flood alarm icon"
+              className="max-w-[2rem] md:max-w-[4rem]"
+            />
+            <h3 className="text-base font-semibold md:text-xl text-white text-center">
+              Video surveillance integration
+            </h3>
+          </div>
+          <div className="flex flex-col place-items-center gap-4">
+            <img
+              src={wirless_burglar_alarm}
+              alt="wirless flood alarm icon"
+              className="max-w-[2rem] md:max-w-[4rem]"
+            />
+            <h3 className="text-base font-semibold md:text-xl text-white text-center">
+              Burglar Alarm
+            </h3>
+          </div>
+          <div className="flex flex-col place-items-center gap-4">
+            <img
+              src={wirless_fire_alarm}
+              alt="wirless flood alarm icon"
+              className="max-w-[2rem] md:max-w-[4rem]"
+            />
+            <h3 className="text-base font-semibold md:text-xl text-white text-center">
+              Fire Protection
+            </h3>
+          </div>
+          <div className="flex flex-col place-items-center gap-4">
+            <img
+              src={wirless_flood_alarm}
+              alt="wirless flood alarm icon"
+              className="max-w-[2rem] md:max-w-[4rem]"
+            />
+            <h3 className="text-base font-semibold md:text-xl text-white text-center">
+              Flood Protection
+            </h3>
+          </div>
+          <div className="flex flex-col place-items-center gap-4">
+            <img
+              src={wirless_automation}
+              alt="wirless flood alarm icon"
+              className="max-w-[2rem] md:max-w-[4rem]"
+            />
+            <h3 className="text-base font-semibold md:text-xl text-white text-center">
+              Automation Scenarios
+            </h3>
+          </div>
         </div>
-      </section> */}
+      </section>
       <section className="py-20">
         <Wrapper className="px-2 md:px-14 relative py-8">
-          <header className="space-y-6 text-center">
-            <h2 className={`${styles.headingSecondary} text-red-600 mb-16`}>
-              Slider
-            </h2>
-          </header>
           <Swiper
             spaceBetween={40}
             slidesPerView={1}
@@ -207,7 +254,11 @@ const WirelessInAndOutdoor = () => {
           </h2>
           <div className="py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12">
             <div className="space-y-6">
-              <img src={wirlessIcon1} alt="wireless icon" />
+              <img
+                src={wirlessIcon1}
+                alt="wireless icon"
+                className="md:w-[3.5rem]"
+              />
               <h3 className="text-2xl md:text-3xl text-clrSky font-semibold font-AllianceBold">
                 Range upto 2000m
               </h3>
@@ -216,7 +267,11 @@ const WirelessInAndOutdoor = () => {
               </p>
             </div>
             <div className="space-y-6">
-              <img src={wirlessIcon2} alt="wireless icon" />
+              <img
+                src={wirlessIcon2}
+                alt="wireless icon"
+                className="md:w-[3.5rem]"
+              />
               <h3 className="text-2xl md:text-3xl text-clrSky font-semibold font-AllianceBold">
                 Protection of particularly large properties
               </h3>
@@ -225,7 +280,11 @@ const WirelessInAndOutdoor = () => {
               </p>
             </div>
             <div className="space-y-6">
-              <img src={wirlessIcon3} alt="wireless icon" />
+              <img
+                src={wirlessIcon3}
+                alt="wireless icon"
+                className="md:w-[2rem]"
+              />
               <h3 className="text-2xl md:text-3xl text-clrSky font-semibold font-AllianceBold">
                 Effortless maintenance
               </h3>
@@ -236,7 +295,11 @@ const WirelessInAndOutdoor = () => {
               </p>
             </div>
             <div className="space-y-6">
-              <img src={wirlessIcon6} alt="wireless icon" />
+              <img
+                src={wireless_desktop_icon}
+                alt="wireless icon"
+                className="md:w-[3.5rem]"
+              />
               <h3 className="text-2xl md:text-3xl text-clrSky font-semibold font-AllianceBold">
                 Connection with monitoring center
               </h3>

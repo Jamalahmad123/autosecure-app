@@ -189,7 +189,7 @@ function App() {
             }
           />
           <Route
-            path="/solutions/security-solutions"
+            path="/solutions/security-solutions/active-video-surveillance"
             element={
               <Suspense fallback={<Spinner />}>
                 <SecuritySolutions />
@@ -197,7 +197,7 @@ function App() {
             }
           />
           <Route
-            path="/solutions/mobile-security"
+            path="/solutions/security-solutions/mobile-security"
             element={
               <Suspense fallback={<Spinner />}>
                 <MobileSecurity />
@@ -205,7 +205,7 @@ function App() {
             }
           />
           <Route
-            path="/solutions/wireless-in-and-outdoor"
+            path="/solutions/security-solutions/wireless-in-and-outdoor"
             element={
               <Suspense fallback={<Spinner />}>
                 <WirelessInAndOutdoor />
@@ -213,7 +213,7 @@ function App() {
             }
           />
           <Route
-            path="/solutions/scanner-solutions"
+            path="/solutions/scanner-solutions/scan"
             element={
               <Suspense fallback={<Spinner />}>
                 <ScanSolutions />
@@ -221,7 +221,7 @@ function App() {
             }
           />
           <Route
-            path="/solutions/digital-gate-keeper"
+            path="/solutions/scanner-solutions/digital-gate-keeper"
             element={
               <Suspense fallback={<Spinner />}>
                 <DigitalGate />
@@ -229,7 +229,7 @@ function App() {
             }
           />
           <Route
-            path="/solutions/locate-solutions"
+            path="/solutions/scanner-solutions/locate"
             element={
               <Suspense fallback={<Spinner />}>
                 <LocalizationSolutions />
@@ -237,7 +237,7 @@ function App() {
             }
           />
           <Route
-            path="/solutions/locate-app"
+            path="/solutions/scanner-solutions/locate-app"
             element={
               <Suspense fallback={<Spinner />}>
                 <LocateApp />
@@ -245,7 +245,7 @@ function App() {
             }
           />
           <Route
-            path="/solutions/gps-tracker"
+            path="/solutions/scanner-solutions/gps-tracker"
             element={
               <Suspense fallback={<Spinner />}>
                 <GpsTracker />

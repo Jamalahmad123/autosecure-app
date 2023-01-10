@@ -15,6 +15,7 @@ import { useEffect, useRef, useState } from "react";
 
 const Nav = () => {
   const [toggle, setToggle] = useState(false);
+  const [pathStyle, setPathStyle] = useState(false);
   const location = useLocation();
   const navRef = useRef();
 
@@ -30,13 +31,13 @@ const Nav = () => {
 
   return (
     <nav className="bg-white z-[999]">
-      <Wrapper className="navbar justify-between px-4">
+      <Wrapper className="navbar justify-between px-2 md:px-4">
         <div>
           <Link to="/">
             <img
               src={logo}
               alt="logo"
-              className="w-36 md:w-48 max-w-[200px] object-cover"
+              className="w-24 md:w-48 max-w-[200px] object-cover"
             />
           </Link>
         </div>
@@ -60,7 +61,9 @@ const Nav = () => {
                     tabIndex={item.id}
                     className="hover:bg-clrSky"
                   >
-                    <h3 className="text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white relative z-[999]">
+                    <h3
+                      className={`hover:bg-clrSky smooth hover:text-white relative z-[999]`}
+                    >
                       {item.name}
                       <FaCaretDown />
                     </h3>
@@ -111,7 +114,7 @@ const Nav = () => {
             ))}
           </ul>
         </div>
-        <div className={`${styles.flex} gap-4 sm:gap-8`}>
+        <div className={`${styles.flex} gap-2 sm:gap-8`}>
           <Link
             onClick={(e) => {
               e.preventDefault();
@@ -122,7 +125,7 @@ const Nav = () => {
           >
             <FaAt />
           </Link>
-          <NavLink
+          <Link
             onClick={(e) => {
               e.preventDefault();
               window.location.href = "tel:+492512373370";
@@ -130,7 +133,7 @@ const Nav = () => {
             className="text-clrDarkGray block hover:text-clrSky text-base sm:text-lg md:text-2xl"
           >
             <FaPhoneVolume />
-          </NavLink>
+          </Link>
           <NavLink className="text-clrDarkGray hover:text-clrSky text-base sm:text-lg md:text-2xl lg:hidden">
             <FaUserLock />
           </NavLink>
@@ -138,7 +141,7 @@ const Nav = () => {
             login
           </button>
           <button
-            className="lg:hidden flex items-center justify-center gap-1 text-white bg-clrPrimary text-sm font-light p-2 sm:text-lg sm:font-normal md:text-xl rounded-md hover:bg-clrSky"
+            className="lg:hidden flex items-center justify-center gap-1 text-white bg-clrPrimary text-sm font-light px-1 py-2 sm:p-2 sm:text-lg sm:font-normal md:text-xl rounded-md hover:bg-clrSky"
             onClick={() => setToggle((prev) => !prev)}
           >
             <FaGripLines />
