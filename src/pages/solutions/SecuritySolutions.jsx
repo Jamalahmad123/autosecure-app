@@ -68,6 +68,7 @@ import {
   autosecure_2021_Technologie,
 } from "../../assets/videos";
 import TypeWriter from "../../components/ui/TypeWriter";
+import { useTitle } from "../../hooks/customHooks";
 
 const benefits = [
   "Precise real-time indoor and outdoor localization of goods and goods for profitable business applications with innovative analyses.",
@@ -99,6 +100,7 @@ const technologyContent = {
 };
 
 const SecuritySolutions = () => {
+  useTitle("Security Solutions – autosecure |  Safe.  Scan.  locate.");
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

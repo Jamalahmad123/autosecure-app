@@ -14,6 +14,7 @@ import {
 import { styles } from "../../Styles";
 import TypeWriter from "../../components/ui/TypeWriter";
 import { locate_app } from "../../assets/videos";
+import { useTitle } from "../../hooks/customHooks";
 
 const list = [
   "Automated vehicle localization with digital handover and collection processing",
@@ -24,6 +25,7 @@ const list = [
 ];
 
 const LocateApp = () => {
+  useTitle("Localization Solutions | Locate App – autosecure |  Safe.  Scan.  locate.")
   const labels = ["Trust.", "Integrity."];
   const slideImges = [macSlider1, macSlider2, macSlider3, macSlider4];
   return (

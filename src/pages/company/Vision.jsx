@@ -11,9 +11,12 @@ const IndustrySectorSolutions = lazy(() =>
 );
 
 import Wrapper from "../../components/ui/Wrapper";
+import { useTitle } from "../../hooks/customHooks";
 import { styles } from "../../Styles";
 
 const Vision = () => {
+  useTitle("Vision & Mission – autosecure | Secure. Scan. Locate.");
+
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

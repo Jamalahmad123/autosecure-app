@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Wrapper from "../../components/ui/Wrapper";
+import { useTitle } from "../../hooks/customHooks";
 import { styles } from "../../Styles";
 
 const legals = [
@@ -22,6 +23,7 @@ const legals = [
 ];
 
 const Legal = () => {
+  useTitle("Legal – autosecure |  Safe.  Scan.  locate.");
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

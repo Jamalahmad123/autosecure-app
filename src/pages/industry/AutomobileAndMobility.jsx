@@ -9,6 +9,7 @@ import {
 } from "../../assets/videos";
 
 import Spinner from "../../components/ui/Spinner";
+import { useTitle } from "../../hooks/customHooks";
 // import PagesHero from "../../components/PagesHero";
 // import AutosecureEcosystem from "../../components/AutosecureEcosystem";
 // import Features from "../../components/Features";
@@ -64,6 +65,7 @@ const heroContent = {
 };
 
 const AutomobileAndMobility = () => {
+  useTitle("Automobile & Mobility – autosecure |  Safe.  Scan.  locate.");
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

@@ -4,11 +4,13 @@ import Spinner from "../../components/ui/Spinner";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
 import TypeWriter from "../../components/ui/TypeWriter";
+import { useTitle } from "../../hooks/customHooks";
 
 const Achievements = lazy(() => import("../../components/Achievements"));
 
 const News = () => {
   const labels = ["News from autosecure"];
+  useTitle("News – autosecure | Secure. Scan. Locate.")
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

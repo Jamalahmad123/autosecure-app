@@ -15,6 +15,7 @@ import {
   warrentyImg,
 } from "../../assets/images";
 import { styles } from "../../Styles";
+import { useTitle } from "../../hooks/customHooks";
 
 const list = {
   triger: [
@@ -30,6 +31,9 @@ const list = {
 };
 
 const GpsTracker = () => {
+  useTitle(
+    "Localization Solutions | GPS Tracker – autosecure |  Safe.  Scan.  locate."
+  );
   const labels = ["Trust.", "Integrity."];
   return (
     <>

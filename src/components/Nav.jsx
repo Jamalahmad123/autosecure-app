@@ -45,7 +45,7 @@ const Nav = () => {
           <ul className="menu menu-horizontal p-0 z-[999]">
             <li
               tabIndex={solutionsDropdownLinks.id}
-              className="group nav-link z-[999]"
+              className="group nav-link z-[999] capitalize"
             >
               <NavLink
                 to="/solutions"
@@ -54,24 +54,37 @@ const Nav = () => {
                 {solutionsDropdownLinks.name}
                 <FaCaretDown />
               </NavLink>
-              <ul className="bg-white menu">
+              <ul className="bg-white menu shadow">
                 {solutionsDropdownLinks.pages.map((item) => (
                   <li
                     key={item.id}
                     tabIndex={item.id}
-                    className="hover:bg-clrSky"
+                    className="hover:bg-clrSky capitalize"
                   >
-                    <h3
-                      className={`hover:bg-clrSky smooth hover:text-white relative z-[999]`}
-                    >
-                      {item.name}
-                      <FaCaretDown />
-                    </h3>
-                    <ul className="bg-white w-full p-0">
+                    {item?.link ? (
+                      <NavLink
+                        to={item?.link}
+                        className={`hover:bg-clrSky smooth hover:text-white relative z-[999]`}
+                      >
+                        {item.name}
+                        <FaCaretDown />
+                      </NavLink>
+                    ) : (
+                      <h3
+                        className={`hover:bg-clrSky smooth hover:text-white relative z-[999]`}
+                      >
+                        {item.name}
+                        <FaCaretDown />
+                      </h3>
+                    )}
+                    <ul className="bg-white w-full p-0 shadow">
                       {item.subPages.map((item) => (
-                        <li key={item.id} className="hover:bg-clrSky">
+                        <li
+                          key={item.id}
+                          className="hover:bg-clrSky capitalize"
+                        >
                           <NavLink
-                            to={`/${item.link}`}
+                            to={item.link}
                             className="text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white relative z-[999]"
                           >
                             {item.name}
@@ -89,7 +102,7 @@ const Nav = () => {
               <li
                 tabIndex={item.id}
                 key={item.id}
-                className="group nav-link z-[999]"
+                className="group nav-link z-[999] capitalize"
               >
                 <NavLink
                   to={`/${item.link}`}
@@ -98,9 +111,9 @@ const Nav = () => {
                   {item.name}
                   <FaCaretDown />
                 </NavLink>
-                <ul className="bg-white">
+                <ul className="bg-white shadow">
                   {item.subPages.map((item) => (
-                    <li key={item.id} className="hover:bg-clrSky">
+                    <li key={item.id} className="hover:bg-clrSky capitalize">
                       <NavLink
                         to={`/${item.link}`}
                         className="text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white relative z-[999]"

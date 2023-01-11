@@ -7,6 +7,7 @@ import {
   autoLocateVideo,
 } from "../../assets/videos";
 import Spinner from "../../components/ui/Spinner";
+import { useTitle } from "../../hooks/customHooks";
 // import PagesHero from "../../components/PagesHero";
 
 // import IndustrySectorSolutions from "../../components/IndustrySectorSolutions";
@@ -64,6 +65,7 @@ const heroContent = {
 };
 
 const AgriculturAndForming = () => {
+  useTitle("Agriculture & Farming – autosecure |  Safe.  Scan.  locate.");
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

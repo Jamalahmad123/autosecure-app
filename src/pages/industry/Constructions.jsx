@@ -15,6 +15,7 @@ import Spinner from "../../components/ui/Spinner";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
 import { FaCheck } from "react-icons/fa";
+import { useTitle } from "../../hooks/customHooks";
 
 // import PagesHero from "../../components/PagesHero";
 
@@ -74,6 +75,9 @@ const animatedHeroContent = {
 };
 
 const Constructions = () => {
+  useTitle(
+    "Construction & construction vehicles – autosecure |  Safe.  Scan.  locate."
+  );
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

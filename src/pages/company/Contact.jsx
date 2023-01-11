@@ -4,8 +4,10 @@ import { FaAt, FaBuilding, FaPhoneVolume } from "react-icons/fa";
 import { logo } from "../../assets/images";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
+import { useTitle } from "../../hooks/customHooks";
 
 const Contact = () => {
+  useTitle("Contact – autosecure | Secure. Scan. Locate.")
   // const [formData, setFormData] = useState({
   //   company: "",
   //   name: "",

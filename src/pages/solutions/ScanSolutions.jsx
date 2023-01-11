@@ -31,6 +31,7 @@ import {
 } from "../../assets/images";
 import { autosecure_scan_01, autosecure_scan_02 } from "../../assets/videos";
 import { styles } from "../../Styles";
+import { useTitle } from "../../hooks/customHooks";
 
 const checkPionts = [
   "Digital and complete vehicle status check at property access, direct acceptance or at a freely selectable location on the premises.",
@@ -99,19 +100,9 @@ const heroContent = {
   benefit2: "20% faster processes",
   videoPath: autosecure_scan_01,
 };
-const logisticsContent = {
-  title: "Highly efficient and intelligent yard management system",
-  desc1:
-    "Imagine moving 200 trucks and coordinating 5,000 goods movements a day. Even with 3 forklift drivers, this volume is difficult to handle.",
-  desc2:
-    "What if automation led you to the point where only 2 or 1 forklift driver could handle the same workload in a relaxed manner, because targeted and intelligent automation could make the work uninterrupted and much more efficient? Talk to us.",
-};
-
-const title = "360° automation for logistics";
-const desc =
-  "Tailored to your requirements in the logistics process: Discover the autosecure 360° automation concept for logistics and goods.";
 
 const ScanSolutions = () => {
+  useTitle("Scanner Solutions | Scanner – autosecure |  Safe.  Scan.  locate.");
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

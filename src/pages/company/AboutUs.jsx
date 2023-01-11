@@ -28,8 +28,10 @@ const AutosecureCareerDialoge = lazy(() =>
 import { ecosystemAndExpertise } from "../../data/constantData";
 import { styles } from "../../Styles";
 import Spinner from "../../components/ui/Spinner";
+import { useTitle } from "../../hooks/customHooks";
 
 const AboutUs = () => {
+  useTitle("About us – autosecure | Secure. Scan. Locate.");
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

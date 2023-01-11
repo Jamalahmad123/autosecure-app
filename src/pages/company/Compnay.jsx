@@ -2,9 +2,11 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Wrapper from "../../components/ui/Wrapper";
 import { navLinks } from "../../data/constantData";
+import { useTitle } from "../../hooks/customHooks";
 import { styles } from "../../Styles";
 
 const Compnay = () => {
+  useTitle("Company – autosecure | Secure. Scan. Locate.");
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

@@ -13,6 +13,7 @@ import { savingsAndExpertise } from "../../data/constantData";
 import Spinner from "../../components/ui/Spinner";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
+import { useTitle } from "../../hooks/customHooks";
 
 // Lazy Imports
 const PagesHero = lazy(() => import("../../components/PagesHero"));
@@ -68,6 +69,7 @@ const animatedHeroContent = {
 };
 
 const LogisticsAndGoods = () => {
+  useTitle("Logistics & Goods – autosecure |  Safe.  Scan.  locate.");
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

@@ -3,6 +3,7 @@ import { FaFileAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Spinner from "../../components/ui/Spinner";
 import Wrapper from "../../components/ui/Wrapper";
+import { useTitle } from "../../hooks/customHooks";
 import { styles } from "../../Styles";
 
 // import JobsList from "./JobsList";
@@ -10,6 +11,8 @@ import { styles } from "../../Styles";
 const JobsList = lazy(() => import("./JobsList"));
 
 const Career = () => {
+  useTitle("Careers – autosecure | Secure. Scan. Locate.");
+
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

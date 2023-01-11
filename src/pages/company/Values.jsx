@@ -6,8 +6,10 @@ import { styles } from "../../Styles";
 import MeetingVideo from "../../components/ui/MeetingVideo";
 import { poster, booking } from "../../assets/images";
 import { auto_secure_meeting } from "../../assets/videos";
+import { useTitle } from "../../hooks/customHooks";
 
 const Values = () => {
+  useTitle("Values – autosecure | Secure. Scan. Locate.");
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

@@ -18,6 +18,7 @@ import {
 } from "../../assets/images";
 import { digital_wellen } from "../../assets/videos";
 import { styles } from "../../Styles";
+import { useTitle } from "../../hooks/customHooks";
 
 // Content
 const featuresList = [
@@ -41,6 +42,9 @@ const fullSliderImges = [
 const screenSlideImges = [gkScreen1, gkScreen2, gkScreen3, gkScreen4];
 
 const DigitalGate = () => {
+  useTitle(
+    "Scanner Solutions | Digital gate keeper – autosecure |  Safe.  Scan.  locate."
+  );
   const labels = ["Trust.", "Integrity."];
   return (
     <>

@@ -28,17 +28,17 @@ export const solutionsDropdownLinks = {
         {
           id: 1,
           name: "active video surveillance",
-          link: "solutions/security-solutions/active-video-surveillance",
+          link: "/solutions/security-solutions/active-video-surveillance",
         },
         {
           id: 2,
           name: "mobile security tower",
-          link: "solutions/security-solutions/mobile-security",
+          link: "/solutions/security-solutions/mobile-security",
         },
         {
           id: 3,
           name: "wireless in & Outdoor",
-          link: "solutions/security-solutions/wireless-in-and-outdoor",
+          link: "/solutions/security-solutions/wireless-in-and-outdoor",
         },
       ],
     },
@@ -49,33 +49,29 @@ export const solutionsDropdownLinks = {
         {
           id: 1,
           name: "autosecure scanner",
-          link: "solutions/scanner-solutions/scan",
+          link: "/solutions/scanner-solutions/scan",
         },
         {
           id: 2,
           name: "digital Gate keeper",
-          link: "solutions/scanner-solutions/digital-gate-keeper",
+          link: "/solutions/scanner-solutions/digital-gate-keeper",
         },
       ],
     },
     {
       id: 3,
       name: "localization solutions",
+      link: "/solutions/localization-solutions/locate",
       subPages: [
-        {
-          id: 1,
-          name: "locate solutions",
-          link: "solutions/localization-solutions/locate",
-        },
         {
           id: 2,
           name: "autosecure locate app",
-          link: "solutions/localization-solutions/locate-app",
+          link: "/solutions/localization-solutions/locate-app",
         },
         {
           id: 3,
           name: "autosecure gps tracker",
-          link: "solutions/localization-solutions/gps-tracker",
+          link: "/solutions/localization-solutions/gps-tracker",
         },
       ],
     },
@@ -235,7 +231,7 @@ export const features = [
 
   {
     id: 3,
-    link: "/solutions/scanner-solutions/locate",
+    link: "/solutions/localization-solutions/locate",
     title: "locate",
     desc: "Precise real-time indoor and outdoor localization of goods or vehicles.",
     benefit1: "20% faster processes",

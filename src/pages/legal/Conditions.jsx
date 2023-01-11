@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import AccordionList from "../../components/ui/AccordionList";
 import { conditionsList, conditionList2 } from "./accordionData";
 import Wrapper from "../../components/ui/Wrapper";
+import { useTitle } from "../../hooks/customHooks";
 
 const header1 = {
   id: 1,
@@ -28,6 +29,7 @@ const Conditions = () => {
 };
 
 const ConditonsTitle = ({ heroContent }) => {
+  useTitle("Legal | Considions – autosecure |  Safe.  Scan.  locate.");
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

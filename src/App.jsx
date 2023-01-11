@@ -229,7 +229,7 @@ function App() {
             }
           />
           <Route
-            path="/solutions/scanner-solutions/locate"
+            path="/solutions/localization-solutions/locate"
             element={
               <Suspense fallback={<Spinner />}>
                 <LocalizationSolutions />
@@ -237,7 +237,7 @@ function App() {
             }
           />
           <Route
-            path="/solutions/scanner-solutions/locate-app"
+            path="/solutions/localization-solutions/locate-app"
             element={
               <Suspense fallback={<Spinner />}>
                 <LocateApp />
@@ -245,7 +245,7 @@ function App() {
             }
           />
           <Route
-            path="/solutions/scanner-solutions/gps-tracker"
+            path="/solutions/localization-solutions/gps-tracker"
             element={
               <Suspense fallback={<Spinner />}>
                 <GpsTracker />
@@ -376,7 +376,7 @@ function App() {
           <Route
             path="/legal"
             element={
-              <Suspense fallback={<div />}>
+              <Suspense fallback={<Spinner />}>
                 <Legal />
               </Suspense>
             }
@@ -384,7 +384,7 @@ function App() {
           <Route
             path="/legal/imprint"
             element={
-              <Suspense fallback={<div />}>
+              <Suspense fallback={<Spinner />}>
                 <Imprint />
               </Suspense>
             }
@@ -392,7 +392,7 @@ function App() {
           <Route
             path="/legal/privacy"
             element={
-              <Suspense fallback={<div />}>
+              <Suspense fallback={<Spinner />}>
                 <Privacy />
               </Suspense>
             }
@@ -400,7 +400,7 @@ function App() {
           <Route
             path="/legal/conditions"
             element={
-              <Suspense fallback={<div />}>
+              <Suspense fallback={<Spinner />}>
                 <Conditions />
               </Suspense>
             }

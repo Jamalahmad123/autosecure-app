@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect } from "react";
 
 import Spinner from "../../components/ui/Spinner";
+import { useTitle } from "../../hooks/customHooks";
 // import Features from "../../components/Features";
 // import Hero from "../../components/Hero";
 
@@ -9,6 +10,9 @@ const Features = lazy(() => import("../../components/Features"));
 const Hero = lazy(() => import("../../components/Hero"));
 
 const Solutions = () => {
+  // page title
+  useTitle("Solutions – autosecure | Secure. Scan. Locate.");
+
   const title = "Solutions. Automated.";
   const desc =
     "autosecure is your specialist for leading technology-based automation solutions for the automotive and mobility industry.";

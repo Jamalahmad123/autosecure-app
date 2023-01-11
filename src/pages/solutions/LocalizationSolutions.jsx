@@ -6,6 +6,7 @@ import {
 } from "../../data/constantData";
 import { autosecureVehicle } from "../../assets/images";
 import Spinner from "../../components/ui/Spinner";
+import { useTitle } from "../../hooks/customHooks";
 // import Hero from "./Hero";
 // import AutosecureFeaturesList from "../../components/AutosecureFeaturesList";
 
@@ -27,6 +28,9 @@ const benefits = [
 ];
 
 const LocalizationSolutions = () => {
+  useTitle(
+    "Localization Solutions | Localization – autosecure |  Safe.  Scan.  locate."
+  );
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);

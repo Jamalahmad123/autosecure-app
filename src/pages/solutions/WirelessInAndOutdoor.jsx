@@ -34,8 +34,12 @@ import {
 import { features } from "../../data/constantData";
 import { wirelessSlidesData } from "../../data/constantData2";
 import { autosecure_ajax } from "../../assets/videos";
+import { useTitle } from "../../hooks/customHooks";
 
 const WirelessInAndOutdoor = () => {
+  useTitle(
+    "Security solutions | Wireless In- & Outdoor – autosecure |  Safe.  Scan.  locate."
+  );
   const qoute =
     "Certified transmitters in the streamline with the autosecure monitoring center in Münster";
   const labels = [
@@ -114,7 +118,7 @@ const WirelessInAndOutdoor = () => {
           <source src={autosecure_ajax} type="video/mp4" />
           Sorry, your browser doesn't support videos.
         </video>
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center backdrop-blur-[6px] bg-black/10 py-6 sm:py-12 px-4 relative left-0 bottom-0 h-auto w-full">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 items-start backdrop-blur-[6px] bg-black/10 py-6 sm:py-12 px-4 relative left-0 bottom-0 h-auto w-full">
           <div className="flex flex-col place-items-center gap-4">
             <img
               src={wirless_vid_survelance}
