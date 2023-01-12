@@ -88,12 +88,14 @@ const LocateApp = () => {
         <Wrapper className="px-4 flex flex-col-reverse lg:flex-row gap-10">
           <div className="lg:max-w-xl">
             <Swiper
+              modules={[Autoplay]}
               autoplay={{
                 disableOnInteraction: false,
                 reverseDirection: true,
               }}
               loop={true}
-              modules={[Autoplay]}
+              observer={true}
+              observeParents={true}
               className="mySwiper"
             >
               {slideImges.map((slide, i) => (

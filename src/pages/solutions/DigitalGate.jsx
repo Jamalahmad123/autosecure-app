@@ -180,11 +180,13 @@ const DigitalGate = () => {
             </div>
             <div className="max-w-xl">
               <Swiper
+                modules={[Autoplay]}
                 autoplay={{
                   disableOnInteraction: false,
                 }}
                 loop={true}
-                modules={[Autoplay]}
+                observer={true}
+                observeParents={true}
                 className="mySwiper"
               >
                 {screenSlideImges.map((slide, i) => (
