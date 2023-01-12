@@ -4,7 +4,7 @@ const AutosecureSystemApplication = ({ application }) => {
   return (
     <section className="py-14 bg-clrVeryLightGray">
       <Wrapper className="px-4">
-        <div className="flex justify-start items-start md:gap-6 flex-col lg:flex-row lg:justify-between lg:items-start">
+        <div className="flex justify-start items-start gap-8 flex-col lg:flex-row lg:justify-between lg:items-start">
           <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold flex-1">
             {application.title}
           </h2>

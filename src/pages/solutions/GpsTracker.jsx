@@ -195,7 +195,7 @@ const GpsTracker = () => {
             <img src={locateMockup} alt="autosecure locate mockup" />
           </figure>
           <div className="flex-1 space-y-6">
-            <h2 className="text-clrPrimary text-2xl lg:text-[2.2rem] font-bold font-AllianceBold leading-[3rem]">
+            <h2 className="text-clrPrimary text-[1.5rem] lg:text-[2rem] font-bold font-AllianceBold leading-[2.3rem] lg:leading-[3rem]">
               Connect the autosecure locate app with autosecure trackers now to
               experience 100% process intelligence combined with innovative
               technology

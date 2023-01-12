@@ -5,7 +5,7 @@ import Wrapper from "./ui/Wrapper";
 const Employes = () => {
   return (
     <section className="py-14 bg-clrVeryLightGray">
-      <Wrapper className="container max-w-[900px] mx-auto px-14 relative">
+      <Wrapper className="container max-w-[900px] mx-auto px-4 md:px-14 relative">
         <Swiper
           navigation={true}
           modules={[Navigation]}

@@ -122,7 +122,7 @@ const ScanSolutions = () => {
         <AutosecureSystemApplication application={checkPionts04} />
         <AutosecureFullSlider slideImages={slideImages} />
         <section className="py-14 bg-clrVeryLightGray">
-          <Wrapper className="px- flex items-center justify-center flex-col gap-12">
+          <Wrapper className="px-4 flex items-center justify-center flex-col gap-12">
             <figure>
               <img
                 src={zukunftswerkstatt_logo}

@@ -106,12 +106,12 @@ const DigitalGate = () => {
           </p>
         </Wrapper>
       </header>
-      <video autoPlay preload="meta" muted width="100%" height="auto">
+      <video autoPlay loop preload="meta" muted width="100%" height="auto">
         <source src={digital_wellen} type="video/mp4" />
         Sorry, your browser doesn't support videos.
       </video>
       <section className="py-16">
-        <Wrapper className="px-2 space-y-10">
+        <Wrapper className="px-4 space-y-10">
           <div className="flex gap-10 flex-col lg:flex-row">
             <h2
               className={`flex-1 text-2xl md:text-3xl lg:text-4xl font-AllianceBold font-bold text-clrPrimary`}
@@ -139,7 +139,7 @@ const DigitalGate = () => {
         </Wrapper>
       </section>
       <section className="py-20">
-        <Wrapper className="px-2 space-y-12">
+        <Wrapper className="px-4 space-y-12">
           <header>
             <h2
               className={`text-2xl md:text-3xl lg:text-4xl font-AllianceBold font-bold text-clrPrimary`}

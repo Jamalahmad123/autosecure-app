@@ -101,7 +101,7 @@ const Footer = () => {
             <div className="flex flex-col gap-4">
               <Link
                 to="/legal"
-                className="text-lg font-semibold text-clrPrimary text-center md:text-xl"
+                className="text-lg font-semibold text-clrPrimary md:text-xl"
               >
                 legal
               </Link>

@@ -21,7 +21,7 @@ const AutosecureSlider = () => {
             your company and take your security requirements to a new level.
           </p>
         </header>
-        <div className="px-14 relative py-8">
+        <div className="md:px-14 relative py-8">
           <Swiper
             spaceBetween={35}
             pagination={{

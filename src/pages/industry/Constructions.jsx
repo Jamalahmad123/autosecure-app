@@ -120,7 +120,7 @@ const EmergencyService = () => {
   ];
   return (
     <section className="py-20">
-      <Wrapper className="px-4 flex items-start justify-center gap-6 lg:gap-14">
+      <Wrapper className="px-4 flex flex-col items-center justify-center gap-6 lg:gap-14 lg:flex-row lg:items-start">
         <figure className="flex-1 flex items-center justify-center bg-white py-8 rounded-md">
           <img
             src={autosecure_mobile_emergency}

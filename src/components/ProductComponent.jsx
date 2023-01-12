@@ -471,7 +471,7 @@ const ProductComponent = () => {
             <div className="hidden w-[35%] lg:flex items-center justify-center">
               <AnimatedTower />
             </div>
-            <div className="w-[65%] space-y-8">
+            <div className="w-full lg:w-[65%] space-y-8">
               <p className="text-white text-xl lg:text-2xl mt-8">
                 Rent your individually configured autosecure Mobile Security
                 Tower. Start your inquiry and we will contact you immediately

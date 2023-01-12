@@ -37,7 +37,7 @@ const Nav = () => {
             <img
               src={logo}
               alt="logo"
-              className="w-24 md:w-48 max-w-[200px] object-cover"
+              className="w-28 md:w-48 max-w-[200px] object-cover"
             />
           </Link>
         </div>
@@ -150,11 +150,11 @@ const Nav = () => {
           <NavLink className="text-clrDarkGray hover:text-clrSky text-base sm:text-lg md:text-2xl lg:hidden">
             <FaUserLock />
           </NavLink>
-          <button className="hidden lg:btn btn-sm lg:text-white bg-clrPrimary md:text-base text-sm">
+          <button className="hidden lg:flex btn btn-sm text-white bg-clrPrimary hover:bg-clrSky border-none text-base py-5 px-4 h-0 flex-nowrap capitalize">
             login
           </button>
           <button
-            className="lg:hidden flex items-center justify-center gap-1 text-white bg-clrPrimary text-sm font-light px-1 py-2 sm:p-2 sm:text-lg sm:font-normal md:text-xl rounded-md hover:bg-clrSky"
+            className="lg:hidden flex items-center justify-center gap-1 text-white bg-clrPrimary text-sm font-light px-2 py-2 sm:p-2 sm:text-lg sm:font-normal md:text-xl rounded-md hover:bg-clrSky"
             onClick={() => setToggle((prev) => !prev)}
           >
             <FaGripLines />
@@ -256,6 +256,7 @@ const Nav = () => {
               <div className="flex flex-col gap-5">
                 {legals.map((legal, i) => (
                   <NavLink
+                    to={`/legal/${legal}`}
                     className="text-clrPrimary text-center bg-gray-50 p-2 hover:bg-white smooth"
                     key={i}
                   >

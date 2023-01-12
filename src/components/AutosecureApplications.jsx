@@ -45,7 +45,7 @@ const AutosecureApplications = () => {
             More Applications
           </h2>
         </header>
-        <div className="flex items-start justify-start md:gap-6 flex-col lg:flex-row lg:justify-between lg:items-start">
+        <div className="flex items-start justify-start gap-8 flex-col lg:flex-row lg:justify-between lg:items-start">
           <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold flex-1">
             Heat mapping for optimal item placement and maximum revenue.
           </h2>
@@ -60,7 +60,7 @@ const AutosecureApplications = () => {
             cart.
           </p>
         </div>
-        <div className="flex justify-start items-start md:gap-6 flex-col lg:flex-row lg:justify-between lg:items-start">
+        <div className="flex justify-start items-start gap-8 flex-col lg:flex-row lg:justify-between lg:items-start">
           <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold flex-1">
             People counting - get the numbers - and the business.
           </h2>
@@ -73,7 +73,7 @@ const AutosecureApplications = () => {
             off-peak times to save costs.
           </p>
         </div>
-        <div className="flex justify-start items-start md:gap-6 flex-col lg:flex-row lg:justify-between lg:items-start pb-20">
+        <div className="flex justify-start items-start gap-8 flex-col lg:flex-row lg:justify-between lg:items-start pb-20">
           <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold flex-1">
             Queue detection - better customer experience.
           </h2>
@@ -88,7 +88,7 @@ const AutosecureApplications = () => {
       </Wrapper>
       <AutosecureQoute qoute="Leave the premises immediately - the police have already been alerted!" />
       <Wrapper className="px-4 pt-20 space-y-16">
-        <div className="flex justify-start items-start md:gap-6 flex-col lg:flex-row lg:justify-between lg:items-start">
+        <div className="flex justify-start items-start gap-8 flex-col lg:flex-row lg:justify-between lg:items-start">
           <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold flex-1">
             {monitering.title}
           </h2>
@@ -104,7 +104,7 @@ const AutosecureApplications = () => {
             ))}
           </div>
         </div>
-        <div className="flex justify-start items-start md:gap-6 flex-col lg:flex-row lg:justify-between lg:items-start">
+        <div className="flex justify-start items-start gap-8 flex-col lg:flex-row lg:justify-between lg:items-start">
           <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold flex-1">
             {improveRisk.title}
           </h2>
@@ -120,7 +120,7 @@ const AutosecureApplications = () => {
             ))}
           </div>
         </div>
-        <div className="flex justify-start items-start md:gap-6 flex-col lg:flex-row lg:justify-between lg:items-start">
+        <div className="flex justify-start items-start gap-8 flex-col lg:flex-row lg:justify-between lg:items-start">
           <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold flex-1 pr-8">
             {privacy.title}
           </h2>

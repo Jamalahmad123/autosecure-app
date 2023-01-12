@@ -135,7 +135,7 @@ const ApplyForm = () => {
           </div>
           <button
             type="submit"
-            className="btn text-white text-3xl border-none bg-clrPrimary h-20 font-normal capitalize w-full mt-8 rounded-none"
+            className="btn text-white text-xl lg:text-3xl border-none bg-clrPrimary h-20 font-normal capitalize w-full mt-8 rounded-none"
           >
             Send application now
           </button>

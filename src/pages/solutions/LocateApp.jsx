@@ -25,12 +25,13 @@ const list = [
   "Photo documentation of damage and recording of accessories",
 ];
 
+const slideImges = [macSlider1, macSlider2, macSlider3, macSlider4];
+
 const LocateApp = () => {
   useTitle(
     "Localization Solutions | Locate App – autosecure |  Safe.  Scan.  locate."
   );
   const labels = ["Trust.", "Integrity."];
-  const slideImges = [macSlider1, macSlider2, macSlider3, macSlider4];
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -59,7 +60,7 @@ const LocateApp = () => {
         </Wrapper>
       </header>
       <section className="py-20">
-        <Wrapper className="px-2 flex items-center justify-center flex-col lg:flex-row gap-10 lg:gap-20">
+        <Wrapper className="px-4 flex items-center justify-center flex-col lg:flex-row gap-10 lg:gap-20">
           <p className={`max-w-2xl ${styles.textSecondary} text-clrPrimary`}>
             Experience the future of vehicle management with the "autosecure
             Locate App"! With our user-friendly app and integrated "autosecure
@@ -84,7 +85,7 @@ const LocateApp = () => {
         </Wrapper>
       </section>
       <section className="py-20">
-        <Wrapper className="px-2 flex flex-col-reverse lg:flex-row gap-10">
+        <Wrapper className="px-4 flex flex-col-reverse lg:flex-row gap-10">
           <div className="lg:max-w-xl">
             <Swiper
               autoplay={{
@@ -123,9 +124,9 @@ const LocateApp = () => {
         </Wrapper>
       </section>
       <section className="py-20">
-        <Wrapper className="px-2 flex flex-col-reverse items-center lg:flex-row gap-8">
+        <Wrapper className="px-4 flex flex-col-reverse items-center lg:flex-row gap-8">
           <div className="flex-1 space-y-6">
-            <h2 className="text-clrPrimary text-xl lg:text-[2.2rem] font-bold font-AllianceBold leading-[3rem]">
+            <h2 className="text-clrPrimary text-[1.5rem] lg:text-[2rem] font-bold font-AllianceBold leading-[2.3rem] lg:leading-[3rem]">
               Connect the autosecure locate app with autosecure trackers now to
               experience 100% process intelligence combined with innovative
               technology

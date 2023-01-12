@@ -124,6 +124,7 @@ body::-webkit-scrollbar {
 }
 
 canvas {
+  overflow: hidden !important;
   position: absolute !important;
   /* transform: scale(1); */
   animation: appear 4s 1;
@@ -147,6 +148,7 @@ canvas {
   position: absolute;
   inset: 0;
   z-index: -1;
+  overflow: hidden !important;
 }
 
 .swiper {
@@ -402,22 +404,4 @@ canvas {
   margin-bottom: 15px;
   text-align: center;
   display: block;
-}
-
-/* YouTube Video top and bottom bar */
-.youtube-container {
-  overflow: hidden;
-  width: 100%;
-  /* Keep it the right aspect-ratio */
-  aspect-ratio: 16/9;
-  /* No clicking/hover effects */
-  pointer-events: none;
-}
-
-.youtube-container iframe {
-  /* Extend it beyond the viewport... */
-  width: 300%;
-  height: 100%;
-  /* ...and bring it back again */
-  margin-left: -100%;
 }
