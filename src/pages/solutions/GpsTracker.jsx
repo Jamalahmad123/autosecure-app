@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaChevronRight, FaCheck } from "react-icons/fa";
 import Wrapper from "../../components/ui/Wrapper";
@@ -34,12 +35,17 @@ const GpsTracker = () => {
   useTitle(
     "Localization Solutions | GPS Tracker – autosecure |  Safe.  Scan.  locate."
   );
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
   const labels = ["Trust.", "Integrity."];
   return (
     <>
       <header className="py-10">
-        <Wrapper className="px-2">
-          <div className="card flex-col-reverse lg:items-stretch lg:flex-row bg-transparent gap-6">
+        <Wrapper className="px-4">
+          <div className="card flex-col lg:items-stretch lg:flex-row bg-transparent gap-6">
             <figure className="flex-1">
               <img
                 src={tracker}
@@ -60,33 +66,33 @@ const GpsTracker = () => {
                   outstanding solution to protect and maintain your fleet.
                 </p>
                 <div className="space-y-8">
-                  <div className="flex items-center flex-col gap-3 md:flex-row">
+                  <div className="flex items-start flex-col gap-3 md:flex-row md:items-center">
                     <img
                       src={odbMeter}
                       alt="can bus"
-                      className="max-w-[6rem] lg:max-w-[4rem] object-cover"
+                      className="max-w-[3rem] object-cover"
                     />
-                    <p className="text-clrPrimary lg:text-xl font-bold font-AllianceBold">
+                    <p className="text-clrPrimary md:text-lg font-semibold font-AllianceBold">
                       OEM OBD DATA – real odometer & real fuel level data
                     </p>
                   </div>
-                  <div className="flex items-center flex-col gap-3 md:flex-row">
+                  <div className="flex items-start flex-col gap-3 md:flex-row md:items-center">
                     <img
                       src={canBus}
                       alt="can bus"
-                      className="max-w-[6rem] lg:max-w-[4rem] object-cover"
+                      className="max-w-[3rem] object-cover"
                     />
-                    <p className="text-clrPrimary lg:text-xl font-bold font-AllianceBold">
+                    <p className="text-clrPrimary md:text-lg font-semibold font-AllianceBold">
                       CAN bus data
                     </p>
                   </div>
-                  <div className="flex items-center flex-col gap-3 md:flex-row">
+                  <div className="flex items-start flex-col gap-3 md:flex-row md:items-center">
                     <img
                       src={plug}
                       alt="can bus"
-                      className="max-w-[6rem] lg:max-w-[4rem] object-cover"
+                      className="max-w-[3rem] object-cover"
                     />
-                    <p className="text-clrPrimary lg:text-xl font-bold font-AllianceBold">
+                    <p className="text-clrPrimary md:text-lg font-semibold font-AllianceBold">
                       Effortless plug & play installation
                     </p>
                   </div>
@@ -104,7 +110,7 @@ const GpsTracker = () => {
         </Wrapper>
       </header>
       <section className="py-16">
-        <Wrapper className="px-2 space-y-10">
+        <Wrapper className="px-4 space-y-10">
           <div className="flex gap-10 flex-col lg:flex-row">
             <h2
               className={`flex-1 text-2xl md:text-3xl lg:text-4xl font-AllianceBold font-bold text-clrPrimary`}
@@ -123,14 +129,14 @@ const GpsTracker = () => {
           </div>
         </Wrapper>
       </section>
-      <section className="py-20 bg-white">
-        <Wrapper className="px-2 space-y-10">
+      <section className="py-20">
+        <Wrapper className="px-4 space-y-10">
           <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
             Quality
           </h2>
           <div className="flex flex-col items-center lg:flex-row gap-10 lg:gap-20">
             <div className="flex-1 grid grid-cols-1 gap-4 lg:grid-cols-2">
-              <figure className="shadow-lg px-6 py-10 rounded-lg flex items-center justify-center gap-3 flex-col">
+              <figure className="bg-white shadow-lg px-6 py-10 rounded-lg flex items-center justify-center gap-3 flex-col">
                 <img
                   src={europMap}
                   alt="euope map"
@@ -140,7 +146,7 @@ const GpsTracker = () => {
                   MADE IN EUROPE
                 </figcaption>
               </figure>
-              <figure className="shadow-lg px-6 py-10 rounded-lg flex items-center justify-center gap-3 flex-col">
+              <figure className="bg-white shadow-lg px-6 py-10 rounded-lg flex items-center justify-center gap-3 flex-col">
                 <img
                   src={failure}
                   alt="failure icon"
@@ -150,7 +156,7 @@ const GpsTracker = () => {
                   {`<0.1% failure rate`}
                 </figcaption>
               </figure>
-              <figure className="shadow-lg px-6 py-10 rounded-lg flex items-center justify-center gap-3 flex-col">
+              <figure className="bg-white shadow-lg px-6 py-10 rounded-lg flex items-center justify-center gap-3 flex-col">
                 <img
                   src={certifiedImg}
                   alt="certified"
@@ -160,7 +166,7 @@ const GpsTracker = () => {
                   ISO 9001 certified
                 </figcaption>
               </figure>
-              <figure className="shadow-lg px-6 py-10 rounded-lg flex items-center justify-center gap-3 flex-col">
+              <figure className="bg-white shadow-lg px-6 py-10 rounded-lg flex items-center justify-center gap-3 flex-col">
                 <img
                   src={warrentyIcon}
                   alt="warrenty icon"
@@ -176,7 +182,7 @@ const GpsTracker = () => {
                 <img
                   src={warrentyImg}
                   alt="5 years of warrenty"
-                  className="w-full sm:max-w-sm rounded-lg"
+                  className="w-full sm:max-w-sm rounded-lg shadow-lg"
                 />
               </figure>
             </div>
@@ -184,7 +190,7 @@ const GpsTracker = () => {
         </Wrapper>
       </section>
       <section className="py-20">
-        <Wrapper className="px-2 flex flex-col-reverse items-center lg:flex-row gap-8">
+        <Wrapper className="px-4 flex flex-col-reverse items-center lg:flex-row gap-8">
           <figure className="flex-1">
             <img src={locateMockup} alt="autosecure locate mockup" />
           </figure>

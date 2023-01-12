@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaChevronRight, FaCheck } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -31,10 +32,14 @@ const LocateApp = () => {
   const labels = ["Trust.", "Integrity."];
   const slideImges = [macSlider1, macSlider2, macSlider3, macSlider4];
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
   return (
     <>
       <header className="py-20">
-        <Wrapper className="px-2 flex flex-col-reverse items-center lg:flex-row gap-12">
+        <Wrapper className="px-4 flex flex-col items-center lg:flex-row gap-12">
           <figure className="flex-1">
             <img src={locateMockup} alt="autosecure locate mockup" />
           </figure>
@@ -86,13 +91,15 @@ const LocateApp = () => {
                 disableOnInteraction: false,
                 reverseDirection: true,
               }}
-              modules={[Autoplay]}
               loop={true}
+              modules={[Autoplay]}
               className="mySwiper"
             >
               {slideImges.map((slide, i) => (
                 <SwiperSlide className="mySlide" key={i}>
-                  <img src={slide} alt={slide} className="w-full" />
+                  <figure>
+                    <img src={slide} alt={slide} />
+                  </figure>
                 </SwiperSlide>
               ))}
             </Swiper>

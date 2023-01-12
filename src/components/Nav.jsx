@@ -179,17 +179,21 @@ const Nav = () => {
                 {solutionsDropdownLinks.pages.map((item) => (
                   <div className="dropdown" key={item.id}>
                     {item?.link ? (
-                      <NavLink
-                        to={item?.link}
-                        tabIndex={item.id}
-                        className={`text-clrPrimary text-center bg-gray-50 p-2 hover:bg-white smooth flex gap-2 items-center justify-center border-none outline-none`}
-                      >
-                        {item.name}
-                        <FaCaretDown />
-                      </NavLink>
+                      <div className="flex gap-4 items-center justify-center border-none outline-none bg-gray-50 p-2 hover:bg-white smooth">
+                        <NavLink
+                          to={item?.link}
+                          className={`text-clrPrimary text-center`}
+                        >
+                          {item.name}
+                        </NavLink>
+                        <FaCaretDown
+                          tabIndex={item.id}
+                          className="focus:outline-none cursor-pointer"
+                        />
+                      </div>
                     ) : (
                       <label
-                        className={`text-clrPrimary text-center bg-gray-50 p-2 hover:bg-white smooth flex gap-2 items-center justify-center cursor-pointer border-none outline-none`}
+                        className={`text-clrPrimary text-center bg-gray-50 p-2 hover:bg-white smooth flex gap-4 items-center justify-center cursor-pointer border-none outline-none`}
                         tabIndex={item.id}
                       >
                         {item.name}

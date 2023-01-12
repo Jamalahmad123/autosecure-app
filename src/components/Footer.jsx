@@ -8,7 +8,7 @@ import {
   zukunftswerkstatt_logo,
 } from "../assets/images";
 import { styles } from "../Styles";
-import { navLinks } from "../data/constantData";
+import { navLinks, solutionsDropdownLinks } from "../data/constantData";
 
 import Wrapper from "./ui/Wrapper";
 import LazyImage from "./ui/LazyImage";
@@ -42,42 +42,75 @@ const Footer = () => {
             automation solutions for the automotive and mobility industry.
           </p>
         </div>
-        <div className="footer">
+        <div className="footer place-content-center md:place-content-between">
+          <div>
+            <Link
+              to={solutionsDropdownLinks.link}
+              className="text-lg font-semibold text-clrPrimary md:text-xl"
+            >
+              {solutionsDropdownLinks.name}
+            </Link>
+            {solutionsDropdownLinks.pages.map((item) => (
+              <ul key={item.id} className="mt-8">
+                <li>
+                  {item?.link ? (
+                    <Link
+                      to={item.link}
+                      className="text-base md:text-lg font-semibold text-clrPrimary"
+                    >
+                      {item.name}
+                    </Link>
+                  ) : (
+                    <h3 className="text-lg font-semibold text-clrPrimary">
+                      {item.name}
+                    </h3>
+                  )}
+                </li>
+                <ul className="pl-3 space-y-4 mt-6">
+                  {item.subPages.map((item) => (
+                    <li key={item.id}>
+                      <Link to={item.link} className="text-clrPrimary">
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </ul>
+            ))}
+          </div>
           {navLinks.map((item) => (
             <div key={item.id}>
               <Link
                 to={item.link}
-                className="text-lg font-semibold text-clrPrimary text-center"
+                className="text-lg font-semibold text-clrPrimary md:text-xl"
               >
                 {item.name}
               </Link>
-              {item.subPages.map((item) => (
-                <Link
-                  to={`/${item.link}`}
-                  className="text-clrPrimary text-center"
-                  key={item.id}
-                >
-                  {item.name}
+              <ul className="mt-8 space-y-4">
+                {item.subPages.map((item) => (
+                  <li key={item.id}>
+                    <Link to={item.link} className="text-clrPrimary">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+          <div className="">
+            <div className="flex flex-col gap-4">
+              <Link
+                to="/legal"
+                className="text-lg font-semibold text-clrPrimary text-center md:text-xl"
+              >
+                legal
+              </Link>
+              {legals.map((legal, i) => (
+                <Link to={`legal/${legal}`} className="text-clrPrimary" key={i}>
+                  {legal}
                 </Link>
               ))}
             </div>
-          ))}
-          <div>
-            <Link
-              to="/legal"
-              className="text-lg font-semibold text-clrPrimary text-center"
-            >
-              legal
-            </Link>
-            {legals.map((legal, i) => (
-              <Link
-                to={`legal/${legal}`}
-                className="text-clrPrimary text-center"
-                key={i}
-              >
-                {legal}
-              </Link>
-            ))}
           </div>
         </div>
       </Wrapper>
@@ -86,6 +119,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// autosecure_customer-16 > daimler
-// autosecure_customer-15 > goldbeck

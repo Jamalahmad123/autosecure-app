@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaCheck, FaChevronRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -51,10 +52,15 @@ const WirelessInAndOutdoor = () => {
     "24/7 live stream.",
     "Unlimited data volume.",
   ];
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
   return (
     <>
       <header className="py-20 bg-black">
-        <Wrapper className="px-2">
+        <Wrapper className="px-4">
           <TypeWriter width={140} labels={labels} hasStyle />
           <h2
             className={`text-2xl md:text-3xl lg:text-4xl font-AllianceBold font-bold text-white mb-16`}
@@ -172,7 +178,7 @@ const WirelessInAndOutdoor = () => {
         </div>
       </section>
       <section className="py-20">
-        <Wrapper className="px-2 md:px-14 relative py-8">
+        <Wrapper className="px-4 md:px-14 relative py-8">
           <Swiper
             spaceBetween={40}
             slidesPerView={1}
@@ -251,7 +257,7 @@ const WirelessInAndOutdoor = () => {
         </Wrapper>
       </section>
       <section className="py-20 bg-black">
-        <Wrapper className="px-2">
+        <Wrapper className="px-4">
           <h2 className={`${styles.headingSecondary} text-white mb-16`}>
             Professional safety equipment <br className="hidden md:block" />
             <span className="text-clrSky"> for your company</span>
@@ -331,7 +337,7 @@ const WirelessInAndOutdoor = () => {
         </Wrapper>
       </section>
       <section className="py-20">
-        <Wrapper className="px-2 space-y-24">
+        <Wrapper className="px-4 space-y-24">
           <header className="space-y-6">
             <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
               The trusted partner of{" "}
@@ -406,7 +412,7 @@ const WirelessInAndOutdoor = () => {
       </section>
       <AutosecureQoute qoute={qoute} />
       <section className="py-20">
-        <Wrapper className="px-2 grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <Wrapper className="px-4 grid grid-cols-1 lg:grid-cols-2 gap-10">
           <img src={wirless_vds} alt="wireless vds" className="mx-auto" />
           <div className="space-y-12">
             <h2 className={`${styles.headingSecondary} text-[#0b3f87]`}>

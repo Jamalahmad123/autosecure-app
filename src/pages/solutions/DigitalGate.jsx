@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
@@ -46,10 +47,15 @@ const DigitalGate = () => {
     "Scanner Solutions | Digital gate keeper – autosecure |  Safe.  Scan.  locate."
   );
   const labels = ["Trust.", "Integrity."];
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
+
   return (
     <>
       <header className="pt-20 pb-14 bg-black">
-        <Wrapper className="px-2 space-y-14">
+        <Wrapper className="px-4 space-y-14">
           <div className="flex justify-between gap-10 flex-col lg:flex-row">
             <div className="flex-1">
               <TypeWriter width={80} labels={labels} />
@@ -177,8 +183,8 @@ const DigitalGate = () => {
                 autoplay={{
                   disableOnInteraction: false,
                 }}
-                modules={[Autoplay]}
                 loop={true}
+                modules={[Autoplay]}
                 className="mySwiper"
               >
                 {screenSlideImges.map((slide, i) => (
