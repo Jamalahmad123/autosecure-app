@@ -54,12 +54,12 @@ const Home = () => {
     <Suspense fallback={<Spinner />}>
       <Hero title={title} desc={desc} promise={promise} />
       <Features />
-      <About link="/solutions/mobile-security" style="bg-black" />
+      {/* <About link="/solutions/mobile-security" style="bg-black" /> */}
       <IndustrySectorSolutions />
-      <AutosecureEcosystem {...ecosystemAndExpertise} isStyled hasLogo />
+      {/* <AutosecureEcosystem {...ecosystemAndExpertise} isStyled hasLogo /> */}
       <MeetingVideo videoPath={auto_secure_meeting} poster={poster} />
       <AutosecureValues />
-      <AutosecureCareerDialoge />
+      {/* <AutosecureCareerDialoge /> */}
       <AutoSecureNewsDialoge />
       <Achievements />
     </Suspense>

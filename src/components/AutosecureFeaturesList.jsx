@@ -3,7 +3,7 @@ import { FaCheck } from "react-icons/fa";
 
 const AutosecureFeaturesList = ({ children, benefits }) => {
   return (
-    <section className="py-10 bg-clrVeryLightGray">
+    <section className="py-20 bg-clrVeryLightGray">
       <Wrapper className="px-4 space-y-12">
         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {benefits.map((benefit, i) => (

@@ -121,7 +121,7 @@ const SecuritySolutions = () => {
       <Suspense fallback={<Spinner />}>
         <Hero {...safe} />
         <AutosecureFeaturesList benefits={benefits}>
-          <div className="flex items-stretch gap-6">
+          {/* <div className="flex items-stretch gap-6">
             <div className="group card w-80 shadow-xl overflow-hidden cursor-pointer">
               <figure>
                 <img
@@ -154,18 +154,17 @@ const SecuritySolutions = () => {
                 </h3>
               </div>
             </div>
-          </div>
+          </div> */}
         </AutosecureFeaturesList>
-        <AutosecureEcosystem {...savingsAndExpertise} hasLogo />
-        <Save />
+        {/* <Save /> */}
         <MeetingVideo
           videoPath={autosecure_save_scan}
           poster={autosecure_save_scan_poster}
         />
         <AutosecureSlider />
-        <AutosecureProcess {...processContent}>
+        {/* <AutosecureProcess {...processContent}>
           <TypeWriter width={160} labels={labelsProcess} />
-        </AutosecureProcess>
+        </AutosecureProcess> */}
         <AutosecureProcess {...technologyContent} hasSpace>
           <TypeWriter width={120} labels={labelsTech} />
         </AutosecureProcess>
@@ -177,8 +176,9 @@ const SecuritySolutions = () => {
         <AutosecureSystemArc {...deepLearningAndQualityImgs} isFeature />
         <VisualWarnings />
         <AutosecureFullSlider slideImages={slideImages} />
-        <About link="/solutions/mobile-security" style="bg-black" />
+        {/* <About link="/solutions/mobile-security" style="bg-black" /> */}
         <AutosecureApplications />
+        <AutosecureEcosystem {...savingsAndExpertise} hasLogo />
       </Suspense>
     </>
   );

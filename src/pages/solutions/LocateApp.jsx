@@ -25,9 +25,12 @@ const list = [
 ];
 
 const LocateApp = () => {
-  useTitle("Localization Solutions | Locate App – autosecure |  Safe.  Scan.  locate.")
+  useTitle(
+    "Localization Solutions | Locate App – autosecure |  Safe.  Scan.  locate."
+  );
   const labels = ["Trust.", "Integrity."];
   const slideImges = [macSlider1, macSlider2, macSlider3, macSlider4];
+
   return (
     <>
       <header className="py-20">
@@ -120,7 +123,10 @@ const LocateApp = () => {
               experience 100% process intelligence combined with innovative
               technology
             </h2>
-            <Link className="btn text-white md:text-xl gap-2 lg:gap-5 flex-nowrap px-6 py-4 border-none bg-clrSky hover:bg-clrPrimary capitalize">
+            <Link
+              to="/solutions/localization-solutions/gps-tracker"
+              className="btn text-white md:text-xl gap-2 lg:gap-5 flex-nowrap px-6 py-4 border-none bg-clrSky hover:bg-clrPrimary capitalize"
+            >
               Read More
               <FaChevronRight />
             </Link>

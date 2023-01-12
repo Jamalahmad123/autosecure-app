@@ -24,7 +24,7 @@ import autosecure_customer5 from "./autosecure_customer-5.jpg";
 import autosecure_customer6 from "./autosecure_customer-6.jpg";
 import autosecure_customer7 from "./autosecure_customer-7.jpg";
 import autosecure_customer8 from "./autosecure_customer-8.jpg";
-import autosecure_customer9 from "./autosecure_customer-9.jpg";
+import autosecure_customer9 from "./autosecure_customer-9.png";
 import autosecure_customer10 from "./autosecure_customer-10.jpg";
 import autosecure_customer13 from "./autosecure_customer-13.jpg";
 import autosecure_customer14 from "./autosecure_customer-14.png";

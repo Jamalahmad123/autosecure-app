@@ -166,17 +166,68 @@ const Nav = () => {
             toggle ? "h-[100%] z-[999] example" : "h-[0%] -z-50"
           } smooth overflow-auto flex items-start`}
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 px-10 relative w-full items-stretch py-20 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 px-10 relative w-full items-stretch py-20 gap-14">
+            <div className="text-center space-y-8">
+              <NavLink
+                to={`${solutionsDropdownLinks.link}`}
+                className="text-lg font-semibold text-clrPrimary text-center inline-block"
+                ref={navRef}
+              >
+                {solutionsDropdownLinks.name}
+              </NavLink>
+              <div className="flex flex-col gap-5">
+                {solutionsDropdownLinks.pages.map((item) => (
+                  <div className="dropdown" key={item.id}>
+                    {item?.link ? (
+                      <NavLink
+                        to={item?.link}
+                        tabIndex={item.id}
+                        className={`text-clrPrimary text-center bg-gray-50 p-2 hover:bg-white smooth flex gap-2 items-center justify-center border-none outline-none`}
+                      >
+                        {item.name}
+                        <FaCaretDown />
+                      </NavLink>
+                    ) : (
+                      <label
+                        className={`text-clrPrimary text-center bg-gray-50 p-2 hover:bg-white smooth flex gap-2 items-center justify-center cursor-pointer border-none outline-none`}
+                        tabIndex={item.id}
+                      >
+                        {item.name}
+                        <FaCaretDown />
+                      </label>
+                    )}
+                    <ul
+                      tabIndex={item.id}
+                      className="dropdown-content menu shadow z-[999] bg-white flex-row right-0"
+                    >
+                      {item.subPages.map((item) => (
+                        <li
+                          key={item.id}
+                          className="hover:bg-clrSky capitalize w-full grid place-content-center"
+                        >
+                          <NavLink
+                            to={item.link}
+                            className="text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white relative z-[999]"
+                          >
+                            {item.name}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
             {navLinks.map((item) => (
-              <div key={item.id} className="text-center">
+              <div key={item.id} className="text-center space-y-8">
                 <NavLink
                   to={`/${item.link}`}
-                  className="text-lg font-semibold text-clrPrimary text-center inline-block mb-4"
+                  className="text-lg font-semibold text-clrPrimary text-center inline-block"
                   ref={navRef}
                 >
                   {item.name}
                 </NavLink>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-5">
                   {item.subPages.map((item) => (
                     <NavLink
                       to={`/${item.link}`}
@@ -190,11 +241,15 @@ const Nav = () => {
                 </div>
               </div>
             ))}
-            <div>
-              <h3 className="text-lg font-semibold text-clrPrimary text-center mb-4">
+            <div className="text-center space-y-8">
+              <NavLink
+                to="/legal"
+                className="text-lg font-semibold text-clrPrimary text-center inline-block"
+                ref={navRef}
+              >
                 legal
-              </h3>
-              <div className="flex flex-col gap-2">
+              </NavLink>
+              <div className="flex flex-col gap-5">
                 {legals.map((legal, i) => (
                   <NavLink
                     className="text-clrPrimary text-center bg-gray-50 p-2 hover:bg-white smooth"

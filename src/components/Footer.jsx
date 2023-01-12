@@ -86,3 +86,6 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// autosecure_customer-16 > daimler
+// autosecure_customer-15 > goldbeck
