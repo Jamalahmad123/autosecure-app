@@ -201,7 +201,7 @@ const GpsTracker = () => {
               technology
             </h2>
             <Link
-              to="/solutions/locate-app"
+              to="/solutions/localization-solutions/locate-app"
               className="btn text-white md:text-xl gap-2 border-none bg-clrSky hover:bg-clrPrimary capitalize"
             >
               Read More

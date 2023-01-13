@@ -1,5 +1,7 @@
 import { lazy, Suspense, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper";
 import {
   FaChevronRight,
   FaCheck,
@@ -23,10 +25,7 @@ import { auto_secure_timelaps } from "../assets/videos";
 import {
   aboutTower,
   data,
-  featureArc,
-  featureDeepLearning,
-  featureindivisuals,
-  quality,
+  mobileSecuritySliderData,
 } from "../data/constantData2";
 import AnimatedTower from "./ui/AnimatedTower";
 import AnimatedRouter from "./ui/AnimatedRouter";
@@ -35,7 +34,7 @@ import MultiStepForm from "./ui/MultiStepForm";
 const { outDoor, fencedArea, cenimaWeb, smartTracking, monitoringCenter } =
   data;
 
-const ProductComponent = () => {
+const ProductComponent = ({ scrollIntoView }) => {
   return (
     <>
       <section className="py-16 bg-theif">
@@ -71,9 +70,12 @@ const ProductComponent = () => {
                 configurable camera equipment, you receive a tailor-made mobile
                 security solution for your individual requirements.
               </p>
-              <Link className="btn text-base md:text-xl font-semibold text-white lowercase border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular">
+              <button
+                onClick={scrollIntoView}
+                className="btn text-base md:text-xl font-semibold text-white lowercase border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular"
+              >
                 request a quote <FaChevronRight size={20} className="ml-4" />
-              </Link>
+              </button>
             </div>
           </div>
           <div className="py-14">
@@ -295,9 +297,12 @@ const ProductComponent = () => {
                 from autosecure - this is how we achieve 100% protection for
                 your valuables.
               </p>
-              <Link className="btn text-base md:text-xl font-semibold text-white lowercase border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular">
+              <button
+                onClick={scrollIntoView}
+                className="btn text-base md:text-xl font-semibold text-white lowercase border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular"
+              >
                 request a quote <FaChevronRight size={20} className="ml-4" />
-              </Link>
+              </button>
             </div>
             <ul className="flex-1 space-y-4">
               {monitoringCenter.map((item, i) => (
@@ -355,16 +360,74 @@ const ProductComponent = () => {
                   </li>
                 ))}
               </ul>
-              <Link className="btn text-base md:text-xl font-semibold text-white lowercase border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular">
+              <button
+                onClick={scrollIntoView}
+                className="btn text-base md:text-xl font-semibold text-white lowercase border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular"
+              >
                 request a quote <FaChevronRight size={20} className="ml-4" />
-              </Link>
+              </button>
             </div>
           </div>
         </Wrapper>
       </section>
       <section className="py-20 bg-clrLightGray">
-        <Wrapper className="px-4">
-          <SplitContainer>
+        <Wrapper className="px-4 relative py-8">
+          <Swiper
+            spaceBetween={35}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper py-8 static"
+            breakpoints={{
+              768: {
+                // width: 576,
+                slidesPerView: 1,
+              },
+              1080: {
+                // width: 768,
+                slidesPerView: 2,
+              },
+              // 1280: {
+              //   // width: 768,
+              //   slidesPerView: 3,
+              // },
+            }}
+            style={{
+              "--swiper-pagination-color": "#162529",
+              "--swiper-navigation-color": "#162529",
+            }}
+          >
+            {mobileSecuritySliderData.map((item) => (
+              <SwiperSlide
+                className="mySlide card bg-white shadow-xl items-stretch cursor-grab"
+                key={item.id}
+              >
+                <div className="card-body gap-16 md:justify-between md:gap-8">
+                  <div className="space-y-6">
+                    <h2 className="capitalize font-bold text-2xl md:text-3xl lg:text-4xl text-clrPrimary">
+                      {item.title1} <br className="hidden lg:block" />
+                      <span className="text-clrSky lg:block">
+                        {item.title2}
+                      </span>
+                    </h2>
+                    <p className="text-lg md:text-xl text-clrPrimary flex-grow-0">
+                      {item.titleDesc}
+                    </p>
+                  </div>
+                  <ul className="space-y-3">
+                    {item.list.map((benefit, i) => (
+                      <li className="flex items-start gap-2" key={i}>
+                        <FaCheck className="text-clrSky min-w-[25px]" />
+                        <p className="text-clrPrimary">{benefit}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          {/* <SplitContainer>
             <FeaturesList2 data={featureindivisuals}>
               <h2
                 className={`${styles.headingSecondary} leading-[2.8rem] text-clrPrimary lg:leading-[3.8rem]`}
@@ -401,7 +464,7 @@ const ProductComponent = () => {
                 <span className="text-clrSky lg:block">Saturated colors.</span>
               </h2>
             </FeaturesList2>
-          </SplitContainer>
+          </SplitContainer> */}
         </Wrapper>
       </section>
       <section className="py-20 bg-clrLightGray">

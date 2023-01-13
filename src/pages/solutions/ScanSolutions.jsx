@@ -130,9 +130,7 @@ const ScanSolutions = () => {
                 className="w-full md:w-1/2 mx-auto"
               />
             </figure>
-            <h2
-              className={`${styles.headingSecondary} text-clrPrimary text-center`}
-            >
+            <h2 className="text-clrPrimary text-[1.5rem] lg:text-[2rem] font-bold font-AllianceBold leading-[2.3rem] lg:leading-[3rem] text-center">
               Digital condition control, damage detection and documentation in
               real time. Experience the autosecure car scanner live in the
               workshop of the future 4.0.

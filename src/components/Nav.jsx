@@ -61,22 +61,12 @@ const Nav = () => {
                     tabIndex={item.id}
                     className="hover:bg-clrSky capitalize"
                   >
-                    {item?.link ? (
-                      <NavLink
-                        to={item?.link}
-                        className={`hover:bg-clrSky smooth hover:text-white relative z-[999]`}
-                      >
-                        {item.name}
-                        <FaCaretDown />
-                      </NavLink>
-                    ) : (
-                      <h3
-                        className={`hover:bg-clrSky smooth hover:text-white relative z-[999]`}
-                      >
-                        {item.name}
-                        <FaCaretDown />
-                      </h3>
-                    )}
+                    <label
+                      className={`hover:bg-clrSky smooth hover:text-white relative z-[999]`}
+                    >
+                      {item.name}
+                      <FaCaretDown />
+                    </label>
                     <ul className="bg-white w-full p-0 shadow">
                       {item.subPages.map((item) => (
                         <li
@@ -178,28 +168,13 @@ const Nav = () => {
               <div className="flex flex-col gap-5">
                 {solutionsDropdownLinks.pages.map((item) => (
                   <div className="dropdown" key={item.id}>
-                    {item?.link ? (
-                      <div className="flex gap-4 items-center justify-center border-none outline-none bg-gray-50 p-2 hover:bg-white smooth">
-                        <NavLink
-                          to={item?.link}
-                          className={`text-clrPrimary text-center`}
-                        >
-                          {item.name}
-                        </NavLink>
-                        <FaCaretDown
-                          tabIndex={item.id}
-                          className="focus:outline-none cursor-pointer"
-                        />
-                      </div>
-                    ) : (
-                      <label
-                        className={`text-clrPrimary text-center bg-gray-50 p-2 hover:bg-white smooth flex gap-4 items-center justify-center cursor-pointer border-none outline-none`}
-                        tabIndex={item.id}
-                      >
-                        {item.name}
-                        <FaCaretDown />
-                      </label>
-                    )}
+                    <label
+                      className={`text-clrPrimary text-center bg-gray-50 p-2 hover:bg-white smooth flex gap-4 items-center justify-center cursor-pointer border-none outline-none`}
+                      tabIndex={item.id}
+                    >
+                      {item.name}
+                      <FaCaretDown />
+                    </label>
                     <ul
                       tabIndex={item.id}
                       className="dropdown-content menu shadow z-[999] bg-white flex-row right-0"

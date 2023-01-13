@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
+import { FaCaretDown } from "react-icons/fa";
 import {
   autosecure_hipe_award,
   hikvision_logo,
@@ -42,41 +43,45 @@ const Footer = () => {
             automation solutions for the automotive and mobility industry.
           </p>
         </div>
-        <div className="footer place-content-center md:place-content-between">
-          <div>
+        <div className="footer place-content-center md:place-content-between pb-14">
+          <div className="space-y-8">
             <Link
-              to={solutionsDropdownLinks.link}
+              to={`${solutionsDropdownLinks.link}`}
               className="text-lg font-semibold text-clrPrimary md:text-xl"
             >
               {solutionsDropdownLinks.name}
             </Link>
-            {solutionsDropdownLinks.pages.map((item) => (
-              <ul key={item.id} className="mt-8">
-                <li>
-                  {item?.link ? (
-                    <Link
-                      to={item.link}
-                      className="text-base md:text-lg font-semibold text-clrPrimary"
-                    >
-                      {item.name}
-                    </Link>
-                  ) : (
-                    <h3 className="text-lg font-semibold text-clrPrimary">
-                      {item.name}
-                    </h3>
-                  )}
-                </li>
-                <ul className="pl-3 space-y-4 mt-6">
-                  {item.subPages.map((item) => (
-                    <li key={item.id}>
-                      <Link to={item.link} className="text-clrPrimary">
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </ul>
-            ))}
+            <div className="flex flex-col gap-5">
+              {solutionsDropdownLinks.pages.map((item) => (
+                <div className="dropdown" key={item.id}>
+                  <label
+                    className={`text-clrPrimary font-semibold smooth flex gap-4 items-center justify-between cursor-pointer outline-none`}
+                    tabIndex={item.id}
+                  >
+                    {item.name}
+                    <FaCaretDown />
+                  </label>
+                  <ul
+                    tabIndex={item.id}
+                    className="dropdown-content menu shadow z-[999] bg-white rounded-lg flex-row right-0"
+                  >
+                    {item.subPages.map((item) => (
+                      <li
+                        key={item.id}
+                        className="hover:bg-clrSky capitalize w-full"
+                      >
+                        <Link
+                          to={item.link}
+                          className="text-sm text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white relative z-[999]"
+                        >
+                          {item.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
           {navLinks.map((item) => (
             <div key={item.id}>

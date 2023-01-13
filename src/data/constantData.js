@@ -16,6 +16,50 @@ import {
   autoLocateVideo,
 } from "../assets/videos";
 
+export const securityPages = [
+  {
+    id: 1,
+    name: "active video surveillance",
+    link: "/solutions/security-solutions/active-video-surveillance",
+  },
+  {
+    id: 2,
+    name: "mobile security tower",
+    link: "/solutions/security-solutions/mobile-security",
+  },
+  {
+    id: 3,
+    name: "wireless in & Outdoor",
+    link: "/solutions/security-solutions/wireless-in-and-outdoor",
+  },
+];
+
+export const scanPages = [
+  {
+    id: 1,
+    name: "autosecure scanner",
+    link: "/solutions/scanner-solutions/scan",
+  },
+  {
+    id: 2,
+    name: "digital gatekeeper",
+    link: "/solutions/scanner-solutions/digital-gate-keeper",
+  },
+];
+
+export const locatePages = [
+  {
+    id: 2,
+    name: "autosecure locate app",
+    link: "/solutions/localization-solutions/locate-app",
+  },
+  {
+    id: 3,
+    name: "autosecure GPS tracker",
+    link: "/solutions/localization-solutions/gps-tracker",
+  },
+];
+
 export const solutionsDropdownLinks = {
   id: 1,
   name: "solutions",
@@ -53,7 +97,7 @@ export const solutionsDropdownLinks = {
         },
         {
           id: 2,
-          name: "digital Gate keeper",
+          name: "digital gatekeeper",
           link: "/solutions/scanner-solutions/digital-gate-keeper",
         },
       ],
@@ -70,7 +114,7 @@ export const solutionsDropdownLinks = {
         },
         {
           id: 3,
-          name: "autosecure gps tracker",
+          name: "autosecure GPS tracker",
           link: "/solutions/localization-solutions/gps-tracker",
         },
       ],
@@ -217,6 +261,7 @@ export const features = [
     benefit2: "100% less claims",
     btnTitle: "security solutions",
     videoPath: autoSecurityVideo,
+    subPages: securityPages,
   },
   {
     id: 2,
@@ -227,6 +272,7 @@ export const features = [
     benefit2: "No discussions with customers",
     btnTitle: "Scanner solutions",
     videoPath: autoScanVideo,
+    subPages: scanPages,
   },
 
   {
@@ -238,6 +284,130 @@ export const features = [
     benefit2: "More sales at less cost",
     btnTitle: "locate solutions",
     videoPath: autoLocateVideo,
+    subPages: locatePages,
+  },
+];
+
+export const solutionsLogistics = [
+  {
+    id: 1,
+    title: "Automated entry and exit control.",
+    desc: "Automated trailer and dangerous goods detection, freight inspection to reduce manual handling and search effort are often still carried out manually in logistics today, with a high error rate and immense personnel costs. The new autosecure scan solution simplifies, digitizes and automates these routine tasks.",
+    btnTitle: "security solutions",
+    path: "/solutions/security-solutions",
+    videoPath: autoSecurityVideo,
+    subPages: securityPages,
+  },
+  {
+    id: 2,
+    title: "Goods and goods with automatic booking process.",
+    desc: "Manual and personnel-intensive routine tasks such as the booking of goods and goods are still carried out in many companies with high human resources and a high error rate. The new autosecure Locate solution automates these processes and ensures at least 20% faster process handling.",
+    btnTitle: "Scanner solutions",
+    path: "/solutions/scanner-solutions",
+    videoPath: autoScanVideo,
+    subPages: scanPages,
+  },
+  {
+    id: 3,
+    title: "Theft and burglary problems on the company premises.",
+    desc: "Machine and goods theft is a big problem for logisticians. Almost every company encounters permanent thefts. autosecure offers sensible and intelligent security solutions and ensures 100% protection for your valuables. By the way, with autosecure you achieve savings of at least 50% compared to personnel-based monitoring.",
+    btnTitle: "Locate solutions",
+    path: "/solutions/localization-solutions",
+    videoPath: autoLocateVideo,
+    subPages: locatePages,
+  },
+];
+
+export const solutionsConstructions = [
+  {
+    id: 1,
+    title: "Theft and burglary problems on the construction site.",
+    desc: "Theft of machinery or recyclable materials on construction sites is a major problem for construction companies. Not only the associated loss of value, but also the resulting downtimes lead to considerable economic difficulties. autosecure offers sensible and intelligent security solutions and ensures 100% protection for your valuables.",
+    btnTitle: "security solutions",
+    path: "/solutions/security-solutions",
+    videoPath: autoSecurityVideo,
+    subPages: securityPages,
+  },
+  {
+    id: 2,
+    title:
+      "Automated documentation of delivery and removal processes on the construction site.",
+    desc: "Which authorized or unauthorized persons enter the construction site and when? On many construction sites, this topic leads to numerous discussions, insurance problems, attendance and time recording problems and much more. The autosecure scan solution offers ideal options for automated access control.",
+    btnTitle: "Scanner solutions",
+    path: "/solutions/scanner-solutions",
+    videoPath: autoScanVideo,
+    subPages: scanPages,
+  },
+  {
+    id: 3,
+    title:
+      "Goods and building materials leave the construction site unnoticed or simply cannot be found again.",
+    desc: "It not only costs time and nerves - but at the end of the day also hard cash. Long search times for finding goods and building materials that have left the construction site unnoticed or unintentionally or simply can no longer be found. With the new autosecure-Locate solution, goods and building materials can be located to within a few meters and, incidentally, perfectly protected against theft.",
+    btnTitle: "Locate solutions",
+    path: "/solutions/localization-solutions",
+    videoPath: autoLocateVideo,
+    subPages: locatePages,
+  },
+];
+
+export const solutionsAutoMobile = [
+  {
+    id: 1,
+    title: "Theft and burglary problems on the company premises.",
+    desc: "Vehicle theft is a big problem for car dealerships, car parks and vehicle rental companies. Almost every company encounters permanent partial and total thefts. autosecure offers sensible and intelligent security solutions and ensures 100% protection for your valuables.",
+    btnTitle: "security solutions",
+    path: "/solutions/security-solutions",
+    videoPath: autoSecurityVideo,
+    subPages: securityPages,
+  },
+  {
+    id: 2,
+    title: "Automated condition documentation of vehicles on the site.",
+    desc: "Discussion with customers about the condition of the vehicle at what time or the quick detection of damage to the vehicle during the condition assessment. The new autosecure scanner solves these problems and automatically records every vehicle on the company premises.",
+    btnTitle: "Scanner solutions",
+    path: "/solutions/scanner-solutions",
+    videoPath: autoScanVideo,
+    subPages: scanPages,
+  },
+  {
+    id: 3,
+    title: "Long search times for finding vehicles on the premises.",
+    desc: "It not only costs time and nerves - but at the end of the day also hard cash. Long search times for finding vehicles on the company premises are a time-consuming problem for many car dealerships, car parks and vehicle rental companies. With the new autosecure locate solution, your vehicles can be located to within a few meters.",
+    btnTitle: "Locate solutions",
+    path: "/solutions/localization-solutions",
+    videoPath: autoLocateVideo,
+    subPages: locatePages,
+  },
+];
+
+export const solutionsAgriculture = [
+  {
+    id: 1,
+    title: "Theft and burglary problems on the company premises.",
+    desc: "Machinery and goods theft in agriculture is a big problem. Almost every agricultural business encounters permanent theft. autosecure offers sensible and intelligent security solutions and ensures 100% protection for your valuables. By the way, with autosecure you achieve savings of at least 50% compared to personnel-based monitoring.",
+    btnTitle: "security solutions",
+    path: "/solutions/security-solutions",
+    videoPath: autoSecurityVideo,
+    subPages: securityPages,
+  },
+  {
+    id: 2,
+    title: "Automated entry and exit control.",
+    desc: "Automated harvest and fruit inspection (shape, color, size) is still a dream of the future in many agricultural businesses. A large number of employees are often entrusted with these tasks. The new autosecure scan solution and the latest machine vision technology ensure that your harvest inspection runs automatically and securely.",
+    btnTitle: "Scanner solutions",
+    path: "/solutions/scanner-solutions",
+    videoPath: autoScanVideo,
+    subPages: scanPages,
+  },
+  {
+    id: 3,
+    title:
+      "Goods and goods leave the property unnoticed or simply cannot be found again.",
+    desc: "It not only costs time and nerves - but at the end of the day also hard cash. Long search times for finding goods and goods that have left the property unnoticed or unintentionally or simply can no longer be found. With the new autosecure Locate solution, goods and goods can be located to within a few meters and also perfectly protected against theft.",
+    btnTitle: "Locate solutions",
+    path: "/solutions/localization-solutions",
+    videoPath: autoLocateVideo,
+    subPages: locatePages,
   },
 ];
 

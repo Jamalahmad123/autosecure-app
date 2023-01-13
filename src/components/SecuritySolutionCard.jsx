@@ -11,6 +11,7 @@ const SecuritySolutionCard = ({
   path,
   videoPath,
   id,
+  subPages,
 }) => {
   return (
     <section className="py-12 bg-clrVeryLightGray">
@@ -28,20 +29,37 @@ const SecuritySolutionCard = ({
             Sorry, your browser doesn't support videos.
           </video>
           <p className="text-clrSky text-lg font-bold font-AllianceBold mt-4">
-            Solutin {id}
+            Solution {id}
           </p>
         </div>
         <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
           {title}
         </h2>
         <p className="text-base text-clrPrimary">{desc}</p>
-        <Link
-          to={path}
-          className="btn py-4 h-auto text-lg font-medium lg:text-xl capitalize text-white bg-clrPrimary hover:bg-clrSky border-none gap-2"
-        >
-          <img src={logo_sm} alt="logo" className="w-4" />
-          <span>{btnTitle}</span>
-        </Link>
+        <div className="mt-4 dropdown z-[999]">
+          <button
+            className="btn font-normal capitalize text-white bg-clrPrimary hover:bg-clrSky border-none gap-6 focus:bg-clrSky focus:rounded-b-none"
+            tabIndex={id}
+          >
+            <img src={logo_sm} alt="logo" className="w-4 pointer-events-none" />
+            <span className="pointer-events-none">{btnTitle}</span>
+          </button>
+          <ul
+            tabIndex={id}
+            className="dropdown-content menu shadow z-[999] bg-clrPrimary flex-row right-0 rounded-b-md"
+          >
+            {subPages.map((item) => (
+              <li key={item.id} className="hover:bg-white capitalize w-full">
+                <Link
+                  to={item.link}
+                  className="text-sm text-white hover:text-clrPrimary smooth hover:bg-white relative z-[999]"
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </Wrapper>
     </section>
   );

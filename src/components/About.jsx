@@ -2,14 +2,10 @@ import { FaChevronRight, FaCheck } from "react-icons/fa";
 import Wrapper from "./ui/Wrapper";
 import { styles } from "../Styles";
 import { autosecureMobile } from "../assets/images";
-import { Link } from "react-router-dom";
 import TypeWriter from "./ui/TypeWriter";
 import ParticlesBackground from "./ui/ParticlesBackground";
-import { lazy, Suspense } from "react";
 import AnimatedTower from "./ui/AnimatedTower";
 import LazyImage from "./ui/LazyImage";
-
-// const ParticlesBackground = lazy(() => import("./ui/ParticlesBackground"));
 
 const options = {
   fpsLimit: 60,
@@ -70,7 +66,7 @@ const options = {
   retina_detect: true,
 };
 
-const About = ({ link, linkTitle = "Learn More", style }) => {
+const About = ({ scrollToView }) => {
   const labels = [
     "Rent flexibly.",
     "Immediate contact with the perpetrator.",
@@ -82,10 +78,8 @@ const About = ({ link, linkTitle = "Learn More", style }) => {
   ];
   return (
     <>
-      <section className={`pt-20 ${style} relative z-[1]`}>
-        <Suspense fallback={<div />}>
-          <ParticlesBackground id="about" options={options} />
-        </Suspense>
+      <section className="pt-20 gradient-animation relative z-[1]">
+        <ParticlesBackground id="about" options={options} />
         <Wrapper className="px-4">
           <TypeWriter width={140} labels={labels} hasStyle />
           <header>
@@ -113,13 +107,13 @@ const About = ({ link, linkTitle = "Learn More", style }) => {
                   <FaChevronRight className="inline-block text-clrSky" /> 100%
                   configurable.
                 </p>
-                <Link
-                  to={link}
-                  className="btn text-white btn-lg gap-2 border-none bg-clrSkyDark hover:bg-clrSky"
+                <button
+                  className="btn text-white btn-lg gap-4 md:gap-8 border-none bg-clrSkyDark hover:bg-clrSky"
+                  onClick={scrollToView}
                 >
-                  {linkTitle}
+                  Rent Now
                   <FaChevronRight />
-                </Link>
+                </button>
               </div>
             </div>
           </div>
@@ -150,14 +144,6 @@ const About = ({ link, linkTitle = "Learn More", style }) => {
                 </p>
               </div>
             </div>
-
-            {/* <figure className="flex self-end">
-              <img
-                src={}
-                alt="autosecure-mobile"
-                loading="lazy"
-              />
-            </figure> */}
             <figure className="flex self-end">
               <LazyImage
                 image={{

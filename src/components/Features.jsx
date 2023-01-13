@@ -4,9 +4,21 @@ import { Link } from "react-router-dom";
 import Wrapper from "./ui/Wrapper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
-import { features } from "../data/constantData";
+import { features, solutionsDropdownLinks } from "../data/constantData";
 import { styles } from "../Styles";
 import { logo_sm } from "../assets/images";
+
+/*<li
+                        key={item.id}
+                        className="hover:bg-clrSky capitalize w-full"
+                      >
+                        <Link
+                          to={item.link}
+                          className="text-sm text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white relative z-[999]"
+                        >
+                          {item.name}
+                        </Link>
+                      </li> */
 
 const Features = () => {
   return (
@@ -68,14 +80,36 @@ const Features = () => {
                     <p className="text-base text-clrPrimary">{item.benefit2}</p>
                   </div>
                 </div>
-                <div className="mt-4">
-                  <Link
-                    to={item.link}
-                    className="btn font-normal capitalize text-white bg-clrPrimary hover:bg-clrSky border-none gap-2"
+                <div className="mt-4 dropdown dropdown-top">
+                  <button
+                    className="btn font-normal capitalize text-white bg-clrPrimary hover:bg-clrSky border-none gap-6 focus:bg-clrSky focus:rounded-t-none"
+                    tabIndex={item.id}
                   >
-                    <img src={logo_sm} alt="logo" className="w-4" />
-                    <span>{item.btnTitle}</span>
-                  </Link>
+                    <img
+                      src={logo_sm}
+                      alt="logo"
+                      className="w-4 pointer-events-none"
+                    />
+                    <span className="pointer-events-none">{item.btnTitle}</span>
+                  </button>
+                  <ul
+                    tabIndex={item.id}
+                    className="dropdown-content menu shadow z-[999] bg-clrPrimary flex-row right-0 rounded-t-md"
+                  >
+                    {item.subPages.map((item) => (
+                      <li
+                        key={item.id}
+                        className="hover:bg-clrSky capitalize w-full"
+                      >
+                        <Link
+                          to={item.link}
+                          className="text-sm text-white hover:bg-transparent hover:bg-clrSky smooth hover:text-white relative z-[999]"
+                        >
+                          {item.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </SwiperSlide>

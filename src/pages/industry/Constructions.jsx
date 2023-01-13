@@ -16,6 +16,7 @@ import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
 import { FaCheck } from "react-icons/fa";
 import { useTitle } from "../../hooks/customHooks";
+import { solutionsConstructions } from "../../data/constantData";
 
 // import PagesHero from "../../components/PagesHero";
 
@@ -34,34 +35,6 @@ const AutosecureEcosystem = lazy(() =>
 const AnimatedCircle = lazy(() => import("../../components/ui/AnimatedCircle"));
 const Features = lazy(() => import("../../components/Features"));
 
-const solutions = [
-  {
-    id: 1,
-    title: "Theft and burglary problems on the construction site.",
-    desc: "Theft of machinery or recyclable materials on construction sites is a major problem for construction companies. Not only the associated loss of value, but also the resulting downtimes lead to considerable economic difficulties. autosecure offers sensible and intelligent security solutions and ensures 100% protection for your valuables.",
-    btnTitle: "security solutions",
-    path: "/solutions/security-solutions",
-    videoPath: autoSecurityVideo,
-  },
-  {
-    id: 2,
-    title:
-      "Automated documentation of delivery and removal processes on the construction site.",
-    desc: "Which authorized or unauthorized persons enter the construction site and when? On many construction sites, this topic leads to numerous discussions, insurance problems, attendance and time recording problems and much more. The autosecure scan solution offers ideal options for automated access control.",
-    btnTitle: "Scanner solutions",
-    path: "/solutions/scanner-solutions",
-    videoPath: autoScanVideo,
-  },
-  {
-    id: 3,
-    title:
-      "Goods and building materials leave the construction site unnoticed or simply cannot be found again.",
-    desc: "It not only costs time and nerves - but at the end of the day also hard cash. Long search times for finding goods and building materials that have left the construction site unnoticed or unintentionally or simply can no longer be found. With the new autosecure-Locate solution, goods and building materials can be located to within a few meters and, incidentally, perfectly protected against theft.",
-    btnTitle: "Locate solutions",
-    path: "/solutions/localization-solutions",
-    videoPath: autoLocateVideo,
-  },
-];
 const heroContent = {
   title: "Construction & construction vehicles",
   desc: "Automation solutions for the construction site of the future",
@@ -85,10 +58,10 @@ const Constructions = () => {
     <>
       <Suspense fallback={<Spinner />}>
         <PagesHero {...heroContent} />
-        <AutosecureEcosystem {...savingsAndExpertise} hasLogo />
-        {solutions.map((item) => (
+        {solutionsConstructions.map((item) => (
           <SecuritySolutionCard {...item} key={item.id} />
         ))}
+        <AutosecureEcosystem {...savingsAndExpertise} hasLogo />
         <Hero
           title={animatedHeroContent.title}
           desc={animatedHeroContent.desc}

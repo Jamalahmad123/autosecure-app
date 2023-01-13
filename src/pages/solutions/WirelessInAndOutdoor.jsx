@@ -6,6 +6,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 import Wrapper from "../../components/ui/Wrapper";
 import TypeWriter from "../../components/ui/TypeWriter";
+import ParticlesBackground from "../../components/ui/ParticlesBackground";
 import AutosecureQoute from "../../components/ui/AutosecureQoute";
 import { styles } from "../../Styles";
 
@@ -14,17 +15,12 @@ import {
   CE,
   CE2,
   grade2,
-  wireless_center_unit,
   wireless_desktop_icon,
-  wireless_radio,
   wireless_slide_1,
   wireless_slide_2,
   wirlessIcon1,
   wirlessIcon2,
   wirlessIcon3,
-  wirlessIcon4,
-  wirlessIcon5,
-  wirlessIcon6,
   wirless_automation,
   wirless_burglar_alarm,
   wirless_fire_alarm,
@@ -32,10 +28,68 @@ import {
   wirless_vds,
   wirless_vid_survelance,
 } from "../../assets/images";
-import { features } from "../../data/constantData";
 import { wirelessSlidesData } from "../../data/constantData2";
 import { autosecure_ajax } from "../../assets/videos";
 import { useTitle } from "../../hooks/customHooks";
+
+const options = {
+  fpsLimit: 60,
+  fullScreen: {
+    enable: false,
+    zIndex: -999,
+  },
+  background: {
+    color: "transparent",
+  },
+  interactivity: {
+    detectsOn: "canvas",
+    events: {
+      resize: true,
+    },
+  },
+  particles: {
+    color: {
+      value: "#0A84FF",
+    },
+    links: {
+      color: "#dadada",
+      distance: 250,
+      enable: true,
+      opacity: 0.3,
+      width: 1,
+    },
+    collisions: {
+      enable: true,
+    },
+    move: {
+      directions: "none",
+      enable: true,
+      outModes: {
+        default: "bounce",
+      },
+      random: false,
+      speed: 1,
+      straight: false,
+    },
+    number: {
+      density: {
+        enable: true,
+        area: 800,
+      },
+      value: 30,
+    },
+    opacity: {
+      value: 0.3,
+    },
+    shape: {
+      type: "circle",
+    },
+    size: {
+      value: { min: 1, max: 1 },
+    },
+  },
+  retina_detect: true,
+};
 
 const WirelessInAndOutdoor = () => {
   useTitle(
@@ -59,7 +113,8 @@ const WirelessInAndOutdoor = () => {
 
   return (
     <>
-      <header className="py-20 bg-black">
+      <header className="py-20 bg-black relative z-[1]">
+        <ParticlesBackground id="about" options={options} />
         <Wrapper className="px-4">
           <TypeWriter width={140} labels={labels} hasStyle />
           <h2

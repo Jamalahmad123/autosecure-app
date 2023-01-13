@@ -13,11 +13,19 @@ const MobileSecurity = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);
+
+  const scrollToView = () => {
+    const element = document.getElementById("rent");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <Suspense fallback={<Spinner />}>
-        <About link="rent" linkTitle="Rent Now" style="gradient-animation" />
-        <ProductComponent />
+        <About scrollToView={scrollToView} />
+        <ProductComponent scrollIntoView={scrollToView} />
       </Suspense>
     </>
   );

@@ -60,7 +60,7 @@ const AboutUs = () => {
             <p className="text-base text-clrPrimary md:max-w-2xl leading-6 md:text-lg">
               With our{" "}
               <Link
-                to="/solutions/security-solutions"
+                to="/solutions/security-solutions/active-video-surveillance/active-video-surveillance"
                 className="font-bold text-xl hover:opacity-90"
               >
                 autosecure SAVE principle
@@ -70,14 +70,14 @@ const AboutUs = () => {
               your company and save costs at the same time. autosecure assumes
               responsibility for{" "}
               <Link
-                to="/solutions/security-solutions"
+                to="/solutions/security-solutions/active-video-surveillance"
                 className="font-bold text-xl hover:opacity-90"
               >
                 security
               </Link>{" "}
               on company premises for its customers and offers{" "}
               <Link
-                to="/solutions/security-solutions"
+                to="/solutions/security-solutions/active-video-surveillance"
                 className="font-bold text-xl hover:opacity-90"
               >
                 100% protection for its customers' assets.
@@ -86,23 +86,20 @@ const AboutUs = () => {
             <p className="text-base text-clrPrimary md:max-w-2xl leading-6 md:text-lg">
               In addition to{" "}
               <Link
-                to="/solutions/security-solutions"
+                to="/solutions/security-solutions/active-video-surveillance"
                 className="font-bold text-xl hover:opacity-90"
               >
                 technology-based security
               </Link>{" "}
               solutions, autosecure also offers smart solutions in the area of{" "}
               <Link
-                to="/solutions/scanner-solutions"
+                to="/solutions/scanner-solutions/scan"
                 className="font-bold text-xl hover:opacity-90"
               >
                 ​​scan
               </Link>{" "}
               and{" "}
-              <Link
-                to="/solutions/localization-solutions"
-                className="font-bold text-xl hover:opacity-90"
-              >
+              <Link to="" className="font-bold text-xl hover:opacity-90">
                 localization technologies.
               </Link>
             </p>

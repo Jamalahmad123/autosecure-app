@@ -37,10 +37,10 @@ const Hero = ({ title, desc, benefit1, benefit2, videoPath, isAssist }) => {
                 <img
                   src={autosecureMeetingGirl}
                   alt="girl assistant"
-                  className="w-40 lg:w-28 h-auto object-cover"
+                  className="hidden lg:block w-40 lg:w-28 h-auto object-cover"
                 />
-                <div className="space-y-10">
-                  <p className="text-lg lg:text-xl font-AllianceBold font-bold">
+                <div className="lg:space-y-10">
+                  <p className="hidden lg:block text-lg lg:text-xl font-AllianceBold font-bold">
                     Arrange your online appointment with Marina Eiling now.
                   </p>
                   <Link
