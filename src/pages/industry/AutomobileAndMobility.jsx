@@ -32,10 +32,10 @@ const SecuritySolutionCard = lazy(() =>
 );
 
 const heroContent = {
-  title: "Automobile & Mobility",
-  desc: "Automation solutions for car dealerships, car parks and vehicle rental companies.",
-  benefit1: "50% less security costs",
-  benefit2: "20% faster processes",
+  title: "Automobil & Mobilität",
+  desc: "Automations-Lösungen für Autohäuser, Autoparks und Fahrzeug-Vermieter.",
+  benefit1: "50% weniger Security-Kosten",
+  benefit2: "20% schnellere Prozesse",
   img: autosecureVehicle,
 };
 

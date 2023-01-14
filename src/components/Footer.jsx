@@ -35,12 +35,12 @@ const Footer = () => {
               className="w-36 mx-auto md:max-w-xs md:w-auto mb-8"
             />
             <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
-              Trust. Integrity.
+              Vertrauen. Integrität.
             </h2>
           </figure>
           <p className="text-base md:text-xl font-medium text-clrPrimary text-center lg:max-w-xl">
-            autosecure is your specialist for leading technology-based
-            automation solutions for the automotive and mobility industry.
+            autosecure ist Ihr Spezialist für führende technologiebasierte
+            Automations-Lösungen für die Automobil- und Mobilitätsindustrie.
           </p>
         </div>
         <div className="footer place-content-center md:place-content-between pb-14">

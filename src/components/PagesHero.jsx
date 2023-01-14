@@ -6,7 +6,7 @@ import TypeWriter from "./ui/TypeWriter";
 import Wrapper from "./ui/Wrapper";
 
 const PagesHero = ({ title, desc, benefit1, benefit2, img }) => {
-  const labels = ["Trust.", "Integrity."];
+  const labels = ["Vertrauen.", "Integrität."];
   return (
     <header className="py-10">
       <Wrapper className="px-4">
@@ -19,7 +19,7 @@ const PagesHero = ({ title, desc, benefit1, benefit2, img }) => {
             />
           </figure>
           <div className="card-body justify-start items-start">
-            <TypeWriter width={100} labels={labels} />
+            <TypeWriter width={120} labels={labels} />
             <h1 className={`${styles.headingPrimary} text-clrPrimary`}>
               {title}
             </h1>
@@ -32,9 +32,9 @@ const PagesHero = ({ title, desc, benefit1, benefit2, img }) => {
             </p>
             <Link
               to="/company/contact"
-              className="btn text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular mt-6"
+              className="btn text-white capitalize font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular mt-6"
             >
-              make an appointment <FaCalendarCheck size={20} className="ml-5" />
+              Termin vereinbaren <FaCalendarCheck size={20} className="ml-5" />
             </Link>
           </div>
         </div>

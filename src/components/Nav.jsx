@@ -118,7 +118,7 @@ const Nav = () => {
           </ul>
         </div>
         <div className={`${styles.flex} gap-2 sm:gap-8`}>
-          <Link
+          <button
             onClick={(e) => {
               e.preventDefault();
               window.location.href = "mailto:info@autosecure.net";
@@ -127,8 +127,8 @@ const Nav = () => {
             className="text-clrDarkGray hover:text-clrSky text-base sm:text-lg md:text-2xl"
           >
             <FaAt />
-          </Link>
-          <Link
+          </button>
+          <button
             onClick={(e) => {
               e.preventDefault();
               window.location.href = "tel:+492512373370";
@@ -136,10 +136,15 @@ const Nav = () => {
             className="text-clrDarkGray block hover:text-clrSky text-base sm:text-lg md:text-2xl"
           >
             <FaPhoneVolume />
-          </Link>
-          <NavLink className="text-clrDarkGray hover:text-clrSky text-base sm:text-lg md:text-2xl lg:hidden">
+          </button>
+          <a
+            href="https://app.autosecure.net/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-clrDarkGray hover:text-clrSky text-base sm:text-lg md:text-2xl lg:hidden cursor-pointer"
+          >
             <FaUserLock />
-          </NavLink>
+          </a>
           <button className="hidden lg:flex btn btn-sm text-white bg-clrPrimary hover:bg-clrSky border-none text-base py-5 px-4 h-0 flex-nowrap capitalize">
             login
           </button>

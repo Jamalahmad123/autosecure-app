@@ -11,14 +11,14 @@ const Compnay = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);
 
-  const [companyLinks] = navLinks.filter((item) => item.name === "company");
+  const [companyLinks] = navLinks.filter((item) => item.name === "Unternehmen");
 
   return (
     <>
       <header className="pt-28 pb-14">
         <Wrapper className="md:px-10 px-4">
           <h1 className={`${styles.headingPrimary} text-clrPrimary`}>
-            Company
+            Unternehmen
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 mt-16">
             {companyLinks.subPages.map((item, i) => (

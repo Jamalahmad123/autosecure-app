@@ -19,11 +19,11 @@ const IndustrySectorSolutions = () => {
             <h1
               className={`${styles.headingPrimary} text-clrPrimary font-AllianceBold`}
             >
-              Industry sectors. Solutions.
+              Branchen. Lösungen.
             </h1>
             <p className={`${styles.textPrimary} text-clrPrimary`}>
-              Tailored to your industry. Find out what solutions and added value
-              the new autosecure ecosystem has to offer you.
+              Zugeschnitten auf Ihre Branche. Erfahren Sie, welche Lösungen und
+              Mehrwerte Ihnen das neue autosecure Eco-System zu bieten hat.
             </p>
 
             <Link
@@ -31,7 +31,7 @@ const IndustrySectorSolutions = () => {
               className="link link-neutral text-lg items-center inline-flex text-clrPrimary"
             >
               <FaCalendarAlt className="inline-block mr-4  font-AllianceRegular" />
-              Arrange a consultation
+              Beratungs-Gespräch vereinbaren
             </Link>
           </Wrapper>
         </header>
@@ -88,11 +88,11 @@ const IndustrySectorSolutions = () => {
                   </h2>
                   <p className="text-black mb-4">{item.desc}</p>
                   <div className="flex items-center gap-2">
-                    <FaCheck className="text-clrSky min-w-[20px]" />
+                    <FaCheck className="text-clrSky min-w-[15px]" />
                     <p className="text-base text-clrPrimary">{item.benefit1}</p>
                   </div>
                   <div className="flex gap-2">
-                    <FaCheck className="text-clrSky min-w-[20px]" />
+                    <FaCheck className="text-clrSky min-w-[15px]" />
                     <p className="text-base text-clrPrimary">{item.benefit2}</p>
                   </div>
                   <div className="mt-4">
@@ -101,7 +101,9 @@ const IndustrySectorSolutions = () => {
                       className="btn text-white font-normal capitalize bg-clrPrimary hover:bg-clrSky border-none gap-2"
                     >
                       <img src={logo_sm} alt="logo" className="w-4" />
-                      <span className="capitalize text-base">learn more</span>
+                      <span className="capitalize text-base">
+                        Mehr erfahren
+                      </span>
                     </Link>
                   </div>
                 </div>

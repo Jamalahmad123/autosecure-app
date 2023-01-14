@@ -39,79 +39,82 @@ const AboutUs = () => {
     <>
       <header className="pt-24 pb-14">
         <Wrapper className="px-4">
-          <p className="text-clrPrimary text-lg mb-2">About us.</p>
+          <p className="text-clrPrimary text-lg mb-2">Über uns.</p>
           <h1 className={`text-clrPrimary ${styles.headingPrimary}`}>
-            We love technology and smart <br className="hidden md:block" />{" "}
-            automation.
+            Wir lieben Technologie und <br className="hidden md:block" /> smarte
+            Automation.
           </h1>
           <div className="space-y-6 mt-12">
             <p className={`${styles.textPrimary} text-clrPrimary`}>
-              autosecure is your specialist for leading technology-based
-              automation solutions for the automotive and mobility industry.
+              autosecure ist Ihr Spezialist für führende technologiebasierte
+              Automations-Lösungen für die Automobil- und Mobilitätsindustrie.
             </p>
             <p className="text-base text-clrPrimary md:max-w-2xl leading-6 md:text-lg">
-              We help car dealerships, car parks, vehicle rental companies and
-              logistics companies to optimize processes on the company premises
-              and significantly reduce cost structures with our future-oriented{" "}
+              Wir helfen Auto-Häusern, Auto-Parks, Fahrzeug-Vermietern und
+              Logistikern mit unseren zukunftsweisenden{" "}
               <Link to="/" className="font-bold text-xl hover:opacity-90">
-                automation solutions.
-              </Link>
+                Automations-Lösungen
+              </Link>{" "}
+              Prozesse auf dem Betriebsgelände zu optimieren und
+              Kostenstrukturen erheblich zu reduzieren.
             </p>
+            {/*      */}
             <p className="text-base text-clrPrimary md:max-w-2xl leading-6 md:text-lg">
-              With our{" "}
+              Mit unserem{" "}
               <Link
                 to="/solutions/security-solutions/active-video-surveillance/active-video-surveillance"
                 className="font-bold text-xl hover:opacity-90"
               >
-                autosecure SAVE principle
+                autosecure SAVE-Prinzip
               </Link>{" "}
-              and our innovative technology, we ensure that your valuables are
-              not damaged. So you do not have to worry about the security of
-              your company and save costs at the same time. autosecure assumes
-              responsibility for{" "}
+              und unserer innovativen Technologie stellen wir sicher, dass kein
+              Schaden an Ihren Werten entsteht. So brauchen Sie sich um die
+              Sicherheit Ihres Unternehmens keine Sorgen machen und sparen dabei
+              noch Kosten ein. autosecure übernimmt für seine Kunden die
+              Verantwortung für die{" "}
               <Link
                 to="/solutions/security-solutions/active-video-surveillance"
                 className="font-bold text-xl hover:opacity-90"
               >
-                security
+                Sicherheit
               </Link>{" "}
-              on company premises for its customers and offers{" "}
+              auf dem Betriebsgelände und bietet{" "}
               <Link
                 to="/solutions/security-solutions/active-video-surveillance"
                 className="font-bold text-xl hover:opacity-90"
               >
-                100% protection for its customers' assets.
+                100% Schutz für die Werte seiner Kunden.
               </Link>
             </p>
             <p className="text-base text-clrPrimary md:max-w-2xl leading-6 md:text-lg">
-              In addition to{" "}
+              Neben{" "}
               <Link
                 to="/solutions/security-solutions/active-video-surveillance"
                 className="font-bold text-xl hover:opacity-90"
               >
-                technology-based security
+                technologiebasierten Sicherheitslösungen
               </Link>{" "}
-              solutions, autosecure also offers smart solutions in the area of{" "}
+              bietet autosecure zudem smarte Lösungen im Bereich der{" "}
               <Link
                 to="/solutions/scanner-solutions/scan"
                 className="font-bold text-xl hover:opacity-90"
               >
-                ​​scan
+                Scan–
               </Link>{" "}
-              and{" "}
+              und{" "}
               <Link to="" className="font-bold text-xl hover:opacity-90">
-                localization technologies.
+                Lokalisations-Technologien.
               </Link>
             </p>
             <p className="font-bold text-lg md:text-xl text-clrPrimary">
-              We lower your costs. And increase your sales. Promised.
+              Wir senken Ihre Kosten. Und steigern Ihren Umsatz. Versprochen.
             </p>
             <Link
               to="/company/contact"
               className="link link-neutral text-lg inline-block text-clrPrimary"
             >
               <FaCalendarAlt className="inline-block mr-4" />
-              Arrange a consultation
+              Beratungs-Gespräch vereinbaren
             </Link>
           </div>
         </Wrapper>

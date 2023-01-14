@@ -17,21 +17,21 @@ const Values = () => {
     <>
       <header className="pt-24 pb-14">
         <Wrapper className="px-4 mb-6">
-          <p className="text-lg text-clrPrimary">Our Values.</p>
+          <p className="text-lg text-clrPrimary">Unsere Werte.</p>
           <h1 className={`${styles.headingPrimary} text-clrPrimary`}>
-            Trust. Integrity.
+            Vertrauen. Integrität.
           </h1>
           <p className={`${styles.textPrimary} my-8 text-clrPrimary`}>
-            With autosecure you not only get leading technology-based automation
-            solutions, but also a sincere partner that you can rely on at all
-            times.
+            Mit autosecure erhalten Sie nicht nur führende technologiebasierte
+            Automations-Lösungen, sondern einen aufrichtigen Partner, auf den
+            Sie sich jederzeit verlassen können.
           </p>
           <Link
             to="/company/contact"
             className="link link-neutral text-lg inline-block text-clrPrimary"
           >
             <FaCalendarAlt className="inline-block mr-4" />
-            Arrange a consultation
+            Beratungs-Gespräch vereinbaren
           </Link>
         </Wrapper>
         <MeetingVideo videoPath={auto_secure_meeting} poster={booking} />

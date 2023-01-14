@@ -9,18 +9,18 @@ const AutosecureValues = () => {
       <Wrapper className="space-y-24 px-4">
         <div>
           <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
-            Trust. Integrity.
+            Vertrauen. Integrität.
           </h2>
           <p className="text-base md:text-xl xl:text-xl text-clrPrimary md:max-w-2xl my-8">
-            With autosecure you not only get leading technology-based automation
-            solutions, but also a sincere partner that you can rely on at all
-            times.
+            Mit autosecure erhalten Sie nicht nur führende technologiebasierte
+            Automations-Lösungen, sondern einen aufrichtigen Partner, auf den
+            Sie sich jederzeit verlassen können.
           </p>
           <Link
             to="/company/values"
             className="text-xl border-b p-4 border-clrPrimary text-clrPrimary hover:bg-white font-light"
           >
-            Our values
+            Unsere Werte
             <FaChevronRight className="inline-block ml-2" />
           </Link>
         </div>

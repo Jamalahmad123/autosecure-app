@@ -30,10 +30,10 @@ const AutosecureEcosystem = lazy(() =>
 const Features = lazy(() => import("../../components/Features"));
 
 const heroContent = {
-  title: "Agriculture & Farming",
-  desc: "Technology-based solutions for the farmer of tomorrow.",
-  benefit1: "Digital entry and exit control",
-  benefit2: "Digital release of entry and exit authorizations",
+  title: "Agrar- & Landwirtschaft",
+  desc: "Technologiebasierte Lösungen für den Landwirt von morgen.",
+  benefit1: "Digitale Ein- und Ausfahrtkontrolle",
+  benefit2: "Digitale Freigabe von Ein- und Ausfahrtberechtigungen",
   img: autosecureFarming,
 };
 

@@ -62,12 +62,12 @@ export const locatePages = [
 
 export const solutionsDropdownLinks = {
   id: 1,
-  name: "solutions",
+  name: "Lösungen",
   link: "/solutions",
   pages: [
     {
       id: 1,
-      name: "security solutions",
+      name: "Security-Lösungen",
       subPages: [
         {
           id: 1,
@@ -88,7 +88,7 @@ export const solutionsDropdownLinks = {
     },
     {
       id: 2,
-      name: "scanner solutions",
+      name: "Scanner-Lösungen",
       subPages: [
         {
           id: 1,
@@ -104,7 +104,7 @@ export const solutionsDropdownLinks = {
     },
     {
       id: 3,
-      name: "localization solutions",
+      name: "Lokalisations-Lösungen",
       link: "/solutions/localization-solutions/locate",
       subPages: [
         {
@@ -147,64 +147,64 @@ export const navLinks = [
   // },
   {
     id: 2,
-    name: "industry sectors",
+    name: "Branchen",
     link: "industry",
     subPages: [
       {
         id: 1,
-        name: "automobile & mobility",
+        name: "Automobil & Mobilität",
         link: "industry/automobile-mobility",
       },
       {
         id: 2,
-        name: "agriculture & formings",
+        name: "Agrar & Landwirtschaft",
         link: "industry/agriculture-formings",
       },
       {
         id: 3,
-        name: "construction & construction vehicles",
+        name: "Bau & Baufahrzeuge",
         link: "industry/construction",
       },
       {
         id: 4,
-        name: "logistics & goods",
+        name: "Logistik & Waren",
         link: "industry/logistics-goods",
       },
     ],
   },
   {
     id: 3,
-    name: "company",
+    name: "Unternehmen",
     link: "company",
     subPages: [
       {
         id: 1,
-        name: "about us",
+        name: "Über uns",
         link: "company/about-us",
       },
       {
         id: 2,
-        name: "news",
+        name: "News",
         link: "company/news",
       },
       {
         id: 3,
-        name: "career",
+        name: "Karriere",
         link: "company/career",
       },
       {
         id: 4,
-        name: "values",
+        name: "Werte",
         link: "company/values",
       },
       {
         id: 5,
-        name: "mission and vision",
+        name: "Vision & Mission",
         link: "company/mission-vision",
       },
       {
         id: 6,
-        name: "contact",
+        name: "Kontakt",
         link: "company/contact",
       },
     ],
@@ -216,37 +216,37 @@ export const industrySector = [
   {
     id: 1,
     link: "/industry/automobile-mobility",
-    name: "Automobiles & Mobility",
-    desc: "Automation solutions for car dealerships, car parks and vehicle rental companies.",
-    benefit1: "50% less security costs",
-    benefit2: "20% faster process",
+    name: "Automobil & Mobilität",
+    desc: "Automations-Lösungen für Autohäuser, Autoparks und Fahrzeug-Vermieter.",
+    benefit1: "50% weniger Security-Kosten",
+    benefit2: "20% schnellere Prozesse",
     image: autosecureVehicle,
   },
   {
     id: 2,
     link: "/industry/construction",
-    name: "Construction & construction vehicles",
-    desc: "Automation solutions for the construction site of the future.",
-    benefit1: "50% less security costs",
-    benefit2: "20% faster process",
+    name: "Bau & Baufahrzeuge",
+    desc: "Automations-Lösungen für die Baustelle der Zukunft.",
+    benefit1: "50% weniger Security-Kosten",
+    benefit2: "20% schnellere Prozesse",
     image: autosecureConstruction,
   },
   {
     id: 3,
     link: "/industry/agriculture-formings",
-    name: "Agriculturing & Farming",
-    desc: "Technology-based solutions for the farmer of tomorrow.",
-    benefit1: "Digital entry and exit control",
-    benefit2: "Digital release of entry and exit authorizations",
+    name: "Agrar & Landwirtschaft",
+    desc: "Technologiebasierte Lösungen für den Landwirt von morgen.",
+    benefit1: "Digitale Ein- und Ausfahrtkontrolle",
+    benefit2: "Digitale Freigabe von Ein- & Ausfahrtberechtigungen",
     image: autosecureFarming,
   },
   {
     id: 4,
     link: "/industry/logistics-goods",
-    name: "Logistics & Goods",
-    desc: "Automation solutions for logistics processes and goods tracking.",
-    benefit1: "50% less security costs",
-    benefit2: "20% faster process",
+    name: "Logistik & Waren",
+    desc: "Automations-Lösungen für Logistik-Prozesse und Waren-Tracking.",
+    benefit1: "50% weniger Security-Kosten",
+    benefit2: "20% schnellere Prozesse",
     image: autosecureLogistic,
   },
 ];
@@ -255,11 +255,11 @@ export const features = [
   {
     id: 1,
     link: "/solutions/security-solutions/active-video-surveillance",
-    title: "safe",
-    desc: "Active video surveillance with live perpetrator address according to the SAVE principle.",
-    benefit1: "50% less security costs",
-    benefit2: "100% less claims",
-    btnTitle: "security solutions",
+    title: "secure",
+    desc: "Aktive Videoüberwachung mit Live-Täteransprache nach dem SAVE-Prinzip.",
+    benefit1: "50% weniger Security-Kosten",
+    benefit2: "100% weniger Schadensfälle",
+    btnTitle: "Security-Lösungen",
     videoPath: autoSecurityVideo,
     subPages: securityPages,
   },
@@ -267,10 +267,10 @@ export const features = [
     id: 2,
     link: "/solutions/scanner-solutions/scan",
     title: "scan",
-    desc: "Digital condition control, damage detection and documentation in real time.",
-    benefit1: "100% condition detection of all vehicles",
-    benefit2: "No discussions with customers",
-    btnTitle: "Scanner solutions",
+    desc: "Digitale Zustandskontrolle, Schadenerkennung und Dokumentation in Echtzeit.",
+    benefit1: "100% Zustandserfassung aller Fahrzeuge",
+    benefit2: "Keine Diskussionen mit Kunden",
+    btnTitle: "Scanner-Lösungen",
     videoPath: autoScanVideo,
     subPages: scanPages,
   },
@@ -279,10 +279,10 @@ export const features = [
     id: 3,
     link: "/solutions/localization-solutions/locate",
     title: "locate",
-    desc: "Precise real-time indoor and outdoor localization of goods or vehicles.",
-    benefit1: "20% faster processes",
-    benefit2: "More sales at less cost",
-    btnTitle: "locate solutions",
+    desc: "Präzise Echtzeit In- und Outdoor Lokalisation von Waren oder Fahrzeugen.",
+    benefit1: "20% schnellere Prozesse",
+    benefit2: "Mehr Umsatz zu weniger Kosten",
+    btnTitle: "locate-Lösungen",
     videoPath: autoLocateVideo,
     subPages: locatePages,
   },
@@ -291,27 +291,27 @@ export const features = [
 export const solutionsLogistics = [
   {
     id: 1,
-    title: "Automated entry and exit control.",
-    desc: "Automated trailer and dangerous goods detection, freight inspection to reduce manual handling and search effort are often still carried out manually in logistics today, with a high error rate and immense personnel costs. The new autosecure scan solution simplifies, digitizes and automates these routine tasks.",
-    btnTitle: "security solutions",
+    title: "Automatisierte Ein- und Ausfahrt-Kontrolle.",
+    desc: "Automatisierte Trailer und Gefahrgut-Erkennung, Frachtprüfung zur Reduktion von manuellen Abfertigungs- und Such-Aufwand werden in der Logistik heutzutage oftmals noch manuell, mit einer hohen Fehlerquote und immensem Personalaufwand ausgeführt. Die neue autosecure Scan-Lösung vereinfacht, digitalisiert und automatisiert diese Routine-Aufgaben.",
+    btnTitle: "security-Lösungen",
     path: "/solutions/security-solutions",
     videoPath: autoSecurityVideo,
     subPages: securityPages,
   },
   {
     id: 2,
-    title: "Goods and goods with automatic booking process.",
-    desc: "Manual and personnel-intensive routine tasks such as the booking of goods and goods are still carried out in many companies with high human resources and a high error rate. The new autosecure Locate solution automates these processes and ensures at least 20% faster process handling.",
-    btnTitle: "Scanner solutions",
+    title: "Waren und Güter mit automatischem Buchungsvorgang.",
+    desc: "Manuelle und personalintensive Routine-Aufgaben wie das Verbuchen von Waren und Gütern, werden nach wie vor in vielen Betrieben mit hohen Personal-Ressourcen und hoher Fehlerquote betrieben. Die neue autosecure Locate-Lösung automatisiert diese Vorgänge und sorgt für mindestens 20% schnellere Prozess-Abwicklung.",
+    btnTitle: "Scanner-Lösungen",
     path: "/solutions/scanner-solutions",
     videoPath: autoScanVideo,
     subPages: scanPages,
   },
   {
     id: 3,
-    title: "Theft and burglary problems on the company premises.",
-    desc: "Machine and goods theft is a big problem for logisticians. Almost every company encounters permanent thefts. autosecure offers sensible and intelligent security solutions and ensures 100% protection for your valuables. By the way, with autosecure you achieve savings of at least 50% compared to personnel-based monitoring.",
-    btnTitle: "Locate solutions",
+    title: "Diebstahl- und Einbruchs-Problematik auf dem Betriebsgelände.",
+    desc: "Maschinen und Warendiebstahl ist bei Logistikern ein großes Problem. Permanente Entwendungen begegnen beinahe jedem Unternehmen. autosecure bietet sinnvolle und intelligente Sicherheitslösungen und stellt 100% Schutz für Ihre Werte sicher. Übrigens erreichen Sie mit autosecure mind. 50% Ersparnis gegenüber personalbasierter Überwachung.",
+    btnTitle: "Locate-Lösungen",
     path: "/solutions/localization-solutions",
     videoPath: autoLocateVideo,
     subPages: locatePages,
@@ -321,9 +321,9 @@ export const solutionsLogistics = [
 export const solutionsConstructions = [
   {
     id: 1,
-    title: "Theft and burglary problems on the construction site.",
-    desc: "Theft of machinery or recyclable materials on construction sites is a major problem for construction companies. Not only the associated loss of value, but also the resulting downtimes lead to considerable economic difficulties. autosecure offers sensible and intelligent security solutions and ensures 100% protection for your valuables.",
-    btnTitle: "security solutions",
+    title: "Diebstahl- und Einbruchs-Problematik auf der Baustelle.",
+    desc: "Maschinen- oder Wertstoff-Diebstahl auf Baustellen sind für Bauunternehmen ein großes Problem. Nicht nur der damit verbundene Wertverlust, gerade auch die daraus folgenden Ausfallzeiten führen zu erheblichen wirtschaftlichen Schwierigkeiten. autosecure bietet sinnvolle und intelligente Sicherheitslösungen und stellt 100% Schutz für Ihre Werte sicher.",
+    btnTitle: "security-Lösungen",
     path: "/solutions/security-solutions",
     videoPath: autoSecurityVideo,
     subPages: securityPages,
@@ -331,9 +331,9 @@ export const solutionsConstructions = [
   {
     id: 2,
     title:
-      "Automated documentation of delivery and removal processes on the construction site.",
-    desc: "Which authorized or unauthorized persons enter the construction site and when? On many construction sites, this topic leads to numerous discussions, insurance problems, attendance and time recording problems and much more. The autosecure scan solution offers ideal options for automated access control.",
-    btnTitle: "Scanner solutions",
+      "Automatiserte Dokumentation von Anliefer- und Abfuhrprozessen auf der Baustelle.",
+    desc: "Welche berechtigten oder unberechtigten Personen betreten zu welchem Zeitpunkt die Baustelle? Auf vielen Baustellen führt dieses Thema zu zahlreichen Diskussionen, Versicherungs-Problematiken, Anwesenheits- und Zeiterfassungs-Problemen und vieles mehr. Die autosecure Scan-Lösung bietet ideale Möglichkeiten für automatisierte Zutrittskontrolle.",
+    btnTitle: "Scanner-Lösungen",
     path: "/solutions/scanner-solutions",
     videoPath: autoScanVideo,
     subPages: scanPages,
@@ -341,9 +341,9 @@ export const solutionsConstructions = [
   {
     id: 3,
     title:
-      "Goods and building materials leave the construction site unnoticed or simply cannot be found again.",
-    desc: "It not only costs time and nerves - but at the end of the day also hard cash. Long search times for finding goods and building materials that have left the construction site unnoticed or unintentionally or simply can no longer be found. With the new autosecure-Locate solution, goods and building materials can be located to within a few meters and, incidentally, perfectly protected against theft.",
-    btnTitle: "Locate solutions",
+      "Waren und Baustoffe verlassen unbemerkt die Baustelle oder können einfach nicht wieder gefunden werden.",
+    desc: "Es kostet nicht nur Zeit und Nerven – sondern am Ende des Tages auch bares Geld. Hohe Suchzeiten für das Auffinden von Waren und Baustoffen, die unbemerkt oder ungewollt die Baustelle verlassen haben oder einfach nicht mehr gefunden werden können. Mit der neuen autosecure-Locate Lösung lassen sich Waren und Baustoffe bis auf wenige Meter genau lokalisieren und ganz nebenbei noch perfekt vor Diebstahl schützen.",
+    btnTitle: "Locate-Lösungen",
     path: "/solutions/localization-solutions",
     videoPath: autoLocateVideo,
     subPages: locatePages,
@@ -353,27 +353,28 @@ export const solutionsConstructions = [
 export const solutionsAutoMobile = [
   {
     id: 1,
-    title: "Theft and burglary problems on the company premises.",
-    desc: "Vehicle theft is a big problem for car dealerships, car parks and vehicle rental companies. Almost every company encounters permanent partial and total thefts. autosecure offers sensible and intelligent security solutions and ensures 100% protection for your valuables.",
-    btnTitle: "security solutions",
+    title: "Diebstahl- und Einbruchs-Problematik auf dem Betriebsgelände.",
+    desc: "Kfz-Diebstahl ist für Autohäuser, Auto-Parks und Fahrzeug-Vermieter ein großes Problem. Permanente Teil- und Totalentwendungen begegnen beinahe jedem Unternehmen. autosecure bietet sinnvolle und intelligente Sicherheitslösungen und stellt 100% Schutz für Ihre Werte sicher.",
+    btnTitle: "Security-Lösungen",
     path: "/solutions/security-solutions",
     videoPath: autoSecurityVideo,
     subPages: securityPages,
   },
   {
     id: 2,
-    title: "Automated condition documentation of vehicles on the site.",
-    desc: "Discussion with customers about the condition of the vehicle at what time or the quick detection of damage to the vehicle during the condition assessment. The new autosecure scanner solves these problems and automatically records every vehicle on the company premises.",
-    btnTitle: "Scanner solutions",
+    title:
+      "Automatisierte Zustandsdokumentation von Fahrzeugen auf dem Gelände.",
+    desc: "Diskussion mit Kunden, in welchem Zustand sich das Fahrzeug zu welchem Zeitpunkt befand oder die schnelle Erkennung von Schäden am Fahrzeug bei der Zustandsbewertung. Diese Problematiken löst der neue autosecure-Scanner und erfasst jedes Fahrzeug automatisiert auf dem Betriebsgelände.",
+    btnTitle: "Scanner-Lösungen",
     path: "/solutions/scanner-solutions",
     videoPath: autoScanVideo,
     subPages: scanPages,
   },
   {
     id: 3,
-    title: "Long search times for finding vehicles on the premises.",
-    desc: "It not only costs time and nerves - but at the end of the day also hard cash. Long search times for finding vehicles on the company premises are a time-consuming problem for many car dealerships, car parks and vehicle rental companies. With the new autosecure locate solution, your vehicles can be located to within a few meters.",
-    btnTitle: "Locate solutions",
+    title: "Hohe Suchzeiten für das Auffinden von Fahrzeugen auf dem Gelände.",
+    desc: "Es kostet nicht nur Zeit und Nerven – sondern am Ende des Tages auch bares Geld. Hohe Suchzeiten für das Auffinden von Fahrzeugen auf dem Betriebsgelände sind ein zeitintensives Problem für viele Autohäuser, Auto-Parks und Fahrzeugvermieter. Mit der neuen autosecure-Locate Lösung lassen sich Ihre Fahrzeuge bis auf wenige Meter genau lokalisieren.",
+    btnTitle: "Locate-Lösungen",
     path: "/solutions/localization-solutions",
     videoPath: autoLocateVideo,
     subPages: locatePages,
@@ -383,18 +384,18 @@ export const solutionsAutoMobile = [
 export const solutionsAgriculture = [
   {
     id: 1,
-    title: "Theft and burglary problems on the company premises.",
-    desc: "Machinery and goods theft in agriculture is a big problem. Almost every agricultural business encounters permanent theft. autosecure offers sensible and intelligent security solutions and ensures 100% protection for your valuables. By the way, with autosecure you achieve savings of at least 50% compared to personnel-based monitoring.",
-    btnTitle: "security solutions",
+    title: "Diebstahl- und Einbruchs-Problematik auf dem Betriebsgelände.",
+    desc: "Maschinen und Warendiebstahl in der Landwirtschaft ist ein großes Problem. Permanente Entwendungen begegnen beinahe jedem Agrar-Betrieb. autosecure bietet sinnvolle und intelligente Sicherheitslösungen und stellt 100% Schutz für Ihre Werte sicher. Übrigens erreichen Sie mit autosecure mind. 50% Ersparnis gegenüber personalbasierter Überwachung.",
+    btnTitle: "security-Lösungen",
     path: "/solutions/security-solutions",
     videoPath: autoSecurityVideo,
     subPages: securityPages,
   },
   {
     id: 2,
-    title: "Automated entry and exit control.",
-    desc: "Automated harvest and fruit inspection (shape, color, size) is still a dream of the future in many agricultural businesses. A large number of employees are often entrusted with these tasks. The new autosecure scan solution and the latest machine vision technology ensure that your harvest inspection runs automatically and securely.",
-    btnTitle: "Scanner solutions",
+    title: "Automatisierte Ein- und Ausgangs-Kontrolle.",
+    desc: "Automatisierte Ernte- und Frucht-Prüfung (Form, Farbe, Größe)  ist in vielen Agrar-Betrieben noch Zukunftsmusik. Oft werden eine Vielzahl von Mitarbeitern mit diesen Aufgaben betraut. Die neue autosecure Scan-Lösung und modernste Machine-Vision Technologie sorgen für einen automatisierten und sicheren Ablauf Ihrer Ernte-Prüfung.",
+    btnTitle: "Scanner-Lösungen",
     path: "/solutions/scanner-solutions",
     videoPath: autoScanVideo,
     subPages: scanPages,
@@ -402,9 +403,9 @@ export const solutionsAgriculture = [
   {
     id: 3,
     title:
-      "Goods and goods leave the property unnoticed or simply cannot be found again.",
-    desc: "It not only costs time and nerves - but at the end of the day also hard cash. Long search times for finding goods and goods that have left the property unnoticed or unintentionally or simply can no longer be found. With the new autosecure Locate solution, goods and goods can be located to within a few meters and also perfectly protected against theft.",
-    btnTitle: "Locate solutions",
+      "Waren und Güter verlassen unbemerkt die Liegenschaft oder können einfach nicht wieder gefunden werden.",
+    desc: "Es kostet nicht nur Zeit und Nerven – sondern am Ende des Tages auch bares Geld. Hohe Suchzeiten für das Auffinden von Waren und Gütern, die unbemerkt oder ungewollt die Liegenschaft verlassen haben oder einfach nicht mehr gefunden werden können. Mit der neuen autosecure Locate-Lösung lassen sich Waren und Güter bis auf wenige Meter genau lokalisieren und ganz nebenbei noch perfekt vor Diebstahl schützen.",
+    btnTitle: "Locate-Lösungen",
     path: "/solutions/localization-solutions",
     videoPath: autoLocateVideo,
     subPages: locatePages,
@@ -413,66 +414,59 @@ export const solutionsAgriculture = [
 
 export const acheivements = [
   {
-    id: "autosecure-goes-automechanika-2022",
-    title: "Autosecure goes Automechanika 2022",
+    id: "autosecure-goes-Automechanika-2022",
+    title: "autosecure goes Automechanika 2022",
     image: autosecureAutomechanika,
     details: {
       id: 1,
       date: "Munster, September 8, 2022",
-      desc: "Safe. Scan. locate. The automation specialist autosecure will present its new car scanner at the automechanika Frankfurt 2022 as part of the future workshop 4.0. Visit us in Hall 9.0, Stand E62.",
+      desc: "Secure. Scan. Locate. Der Automations-Spezialist autosecure wird auf der automechanika Frankfurt 2022 im Rahmen der Zukunftswerkstatt 4.0 seinen neuen Auto-Scanner präsentieren. Besuchen Sie uns in Halle 9.0, Stand E62.",
       html: `
         <p>
-        autosecure's car scanner offers you digital condition monitoring, damage detection and documentation in real time. Record 100% of all vehicles entering or leaving your premises. Document the condition of each individual vehicle automatically and in real time. This ensures that you can prove at any time which vehicle was in which condition and when. <br /><br />
-
-        The car scanner is particularly interesting for car dealerships, car parks and vehicle rental companies, who repeatedly have discussions with their customers about who caused damage to the vehicle and are often left with the costs of repairs. With the autosecure car scanner, these problems are a thing of the past - because you can prove the condition of the vehicle at any time without any doubt.</p>
-        
-        
-        <p>All features of our car scanner at a glance:</p>
+        Der Auto-Scanner von autosecure bietet Ihnen digitale Zustandskontrolle, Schadenerkennung und Dokumentation in Echtzeit. Erfassen Sie 100% aller Fahrzeuge die Ihr Betriebsgelände befahren oder verlassen. Dokumentieren Sie automatisiert und in Echtzeit den Zustand jedes einzelnen Fahrzeuges. Somit stellen Sie sicher, jederzeit nachweisen zu können, wann sich welches Fahrzeug in welchem Zustand befand.<br /><br />
+        Besonders interessant ist der Auto-Scanner für Autohäuser, Autoparks und Fahrzeugsvermieter, die immer wieder Diskussionen mit ihren Kunden führen, wer einen Schaden am Fahrzeug verursacht hat und oft auf Kosten für Reparaturen sitzen bleiben. Mit dem Auto-Scanner von autosecure gehören diese Probleme der Vergangenheit an – denn Sie können jederzeit zweifelsfrei nachweisen, in welchem Zustand sich das Fahrzeug befand.</p>
+        <p><b>All features of our car scanner at a glance:</b></p>
         <ul>
-          <li>Digital and complete vehicle status check at property access, direct acceptance or at a freely selectable location on the premises.</li>
-          <li>Digital vehicle assessment in real time for visual condition assessments and impairment reports.</li>
-          <li>Reduction of manual assessment costs.</li>
-          <li>Seamless integration of the autosecure solutions into in-house IT infrastructure (ERP modeling).</li>
-          <li>Useful further use of the recordings, for example for internal process transparency or as support for the required assessment process by the testing service provider.</li>
-          <li>Automatic assignment of the vehicle through license plate recognition or digital location in combination with autosecure-Locate.</li>
-          <li>Increase in throughput speed.</li>
+          <li>Digitale und lückenlose Fahrzeugzustandskontrolle bei Grundstückszufahrt, Direktannahme oder an einem frei wählbaren Ort auf dem Gelände.</li>
+          <li>Digitale Fahrzeugbegutachtung in Echtzeit für optische Zustandsbewertungen und Wertminderungsgutachten.</li>
+          <li>Reduktion von manuellen Begutachtungskosten.</li>
+          <li>Nahtlose Integration der autosecure Lösungen in hauseigene IT-Infrastruktur (ERP modeling).</li>
+          <li>Sinnvolle Weiterverwendung der Aufnahmen für z.B. interne Prozesstransparenz oder als Unterstützung für den erforderlichen Begutachtungsprozess durch Prüfdienstleister.</li>
+          <li>Automatische Zuordnung des Fahrzeuges durch Kennzeichenerfassung oder digitale Verortung in Kombination mit autosecure-Locate.</li>
+          <li>Erhöhung der Durchlaufgeschwindigkeit.</li>
         </ul>
-        <p>Visit our autosecure booth in hall 9.0, booth E62. We look forward to your visit and would be happy to demonstrate to you how you can use our auto scanner to solve many problems, save costs and automate processes in the future. <br /><br />
-
-        More information about our auto scanner for you on our website at <a href="/solutions/scanner-solutions"><b>scan.autosecure.net</b></a>
+        <p>Besuchen Sie unseren autosecure Messestand in Halle 9.0, Stand E62. Wir freuen uns auf Ihren Besuch und demonstrieren Ihnen gerne, wie Sie mit unserem Auto-Scanner künftig viele Probleme lösen, Kosten einsparen und Vorgänge automatisiert.<br /><br />
+        Weitere Informationen zu unserem Auto-Scanner für Sie auf unserer Website unter <a href="/solutions/scanner-solutions/scan"><b>scan.autosecure.net</b></a>
         </p> 
       `,
     },
   },
   {
     id: "autosecure-eco-system-offiziell-gestarted",
-    title: "autosecure ecosystem officially launched",
+    title: "autosecure Eco-System offiziell gestartet",
     image: autosecureNewsEcosystem,
     details: {
       date: "Munster, April 11, 2022",
-      desc: "The digitization of your site security goes to a new level with autosecure. We are happy to announce that a few days ago we officially launched our new autosecure ecosystem.",
+      desc: "Die Digitalisierung Ihrer Standortsicherheit geht mit autosecure wieder auf ein neues Level. Wir freuen uns Ihnen mitteilen zu können, dass wir vor einigen Tagen unser neues autosecure Eco-System offiziell gestartet haben.",
       html: `
-        <p>The autosecure ecosystem is our new high-end web platform for the integration of all our services:</p> <br />
+        <p>Das autosecure Ecosystem ist unsere neue Highend-Webplattform für die Integration aller unserer Services:</p><br />
         <ul>
-          <li>Web platform for maximum simplification of business processes</li>
-          <li>Cloud-based user account</li>
-          <li>Considerable reduction in e-mail correspondence, telephone calls or search effort</li>
-          <li>Centralized provision of information and documentation
-          Maximum transparency for events</li>
-        </ul> <br />
+          <li>Web-Plattform für die maximale Vereinfachung von Geschäftsabläufen</li>
+          <li>Cloudbasierter User-Account</li>
+          <li>Erhebliche Reduktion von E-Mail Korrespondenz, Telefonaten oder Suchaufwand</li>
+          <li>Zentralisierte Bereitstellung von Informationen und Dokumentationen</li>
+          <li>Maximale Transparenz für Ereignisse</li>
+        </ul><br />
         <p>
-        This takes you to the portal <br />
+        Hier gelangen Sie zum Portal<br />
         <a href="https://app.autosecure.net">https://app.autosecure.net</a> <br /> <br />
+        In einer separaten E-Mail erhalten Sie noch heute Ihre Zugangsdaten.<br /> <br />
+        Mit dem autosecure Eco-System wird die Kommunikation zwischen Ihnen und unseren Kolleg*innen in der Leitstelle auf ein neues digitales Niveau gehoben. Festgestellte Ereignisse an Ihrem Objekt werden künftig direkt im Eco-System erfasst und in einer gesammelten Übersicht in Echtzeit zur Verfügung gestellt. Weiterhin erhalten Sie künftig immer automatisch morgens um 08.00 Uhr eine E Mail mit allen festgestellten Ereignissen der letzten 24 Stunden an Ihrem Objekt. Natürlich können Sie die E-Mail Benachrichtigung in den Einstellungen auch wieder deaktivieren.<br /> <br />
         
-        You will receive your access data in a separate email today.<br /> <br />
+        Sie möchten Anmeldungen für Fahrzeugabholungen oder besondere Hinweise für uns hinterlegen? Nutzen Sie die Funktion „Objektvermerke“ und hinterlassen Sie uns damit unproblematisch Nachrichten.<br /> <br />
         
-        With the autosecure ecosystem, communication between you and our colleagues in the control center is raised to a new digital level. Detected events at your property will in future be recorded directly in the ecosystem and made available in real time in a collected overview. In addition, you will automatically receive an e-mail at 8 a.m. in the morning with all the events recorded at your property in the last 24 hours. Of course you can also deactivate the e-mail notification in the settings. <br /> <br />
-        
-        Would you like to leave registrations for vehicle collections or special information for us? Use the "Object notes" function and leave us messages without any problems. <br /> <br />
-        
-        In the autosecure Eco-System, we store all available documents such as camera plans, coordinated alarm plans and property information for your property as standard. You will also find our agreed schedules and other object remarks here. This means that we have all the relevant information in one place and we save a lot of time and nerves for both of us. <br /> <br />
-        
-        Do you have any questions about the ecosystem or would you like individual training in the system? We are always at your service!
+        Im autosecure Eco-System hinterlegen wir zu Ihrem Objekt standardmäßig alle verfügbaren Dokumente wie Kamerapläne, abgestimmte Alarmpläne und Objektinformationen. Außerdem finden Sie hier unsere vereinbarten Zeitpläne und sonstige Objektbemerkungen. Damit haben wir alle relevanten Informationen an einem Ort und wir sparen uns beiderseitig viel Zeit und Nerven.<br /> <br />
+        Sie haben Fragen zum Eco-System oder möchten gerne eine individuelle Einarbeitung in das System? Wir stehen Ihnen jederzeit gern zur Verfügung!
         </p>
       `,
     },
@@ -480,58 +474,60 @@ export const acheivements = [
 
   {
     id: "hipe-award-fuer-autosecure",
-    title: "HIPE Award for autosecure",
+    title: "HIPE Award für autosecure",
     image: autosecureHipeAward,
     details: {
       date: "Munster, April 4, 2022",
-      desc: "The autosecure company receives the HIPE Award 2022 – a clear recommendation for our service with an overall rating of 1.7.",
+      desc: "Das Unternehmen autosecure erhält HIPE Award 2022 Auszeichnung – klare Empfehlung unserer Dienstleistung mit der Gesamtnote 1,7.",
       html: `
-        <p>The HIPE Award stands for a clear recommendation of the service of an excellent company. The companies that are nominated and honored for the HIPE Award are characterized by more qualitative security and outstanding service. With an overall grade of 1.7, autosecure received one of the most coveted awards for companies in German-speaking countries.</p>
+        <p>Der HIPE Award steht für eine klare Empfehlung der Dienstleistung eines ausgezeichneten Unternehmens. Mehr qualitative Sicherheit und überragende Dienstleistung zeichnen die Unternehmen aus, die für den HIPE Award nominiert und ausgezeichnet werden. Mit der Gesamtnote 1,7 erhält autosecure einer der begehrtesten Auszeichnungen für Unternehmen im deutschsprachigen Raum.</p>
 
-        <p>“We are very happy about this award - it shows the good development of our company and our team. As a high-quality service provider for secure, scan and locate solutions, this is further proof that our service is right.” explains autosecure Managing Director Stefan Chüo.</p>
+        <p>“Wir freuen uns sehr über diese Auszeichnung – dies zeigt die gute Entwicklung unseres Unternehmen und unseres Teams. Als hochwertiger Dienstleister für Secure-, Scan- und Locate-Lösungen ist dies ein weiterer Beweis dafür, dass unser Service stimmt.” erklärt autosecure Geschäftsführer Stefan Chüo.</p>
         
-        <p>autosecure GmbH from Münster specializes in leading technology-based automation solutions for the automotive and mobility industry and, in addition to <a href="/solutions/security-solutions">security technologies</a> , also offers <a href="/solutions/scanner-solutions">auto scanner solutions</a> for digital status control, damage detection and documentation in real time, as well as <a href="/solutions/localization-solutions">locate solutions</a> for precise localization of goods or vehicles indoors and outdoors.</p> <br />
+        <p>Die autosecure GmbH aus Münster ist spezialisiert auf führende technologiebasierte Automations-Lösungen für die Automobil- und Mobilitätsindustrie und bietet neben <a href="/solutions/security-solutions/active-video-surveillance">Sicherheits-Technologien</a> auch <a href="/solutions/scanner-solutions/scan">Auto-Scanner-Lösungen</a> für die digitale Zustandskontrolle, Schadenserkennung und Dokumentation in Echtzeit, sowie <a href="#">Locate-Lösungen</a> für die präzise Lokalisierung von Waren oder Fahrzeugen im In- und Outdoor-Bereich.</p> <br />
         <img src="/autosecure_hipe_award_2.jpg" />
       `,
     },
   },
   {
     id: "sicherung-des-grossbetriebes-sueverkruep-in-muenster",
-    title: "Securing of the large Süverkrüp farm in Neumünster.",
+    title: "Sicherung des Großbetriebes Süverkrüp in Neumünster.",
     image: autosecureneumuenster,
     details: {
       date: "Munster, November 13, 2021",
-      desc: "Family businesses think in terms of generations, not financial years. With the forward-looking security solutions from autosecure, the Süverkrüp car dealership group from Schleswig Holstein has opted for the next generation of technology-based and fully automated security for site security.",
+      desc: "Familienunternehmen denken in Generationen, nicht in Geschäftsjahren. Mit den zukunftsweisenden Sicherheitslösungen von autosecure entscheidet sich die Autohaus-Gruppe Süverkrüp aus Schleswig Holstein für die nächste Generation von technologiebasierter und vollautomatisierter Sicherheit zur Standort-Absicherung.",
       html: `
-        <p>"The family company Süverkrüp, with its 111-year history, its 17 locations throughout Germany and its 9 car brands, has always been at the top of our list of desired customers at autosecure. We are all the more pleased to be able to secure the Neumünster location for this traditional car dealership group with our future-oriented and automated <a href="/solutions/security-solutions">safety technologies and to help the Süverkrüp family of entrepreneurs no longer have to make compromises when it comes to safety"</a>. Stefan Chüo, Managing Director of autosecure GmbH, is pleased.</p>
+        <p>„Das Familienunternehmen Süverkrüp mit seiner 111-jährigen Historie, seinen 17 Standorten in ganz Deutschland und seinen 9 Automarken, stand bei autosecure immer ganz oben auf unserer Wunschkundenliste. Umso mehr freuen wir uns, für diese traditionsreiche Autohaus-Gruppe den Standort Neumünster mit unseren zukunftsweisenden und automatisierten<a href="/solutions/security-solutions/active-video-surveillance">Sicherheitstechnologien</a>. abzusichern und der Süverkrüp-Unternehmerfamilie zu helfen, beim Thema Sicherheit keine Kompromisse mehr eingehen zu müssen“. zeigt sich Stefan Chüo, Geschäftsführer der autosecure GmbH erfreut.</p>
 
-        <p>Above all, <a href="/solutions/security-solutions">autosecure's holistic security approach</a> was convincing . With the support of artificial intelligence, machine learning technology and the use of the latest high-end cameras on the one hand - and a <a href="/solutions/security-solutions">360° security concept with live perpetrator addressing</a> , our own 24/7 security center with active troubleshooting, the specially developed autosecure SAVE principle and the in-depth security know-how of the autosecure team on the other hand - form the perfect symbiosis for 100% less damage and up to 50% cost savings in the security area.</p>
+        <p>Überzeugen konnte vor allem der <a href="/solutions/security-solutions/active-video-surveillance">ganzheitliche Sicherheitsansatz von autosecure.</a> Mit Unterstützung von künstlicher Intelligenz, Machine Learning Technologie und Einsatz von modernsten Highend-Kameras auf der einen Seite – und einem <a href="/solutions/security-solutions/active-video-surveillance">360° Sicherheitskonzept mit Live-Täteransprache</a> ,eigenem 24/7 Security-Center mit aktiver Störungsbeseitigung, dem eigens entwickelten autosecure SAVE-Prinzip und das tiefgreifende Sicherheits-Know-How des autosecure-Teams auf der anderen Seiten – bilden die perfekte Symbiose für 100% weniger Schadensfälle und bis zu 50% Kosteneinsparung im Sicherheitsbereich.</p>
 
-        <p>In addition to the added value mentioned for the Süverkrüp location in Neumünster, there were other factors with which autosecure was able to convince as a new security partner. Due to the absence of theft and damage events and the 100% security guarantee from autosecure, not only costs for insurance premiums can be saved in the medium term, but also the time and research effort for events to be clarified on the company premises can be significantly reduced. A hardware guarantee of up to 5 years contributes to investment security - and the smart financing and leasing models from autosecure protect liquidity on the customer side.</p>
+        <p>Neben den genannten Mehrwerten für den Süverkrüp Standort in Neumünster, gab es weitere Faktoren, mit denen autosecure als neuer Sicherheits-Partner überzeugen konnte. Durch ausbleibende Diebstahl- und Schadensereignisse und der 100%-Sicherheitsgarantie von autosecure, lassen sich mittelfristig nicht nur Kosten für Versicherungsbeiträge einsparen, sondern auch Zeit- und Rechercheaufwand für zu klärende Ereignisse auf dem Betriebsgelände erheblich reduzieren. Eine Hardware-Garantie von bis zu 5 Jahren trägt zur Investitionssicherheit bei – und die smarten Finanzierungs- und Leasingmodelle von autosecure schonen die Liquidität auf Kundenseite.</p>
       
-        <p>autosecure GmbH from Münster specializes in leading technology-based automation solutions for the automotive and mobility industry and, in addition to <a href="/solutions/security-solutions">security technologies</a> , also offers <a href="/solutions/scanner-solutions">auto scanner solutions</a> for digital status control, damage detection and documentation in real time, as well as <a href="/solutions/localization-solutions">locate solutions</a> for precise localization of goods or vehicles indoors and outdoors.</p>
+        <p>Die autosecure GmbH aus Münster ist spezialisiert auf führende technologiebasierte Automations-Lösungen für die Automobil- und Mobilitätsindustrie und bietet neben <a href="/solutions/security-solutions/active-video-surveillance">Sicherheits-Technologien</a>auch <a href="/solutions/scanner-solutions/scan">Auto-Scanner-Lösungen</a> für die digitale Zustandskontrolle, Schadenserkennung und Dokumentation in Echtzeit, sowie <a href="#">Locate-Lösungen</a> für die präzise Lokalisierung von Waren oder Fahrzeugen im In- und Outdoor-Bereich.</p>
       `,
     },
   },
   {
     id: "autosecure-wird-technologie-partner-der-zukunftswerkstatt-4-0",
-    title: "autosecure becomes a technology partner of the future workshop 4.0",
+    title: "autosecure wird Technologie-Partner der Zukunftswerkstatt 4.0",
     image: autosecurePartnerZukunftswerkstatt,
     details: {
       date: "Munster, November 10, 2021",
-      desc: `Under the chairmanship of Economics and Labor Minister Dr. Nicole Hoffmeister-Kraut, the steering committee of the "Automotive Industry Transformation Council" in Baden-Württemberg launched the "Future Workshop 4.0" for the automotive industry. Companies in the motor vehicle trade should prepare for the technological transformation process at an early stage in order to secure future employment in the sector. As a specialist for smart and forward-looking solutions in the areas of security, scan and locate for the automotive and mobility industry, the technology company autosecure will be on board as a technology partner of the future workshop 4.0.`,
-      html: `
-        <p>The Future Workshop 4.0 in Esslingen near Stuttgart takes on the role of an "innovation showcase", with the help of which new technologies and systems are tested along the customer journey in sales and after-sales. Conceptually, the future workshop 4.0 represents a real place where the actual structures and processes of a car dealership company are realistically and practically mapped.</p>
-        
-        <p>"As a technology company and specialist for the automotive and mobility industry, it was obvious for autosecure to strive for a partnership with Zukunftswerkstatt 4.0. We are pleased to present our smart <a href="/solutions/security-solutions">security</a> , <a href="/solutions/scanner-solutions">scan</a> and <a href="/solutions/localization-solutions">locate</a> solutions in the showroom of the future workshop 4.0 and to demonstrate our future-oriented products and their added value for car dealerships, car parks or vehicle rental companies to interested parties as part of the "innovation showcase", explains Stefan Chüo , CEO of autosecure, the new partnership.</p>
+      desc: `Unter dem Vorsitz von Wirtschafts- und Arbeitsministerin Dr. Nicole Hoffmeister-Kraut hat der Lenkungskreis des „Transformationsrats Automobilwirtschaft“ in Baden-Württemberg die „Zukunftswerkstatt 4.0“ für die Kfz-Branche auf den Weg gebracht. Unternehmen des Kfz-Gewerbes sollen sich frühzeitig auf den technologischen Transformationsprozess vorbereiten, um die Beschäftigung der Branche auch künftig abzusichern.
 
-        <p>autosecure GmbH from Münster specializes in leading technology-based automation solutions for the automotive and mobility industry and, in addition to <a href="/solutions/security-solutions">security technologies</a> , also offers <a href="/solutions/scanner-solutions">auto scanner solutions</a> for digital status control, damage detection and documentation in real time, as well as <a href="/solutions/localization-solutions">locate solutions</a> for precise localization of goods or vehicles indoors and outdoors.</p>
+      Als Spezialist für smarte und zukunftsweisende Lösungen in den Bereichen Security, Scan und Locate für die Automobil- und Mobilitätsindustrie ist das Technologie-Unternehmen autosecure künftig als Technologie-Partner der Zukunftswerkstatt 4.0 mit an Board.`,
+      html: `
+        <p>Die Zukunftswerkstatt 4.0 in Esslingen bei Stuttgart nimmt die Rolle eines „Innovationsschaufensters“ ein, mit dessen Hilfe neue Technologien und Systeme entlang der Customer-Journey im Sales und After-Sales erprobt werden. Konzeptionell stellt die Zukunftswerkstatt 4.0 einen realen Ort dar, an dem die tatsächlichen Strukturen und Prozesse eines Autohausunternehmens realitätsgetreu und praxistauglich abgebildet werden.</p>
+        
+        <p>„Als Technologie-Unternehmen und Spezialist für die Automobil- und Mobilitätsindustrie war es für autosecure naheliegend eine Partnerschaft mit der Zukunftswerkstatt 4.0 anzustreben. Wir freuen uns, unsere smarten <a href="/solutions/security-solutions/active-video-surveillance">Security</a>,<a href="/solutions/scanner-solutions">Scan</a>- und <a href="#">Locate-Lösungen</a> im Showroom der Zukunftswerkstatt 4.0 vorzustellen und Interessenten von unseren zukunftsweisenden Produkten und deren Mehrwerte für Autohäuser, Autoparks oder Fahrzeug-Vermieter im Rahmen des „Innovationsschaufensters“ zu demonstrieren.“ erklärt Stefan Chüo, Geschäftsführer von autosecure, die neue Partnerschaft.</p>
+
+        <p>Die autosecure GmbH aus Münster ist spezialisiert auf führende technologiebasierte Automations-Lösungen für die Automobil- und Mobilitätsindustrie und bietet neben <a href="/solutions/security-solutions/active-video-surveillance">Sicherheits-Technologien</a> auch <a href="/solutions/scanner-solutions/scan">Auto-Scanner-Lösungen</a> für die digitale Zustandskontrolle, Schadenserkennung und Dokumentation in Echtzeit, sowie <a href="#">Locate-Lösungen</a> für die präzise Lokalisierung von Waren oder Fahrzeugen im In- und Outdoor-Bereich.</p>
       `,
     },
   },
   {
-    id: "hikvision-outstanding-performance-award-fuer-autosecure",
-    title: "HikVision Outstanding Performance Award for autosecure",
+    id: "HikVision-outstanding-performance-award-für-autosecure",
+    title: "HikVision Outstanding Performance Award für autosecure",
     image: autosecureHikvision,
     details: {
       date: "Munster, November 2, 2021",
@@ -555,54 +551,54 @@ export const acheivements = [
 
 export const ecosystemAndExpertise = {
   id: 1,
-  title1: "Eco system",
-  title2: "expertise",
+  title1: "Eco-System",
+  title2: "Expertise",
   desc1: [
-    "High-end web platform for integrating all autosecure services",
-    "Software for the maximum simplification of business processes",
-    "Cloud-based user account",
-    "Considerable reduction of e-mail correspondence, telephone calls or search effort",
-    "Centralized provision of information and vehicle documentation",
-    "Maximum transparency and simplification of vehicle search processes",
+    "Highend Web-Plattform zur Integration aller autosecure Services",
+    "Software für die maximale Vereinfachung von Geschäftsabläufen",
+    "Cloudbasierter User-Account",
+    "Erhebliche Reduktion von E-Mail Korrespondenz, Telefonaten oder Suchaufwand",
+    "Zentralisierte Bereitstellung von Informationen und Fahrzeug-Dokumentationen",
+    "Maximale Transparenz und Vereinfachung von Fahrzeug-Suchprozessen",
   ],
   desc2: [
-    "10+ years of know-how",
-    "Leading in the development of software and future-oriented technologies",
-    "Highly qualified staff",
-    "Regular training and further education",
-    "24/7 monitoring & service control center",
-    "State-of-the-art video technology & IoT",
-    "Interfaces for customer-specific ERP systems",
-    "Specialized in leasing and financing models as well as insurance protection",
-    "Data protection security",
-    "Certified HIKVISION Platinum Partner",
-    "Approval as a security company according to § 34a GewO",
+    "10+ Jahre Know-How",
+    "Führend in der Entwicklung von Software und zukunftsweisenden Technologien",
+    "Hochqualifiziertes Personal",
+    "Regelmäßige Schulungen und Weiterbildungen",
+    "24/7 Monitoring- & Service-Leitstelle",
+    "Modernste Videotechnik & IoT",
+    "Schnittstellen für kundeneigene ERP-Systeme",
+    "Spezialisiert auf Leasing- und Finanzierungsmodelle sowie Versicherungsschutz",
+    "Datenschutzrechtliche Sicherheit",
+    "Zertifizierter HIKVISION Platinum Partner",
+    "Zulassung als Sicherheitsunternehmen nach § 34a GewO",
   ],
 };
 
 export const savingsAndExpertise = {
   id: 1,
-  title1: "potential savings",
-  title2: "expertise",
+  title1: "Einsparpotentiale",
+  title2: "Expertise",
   desc1: [
-    "At least 50% reduction in security costs compared to personnel-based monitoring solutions.",
-    "20% faster vehicle and customer processes.",
-    "Investment security due to the most modern and future-oriented technology solutions.",
-    "Medium-term reduction of insurance premiums due to the absence of theft and damage events.",
-    "Significant savings in time and research effort for events to be clarified on the company premises.",
-    "Up to 5 years warranty on the hardware used.",
+    "Mindestens 50% Reduktion von Security-Kosten gegenüber personalbasierten Überwachungslösungen.",
+    "20% schnellere Fahrzeug- und Kundenprozesse.",
+    "Investitionssicherheit aufgrund von modernster und zukunftsweisender Technologie-Lösungen",
+    "Mittelfristige Reduktion von Versicherungsbeiträgen durch ausbleibende Diebstahl- und Schadensereignisse",
+    "Erhebliche Einsparungen von Zeit- und Rechercheaufwand für zu klärende Ereignisse auf dem Betriebsgelände",
+    "Bis zu 5 Jahre Garantie auf die eingesetzte Hardware",
   ],
 
   desc2: [
-    "10+ years of know-how",
-    "Leading in the development of software and future-oriented technologies",
-    "Highly qualified staff",
-    "Regular training and further education",
-    "24/7 monitoring & service control center",
-    "State-of-the-art video technology & IoT",
-    "Interfaces for customer-specific ERP systems",
-    "Specialized in leasing and financing models as well as insurance protection",
-    "Data protection security",
+    "10+ Jahre Know-How",
+    "Führend in der Entwicklung von Software und zukunftsweisenden Technologien",
+    "Hochqualifiziertes Personal",
+    "Regelmäßige Schulungen und Weiterbildungen",
+    "24/7 Monitoring- & Service-Leitstelle",
+    "Modernste Videotechnik & IoT",
+    "Schnittstellen für kundeneigene ERP-Systeme",
+    "Spezialisiert auf Leasing- und Finanzierungsmodelle sowie Versicherungsschutz",
+    "Datenschutzrechtliche Sicherheit",
   ],
 };
 
@@ -642,92 +638,92 @@ export const vehicleAndPlateRecognition = {
 
 export const systemTakeoverAndSystemArc = {
   id: 1,
-  title1: "system takeover.",
+  title1: "System-Übernahme.",
   titleOneDesc:
-    "Seamless integration of your existing camera system into the autosecure ecosystem.",
-  title2: "State-of-the-art system architecture.",
-  titleTwoDesc: "Security made in Germany.",
+    "Nahtlose Integration Ihres bestehenden Kamera-Systems in das autosecure Ecosystem.",
+  title2: "Modernste Systemarchitektur.",
+  titleTwoDesc: "Sicherheit made in Germany.",
   desc1: [
-    "Upgrade your existing camera intelligence with autosecure AI technology.",
-    "Free takeover and integration of existing camera infrastructure.",
-    "Optimizing or closing gaps in your current camera system.",
+    "Upgrade Ihrer bestehenden Kamera-Intelligenz durch autosecure KI-Technologie.",
+    "Kostenfreie Übernahme und Integration bestehender Kamera-Infrastruktur.",
+    "Optimierung oder Lückenschließung Ihres aktuellen Kamera-Systems.",
   ],
   desc2: [
-    "Cloud hosting and German data centers – with geo-redundancy if required.",
-    "On-site NVR (Network Video Recorder) as a local storage medium with a completely variable storage period (30 / 60 / 90 days depending on customer requirements).",
-    "Dual transmission paths (DSL, LTE).",
+    "Cloudhosting und deutsche Rechenzentren – auf Wunsch auch mit Georedundanz.",
+    "Vor-Ort NVR (Network Video Recorder) als lokales Speichermedium mit völlig variabler Speicherdauer (30 / 60 / 90 Tage je nach Kundenwunsch).",
+    "Duale Übertragungswege (DSL, LTE).",
   ],
 };
 
 export const deepLearningAndQualityImgs = {
   id: 1,
-  title1: "deep learning",
-  titleOneDesc: "Intelligence in the cameras.",
-  feature1: "> 95% real alarm rate",
-  title2: "Brilliant image quality. Saturated colors.",
-  titleTwoDesc: "Even in complete darkness.",
-  feature2: "> Real color rendering from as little as 0.01 lux.",
+  title1: "Deep Learning.",
+  titleOneDesc: "Intelligenz in den Kameras.",
+  feature1: "> 95% Echtalarm-Quote",
+  title2: "Brillante Bildqualität. Satte Farben.",
+  titleTwoDesc: "Selbst bei völliger Dunkelheit.",
+  feature2: "> Echte Farbwiedergabe schon bei 0,01 lux.",
   desc1: [
-    "Innovative DeepLearning algorithm for alarm generation.",
-    "The magic behind it all: important events are put in the spotlight.",
-    "As the name suggests, the technology used offers the lowest false alarm rate . This reduces the effort in the alarm center and forms the basis for security services of the highest quality.",
-    "Precise alarm: Thanks to deep learning algorithms, the technology distinguishes people and vehicles from other moving targets.",
-    "False alarms caused by light reflections, small animals, dogs, cats, martens, etc. are a thing of the past in 95% of cases.",
+    "Innovativer DeepLearning-Algorithmus für die Alarmerzeugung.",
+    "Die Magie hinter allem: wichtige Ereignisse werden in den Mittelpunkt gestellt.",
+    "Wie der Name schon andeutet, bietet die verwendete Technik die geringste Fehlalarmquote. Das reduziert den Aufwand in der Alarmzentrale und bildet die Grundlage für Sicherheits-Dienstleistung auf qualitativ höchstem Niveau.",
+    "Präziser Alarm: Dank tiefgreifender Lernalgorithmen unterscheidet die Technologie Personen und Fahrzeuge von anderen beweglichen Zielen.",
+    "Fehlalarme durch Lichtreflexionen, Kleintiere, Hunde, Katzen, Marder etc. gehören in 95 % der Fälle der Vergangenheit an.",
   ],
   desc2: [
-    "What's the challenge?",
-    "The darkness provides protection for theft, trespassing and other crimes.",
-    "When a traditional camera with infrared illumination is used for night surveillance, people, vehicles or other important objects are blurred and fade into the background, making it difficult to see details.",
-    "Color-related information is crucial for many scenarios and represents a great enrichment for data and analysis. However, conventional cameras often lose important details when only displaying black-and-white images. Our technology is our solution to this common challenge faced by many security system users.",
+    "Was ist die Herausforderung?",
+    "Die Dunkelheit bietet Schutz für Diebstahl, Hausfriedensbruch und anderen Verbrechen.",
+    "Wenn eine herkömmliche Kamera mit Infrarotbeleuchtung für die Nachtüberwachung verwendet wird, sind Personen, Fahrzeuge oder andere wichtige Objekte verschwommen und blenden sich in den Hintergrund ein, so dass es schwierig ist, Details zu erkennen.",
+    "Farbbezogene Informationen sind für viele Szenarien von entscheidender Bedeutung und stellen eine große Bereicherung für Daten und Analysen dar. Herkömmliche Kameras verlieren jedoch oft wichtige Details, wenn sie nur Schwarz-Weiß-Bilder wiedergeben. Unsere Technologie ist unsere Lösung für diese häufige Herausforderung, vor der viele Benutzer von Sicherheitssystemen stehen.",
   ],
 };
 
 export const packages = [
   {
     id: 1,
-    title: "financing",
+    title: "Finanzierung",
     benefits: [
-      "Flexible leasing options or purchase",
-      "Free, tailored investment advice from financing partners",
+      "Flexible Leasingoptionen oder Kauf",
+      "Kostenfreie, zugeschnittene Investitionsberatung durch Finanzierungspartner",
     ],
   },
   {
     id: 2,
-    title: "products",
+    title: "Produkte",
     benefits: [
-      "Trend awareness in hardware and software development",
-      "Sustainably constant product availability",
+      "Trendbewusstsein in der Hard- und Software-Entwicklung",
+      "Nachhaltig konstante Produkt-Verfügbarkeit",
     ],
   },
   {
     id: 3,
-    title: "Installation according to VDE 0100",
+    title: "Installation nach VDE 0100",
     benefits: [
-      "Highest execution quality through decades of experience with camera surveillance and ELA systems",
+      "Höchste Ausführungsqualität durch jahrzehntelange Erfahrung mit Kameraüberwachungs- und ELA-Anlagen",
     ],
   },
   {
     id: 4,
-    title: "service",
+    title: "Service",
     benefits: [
-      "Proactive troubleshooting and service promise",
-      "Individual service packages, reliable routine checks = optimal failure prevention and longevity",
+      "Proaktive Störungsbeseitigung und Serviceversprechen",
+      "Individuelle Service-Pakete, zuverlässige Routineüberprüfungen = optimalen Ausfallverhütung und Langlebigkeit",
     ],
   },
   {
     id: 5,
-    title: "security center",
+    title: "Security-Center",
     benefits: [
-      "Operational and alarm monitoring by emergency and service control center 24/7",
-      "Certification according to VdS 2172: 2005-12",
+      "Betriebs- und Alarmüberwachung durch Notruf- und Serviceleitstelle 24/7",
+      "Zertifizierung nach VdS 2172 : 2005-12",
     ],
   },
   {
     id: 6,
-    title: "insurance",
+    title: "Versicherung",
     benefits: [
-      "Security only with insurance",
-      "Option to have an insurance quote tailored to your investment in security",
+      "Sicherheit nur mit Versicherung",
+      "Option auf ein abgestimmtes Versicherungsangebot mit Berücksichtigung Ihrer Investition in die Sicherheit",
     ],
   },
 ];
@@ -735,279 +731,280 @@ export const packages = [
 export const jobs = [
   {
     id: 1,
-    title: "Area Sales Manager North",
-    type: "Permanent position / full-time",
-    location: "Germany North",
-    starting: "From now on",
+    title: "Area Sales Manager Nord",
+    type: "Festanstellung / Vollzeit",
+    location: "Deutschland-Nord",
+    starting: "Ab sofort",
     details: {
-      desc: "autosecure GmbH is a young company headquartered in Münster in the field of intelligent security technology and innovative hardware and software solutions for the automotive trade and automotive logistics. We operate nationwide and have grown very strongly since our foundation in 2020. In order to continue this development, we would like to further strengthen our sales and are looking for an Area Sales Manager for the North Germany area as soon as possible.",
+      desc: "Die autosecure GmbH ist ein junges Unternehmen mit Hauptsitz in Münster im Bereich intelligenter Sicherheitstechnik und innovativer Hard- und Softwarelösungen für den Automobilhandel und die Automobillogistik. Wir agieren bundesweit und sind seit unserer Gründung im Jahr 2020 sehr stark gewachsen. Um diese Entwicklung weiter fortzusetzen möchten wir unseren Vertrieb weiter stärken und suchen zum nächstmöglichen Zeitpunkt einen Area Sales Manager für den Bereich Deutschland-Nord.",
       location:
-        "Cologne, Dortmund, Kassel, Bielefeld, Hanover, Magdeburg, Leipzig, Dresden, Berlin, Hamburg, Kiel",
-      base: "Full-time from now on",
-      type: "permanent employment",
+        "Köln, Dortmund, Kassel, Bielefeld, Hannover, Magdeburg, Leipzig, Dresden, Berlin, Hamburg, Kiel",
+      base: "Ab sofort in Vollzeit",
+      type: "Festanstellung",
       tasks: [
-        "Acquisition of new customers and continuous market development in the agreed sales area",
-        "Competent and comprehensive advice for interested parties as well as maintenance of active relationship management in the portfolio",
-        "Professional preparation of offers and contracts, implementation of offer presentations and target-oriented contract negotiations",
-        "Support and participation in specialist conferences/conventions and trade fairs",
+        "Akquisition von Neukunden und kontinuierliche Marktbearbeitung im vereinbarten Vertriebsgebiet",
+        "Kompetente und umfassende Beratung von Interessenten sowie Pflege eines aktiven Beziehungsmanagements im Bestand",
+        "Professionelle Angebots- und Vertragserstellung, Umsetzung von Angebotspräsentationen und zielführenden Vertragsverhandlungen",
+        "Unterstützung und Teilnahme an Fachtagungen/Kongressen und Messen",
       ],
       profile: [
-        "Many years of extensive professional experience in field sales with a high affinity for digitization and innovative technologies are preferred. But career changers and junior account managers are also interesting for us.",
-        "Strong communication skills, high sense of mission",
-        "Sales strength, empathy and negotiation skills",
-        "Structured way of working, service orientation",
-        "High willingness to travel",
+        "Langjährige und umfassende Berufserfahrung im Vertriebsaußendienst mit hoher Affinität für Digitalisierung und innovative Technologien bevorzugt. Aber auch Quereinsteiger und Junior Account Manager sind für uns interessant.",
+        "Kommunikationsstärke, hohes Sendungsbewusstsein",
+        "Vertriebsstärke, Empathie und Verhandlungsfähigkeit",
+        "Strukturierte Arbeitsweise, Serviceorientierung",
+        "Hohe Reisebereitschaft",
       ],
       offer: [
-        "Exciting and innovative products with high appeal and relevance for our target group",
-        "Flat hierarchy with a strong team spirit",
-        "Provision of company cars for private use",
-        "Apple mobile phone, premium notebook, corporate credit card",
-        "Attractive, performance-related remuneration and a permanent employment contract",
+        "Spannende und innovative Produkte mit hoher Anziehungskraft und Relevanz für unsere Zielgruppe",
+        "Flache Hierarchie mit einem starken Team-Spirit",
+        "Überlassung Dienstwagen auch zur privaten Nutzung",
+        "Apple Mobiltelefon, Premium-Notebook, Firmen-Kreditkarte",
+        "Attraktive, erfolgsorientierte Vergütung und ein unbefristeter Arbeitsvertrag",
       ],
     },
   },
   {
     id: 2,
-    title: "Area Sales Manager South",
-    type: "Permanent position / full-time",
-    location: " Germany-South",
-    starting: "From now on",
+    title: "Area Sales Manager Süd",
+    type: "Festanstellung / Vollzeit",
+    location: "Deutschland-Süd",
+    starting: "Ab sofort",
     details: {
-      desc: "autosecure GmbH is a young company headquartered in Münster in the field of intelligent security technology and innovative hardware and software solutions for the automotive trade and automotive logistics. We operate nationwide and have grown very strongly since our foundation in 2020. In order to continue this development, we would like to further strengthen our sales and are looking for an Area Sales Manager for the southern Germany area as soon as possible.",
+      desc: "Die autosecure GmbH ist ein junges Unternehmen mit Hauptsitz in Münster im Bereich intelligenter Sicherheitstechnik und innovativer Hard- und Softwarelösungen für den Automobilhandel und die Automobillogistik. Wir agieren bundesweit und sind seit unserer Gründung im Jahr 2020 sehr stark gewachsen. Um diese Entwicklung weiter fortzusetzen möchten wir unseren Vertrieb weiter stärken und suchen zum nächstmöglichen Zeitpunkt einen Area Sales Manager für den Bereich Deutschland-Süd.",
       location:
-        "Frankfurt am Main, Saarbrücken, Karlsruhe, Stuttgart, Munich, Passau, Nuremberg, Hof",
-      base: "Full-time from now on",
-      type: "permanent employment",
+        "Frankfurt am Main, Saarbrücken, Karsruhe, Stuttgart, München, Passau, Nürnberg, Hof",
+      base: "Ab sofort in Vollzeit",
+      type: "Festanstellung",
       tasks: [
-        "Acquisition of new customers and continuous market development in the agreed sales area",
-        "Competent and comprehensive advice for interested parties as well as maintenance of active relationship management in the portfolio",
-        "Professional preparation of offers and contracts, implementation of offer presentations and target-oriented contract negotiations",
-        "Support and participation in specialist conferences/conventions and trade fairs",
+        "Akquisition von Neukunden und kontinuierliche Marktbearbeitung im vereinbarten Vertriebsgebiet",
+        "Kompetente und umfassende Beratung von Interessenten sowie Pflege eines aktiven Beziehungsmanagements im Bestand",
+        "Professionelle Angebots- und Vertragserstellung, Umsetzung von Angebotspräsentationen und zielführenden Vertragsverhandlungen",
+        "Unterstützung und Teilnahme an Fachtagungen/Kongressen und Messen",
       ],
       profile: [
-        "Many years of extensive professional experience in field sales with a high affinity for digitization and innovative technologies are preferred. But career changers and junior account managers are also interesting for us.",
-        "Strong communication skills, high sense of mission",
-        "Sales strength, empathy and negotiation skills",
-        "Structured way of working, service orientation",
-        "High willingness to travel",
+        "Langjährige und umfassende Berufserfahrung im Vertriebsaußendienst mit hoher Affinität für Digitalisierung und innovative Technologien bevorzugt. Aber auch Quereinsteiger und Junior Account Manager sind für uns interessant.",
+        "Kommunikationsstärke, hohes Sendungsbewusstsein",
+        "Vertriebsstärke, Empathie und Verhandlungsfähigkeit",
+        "Strukturierte Arbeitsweise, Serviceorientierung",
+        "Hohe Reisebereitschaft",
       ],
       offer: [
-        "Exciting and innovative products with high appeal and relevance for our target group",
-        "Flat hierarchy with a strong team spirit",
-        "Provision of company cars for private use",
-        "Apple mobile phone, premium notebook, corporate credit card",
-        "Attractive, performance-related remuneration and a permanent employment contract",
+        "Spannende und innovative Produkte mit hoher Anziehungskraft und Relevanz für unsere Zielgruppe",
+        "Flache Hierarchie mit einem starken Team-Spirit",
+        "Überlassung Dienstwagen auch zur privaten Nutzung",
+        "Apple Mobiltelefon, Premium-Notebook, Firmen-Kreditkarte",
+        "Attraktive, erfolgsorientierte Vergütung und ein unbefristeter Arbeitsvertrag",
       ],
     },
   },
   {
     id: 3,
-    title: "App developer iOS & Android",
-    type: "Permanent position / full-time",
-    location: "Muenster",
-    starting: "From now on",
+    title: "App-Entwickler iOS & Android",
+    type: "Festanstellung / Vollzeit",
+    location: "Münster",
+    starting: "Ab Sofort",
     details: {
-      desc: "The autosecure GmbH based in Münster, are a young startup in the field of intelligent and technology-based security technology. Our work focuses on active video management systems for commercial customers throughout Germany. Would you like to help shape the development and scaling of a growing startup? Would you like to work closely with our management on strategic projects and achieve our goals? Then become part of our team and help us to write our success story together!",
-      location: "Muenster",
-      base: "Full-time from now on",
-      type: "permanent employment",
+      desc: "Die autosecure GmbH mit Sitz in Münster, sind ein junges Startup im Bereich der intelligenten und technologiebasierten Sicherheitstechnik. Unser Arbeitsschwerpunkt sind aktive Video-Managementsysteme für Gewerbekunden im gesamten Bundesgebiet. Du möchtest Aufbau und Skalierung eines wachsenden Startups mitgestalten? Du hast Lust in enger Zusammenarbeit mit unserer Geschäftsführung an strategischen Projekten mitzuwirken und unsere Ziele zu verwirklichen? Dann werde Teil unseres Teams und hilf uns dabei unsere Erfolgsstory gemeinsam zu schreiben!",
+      location: "Münster",
+      base: "Ab sofort in Vollzeit",
+      type: "Festanstellung",
+
       tasks: [
-        "Create new apps for our customers in the field of digitization or further develop existing apps",
-        "Conception, development and continuous optimization of native apps in SwiftUI & Combine (iOS)",
-        "Documentation of code and workflows",
-        "Implementation of UI defaults",
-        "Independent testing and bug fixing",
-        "Close cooperation with our marketing & sales units",
-        "High commitment and willingness to perform",
+        "Erstelle neue Apps für unsere Kunden im Bereich der Digitalisierung oder entwickle bestehende Apps weiter",
+        "Konzeption, Entwicklung und kontinuierliche Optimierung von nativen Apps in SwiftUI & Combine (iOS)",
+        "Dokumentation von Code und Workflows",
+        "Implementierung von UI-Vorgaben",
+        "Eigenständiges Testing und Bugfixing",
+        "Enge Zusammenarbeit mit unseren Marketing- & Sales-Units",
+        "Hohe Einsatz- und Leistungsbereitschaft",
       ],
       profile: [
-        "An IT degree, a comparable degree or IT training",
-        "Meaningful references, ideally in live operation",
-        "Several years of experience in an agency, software company or startup",
-        "Team player using agile methods",
-        "High commitment and willingness to perform",
-        "You are characterized by innovative spirit and fun in further development",
+        "Ein IT-Studium, ein vergleichbares Studium oder eine IT-Ausbildung",
+        "Aussagekräftige Referenzen, idealerweise im Live-Betrieb",
+        "Mehrjährige Erfahrung in einer Agentur, Softwareunternehmen oder einem Startup",
+        "Teamplayer unter Einsatz von agilen Methoden",
+        "Hohe Einsatz- und Leistungsbereitschaft",
+        "Innovationsfreude und Spaß an der Weiterentwicklung zeichnen Sie aus",
       ],
       offer: [
-        "Exciting and innovative products with high appeal and relevance for our target group",
-        "Flat hierarchy with a strong team spirit",
-        "Provision of company cars for private use",
-        "Apple mobile phone, premium notebook, corporate credit card",
-        "Attractive, above-average and success-oriented remuneration and a permanent employment contract",
-        "Very good promotion and development opportunities",
+        "Spannende und innovative Produkte mit hoher Anziehungskraft und Relevanz für unsere Zielgruppe",
+        "Flache Hierarchie mit einem starken Team-Spirit",
+        "Überlassung Dienstwagen auch zur privaten Nutzung",
+        "Apple Mobiltelefon, Premium-Notebook, Firmen-Kreditkarte",
+        "Attraktive, erfolgsorientierte Vergütung und ein unbefristeter Arbeitsvertrag",
       ],
     },
   },
   {
     id: 4,
-    title: "Frontend Developer Laravel, PHP",
-    type: "Permanent position / full-time",
-    location: "Muenster",
-    starting: "From now on",
+    title: "Frontend-Entwickler Laravel, PHP",
+    type: "Festanstellung / Vollzeit",
+    location: "Münster",
+    starting: "Ab sofort",
     details: {
-      desc: "The autosecure GmbH based in Münster, are a young startup in the field of intelligent and technology-based security technology. Our work focuses on active video management systems for commercial customers throughout Germany. Would you like to help shape the development and scaling of a growing startup? Would you like to work closely with our management on strategic projects and achieve our goals? Then become part of our team and help us to write our success story together",
-      location: "Muenster",
-      base: "Full-time from now on",
-      type: "permanent employment",
+      desc: "Die autosecure GmbH mit Sitz in Münster, sind ein junges Startup im Bereich der intelligenten und technologiebasierten Sicherheitstechnik. Unser Arbeitsschwerpunkt sind aktive Video-Managementsysteme für Gewerbekunden im gesamten Bundesgebiet. Du möchtest Aufbau und Skalierung eines wachsenden Startups mitgestalten? Du hast Lust in enger Zusammenarbeit mit unserer Geschäftsführung an strategischen Projekten mitzuwirken und unsere Ziele zu verwirklichen? Dann werde Teil unseres Teams und hilf uns dabei unsere Erfolgsstory gemeinsam zu schreiben!",
+      location: "Münster",
+      base: "Ab sofort in Vollzeit",
+      type: "Festanstellung",
+
       tasks: [
-        "Development and further development of the autosecure ecosystem",
-        "Development of interfaces for customer's own ERP systems",
-        "Design and implementation of Laravel applications considering maintainability, fault tolerance and scalability",
-        "Converting complex, high-level requirements into concrete technical specifications and estimates to support project planning and decision-making",
-        "Provide and receive constructive feedback in technical meetings and code reviews",
-        "Close cooperation with our marketing and sales units",
-        "Close cooperation with our product development",
+        "Entwicklung und Weiterentwicklung des autosecure Eco-Systems",
+        "Entwicklung von Schnittstellen für kundeneigene ERP-Systeme",
+        "Entwurf und Implementierung von Laravel-Anwendungen unter Berücksichtigung von Wartbarkeit, Fehlertoleranz und Skalierbarkeit",
+        "Umwandlung komplexer, hochrangiger Anforderungen in konkrete technische Spezifikationen und Schätzungen zur Unterstützung der Projektplanung und Entscheidungsfindung",
+        "Bereitstellung und Entgegennahme von konstruktivem Feedback in technischen Besprechungen und Code-Reviews",
+        "Enge Zusammenarbeit mit unseren Marketing- und Sales-Units",
+        "Enge Zusammenarbeit mit unserer Produkt-Entwicklung",
         "prototyping",
       ],
       profile: [
-        "In-depth knowledge and expertise with the Laravel PHP framework",
-        "At least 5 years of experience writing production quality PHP code",
-        "In-depth experience with and understanding of the Laravel framework is a must",
-        "Up-to-date knowledge of the latest PHP and Laravel versions and the surrounding ecosystem",
-        "Experience in documenting, creating and using RESTful APIs",
-        "Confidence in taking on complex tasks independently and turning them into well-tested and maintainable solutions",
-        "Experience with a collaborative Git workflow, such as B. 'Git Flow'",
-        "Familiarity with the Linux command line",
-        "Willingness to work, willingness to perform and openness",
-        "Team spirit and good communication skills",
+        "Fundierte Kenntnisse und Fachwissen mit dem Laravel PHP-Framework",
+        "Mindestens 5 Jahre Erfahrung mit dem Schreiben von PHP-Code in Produktionsqualität",
+        "Tiefgreifende Erfahrung mit und Verständnis für das Laravel-Framework ist ein Muss",
+        "Aktuelle Kenntnisse der neuesten PHP- und Laravel-Versionen und des umgebenden Ökosystems",
+        "Erfahrung in der Dokumentation, Erstellung und Nutzung von RESTful APIs",
+        "Selbstvertrauen in die eigenständige Übernahme komplexer Aufgaben und deren Umsetzung in gut getestete und wartbare Lösungen",
+        "Erfahrung mit einem kollaborativen Git-Workflow, wie z. B. 'Git Flow'",
+        "Vertrautheit mit der Linux-Befehlszeile",
+        "Einsatzbereitschaft, Leistungsbereitschaft und Offenheit",
+        "Teamgeist und gute Kommunikationsfähigkeiten",
       ],
       offer: [
-        "Exciting and innovative products with high appeal and relevance for our target group",
-        "Flat hierarchy with a strong team spirit",
-        "Provision of company cars for private use",
-        "Apple mobile phone, premium notebook, corporate credit card",
-        "Attractive, above-average and success-oriented remuneration and a permanent employment contract",
-        "Very good promotion and development opportunities",
+        "Spannende und innovative Produkte mit hoher Anziehungskraft und Relevanz für unsere Zielgruppe",
+        "Flache Hierarchie mit einem starken Team-Spirit",
+        "Überlassung Dienstwagen auch zur privaten Nutzung",
+        "Apple Mobiltelefon, Premium-Notebook, Firmen-Kreditkarte",
+        "Attraktive, erfolgsorientierte Vergütung und ein unbefristeter Arbeitsvertrag",
       ],
     },
   },
   {
     id: 5,
-    title: "IT support",
-    type: "Permanent position / full-time",
-    location: "Muenster",
-    starting: "From now on",
+    title: "IT-Support",
+    type: "Festanstellung / Vollzeit",
+    location: "Münster",
+    starting: "Ab sofort",
     details: {
-      desc: "autosecure GmbH is a young company headquartered in Münster in the field of intelligent security technology and innovative hardware and software solutions for the automotive trade and automotive logistics. We operate nationwide and have grown very strongly since our foundation in 2020. In order to continue this development, we would like to further strengthen our IT unit and are looking for an IT support specialist as soon as possible",
-      location: "Muenster",
-      base: "Full-time from now on",
-      type: "permanent employment",
+      desc: "Die autosecure GmbH ist ein junges Unternehmen mit Hauptsitz in Münster im Bereich intelligenter Sicherheitstechnik und innovativer Hard- und Softwarelösungen für den Automobilhandel und die Automobillogistik. Wir agieren bundesweit und sind seit unserer Gründung im Jahr 2020 sehr stark gewachsen. Um diese Entwicklung weiter fortzusetzen möchten wir unsere IT-Unit weiter stärken und suchen zum nächstmöglichen Zeitpunkt einen IT-Support Spezialisten.",
+      location: "Münster",
+      base: "Ab sofort in Vollzeit",
+      type: "Festanstellung",
       tasks: [
-        "Our security systems are 100% intelligent networked IT systems. The regular checking of target states and the correct setting of all parameters is an elementary building block for the security of our customer systems. We are looking for you for this central task!",
+        "Unsere Sicherheitsanlagen sind zu 100% intelligent vernetzte IT-Systeme. Die regelmäßige Überprüfung von Soll-Zuständen und korrekte Einstellung aller Parameter ist ein elementarer Baustein für die Sicherheit unserer Kundensysteme. Für diese zentrale Aufgabe suchen wir Sie!",
       ],
       profile: [
-        "Completed vocational training in the IT sector",
-        "Experience in 1st level support",
-        "Safe handling of Windows operating systems",
-        "Good network and hardware knowledge",
-        "Reliable, communicative, committed",
+        "Abgeschlossene Berufsausbildung im IT-Bereich",
+        "Erfahrungen im 1st Level Support",
+        "Sicherer Umgang mit Windows Betriebssystemen",
+        "Gute Netzwerk- und Hardware-Kenntnisse",
+        "Verlässlich, kommunikativ, engagiert",
       ],
       offer: [
-        "Exciting, nationwide projects in a highly motivated and very collegial team",
-        "Personal development opportunities in a future-oriented and modern company",
-        "Performance-based compensation",
-        "Lots of fun and opportunities for development",
-        "Immediate entry full-time/part-time",
-        "Home office possible",
+        "Spannende, bundesweite Projekte in einem hochmotivierten und sehr kollegialen Team",
+        "Persönliche Entwicklungsmöglichkeiten in einem zukunftsorientierten und modernen Unternehmen",
+        "Leistungsorientierte Vergütung",
+        "Viel Spaß und Entfaltungsmöglichkeiten",
+        "Sofortiger Einstieg in Vollzeit/Teilzeit",
+        "Homeoffice möglich",
       ],
     },
   },
   {
     id: 6,
     title: "Junior Account Manager",
-    type: "Permanent position / full-time",
-    location: "Muenster",
-    starting: "From now on",
+    type: "Festanstellung / Vollzeit",
+    location: "Münster",
+    starting: "Ab sofort",
     details: {
       desc: "The autosecure GmbH based in Münster, are a young startup in the field of intelligent and technology-based security technology. Our work focuses on active video management systems for commercial customers throughout Germany. Would you like to help shape the development and scaling of a growing startup? Would you like to work closely with our management on strategic projects and achieve our goals? Then become part of our team and help us to write our success story together!",
-      location: "Muenster",
-      base: "Full-time from now on",
-      type: "permanent employment",
+      location: "Münster",
+      base: "Ab sofort in Vollzeit",
+      type: "Festanstellung",
       tasks: [
-        "Support for new customer acquisition",
-        "Customer support with high commitment",
-        "Care, advice and support for maximum customer experiences",
-        "Preparation of project documents",
-        'Responsible for our "Customer Happiness Guarantee"',
+        "Unterstützung bei Neukunden-Akquise",
+        "Kunden-Support mit hoher Einsatzbereitschaft",
+        "Betreuung, Beratung und Support für ein maximale Kunden-Erlebnisse",
+        "Aufbereitung von Projekt-Unterlagen",
+        'Mitverantwortlich für unsere "Customer Happiness Garantie"',
       ],
       profile: [
-        "We are looking for career starters or career changers with an affinity for IT and modern technologies",
-        "Willingness to work, willingness to perform and openness",
-        "Willingness to travel (nationwide)",
-        "Class B driving license is required",
-        "Strong personality and confident demeanor",
+        "Wir suchen Berufseinsteiger oder Quereinsteiger mit einer Affinität für IT und moderne Technologien",
+        "Einsatzbereitschaft, Leistungsbereitschaft und Offenheit",
+        "Reisebereitschaft (bundesweit)",
+        "Führerschein Klasse B wird vorausgesetzt",
+        "Starke Persönlichkeit und selbstbewusstes Auftreten",
       ],
       offer: [
-        "Exciting and innovative products with high appeal and relevance for our target group",
-        "Flat hierarchy with a strong team spirit",
-        "Provision of company cars for private use",
-        "Apple mobile phone, premium notebook, corporate credit card",
-        "Attractive, above-average and success-oriented remuneration and a permanent employment contract",
-        "Very good promotion and development opportunities",
+        "Spannende und innovative Produkte mit hoher Anziehungskraft und Relevanz für unsere Zielgruppe",
+        "Flache Hierarchie mit einem starken Team-Spirit",
+        "Überlassung Dienstwagen auch zur privaten Nutzung",
+        "Apple Mobiltelefon, Premium-Notebook, Firmen-Kreditkarte",
+        "Attraktive, erfolgsorientierte Vergütung und ein unbefristeter Arbeitsvertrag",
+        "Sehr gute Aufstiegs- und Entwicklungsmöglichkeiten",
       ],
     },
   },
 
   {
     id: 7,
-    title: "System engineer / IT technology in the field",
-    type: "Permanent position / full-time",
-    location: "Muenster",
-    starting: "From now on",
+    title: "System Engineer / IT Technik im Außendienst",
+    type: "Festanstellung / Vollzeit",
+    location: "Münster / Bundesweit",
+    starting: "Ab sofort",
     details: {
-      desc: "autosecure GmbH is a specialist provider in the area of ​​security for automobile trade and logistics companies. We support our customers nationwide and deliver high-quality camera surveillance solutions based on the latest cloud and network architecture. We are looking for an experienced network and IT specialist to set up and support our customer systems as soon as possible.",
-      location: "Munster / Nationwide",
-      base: "Full-time from now on",
-      type: "permanent employment",
+      desc: "autosecure GmbH ist Spezialanbieter im Bereich der Sicherung von Automobilhandels- und Logistikbetrieben. Wir betreuen unsere Kunden bundesweit und liefern hochwertige Kamera-Überwachungslösungen auf Basis modernster Cloud- und Netzwerkarchitektur. Zum nächstmöglichen Zeitpunkt suchen wir einen erfahrenen Netzwerk- und IT-Spezialisten für die Einrichtung und Betreuung unserer Kundensysteme.",
+      location: "Münster / Bundesweit",
+      base: "Ab sofort in Vollzeit",
+      type: "Festanstellung",
+
       tasks: [
-        "You are responsible for the commissioning, configuration and support during operation of the camera systems installed nationwide at our customers. In the event of system failures and disruptions, you ensure that the target state is restored as quickly as possible",
-        "With your IT know-how and your strong problem-solving and team skills, you make a valuable contribution to the continuous improvement of our system setup.",
-        "You also assume responsibility in direct customer contact and perform important interface work between the assembly team and customer support.",
+        "Sie verantworten die Inbetriebnahme, Konfiguration und Betreuung im Betrieb der bundesweit bei unseren Kudnen installierten Kamerasysteme. Im Falle von Systemausfällen und Störungen tragen Sie dafür Sorge, dass eine schnellstmögliche Wiederherstellung des Sollzustandes gewährleistet wird.",
+        "Mit Ihrem IT-KnowHow und Ihrer ausgeprägten Problemlösungs- und Teamkompetenz leisten Sie Ihren wertvollen Beitrag zur kontinuierlichen Verbesserung unseres Systemsetups.",
+        "Sie übernehmen auch im direkten Kundenkontakt Verantwortung und leisten wichtige Schnittstellenarbeit zwischen Montageteam und Kundenbetreuung.",
       ],
       profile: [
-        "You have in-depth experience in setting up and setting up network, cloud and IP-based systems, preferably in the field of video. You have an unrestricted willingness to travel throughout Germany for direct on-site support and installation of our customer systems.",
-        "Preferably, you have basic training as an IT specialist for system integration or comparable and several years of professional experience in this field.",
-        "Your appearance is always binding. You are a good communicator, a team player and loyal.",
+        "Sie haben fundierte Erfahrungen im Aufsetzen und Einrichten von Netzwerk-, Cloud- & IP-basierten Systemen vorzugsweise im Bereich Video. Sie haben eine uneingeschränkte Reisebereitschaft im gesamten Bundesgebiet für die direkte Vor-Ort-Betreuung und Einrichtung unserer Kundensysteme.",
+        "Vorzugsweise haben Sie eine Grundausbildung zum Fachinformatiker für Systemintegration oder vergleichbar sowie mehrjährige Berufserfahrungen auf diesem Gebiet.",
+        "Ihr Auftreten ist stets verbindlich. Sie sind kommunikationsstark, teamfähig und loyal.",
       ],
       offer: [
-        "Exciting and innovative products with high appeal and relevance for our target group",
-        "Flat hierarchy with a strong team spirit",
-        "Provision of company cars for private use",
-        "Apple mobile phone, premium notebook, corporate credit card",
-        "Attractive, above-average and success-oriented remuneration and a permanent employment contract",
+        "Spannende und innovative Produkte mit hoher Anziehungskraft und Relevanz für unsere Zielgruppe",
+        "Flache Hierarchie mit einem starken Team-Spirit",
+        "Überlassung Dienstwagen auch zur privaten Nutzung",
+        "Apple Mobiltelefon, Premium-Notebook, Firmen-Kreditkarte",
+        "Attraktive, erfolgsorientierte Vergütung und ein unbefristeter Arbeitsvertrag",
       ],
     },
   },
   {
     id: 8,
-    title: "Business Development Intern",
-    type: "Permanent position / full-time",
-    location: "Muenster",
-    starting: "From now on",
+    title: "Praktikum Business Development",
+    type: "Festanstellung / Vollzeit",
+    location: "Münster",
+    starting: "Ab sofort",
     details: {
-      desc: "The autosecure GmbH based in Münster, are a young startup in the field of intelligent and technology-based security technology. Our work focuses on active video management systems for commercial customers throughout Germany. Would you like to help shape the development and scaling of a growing startup? Would you like to work closely with our management on strategic projects and achieve our goals? Then become part of our team and help us to write our success story together!",
-      location: "Munster",
-      base: "Full-time from now on",
-      type: "permanent employment",
+      desc: "Die autosecure GmbH mit Sitz in Münster, sind ein junges Startup im Bereich der intelligenten und technologiebasierten Sicherheitstechnik. Unser Arbeitsschwerpunkt sind aktive Video-Managementsysteme für Gewerbekunden im gesamten Bundesgebiet. Du möchtest Aufbau und Skalierung eines wachsenden Startups mitgestalten? Du hast Lust in enger Zusammenarbeit mit unserer Geschäftsführung an strategischen Projekten mitzuwirken und unsere Ziele zu verwirklichen? Dann werde Teil unseres Teams und hilf uns dabei unsere Erfolgsstory gemeinsam zu schreiben!",
+      location: "Münster",
+      base: "Ab sofort in Vollzeit",
+      type: "Festanstellung",
       tasks: [
-        "As part of your internship, you will focus on working with our management to expand our portfolio in a meaningful and sustainable way",
-        "You research and develop a technology and sales concept for an innovative product expansion",
-        "You prepare the marketing concept for the product innovation together with our graphics agency",
-        "You help with the research of potential leads, evaluate them and thus contribute to the acquisition of new customers",
+        "Im Rahmen deines Praktikums arbeitest du schwerpunktmäßig mit unserer Geschäftsführung daran, unser Portfolio sinnvoll und nachhaltig zu erweitern",
+        "Du recherchierst und entwickelst für eine innovative Produkterweiterung ein Technologie- und Vertriebskonzept",
+        "Du bereitest das Marketingkonzept für die Produktinnovation gemeinsam mit unserer Grafikagentur vor",
+        "Du hilfst bei der Recherche von potentiellen Leads, evaluierst diese und trägst somit zur Neukundenakquise bei",
       ],
       profile: [
-        "You are currently studying or have completed your studies and are looking for an exciting entry into the professional world",
-        "Strong communication skills and a high degree of self-confidence",
-        "Open to new and critical thinking",
-        "Structured way of working",
-        "High willingness to travel",
+        "Du absolvierst gerade ein Studium oder hast Dein Studium abgeschlossen und suchst einen spannenden Einstieg in die Berufswelt",
+        "Kommunikationsstärke und ein hohes Maß an Selbstbewusstsein",
+        "Offen für Neues und kritisches Denken",
+        "Strukturierte Arbeitsweise",
+        "Hohe Reisebereitschaft",
       ],
       offer: [
-        "Challenging tasks in an agile, dynamic and expanding startup environment",
-        " Exciting nationwide projects related to the expansion of our product portfolio",
-        "An ambitious and highly motivated team with flat hierarchies",
-        "The opportunity to contribute your individual strengths and your own ideas with a lot of creative freedom and to develop yourself professionally and personally",
+        "Herausfordernde Aufgaben in einem agilen, dynamischen und expandierenden Startup-Umfeld",
+        "Spannende bundesweite Projekte rund um die Erweiterung unseres Produkt-Portfolios",
+        "Ein ambitioniertes und hochmotiviertes Team mit flachen Hierarchien",
+        "Die Möglichkeit, deine individuellen Stärken und eigenen Ideen mit viel Gestaltungsfreiraum einzubringen sowie dich beruflich und persönlich weiterzuentwickeln",
       ],
     },
   },

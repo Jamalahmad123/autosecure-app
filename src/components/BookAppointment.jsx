@@ -26,18 +26,18 @@ const BookAppointment = () => {
           </figure>
           <div className="card-body justiy-start items-start">
             <h2 className={`text-xl lg:text-3xl font-bold text-clrPrimary`}>
-              Let's talk.
+              Kommen wir ins Gespräch.
             </h2>
             <p className="text-clrPrimary text-base lg:text-lg">
-              Real added value through process automation from autosecure.
-              Arrange your free consultation appointment now.
+              Echter Mehrwert durch Prozess-Automation von autosecure.
+              Vereinbaren Sie jetzt Ihren kostenlosen Beratungs-Termin.
             </p>
             <div className="card-actions mt-6 lg:mt-0">
               <Link
                 to="/company/contact"
-                className="btn lowercase bg-clrSky text-white border-none hover:bg-clrPrimary lg:text-lg font-normal"
+                className="btn capitalize bg-clrSky text-white border-none hover:bg-clrPrimary lg:text-lg font-normal"
               >
-                make an appointment{" "}
+                Termin vereinbaren{" "}
                 <FaCalendarCheck size={20} className="ml-5" />
               </Link>
             </div>

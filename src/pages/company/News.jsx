@@ -9,8 +9,8 @@ import { useTitle } from "../../hooks/customHooks";
 const Achievements = lazy(() => import("../../components/Achievements"));
 
 const News = () => {
-  const labels = ["News from autosecure"];
-  useTitle("News – autosecure | Secure. Scan. Locate.")
+  const labels = ["Neues von autosecure"];
+  useTitle("News – autosecure | Secure. Scan. Locate.");
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);
@@ -20,8 +20,8 @@ const News = () => {
         <Wrapper className="px-4">
           <TypeWriter width={140} labels={labels} />
           <h1 className={`${styles.headingPrimary} text-slate-800`}>
-            News about our projects <br className="hidden md:block" /> and our
-            company.
+            Aktuelles über unsere Projekte <br className="hidden md:block" />{" "}
+            und unser Unternehmen.
           </h1>
         </Wrapper>
       </header>

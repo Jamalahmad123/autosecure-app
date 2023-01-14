@@ -71,11 +71,12 @@ import TypeWriter from "../../components/ui/TypeWriter";
 import { useTitle } from "../../hooks/customHooks";
 
 const benefits = [
-  "Precise real-time indoor and outdoor localization of goods and goods for profitable business applications with innovative analyses.",
-  `Examples of use cases are "Find My Car Terminals", vehicle tagging, digital vehicle files/order folders.`,
-  "Automated vehicle localization and transfer of the respective location to within a few meters with and without license plates.",
-  "Transfer of the information to the customer's own ERP systems via the innovative and open-interface autosecure middleware for real process intelligence and automated downtime recording and control.",
-  "Significant reduction of search and assignment costs.",
+  "Aktive Videoüberwachung mit Live-Täteransprache zur Reduktion der Zugriffszeit auf ein Minimum für maximale Abschreckung und minimale Schadenaufwendungen",
+  `Als Festinstallation mit intelligenten Kauf-, Finanzierungs- oder Leasingmodellen`,
+  "Hauseigenes Alarmcenter zur Echtzeit-Bewertung und Live-Täteransprache",
+  "Oder als Mobile Lösung kurzfristig und zeitbefristet einsetzbar auf Mietbasis",
+  "Standortindividuelle 24/7 Security und nahtlose Integration in die individuellen Geschäftsabläufe",
+  "Nahtlose Integration der autosecure Lösungen in hauseigene IT-Infrastruktur (ERP modeling)",
 ];
 
 const slideImages = [
@@ -95,8 +96,8 @@ const processContent = {
 
 const technologyContent = {
   id: 1,
-  title: "Our technology.",
-  desc: "With our modern artificial intelligence technology, we are able to work with the lowest error alarm rate on the market. In addition, our hardware offers optimal results even in poor lighting conditions. This enables us to achieve the highest service quality for you.",
+  title: "Unsere Technologie.",
+  desc: "Mit unserer modernen Technologie aus der künstlichen Intelligenz sind wir in der Lage, mit der geringsten Fehleralarm-Quote am Markt zu arbeiten. Zusätzlich bietet unsere Hardware schon bei schlechten Lichtverhältnissen optimale Ergebnisse. Damit erzielen wir für Sie höchste Dienstleistungs-Qualität.",
 };
 
 const SecuritySolutions = () => {
@@ -105,15 +106,15 @@ const SecuritySolutions = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);
 
-  const [safe] = features.filter((item) => item.title === "safe");
+  const [safe] = features.filter((item) => item.title === "secure");
   const labelsProcess = [
     "Holistic advice.",
     "Nationwide installations.",
     "Certified surveillance.",
   ];
   const labelsTech = [
-    "Lowest error alert rate on the market.",
-    "State-of-the-art hardware and software.",
+    "Geringste Fehleralarm Quote am Markt.",
+    "Modernste Hard- und Software.",
   ];
 
   return (
@@ -166,7 +167,7 @@ const SecuritySolutions = () => {
           <TypeWriter width={160} labels={labelsProcess} />
         </AutosecureProcess> */}
         <AutosecureProcess {...technologyContent} hasSpace>
-          <TypeWriter width={120} labels={labelsTech} />
+          <TypeWriter width={140} labels={labelsTech} />
         </AutosecureProcess>
         <MeetingVideo
           videoPath={autosecure_2021_Technologie}
@@ -186,16 +187,16 @@ const SecuritySolutions = () => {
 
 const visualWarningsContent = {
   id: 1,
-  mainTitle: "Visual and acoustic warning up to full automation.",
-  subTitle1: "outdoor area",
+  mainTitle: "Visuelle und akustische Warnung bis zur Vollautomatisierung.",
+  subTitle1: "Freigelände",
   features1: [
-    "After the alarm has been raised, the operator in the alarm center qualifies and assesses the situation.",
-    `With visual and acoustic warnings, we signal the suspects on site "We're here!". To add another layer of protection, the optional two-way audio feature also allows on-site sounds to be heard.`,
+    "Nach Alarmierung erfolgt durch den Operator in der Alarmzentrale eine Qualifizierung und Bewertung der Situation.",
+    `Mit visuellen und akustischen Warnungen signalisieren wir den Verdächtigen vor Ort „Wir sind da!“. Um eine weitere Schutzebene hinzuzufügen, ermöglicht die optionale Zwei-Wege-Audio-Funktion ebenfalls, Geräusche vor Ort wahrzunehmen.`,
   ],
-  subTitle2: "Fenced area/indoor area",
+  subTitle2: "Umzäunte Gelände/Innenbereich",
   features2: [
-    "Automated audio warning in restricted area.",
-    "Thanks to the high protection against false alarms, our technology makes it possible to completely dispense with manual intervention in closed-off areas. The cameras detect moments of danger and a user-defined audio message is played immediately. In this way, we do not lose any time in the manual processing of crystal-clear factual situations. (This feature is optional and contains system components that are subject to a surcharge).",
+    "Automatisierte Audio-Warnung im abgesperrten Bereich.",
+    "Durch die hohe Fehlalarmsicherheit ermöglicht unsere Technologie, in abgesperrten Bereichen sogar vollständig auf manuelles Eingreifen zu verzichten. Die Kameras erkennen Gefahrenmomente und sofort wird eine benutzerdefinierte Audio-Nachricht eingespielt. Damit verlieren wir keine Zeit in der manuellen Bearbeitung von glasklaren Tatbestandssituationen. (Dieses Feature ist optional und enthält aufpreispflichtige Systemkomponenten).",
   ],
 };
 

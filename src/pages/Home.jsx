@@ -40,10 +40,11 @@ import { auto_secure_meeting } from "../assets/videos";
 import Spinner from "../components/ui/Spinner";
 
 import { ecosystemAndExpertise } from "../data/constantData";
-const title = "Trust. Integrity.";
+const title = "Vertrauen. Integrität.";
 const desc =
-  "autosecure is your specialist for leading technology-based automation solutions for the automotive and mobility industry.";
-const promise = "We lower your costs. And increase your sales. Promised.";
+  "autosecure ist Ihr Spezialist für führende technologiebasierte Automations-Lösungen für die Automobil- und Mobilitätsindustrie.";
+const promise =
+  "Wir senken Ihre Kosten. Und steigern Ihren Umsatz. Versprochen.";
 
 const Home = () => {
   useEffect(() => {

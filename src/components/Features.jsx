@@ -4,21 +4,9 @@ import { Link } from "react-router-dom";
 import Wrapper from "./ui/Wrapper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
-import { features, solutionsDropdownLinks } from "../data/constantData";
+import { features } from "../data/constantData";
 import { styles } from "../Styles";
 import { logo_sm } from "../assets/images";
-
-/*<li
-                        key={item.id}
-                        className="hover:bg-clrSky capitalize w-full"
-                      >
-                        <Link
-                          to={item.link}
-                          className="text-sm text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white relative z-[999]"
-                        >
-                          {item.name}
-                        </Link>
-                      </li> */
 
 const Features = () => {
   return (

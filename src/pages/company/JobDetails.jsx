@@ -20,6 +20,10 @@ const JobDetails = () => {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [id]);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);
   return (
     <>
@@ -27,7 +31,7 @@ const JobDetails = () => {
         <Wrapper className="px-4">
           <header>
             <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
-              {title} (m/f/d)
+              {title} (m/w/d)
             </h2>
             <p className="text-[20px] leading-[43px] md:text-[30px] text-clrPrimary mt-6 md:max-w-3xl">
               {details.desc}
@@ -55,37 +59,37 @@ const JobDetails = () => {
           </div>
           <div className="py-14 grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className={`${styles.headingSecondary}`}>your taks</h2>
+              <h2 className={`${styles.headingSecondary}`}>Ihre Aufgaben</h2>
               <List list={details.tasks} />
             </div>
             <div>
-              <h2 className={`${styles.headingSecondary}`}>your profile</h2>
+              <h2 className={`${styles.headingSecondary}`}>Ihr Profil</h2>
               <List list={details.profile} />
             </div>
           </div>
           <div className="py-14 grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <h2 className={`${styles.headingSecondary}`}>
-                What we offer you
+                Was wir Ihnen bieten
               </h2>
               <List list={details.offer} />
             </div>
             <div className="space-y-12">
-              <h2 className={`${styles.headingSecondary}`}>Apply now</h2>
+              <h2 className={`${styles.headingSecondary}`}>Jetzt bewerben</h2>
               <div className="space-y-10">
                 <Link
                   to="/company/career/job/apply-now"
                   className="btn py-8 h-0 px-4 text-base md:text-lg gap-4 font-mdeium capitalize text-white bg-clrPrimary hover:bg-clrSky border-none w-full rounded-none flex-nowrap"
                 >
                   <img src={logo_sm} alt="logo" className="w-4" />
-                  <span>Start the online application process</span>
+                  <span>Online-Bewerbungsprozess starten</span>
                 </Link>
                 <div>
                   <p className="font-bold text-lg text-clrPrimary">
-                    Or send your application by post to:
+                    Oder senden Sie Ihre Bewerbung postalisch an:
                   </p>
                   <p className="text-clrPrimary max-w-[200px] mt-4">
-                    autosecure GmbH Stefan Chüo Hammer Strasse 39 48153 Münster
+                    autosecure GmbH Stefan Chüo Hammer Straße 39 48153 Münster
                   </p>
                 </div>
                 <div>

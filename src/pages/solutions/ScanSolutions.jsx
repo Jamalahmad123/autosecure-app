@@ -34,54 +34,56 @@ import { styles } from "../../Styles";
 import { useTitle } from "../../hooks/customHooks";
 
 const checkPionts = [
-  "Digital and complete vehicle status check at property access, direct acceptance or at a freely selectable location on the premises.",
-  "Useful further use of the recordings, for example for internal process transparency or as support for the required assessment process by the testing service provider.",
-  "Digital vehicle assessment in real time for visual condition assessments and impairment reports.",
-  "Automatic assignment of the vehicle through license plate recognition or digital location in combination with autosecure-Locate.",
-  "Reduction of manual assessment costs.",
-  "Increase in throughput speed.",
-  "Seamless integration of the autosecure solutions into in-house IT infrastructure (ERP modeling).",
+  "Digitale und lückenlose Fahrzeugzustandskontrolle bei Grundstückszufahrt, Direktannahme oder an einem frei wählbaren Ort auf dem Gelände.",
+  "Sinnvolle Weiterverwendung der Aufnahmen für z.B. interne Prozesstransparenz oder als Unterstützung für den erforderlichen Begutachtungsprozess durch Prüfdienstleister.",
+  "Digitale Fahrzeugbegutachtung in Echtzeit für optische Zustandsbewertungen und Wertminderungsgutachten.",
+  "Automatische Zuordnung des Fahrzeuges durch Kennzeichenerfassung oder digitale Verortung in Kombination mit autosecure-Locate.",
+  "Reduktion von manuellen Begutachtungskosten.",
+  "Erhöhung der Durchlaufgeschwindigkeit.",
+  "Nahtlose Integration der autosecure Lösungen in hauseigene IT-Infrastruktur (ERP modeling).",
 ];
 
 const checkPionts01 = {
   id: 1,
-  title: "autosecure ecosystem.",
+  title: "autosecure Eco-System.",
   features: [
-    "High-end web platform for integrating all autosecure services",
-    "Software for the maximum simplification of business processes",
-    "Cloud-based user account",
-    "Considerable reduction in e-mail correspondence, telephone calls or search effort",
-    "Centralized provision of information and vehicle documentation",
-    "Maximum transparency and simplification of vehicle search processes",
+    "Highend Web-Plattform zur Integration aller autosecure Services",
+    "Software für die maximale Vereinfachung von Geschäftsabläufen",
+    "Cloudbasierter User-Account",
+    "Erhebliche Reduktion von E-Mail Korrespondenz, Telefonaten oder Suchaufwand",
+    "Zentralisierte Bereitstellung von Informationen und Fahrzeug-Dokumentationen",
+    "Maximale Transparenz und Vereinfachung von Fahrzeug-Suchprozessen",
   ],
 };
+
 const checkPionts02 = {
   id: 1,
-  title: "machine vision.",
+  title: "Machine Vision.",
   features: [
-    "Undistorted detailed recordings of vehicles using high-end machine vision cameras",
-    "Use of common industry standards for automated further processing in image processing programs or directly in the autosecure ecosystem.",
-    "Indoors including professional surface control lights for detailed damage identification or outdoors in the entrance area",
+    "Unverfälschte Detailaufnahmen von Fahrzeugen durch Highend Maschine-Vision Kameras",
+    "Verwendung von gängigen Industriestandards für die automatisierte Weiterverarbeitung in Bildverarbeitungsprogrammen oder direkt im autosecure Eco-System.",
+    "Indoor inkl. professioneller Oberflächenkontrollleuchten zur detaillierten Schadenidentifikation oder Outdoor im Gelände-Einfahrtsbereich",
   ],
 };
 
 const checkPionts03 = {
   id: 1,
-  title: "Status documentation.",
+  title: "Zustands-Dokumentation.",
   features: [
-    "Automatic documentation of vehicles as they pass through the scanner",
-    "Transparency through neutral evidence for customers and companies",
-    "Immediate digital availability of vehicle archive images (issue / acceptance comparison)",
-    "Digital marking of vehicle damage via autosecure Eco-System Interface",
-    "Generation of a digital status report (PDF)",
+    "Automatische Dokumentation von Fahrzeugen bei der Scanner-Durchfahrt",
+    "Transparenz durch neutrale Beweisführung für Kunde und Unternehmen",
+    "Sofortige digitale Verfügbarkeit von Fahrzeug-Archivbildern (Herausgabe- / Hereinnahme-Vergleich)",
+    "Digitale Markierung von Fahrzeug-Schäden über autosecure Eco-System Interface",
+    "Generierung eines digitalen Zustandsberichtes (PDF)",
   ],
 };
+
 const checkPionts04 = {
   id: 1,
-  title: "Automatic license plate recognition.",
+  title: "Automatische Kennzeichenerfassung.",
   features: [
-    "Automatic notification of your employees and assignment of the customer file when a customer visits for a personal greeting",
-    "TBlacklist alert and VIP notification",
+    "Automatische Benachrichtigung Ihrer Mitarbeiter und Zuordnung der Kunden-Akte bei Kundenbesuch für eine persönliche Begrüßung",
+    "Blacklist-Alarm und VIP-Benachrichtigung",
   ],
 };
 
@@ -95,9 +97,9 @@ const slideImages = [
 
 const heroContent = {
   title: "scan",
-  desc: "Digital condition control, damage detection and documentation in real time.",
-  benefit1: "50% less security costs",
-  benefit2: "20% faster processes",
+  desc: "Digitale Zustandskontrolle, Schadenerkennung und Dokumentation in Echtzeit.",
+  benefit1: "100% Dokumentation und Zustandserfassung aller Fahrzeuge",
+  benefit2: "Keine Diskussionen mit Kunden",
   videoPath: autosecure_scan_01,
 };
 
@@ -131,15 +133,15 @@ const ScanSolutions = () => {
               />
             </figure>
             <h2 className="text-clrPrimary text-[1.5rem] lg:text-[2rem] font-bold font-AllianceBold leading-[2.3rem] lg:leading-[3rem] text-center">
-              Digital condition control, damage detection and documentation in
-              real time. Experience the autosecure car scanner live in the
-              workshop of the future 4.0.
+              Digitale Zustandskontrolle, Schadenserkennung und Dokumentation in
+              Echtzeit. Erleben Sie den autosecure Auto-Scanner live in der
+              Zukunftswerkstatt 4.0.
             </h2>
             <Link
               to="/company/contact"
-              className="btn btn-xl text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular"
+              className="btn btn-xl text-white capitalize font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular"
             >
-              make an appointment <FaCalendarCheck size={20} className="ml-5" />
+              Termin vereinbaren <FaCalendarCheck size={20} className="ml-5" />
             </Link>
           </Wrapper>
         </section>

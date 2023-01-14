@@ -36,15 +36,15 @@ const AnimatedCircle = lazy(() => import("../../components/ui/AnimatedCircle"));
 const Features = lazy(() => import("../../components/Features"));
 
 const heroContent = {
-  title: "Construction & construction vehicles",
-  desc: "Automation solutions for the construction site of the future",
-  benefit1: "50% less security costs",
-  benefit2: "20% faster processes",
+  title: "Bau & Baufahrzeuge",
+  desc: "Automations-Lösungen für die Baustelle der Zukunft.",
+  benefit1: "50% weniger Security-Kosten",
+  benefit2: "20% schnellere Prozesse",
   img: autosecureConstruction,
 };
 const animatedHeroContent = {
-  title: "360° automation in construction.",
-  desc: "Tailored to your construction requirements: Discover the autosecure 360° automation concept for construction and construction vehicles.",
+  title: "360° Automatisierung am Bau.",
+  desc: "Maßgeschneidert für Ihre Anforderungen am Bau: Entdecken Sie das autosecure 360° Automations-Konzept für Bau und Baufahrzeuge.",
 };
 
 const Constructions = () => {
@@ -78,18 +78,30 @@ const Constructions = () => {
 
 export default Constructions;
 
+`
+
+
+
+
+
+
+
+
+`;
+
 const EmergencyService = () => {
   const data = [
-    "With a mast height of up to six meters and a narrow stand area of ​​1 x 1 m, we offer the latest surveillance technology in the smallest of spaces for an overview from above.",
-    "Targeted surveillance with two highly functional PTZ cameras",
-    "Intelligent analysis software (AI)",
-    "Pole height 6 m",
-    "Surveillance radius up to 200 m (depending on model)",
-    "Location can be easily changed",
-    "Preventive ambient lighting",
-    "Customer power supply 230 V",
-    "Battery storage continues to provide energy for up to 80 hours in the event of a power failure (depending on the model)",
-    "Full service: delivery, collection, transfer - as long as you want",
+    "Mit einer Masthöhe von bis zu sechs Metern und einem schmalen Standbereich von 1 x 1 m, bieten wir modernste Überwachungstechnik auf kleinstem Raum für den Überblick von oben.",
+    "Zielgerichtete Überwachung mit zwei hochfunktionellen PTZ-Kameras",
+    "Intelligente Analyse-Software (KI)",
+    "Masthöhe 6 m",
+    "Überwachungsradius bis zu 200 m (je nach Modell)",
+    "Standort kann einfach verändert werden",
+    "Präventive Umfeldbeleuchtung",
+
+    "Kundenseitige Stromversorgung 230 V",
+    "Batteriespeicher liefert bei Stromausfall weiter Energie bis 80 Std. (je nach Modell)",
+    "FullService: Lieferung, Abholung, Verbringung – solange Sie möchten",
   ];
   return (
     <section className="py-20">
@@ -102,11 +114,11 @@ const EmergencyService = () => {
         </figure>
         <div className="flex-1 space-y-6">
           <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
-            Mobile emergency services.
+            Mobile Einsatzkräfte.
           </h2>
           <p className="text-clrPrimary text-lg lg:text-2xl">
-            With our mobile security towers, you can also provide security for
-            property areas that are only used temporarily.
+            Mit unseren mobilen Security-Türmen verschaffen Sie sich Sicherheit
+            auch bei nur temporär genutzten Grundstücksarealen.
           </p>
           <ul className="space-y-4">
             {data.map((item, i) => (
@@ -117,18 +129,18 @@ const EmergencyService = () => {
             ))}
           </ul>
           <ul className="space-y-4">
-            <h3 className="text-clrPrimary text-lg lg:text-2xl">Options:</h3>
+            <h3 className="text-clrPrimary text-lg lg:text-2xl">Optional:</h3>
             <li className="text-clrPrimary flex items-start gap-2">
               <FaCheck className="min-w-[20px]" />
-              customer camera
+              Kundenkamera
             </li>
             <li className="text-clrPrimary flex items-start gap-2">
               <FaCheck className="min-w-[20px]" />
-              Thermal camera
+              Wärmebildkamera
             </li>
             <li className="text-clrPrimary flex items-start gap-2">
               <FaCheck className="min-w-[20px]" />
-              time lapse camera
+              Zeitrafferkamera
             </li>
           </ul>
         </div>

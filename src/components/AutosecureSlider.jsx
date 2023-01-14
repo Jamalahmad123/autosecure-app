@@ -14,11 +14,13 @@ const AutosecureSlider = () => {
         <header className="space-y-6">
           <TypeWriter width={140} labels={labels} />
           <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
-            Enjoy our 360° security package.
+            Genießen Sie unser 360° <br className="hidden lg:block" />{" "}
+            Sicherheits-Paket.
           </h2>
           <p className="text-clrPrimary text-lg md:text-2xl md:max-w-3xl">
-            With our security services, we offer a service package tailored to
-            your company and take your security requirements to a new level.
+            Mit unseren Security-Services bieten wir ein auf Ihr Unternehmen
+            abgestimmtes Leistungspaket und bringen Ihre
+            Sicherheits-Anforderungen auf ein neues Level.
           </p>
         </header>
         <div className="md:px-14 relative py-8">

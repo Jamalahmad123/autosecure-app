@@ -11,7 +11,7 @@ const JobsList = () => {
         <h2
           className={`text-xl md:text-2xl font-bold font-AllianceBold text-clrPrimary`}
         >
-          recent job offers
+          Aktuelle Stellenangebote
         </h2>
         <div className="space-y-10">
           {jobs.map((item) => (

@@ -7,7 +7,7 @@ import { styles } from "../../Styles";
 import TypeWriter from "../../components/ui/TypeWriter";
 
 const Hero = ({ title, desc, benefit1, benefit2, videoPath, isAssist }) => {
-  const labels = ["Trust.", "Integrity."];
+  const labels = ["Vertrauen.", "Integrität."];
   return (
     <header className="py-10">
       <Wrapper className="px-4">
@@ -41,13 +41,13 @@ const Hero = ({ title, desc, benefit1, benefit2, videoPath, isAssist }) => {
                 />
                 <div className="lg:space-y-10">
                   <p className="hidden lg:block text-lg lg:text-xl font-AllianceBold font-bold">
-                    Arrange your online appointment with Marina Eiling now.
+                    Vereinbaren Sie jetzt Ihren Online-Termin mit Marina Eiling.
                   </p>
                   <Link
                     to="/company/contact"
                     className="btn btn-xl text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular"
                   >
-                    make an appointment{" "}
+                    Termin vereinbaren{" "}
                     <FaCalendarCheck size={20} className="ml-5" />
                   </Link>
                 </div>
@@ -57,7 +57,7 @@ const Hero = ({ title, desc, benefit1, benefit2, videoPath, isAssist }) => {
                 to="/company/contact"
                 className="btn btn-xl text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular mt-6"
               >
-                make an appointment{" "}
+                Termin vereinbaren{" "}
                 <FaCalendarCheck size={20} className="ml-5" />
               </Link>
             )}

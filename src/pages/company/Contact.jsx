@@ -5,9 +5,10 @@ import { logo } from "../../assets/images";
 import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
 import { useTitle } from "../../hooks/customHooks";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
-  useTitle("Contact – autosecure | Secure. Scan. Locate.")
+  useTitle("Contact – autosecure | Secure. Scan. Locate.");
   // const [formData, setFormData] = useState({
   //   company: "",
   //   name: "",
@@ -66,15 +67,15 @@ const Contact = () => {
         <Wrapper className="px-4">
           <header className="space-y-8">
             <h1 className={`${styles.headingPrimary} text-clrPrimary`}>
-              Contact us.
+              Kontaktieren Sie uns.
             </h1>
             <p className={`${styles.textPrimary} text-clrPrimary`}>
-              autosecure is your specialist for leading technology-based
-              automation solutions for the automotive and mobility industry.
+              autosecure ist Ihr Spezialist für führende technologiebasierte
+              Automations-Lösungen für die Automobil- und Mobilitätsindustrie.
             </p>
             <p className="font-bold text-lg md:text-xl md:max-w-2xl text-clrPrimary">
-              Let's get in touch. We would be happy to visit you nationwide and
-              advise you individually.
+              Lassen Sie uns in Kontakt treten. Wir besuchen Sie gerne
+              bundesweit und beraten Sie individuell.
             </p>
           </header>
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-12 pt-20 bg-clrVeryLightGray">
@@ -83,10 +84,10 @@ const Contact = () => {
                 <img src={logo} alt="logo" className="w-36" />
               </figure>
               <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
-                Visit Us.
+                Besuchen Sie uns.
               </h2>
               <p className="text-clrPrimary sm:max-w-[150px]">
-                autosecure GmbH Hammer Strasse 39 48153 Munster
+                autosecure GmbH Hammer Straße 39 48153 Münster
               </p>
               <div className="flex flex-col gap-6">
                 <a
@@ -117,21 +118,22 @@ const Contact = () => {
                 <img src={logo} alt="logo" className="w-36" />
               </figure>
               <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
-                Make an appointment now.
+                Jetzt Termin vereinbaren.
               </h2>
               <form onSubmit={sendEmail}>
                 <div className="space-y-5">
                   <input
                     type="text"
-                    placeholder="Company *"
+                    placeholder="Unternehmen *"
                     className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                     name="company"
+                    required
                     // value={company}
                     // onChange={onChange}
                   />
                   <input
                     type="text"
-                    placeholder="Surname *"
+                    placeholder="Name *"
                     className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                     name="name"
                     // value={name}
@@ -139,7 +141,7 @@ const Contact = () => {
                   />
                   <input
                     type="email"
-                    placeholder="Email *"
+                    placeholder="E-Mail *"
                     className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                     name="email"
                     // value={email}
@@ -147,7 +149,7 @@ const Contact = () => {
                   />
                   <input
                     type="tel"
-                    placeholder="Phone number. *"
+                    placeholder="Telefon-Nr. *"
                     className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                     name="phoneNo"
                     // value={phoneNo}
@@ -156,7 +158,7 @@ const Contact = () => {
                   <div className="flex items-center flex-col gap-5 sm:flex-row">
                     <input
                       type="text"
-                      placeholder="POSTCODE *"
+                      placeholder="PLZ *"
                       className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                       name="postalNo"
                       // value={postalNo}
@@ -164,7 +166,7 @@ const Contact = () => {
                     />
                     <input
                       type="text"
-                      placeholder="Location *"
+                      placeholder="Ort *"
                       className="bg-white text-clrPrimary input w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                       name="location"
                       // value={location}
@@ -173,7 +175,7 @@ const Contact = () => {
                   </div>
                   <textarea
                     className="textarea box-border h-[200px] w-full bg-white text-clrPrimary focus:outline-none focus:shadow-inputShadow "
-                    placeholder="Your Message *"
+                    placeholder="Ihre Nachricht *"
                     name="message"
                     // value={message}
                     // onChange={onChange}
@@ -183,8 +185,14 @@ const Contact = () => {
                   <label className="label justify-start gap-2 sm:gap-4 cursor-pointer">
                     <input type="checkbox" className="toggle" />
                     <span className="text-xs">
-                      Yes, I agree to the <b>data protection</b> agreements of
-                      autosecure GmbH.
+                      Ja, ich stimme den {/* /legal/conditions */}
+                      <Link
+                        to="/legal/privacy"
+                        className="font-semibold hover:opacity-60"
+                      >
+                        Datenschutzvereinbarungen
+                      </Link>{" "}
+                      der autosecure GmbH
                     </span>
                   </label>
                 </div>
@@ -192,8 +200,14 @@ const Contact = () => {
                   <label className="label justify-start gap-2 sm:gap-4 cursor-pointer">
                     <input type="checkbox" className="toggle" />
                     <span className="text-xs">
-                      Yes, I agree to the <b>general</b> terms and conditions of
-                      autosecure GmbH.
+                      Ja, ich stimme den{" "}
+                      <Link
+                        to="/legal/conditions"
+                        className="font-semibold hover:opacity-60"
+                      >
+                        allgemeinen Geschäftsbedingungen
+                      </Link>
+                      der autosecure GmbH zu.
                     </span>
                   </label>
                 </div>
@@ -201,7 +215,7 @@ const Contact = () => {
                   type="submit"
                   className="btn text-white border-none hover:bg-clrPrimary bg-clrSky w-full mt-8"
                 >
-                  Send inquiry now
+                  Anfrage jetzt senden
                 </button>
               </form>
             </div>

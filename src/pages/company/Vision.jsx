@@ -29,15 +29,15 @@ const Vision = () => {
             <h1
               className={`${styles.headingPrimary} text-clrPrimary mt-4 mb-14`}
             >
-              We want to be the leading ecosystem for automation solutions for
-              the automotive and mobility industry.
+              Wir wollen das führende Ökosystem für Automations-Lösungen für die
+              Automobil- und Mobilitätsindustrie sein.
             </h1>
             <Link
               to="/company/contact"
               className="link text-clrPrimary link-neutral text-lg inline-block"
             >
               <FaCalendarAlt className="inline-block mr-4" />
-              Arrange a consultation
+              Beratungs-Gespräch vereinbaren
             </Link>
           </div>
           <div>
@@ -45,15 +45,15 @@ const Vision = () => {
             <h1
               className={`${styles.headingPrimary} text-clrPrimary mt-4 mb-14`}
             >
-              With our automation solutions, we help our customers to optimize
-              their processes and significantly reduce cost structures.
+              Mit unseren Automations-Lösungen helfen wir unseren Kunden ihre
+              Prozesse zu optimieren und Kostenstrukturen erheblich zu senken.
             </h1>
             <Link
               to="/company/contact"
               className="link text-clrPrimary link-neutral text-lg inline-block"
             >
               <FaCalendarAlt className="inline-block mr-4" />
-              Arrange a consultation
+              Beratungs-Gespräch vereinbaren
             </Link>
           </div>
         </Wrapper>

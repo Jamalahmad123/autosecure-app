@@ -14,13 +14,13 @@ import Wrapper from "../../components/ui/Wrapper";
 import { styles } from "../../Styles";
 
 const NewsDetail = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-  }, []);
-
   const { id } = useParams();
   const [news] = acheivements.filter((item) => item.id === id);
   const { title, image, details } = news;
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [id]);
   return (
     <>
       <main className="py-20">
