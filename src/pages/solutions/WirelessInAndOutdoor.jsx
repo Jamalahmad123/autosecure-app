@@ -96,7 +96,7 @@ const WirelessInAndOutdoor = () => {
     "Security solutions | Wireless In- & Outdoor – autosecure |  Safe.  Scan.  locate."
   );
   const qoute =
-    "Certified transmitters in the streamline with the autosecure monitoring center in Münster";
+    "Zertifizierte Sender im Einklang mit dem autosecure-Überwachungszentrum in Münster";
   const labels = [
     "Rent flexibly.",
     "Immediate contact with the perpetrator.",
@@ -116,12 +116,12 @@ const WirelessInAndOutdoor = () => {
       <header className="py-20 bg-black relative z-[1]">
         <ParticlesBackground id="about" options={options} />
         <Wrapper className="px-4">
-          <TypeWriter width={140} labels={labels} hasStyle />
+          <TypeWriter width={140} labels={labels} hasStyle="text-clrSky" />
           <h2
             className={`text-2xl md:text-3xl lg:text-4xl font-AllianceBold font-bold text-white mb-16`}
           >
-            Professional wireless security system{" "}
-            <span className="text-clrSky"> for the ultimate protection</span>
+            Professionelles drahtloses Sicherheitssystem{" "}
+            <span className="text-clrSky"> für ultimativen Schutz</span>
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14">
             <div className="max-w-xl">
@@ -147,20 +147,21 @@ const WirelessInAndOutdoor = () => {
               </Swiper>
             </div>
             <div className="space-y-8">
-              <h1 className={`${styles.headingPrimary} text-white`}>
-                Autosecure wireless in- & Outdoor intruder System
+              <h1 className={`${styles.headingSecondary} text-white`}>
+                autosecure Drahtloses In- und Außen-Eindringlingssystem
               </h1>
               <p className={`${styles.textSecondary} text-white`}>
-                Autosecure has chosen AJAX for it’s intruder system
-                installations. AJAX is the fastest-growing security product
-                globally. It combines the most advanced security components with
-                intuitive and user-friendly operation.
+                autosecure hat sich für die AJAX-Systeme für
+                Einbruchmeldeanlagen entschieden. AJAX ist das am schnellsten
+                wachsende Sicherheitsprodukt weltweit. Es verbindet die
+                fortschrittlichsten Sicherheitskomponenten mit intuitiver und
+                benutzerfreundlicher Bedienung.
               </p>
               <Link
                 to="/company/contact"
                 className="btn text-white md:text-xl font-AllianceBold font-semibold btn-lg gap-2 border-none bg-clrSky hover:bg-clrSky capitalize"
               >
-                Request a Quote
+                Angebot anfordern
                 <FaChevronRight />
               </Link>
             </div>
@@ -179,7 +180,7 @@ const WirelessInAndOutdoor = () => {
           <source src={autosecure_ajax} type="video/mp4" />
           Sorry, your browser doesn't support videos.
         </video>
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 items-start backdrop-blur-[6px] bg-black/10 py-6 sm:py-12 px-4 relative left-0 bottom-0 h-auto w-full">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 items-start backdrop-blur-[6px] bg-black/10 py-6 sm:py-12 px-2 relative left-0 bottom-0 h-auto w-full">
           <div className="flex flex-col place-items-center gap-4">
             <img
               src={wirless_vid_survelance}
@@ -187,7 +188,7 @@ const WirelessInAndOutdoor = () => {
               className="max-w-[2rem] md:max-w-[4rem]"
             />
             <h3 className="text-base font-semibold md:text-xl text-white text-center">
-              Video surveillance integration
+              Integration von Videoüberwachung
             </h3>
           </div>
           <div className="flex flex-col place-items-center gap-4">
@@ -197,7 +198,7 @@ const WirelessInAndOutdoor = () => {
               className="max-w-[2rem] md:max-w-[4rem]"
             />
             <h3 className="text-base font-semibold md:text-xl text-white text-center">
-              Burglar Alarm
+              Einbruchmeldeanlage
             </h3>
           </div>
           <div className="flex flex-col place-items-center gap-4">
@@ -207,7 +208,7 @@ const WirelessInAndOutdoor = () => {
               className="max-w-[2rem] md:max-w-[4rem]"
             />
             <h3 className="text-base font-semibold md:text-xl text-white text-center">
-              Fire Protection
+              Feuerschutz
             </h3>
           </div>
           <div className="flex flex-col place-items-center gap-4">
@@ -217,7 +218,7 @@ const WirelessInAndOutdoor = () => {
               className="max-w-[2rem] md:max-w-[4rem]"
             />
             <h3 className="text-base font-semibold md:text-xl text-white text-center">
-              Flood Protection
+              Fluterkennung
             </h3>
           </div>
           <div className="flex flex-col place-items-center gap-4">
@@ -227,7 +228,7 @@ const WirelessInAndOutdoor = () => {
               className="max-w-[2rem] md:max-w-[4rem]"
             />
             <h3 className="text-base font-semibold md:text-xl text-white text-center">
-              Automation Scenarios
+              Automatisierung Szenarien
             </h3>
           </div>
         </div>
@@ -273,9 +274,7 @@ const WirelessInAndOutdoor = () => {
                       </span>{" "}
                       <span className="text-clrSky">{item.titleTwoRight}</span>
                     </h2>
-                    <p className="text-base text-clrPrimary md:text-lg">
-                      {item.desc1}
-                    </p>
+                    <p className="text-base text-clrPrimary">{item.desc1}</p>
                   </div>
                 </div>
                 <div className="grid grid-cols-2 place-items-center gap-4 md:gap-8">
@@ -314,8 +313,9 @@ const WirelessInAndOutdoor = () => {
       <section className="py-20 bg-black">
         <Wrapper className="px-4">
           <h2 className={`${styles.headingSecondary} text-white mb-16`}>
-            Professional safety equipment <br className="hidden md:block" />
-            <span className="text-clrSky"> for your company</span>
+            Professionelle Sicherheitsausrüstung{" "}
+            <br className="hidden md:block" />
+            <span className="text-clrSky"> für Ihr Unternehmen</span>
           </h2>
           <div className="py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-12">
             <div className="space-y-6">
@@ -325,10 +325,10 @@ const WirelessInAndOutdoor = () => {
                 className="md:w-[3.5rem]"
               />
               <h3 className="text-2xl md:text-3xl text-clrSky font-semibold font-AllianceBold">
-                Range upto 2000m
+                Reichweite bis zu 2000m
               </h3>
               <p className="text-white text-base md:text-lg">
-                Sufficient coverage for residential and office areas.
+                ausreichende Abdeckung für Wohn- und Bürogebiete.
               </p>
             </div>
             <div className="space-y-6">
@@ -338,10 +338,10 @@ const WirelessInAndOutdoor = () => {
                 className="md:w-[3.5rem]"
               />
               <h3 className="text-2xl md:text-3xl text-clrSky font-semibold font-AllianceBold">
-                Protection of particularly large properties
+                Schutz von besonders großen Anwesen
               </h3>
               <p className="text-white text-base md:text-lg">
-                ReX radio repeaters extend the radio signal range up to 25 km².
+                ReX-Funkverstärker erweitern die Funkreichweite bis zu 25 km².
               </p>
             </div>
             <div className="space-y-6">
@@ -351,12 +351,12 @@ const WirelessInAndOutdoor = () => {
                 className="md:w-[2rem]"
               />
               <h3 className="text-2xl md:text-3xl text-clrSky font-semibold font-AllianceBold">
-                Effortless maintenance
+                Mühelose Wartung
               </h3>
               <p className="text-white text-base md:text-lg">
-                The devices are configured via remote access and have an
-                operating time of up to 7 years with the pre-installed
-                batteries.
+                Die Geräte werden über Fernzugriff konfiguriert und haben eine
+                Betriebszeit von bis zu 7 Jahren mit den vorinstallierten
+                Batterien.
               </p>
             </div>
             <div className="space-y-6">
@@ -366,28 +366,28 @@ const WirelessInAndOutdoor = () => {
                 className="md:w-[3.5rem]"
               />
               <h3 className="text-2xl md:text-3xl text-clrSky font-semibold font-AllianceBold">
-                Connection with monitoring center
+                Verbindung mit dem Überwachungszentrum
               </h3>
               <p className="text-white text-base md:text-lg">
-                Ajax can be directly connected to the autosecure monitoring
-                center.
+                Ajax kann direkt mit dem autosecure-Überwachungszentrum
+                verbunden werden.
               </p>
             </div>
           </div>
           <p className="flex items-start gap-3 text-lg md:text-2xl text-white">
             <FaCheck className="min-w-[25px] text-clrSky" />
-            87.5% of Ajax owners would recommend the system to friends and
-            business partners.
+            87,5% der Ajax-Besitzer würden das System Freunden und
+            Geschäftspartnern empfehlen
           </p>
           <p className="flex items-start gap-3 text-lg md:text-2xl text-white my-5">
             <FaCheck className="min-w-[25px] text-clrSky" />
-            67% of Ajax owners purchase additional components within the first 6
-            months
+            67% der Ajax-Besitzer kaufen innerhalb der ersten 6 Monate
+            zusätzliche Komponenten
           </p>
           <p className="flex items-start gap-3 text-lg md:text-2xl text-white">
             <FaCheck className="min-w-[25px] text-clrSky" />
-            70% of all customer concerns are solved via remote system
-            configuration without sending out technicians
+            70% aller Kundenanliegen werden durch Fernkonfiguration des Systems
+            gelöst, ohne dass Techniker geschickt werden.
           </p>
         </Wrapper>
       </section>
@@ -395,63 +395,63 @@ const WirelessInAndOutdoor = () => {
         <Wrapper className="px-4 space-y-24">
           <header className="space-y-6">
             <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
-              The trusted partner of{" "}
-              <span className="text-clrSky">Security Export</span>
+              der vertraute Partner von{" "}
+              <span className="text-clrSky">Sicherheitsexperten</span>
             </h2>
             <p className="text-lg md:text-2xl text-clrPrimary">
-              Ajax's proprietary hardware and software technologies draw on the
-              experience of security experts from around the world and meet the
-              most stringent industry standards. After testing in five
-              independent laboratories, Ajax devices were confirmed to provide
-              the highest level of reliability for wireless security systems.
-              Moreover, autosecure could configure, manage and monitor thousands
-              of Ajax security systems remotely using intuitive apps at the same
-              time.
+              Die proprietäre Hardware und Software-Technologie von Ajax nutzt
+              die Erfahrung von Sicherheitsexperten aus der ganzen Welt und
+              erfüllt die anspruchsvollsten Branchenstandards. Nach Tests in
+              fünf unabhängigen Labors wurden die Ajax-Geräte bestätigt, dass
+              sie die höchste Zuverlässigkeit für drahtlose Sicherheitssysteme
+              bieten. Außerdem kann autosecure Tausende von
+              Ajax-Sicherheitssystemen intuitiv über Apps gleichzeitig
+              ferngesteuert konfigurieren, verwalten und überwachen.
             </p>
           </header>
           <div className="grid grid-cols-1 lg:grid-cols-3 lg:place-items-center gap-6">
             <div className="flex items-center gap-3">
               <img src={grade2} alt="grade two" className="w-20" />
               <h3 className="text-lg font-semibold lg:text-xl text-clrDarkGray">
-                EN 50131 Grade 2 certificate
+                Zertifikat EN 50131 Grad 2
               </h3>
             </div>
             <div className="flex items-center gap-3">
               <img src={CE} alt="grade two" className="w-20" />
               <h3 className="text-lg font-semibold lg:text-xl text-clrDarkGray">
-                EN 14604 Fire protection certification
+                Zertifikat EN 14604 Feuerschutz
               </h3>
             </div>
             <div className="flex items-center gap-3">
               <img src={CE2} alt="grade two" className="w-20" />
               <h3 className="text-lg font-semibold lg:text-xl text-clrDarkGray">
-                CE <br /> Certification
+                CE-Zertifizierung
               </h3>
             </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             <div className="space-y-14">
               <h2 className={`${styles.headingSecondary} text-clrPrimary`}>
-                Loved by <span className="text-clrSky">User</span>
+                Beliebt bei <span className="text-clrSky">Benutzern</span>
               </h2>
               <p className="text-lg md:text-2xl text-clrPrimary">
-                The Ajax Security system combines the reliability of
-                professional security device and the friendliness of smart home
-                devices. The operation of Ajax can be explained in a few
-                minutes, which facilitates the integration process. More than
-                900,000 users from over 120 around the world protect their
-                property with Ajax. The latest customer satisfaction survey has
-                shown that nine out of ten Ajax owners will recommend the system
-                to friends, colleagues and family members.
+                Das Ajax-Sicherheitssystem vereint die Zuverlässigkeit von
+                professionellen Sicherheitsgeräten und die Freundlichkeit von
+                Smart-Home-Geräten. Die Bedienung von Ajax kann in wenigen
+                Minuten erklärt werden, was den Integrationsprozess erleichtert.
+                Mehr als 900.000 Benutzer aus über 120 Ländern schützen ihr
+                Eigentum mit Ajax. Die jüngste Kundenzufriedenheitsumfrage hat
+                gezeigt, dass neun von zehn Ajax-Besitzern das System Freunden,
+                Kollegen und Familienmitgliedern empfehlen werden.
               </p>
               <div className="space-y-8">
                 <p className="flex items-start gap-3 text-lg md:text-2xl text-clrPrimary">
                   <FaCheck className="min-w-[25px] text-clrSky" />
-                  Alarms via Push-Message, SMS or Voicecall
+                  Alarme per Push-Nachricht, SMS oder Sprachanruf
                 </p>
                 <p className="flex items-start gap-3 text-lg md:text-2xl text-clrPrimary">
                   <FaCheck className="min-w-[25px] text-clrSky" />
-                  Intuitive Apps free of charge
+                  Intuitive Apps kostenlos
                 </p>
               </div>
             </div>
@@ -471,16 +471,17 @@ const WirelessInAndOutdoor = () => {
           <img src={wirless_vds} alt="wireless vds" className="mx-auto" />
           <div className="space-y-12">
             <h2 className={`${styles.headingSecondary} text-[#0b3f87]`}>
-              EN Standards for transmitters (Vds)
+              EN-Standards für Sender (Vds)
             </h2>
             <p className="text-lg md:text-2xl text-clrPrimary">
-              EN Standards are technical voluntary specifications defining
-              requirements for products, production processes, services or
-              test-methods. EN Standards ensure compatibility and
-              interoperability of components, products and services. They bring
-              users improved performance, safety and reduced costs, and
-              facilitate companies' integration in the value chain and trade.
-              evalink devices transmitters are certified EN54- 21.
+              EN-Standards sind technische freiwillige Spezifikationen, die
+              Anforderungen an Produkte, Produktionsprozesse, Dienstleistungen
+              oder Prüfverfahren festlegen. EN-Standards sichern die
+              Kompatibilität und Interoperabilität von Komponenten, Produkten
+              und Dienstleistungen. Sie bringen den Benutzern verbesserte
+              Leistung, Sicherheit und reduzierte Kosten und erleichtern
+              Unternehmen die Integration in die Wertschöpfungskette und den
+              Handel. Evalink-Geräte-Sender sind nach EN54-21 zertifiziert.
             </p>
           </div>
         </Wrapper>

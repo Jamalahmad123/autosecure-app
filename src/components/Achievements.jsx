@@ -70,7 +70,7 @@ const Achievements = () => {
                   }}
                 />
                 <div className="card-body items-start">
-                  <h2 className="card-title text-base font-bold lg:text-xl text-clrPrimary">
+                  <h2 className="card-title text-base font-bold lg:text-xl text-clrPrimary lowercase">
                     {item.title}
                   </h2>
                 </div>

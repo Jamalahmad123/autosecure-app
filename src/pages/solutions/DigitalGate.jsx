@@ -23,14 +23,14 @@ import { useTitle } from "../../hooks/customHooks";
 
 // Content
 const featuresList = [
-  "Photo ID control",
-  "Visitor authorization control",
-  "Issuance of visitor passes",
-  "Barrier opening",
-  "Parking guidance / control parking guidance system",
-  "Receipt & forwarding of messages",
-  "Issuing and signing of site regulations, safety instructions",
-  "Documentation of all visitors and barrier openings",
+  "Fotopasskontrolle",
+  "Kontrolle der Besucherberechtigung",
+  "Ausgabe von Besucherausweisen",
+  "Barriereöffnung",
+  "Parkleitfaden / Kontrolle des Parksystems",
+  "Empfang und Weiterleitung von Nachrichten",
+  "Ausgabe und Unterzeichnung von Geländeordnungen, Sicherheitsanweisungen",
+  "Dokumentation aller Besucher und Barriereöffnungen",
 ];
 
 const fullSliderImges = [
@@ -46,7 +46,7 @@ const DigitalGate = () => {
   useTitle(
     "Scanner Solutions | Digital gate keeper – autosecure |  Safe.  Scan.  locate."
   );
-  const labels = ["Trust.", "Integrity."];
+  const labels = ["Vertrauen.", "Integrität."];
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -58,34 +58,38 @@ const DigitalGate = () => {
         <Wrapper className="px-4 space-y-14">
           <div className="flex justify-between gap-10 flex-col lg:flex-row">
             <div className="flex-1">
-              <TypeWriter width={80} labels={labels} />
+              <TypeWriter
+                width={120}
+                labels={labels}
+                hasStyle="text-clrLightGray"
+              />
               <div className="space-y-8">
                 <h1 className={`${styles.headingPrimary} text-white`}>
-                  Digital <br className="hidden md:block" />
-                  Gatekeeper
+                  Digitaler <br className="hidden md:block" />
+                  Türsteher
                 </h1>
                 <p
                   className={`text-white ${styles.textSecondary} lg:max-w-2xl`}
                 >
-                  Gate management rethought - completely digital, audit-proof
-                  and designed to meet leading international logistics
-                  standards.
+                  Torverwaltung neu gedacht - vollständig digital,
+                  revisionssicher und entwickelt, um führende internationale
+                  Logistikstandards zu erfüllen.
                 </p>
                 <div>
                   <p className="text-xl text-white lg:text-2xl font-bold mb-4">
                     <FaChevronRight className="inline-block text-clrSky" /> 50%
-                    Less cost.
+                    weniger Kosten.
                   </p>
                   <p className="text-xl text-white lg:text-2xl font-bold">
                     <FaChevronRight className="inline-block text-clrSky" /> 100%
-                    Digital.
+                    digital.
                   </p>
                 </div>
                 <Link
                   to="/company/contact"
                   className="btn text-white md:text-xl font-AllianceBold font-semibold btn-lg gap-2 border-none bg-clrSky hover:bg-clrSky capitalize"
                 >
-                  Request a consultation
+                  Eine Beratung anfordern
                   <FaChevronRight />
                 </Link>
               </div>
@@ -97,12 +101,13 @@ const DigitalGate = () => {
             />
           </div>
           <p className={`${styles.textSecondary} text-clrLightGray`}>
-            The autosecure Gatekeeper is your digital gatekeeper for achieving
-            uniform gate processes and reducing manual process efforts.
-            Including a digital vending machine at your entrance area or a
-            processing via the autosecure control center, the Digital Gatekeeper
-            offers you completely new possibilities to meet the security and
-            process standards at your gate.
+            Der autosecure Gatekeeper ist Ihr digitaler Türsteher für die
+            Erreichung einheitlicher Torgänge und die Reduzierung manueller
+            Prozessaufwände. Einschließlich eines digitalen Verkaufsautomaten in
+            Ihrem Eingangsbereich oder einer Verarbeitung über das
+            autosecure-Steuerzentrum bietet Ihnen der Digital Gatekeeper völlig
+            neue Möglichkeiten, die Sicherheits- und Prozessstandards an Ihrem
+            Tor zu erfüllen.
           </p>
         </Wrapper>
       </header>
@@ -116,7 +121,7 @@ const DigitalGate = () => {
             <h2
               className={`flex-1 text-2xl md:text-3xl lg:text-4xl font-AllianceBold font-bold text-clrPrimary`}
             >
-              Overview about the main advantages of the Digital Gatekeeper
+              Überblick über die wichtigsten Vorteile des Digitalen Türstehers
             </h2>
             <FeatureList list={featuresList} />
           </div>
@@ -124,16 +129,17 @@ const DigitalGate = () => {
             <h2
               className={`flex-1 text-2xl md:text-3xl lg:text-4xl font-AllianceBold font-bold text-clrPrimary`}
             >
-              Detailed information:
+              Detaillierte Informationen:
             </h2>
             <p className="flex-1 text-clrPrimary text-xl">
-              With the autosecure Gatekeeper, you not only achieve a consistent
-              digitization of your gate. It also enables significant cost saving
-              potentials, as the digital gatekeeper can noticeably relieve gate
-              handling or even enable it with reduced personnel expenses. <br />
-              With its in-house control center, autosecure also offers the
-              location-independent gate service with the digital gatekeeper, so
-              that you can also completely dispense with on-site gate personnel.
+              Mit dem autosecure Gatekeeper erreichen Sie nicht nur eine
+              konsistente Digitalisierung Ihres Tors. Es ermöglicht auch
+              erhebliche Einsparpotentiale, da der digitale Türsteher die
+              Torabwicklung erheblich entlasten oder sogar mit reduzierten
+              Personalkosten ermöglichen kann. <br /> Mit seinem hauseigenen
+              Steuerzentrum bietet autosecure auch den standortunabhängigen
+              Torservice mit dem digitalen Türsteher an, sodass Sie auch
+              vollständig auf vor Ort tätiges Torpersonal verzichten können.
             </p>
           </div>
         </Wrapper>
@@ -144,9 +150,10 @@ const DigitalGate = () => {
             <h2
               className={`text-2xl md:text-3xl lg:text-4xl font-AllianceBold font-bold text-clrPrimary`}
             >
-              The autosecure Gatekeeper includes the following modules <br />
+              Der autosecure Gatekeeper beinhaltet die folgenden Module
+              <br />
               <span className="text-clrSky">
-                (can be booked flexibly depending on the situation):
+                (je nach Situation flexibel buchbar):
               </span>
             </h2>
           </header>
@@ -155,27 +162,28 @@ const DigitalGate = () => {
               <div className="space-y-6">
                 <p className="flex items-start gap-2 text-lg text-clrPrimary lg:text-2xl font-bold">
                   <FaChevronRight className="text-clrSky min-w-[25px]" />{" "}
-                  Digital gate unit for a digital self-service check-in.
+                  Digitales Torgerät für einen digitalen
+                  Selbstbedienungscheck-in.
                 </p>
                 <p className="flex items-start gap-2 text-lg text-clrPrimary lg:text-2xl font-bold">
                   <FaChevronRight className="text-clrSky min-w-[25px]" />{" "}
-                  Registration app in the local gate
+                  Registrierungs-App am lokalen Tor
                 </p>
                 <p className="flex items-start gap-2 text-lg text-clrPrimary lg:text-2xl font-bold">
                   <FaChevronRight className="text-clrSky min-w-[25px]" />{" "}
-                  Pre-order scheduling portal for pre-registration of pick-up
-                  and delivery appointments
+                  Vorbestellungs-Scheduling-Portal für die Voranmeldung von
+                  Abhol- und Lieferterminen
                 </p>
                 <p className="flex items-start gap-2 text-lg text-clrPrimary lg:text-2xl font-bold">
                   <FaChevronRight className="text-clrSky min-w-[25px]" />{" "}
-                  Digital visitor badge creation
+                  Erstellung von digitalen Besucherausweisen
                 </p>
               </div>
               <Link
                 to="/company/contact"
                 className="btn text-white md:text-xl font-AllianceBold font-semibold btn-lg gap-2 border-none bg-clrSky hover:bg-clrSky capitalize"
               >
-                Request a consultation
+                Eine Beratung anfordern
               </Link>
             </div>
             <div className="max-w-xl">

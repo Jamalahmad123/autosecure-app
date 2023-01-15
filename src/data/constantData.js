@@ -211,6 +211,24 @@ export const navLinks = [
   },
 ];
 
+export const legals = [
+  {
+    id: 2,
+    name: "Impressum",
+    link: "legal/imprint",
+  },
+  {
+    id: 3,
+    name: "Datenschutz",
+    link: "legal/privacy",
+  },
+  {
+    id: 4,
+    name: "ABG",
+    link: "legal/conditions",
+  },
+];
+
 // industry sector solution
 export const industrySector = [
   {

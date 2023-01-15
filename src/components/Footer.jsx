@@ -9,7 +9,7 @@ import {
   zukunftswerkstatt_logo,
 } from "../assets/images";
 import { styles } from "../Styles";
-import { navLinks, solutionsDropdownLinks } from "../data/constantData";
+import { navLinks, solutionsDropdownLinks, legals } from "../data/constantData";
 
 import Wrapper from "./ui/Wrapper";
 import LazyImage from "./ui/LazyImage";
@@ -22,7 +22,7 @@ const Footer = () => {
     premium_leaders_club_logo,
   ];
 
-  const legals = ["imprint", "privacy", "conditions"];
+  // const legals = ["imprint", "privacy", "conditions"];
 
   return (
     <footer className="py-14">
@@ -66,10 +66,7 @@ const Footer = () => {
                     className="dropdown-content menu shadow z-[999] bg-white rounded-lg flex-row right-0"
                   >
                     {item.subPages.map((item) => (
-                      <li
-                        key={item.id}
-                        className="hover:bg-clrSky capitalize w-full"
-                      >
+                      <li key={item.id} className="hover:bg-clrSky w-full">
                         <Link
                           to={item.link}
                           className="text-sm text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white relative z-[999]"
@@ -108,11 +105,15 @@ const Footer = () => {
                 to="/legal"
                 className="text-lg font-semibold text-clrPrimary md:text-xl"
               >
-                legal
+                Rechtliches
               </Link>
-              {legals.map((legal, i) => (
-                <Link to={`legal/${legal}`} className="text-clrPrimary" key={i}>
-                  {legal}
+              {legals.map((item) => (
+                <Link
+                  to={`/${item.link}`}
+                  className="text-clrPrimary"
+                  key={item.id}
+                >
+                  {item.name}
                 </Link>
               ))}
             </div>

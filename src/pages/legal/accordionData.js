@@ -1,62 +1,61 @@
 export const imprintList = [
   {
     id: 1,
-    listTitle: "imprint",
+    listTitle: "Impressum",
     htmlItem: `
       <p>autosecure GmbH <br />
       Hammer Str. 39 <br />
-      48153 Munster</p>
+      48153 Münster</p>
       <p>
-        <span>Phone: +49 (0) 251 / 237337-0</span> <br />
-        <span>Fax: +49 (0) 251 / 237337-7</span> <br />
-        <span>Email: info@autosecure.net<span>
+        <span>Telefon: +49 (0) 251 / 237337-0</span> <br />
+        <span>Telefax: +49 (0) 251 / 237337-7</span> <br />
+        <span>E-Mail: info@autosecure.net<span>
       </p>
-      <p>Represented by: <br />
-        Managing Director Stefan Chüo
+      <p>Vertreten durch:<br />
+      Geschäftsführer Stefan Chüo
       </p>
-      <p>Register entry: <br />
-        Registered in the commercial register. Registration court: Münster Registration number: HRB18821
+      <p>Registereintrag: <br />
+      Eingetragen im Handelsregister. Registergericht: Münster Registernummer: HRB18821
       </p>
-      <p>Tax number: <br />
+      <p>Steuernummer: <br />
         337/5952/0602
       </p>
-      <p>VAT ID no. <br />
+      <p>USt-IdNr. <br />
         DE332870084
       </p>
-      <p>Image rights: <br />
-        Marco Warmuth Photography http://marcowarmuth.de <br />
-        Adobe Fotostock https://stock.adobe.com/de
+      <p>Bildrechte: <br />
+      Marco Warmuth Fotographie http://marcowarmuth.de <br />
+      Adobe Fotostock https://stock.adobe.com/de
       </p>`,
   },
   {
     id: 2,
-    listTitle:
-      "Notice in accordance with the Online Dispute Settlement Ordinance",
+    listTitle: "Hinweis gemäß Online-Streitbeilegungs-Verordnung",
     htmlItem: `
-      <p>According to applicable law, we are obliged to inform consumers of the existence of the European online dispute resolution platform, which can be used to resolve disputes without the need for a court to be involved. The European Commission is responsible for setting up the platform. The European online dispute resolution platform can be found here: <a href="http://ec.europa.eu/odr">http://ec.europa.eu/odr</a>.
+      <p>Nach geltendem Recht sind wir verpflichtet, Verbraucher auf die Existenz der Europäischen Online-Streitbeilegungs-Plattform hinzuweisen, die für die Beilegung von Streitigkeiten genutzt werden kann, ohne dass ein Gericht eingeschaltet werden muss. Für die Einrichtung der Plattform ist die Europäische Kommission zuständig. Die Europäische Online-Streitbeilegungs-Plattform ist hier zu finden:  <a href="http://ec.europa.eu/odr">http://ec.europa.eu/odr</a>.
       </p>
-      <p>Our email is: <a href="mailto:info@autosecure.net">info@autosecure.net</a></p>
-      <p>However, we would like to point out that we are not prepared to participate in the dispute settlement procedure within the framework of the European online dispute settlement platform. To contact us, please use our e-mail and telephone number above.</p>
+      <p>Unsere E-Mail lautet:  <a href="mailto:info@autosecure.net">info@autosecure.net</a></p>
+      <p>Wir weisen aber darauf hin, dass wir nicht bereit sind, uns am Streitbeilegungsverfahren im Rahmen der Europäischen Online-Streitbeilegungs-Plattform zu beteiligen. Nutzen Sie zur Kontaktaufnahme bitte unsere obige E-Mail und Telefonnummer.</p>
     `,
   },
   {
     id: 3,
-    listTitle: "Note according to the Consumer Dispute Settlement Act (VSBG)",
-    htmlItem: `<p>We are not willing and obliged to participate in dispute settlement procedures before a consumer arbitration board.</p>`,
+    listTitle: "Hinweis gemäß Verbraucherstreitbeilegungsgesetz (VSBG)",
+    htmlItem: `<p>Wir sind nicht bereit und verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>`,
   },
   {
     id: 4,
-    listTitle: "Disclaimer - legal information",
+    listTitle: "Disclaimer - rechtliche Hinweise",
     htmlItem: `
-      <p>§1 Content Warning</p>
-      <p>The free and freely accessible content of this website was created with the greatest possible care. However, the provider of this website assumes no liability for the accuracy and timeliness of the free and freely accessible journalistic guides and news provided. Contributions marked by name reflect the opinion of the respective author and not always the opinion of the provider. Simply by calling up the free and freely accessible content, no contractual relationship is established between the user and the provider; in this respect, the provider lacks the will to be legally binding.</p>
-      <p>§2 External links</p>
-      <p>This website contains links to third-party websites (“external links”). These websites are the responsibility of the respective operators. When the external links were first linked, the provider checked the third-party content for any legal violations. At the time, no legal violations were apparent. The provider has no influence whatsoever on the current and future design and content of the linked pages. The setting of external links does not mean that the provider adopts the content behind the reference or link as his own. Constant monitoring of the external links is not reasonable for the provider without concrete evidence of legal violations. However, if we become aware of legal violations, such external links will be deleted immediately. turned off .</p>
-      <p>§3 Copyright and ancillary copyright</p>
-      <p>The content published on this website is subject to German copyright and ancillary copyright. Any use not permitted by German copyright and ancillary copyright law requires the prior written consent of the provider or the respective rights holder. This applies in particular to the duplication, processing, translation, storage, processing or reproduction of content in databases or other electronic media and systems. Contents and rights of third parties are marked as such. The unauthorized duplication or forwarding of individual content or complete pages is not permitted and is punishable by law. Only the production of copies and downloads for personal, private and non-commercial use is permitted.</p>
-      <p>The presentation of this website in external frames is only permitted with written permission.</p>
-      <p>§4 Special Terms of Use</p>
-      <p>Insofar as special conditions for individual uses of this website deviate from the aforementioned paragraphs, this will be expressly pointed out at the appropriate point. In this case, the special terms of use apply in each individual case.</p>
+      <p>§1 Warnhinweis zu Inhalten</p>
+      <p>Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt. Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität der bereitgestellten kostenlosen und frei zugänglichen journalistischen Ratgeber und Nachrichten. Namentlich gekennzeichnete Beiträge geben die Meinung des jeweiligen Autors und nicht immer die Meinung des Anbieters wieder. Allein durch den Aufruf der kostenlosen und frei zugänglichen Inhalte kommt keinerlei Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am Rechtsbindungswillen des Anbieters.</p>
+      <p>§2 Externe Links</p>
+      <p>Diese Website enthält Verknüpfungen zu Websites Dritter (“externe Links”). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine ständige Kontrolle der externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht. gelöscht .</p>
+      <p>§3 Urheber-und Leistungsschutzrechte</p>
+      <p>Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene Verwertung bedarf der vorherigen schriftlichen Zustimmung des Anbieters oder jeweiligen Rechteinhabers. Dies gilt insbesondere für Vervielfältigung, Bearbeitung, Übersetzung, Einspeicherung, Verarbeitung bzw. Wiedergabe von Inhalten in Datenbanken oder anderen elektronischen Medien und Systemen. Inhalte und Rechte Dritter sind dabei als solche gekennzeichnet. Die unerlaubte Vervielfältigung oder Weitergabe einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Lediglich die Herstellung von Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt.</p>
+      <p>Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.</p>
+      <p>§4 Besondere Nutzungsbedingungen</p>
+      <p>Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Paragraphen abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.</p>
     `,
   },
 ];
@@ -64,151 +63,150 @@ export const imprintList = [
 export const privacyList = [
   {
     id: 1,
-    listTitle: "01. Data protection at a glance",
+    listTitle: "01. Datenschutz auf einen Blick",
     htmlItem: `
-      <p>General information</p>
-      <p>The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is all data with which you can be personally identified. Detailed information on the subject of data protection can be found in our data protection declaration listed under this text.</p>
+      <p>Allgemeine Hinweise</p>
+      <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.</p>
       
-      <p>Data collection on this website</p>
-      <p>Who is responsible for data collection on this website? The data processing on this website is carried out by the website operator. You can find their contact details in the imprint of this website.</p>
-      <p>How do we collect your data?</p>
-      <p>On the one hand, your data is collected when you communicate it to us. This can be z. B. be data that you enter in a contact form.
-      Other data is collected automatically or with your consent by our IT systems when you visit the website. This is primarily technical data (e.g. internet browser, operating system or time of the page view). This data is collected automatically as soon as you enter this website.</p>
-      <p>What do we use your data for?</p>
-      <p>Part of the data is collected to ensure that the website is provided without errors. Other data can be used to analyze your user behavior.</p>
-      <p>What rights do you have regarding your data?</p>
-      <p>You have the right to receive information about the origin, recipient and purpose of your stored personal data free of charge at any time. You also have the right to request the correction or deletion of this data. If you have given your consent to data processing, you can revoke this consent at any time for the future. You also have the right, under certain circumstances, to request that the processing of your personal data be restricted. You also have the right to lodge a complaint with the competent supervisory authority.</p>
-      <p>You can contact us at any time at the address given in the imprint if you have any further questions on the subject of data protection.</p>
+      <p>Datenerfassung auf dieser Website</p>
+      <p>Wer ist verantwortlich für die Datenerfassung auf dieser Website? Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.</p>
+      <p>Wie erfassen wir Ihre Daten?</p>
+      <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
+      <p>Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.</p>
+      <p>Wofür nutzen wir Ihre Daten?</p>
+      <p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.</p>
+      <p> Welche Rechte haben Sie bezüglich Ihrer Daten?</p>
+      <p>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.</p>
+      <p>Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.</p>
     `,
   },
   {
     id: 2,
-    listTitle: "02. Hosting and Content Delivery Network (CDN)",
+    listTitle: "02. Hosting und Content Delivery Network (CDN)",
     htmlItem: `
-      <p>External hosting</p>
-      <p>This website is hosted by an external service provider (hoster). The personal data collected on this website is stored on the host's servers. This can primarily be IP addresses, contact requests, meta and communication data, contract data, contact data, names, website access and other data generated via a website. The hoster is used for the purpose of fulfilling the contract with our potential and existing customers (Art. 6 Para. 1 lit. b DSGVO) and in the interest of a secure, fast and efficient provision of our online offer by a professional provider (Art. 6 Para 1 lit. f GDPR).</p>
-      <p>Our hoster will only process your data to the extent that this is necessary to fulfill its performance obligations and will follow our instructions in relation to this data.</p>
-      <p>We use the following hoster: <br /> STRATO AG</p>
-      <p>Registered office of the joint-stock company: <br /> Pascalstrasse 10 <br />
-        10587 Berlin
+      <p>Externes Hosting</p>
+      <p>Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v.a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln. Der Einsatz des Hosters erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO).</p>
+      <p>Unser Hoster wird Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.</p>
+      <p> Wir setzen folgenden Hoster ein: <br /> STRATO AG</p>
+      <p>Sitz der Aktiengesellschaft: <br /> Pascalstraße 10 <br />
+      10587 Berlin
       </p>
-      <p>Conclusion of a contract for order processing <br />
-      In order to ensure data protection-compliant processing, we have concluded a contract for order processing with our hoster.</p>
+      <p>Abschluss eines Vertrages über Auftragsverarbeitung <br />
+      Um die datenschutzkonforme Verarbeitung zu gewährleisten, haben wir einen Vertrag über Auftragsverarbeitung mit unserem Hoster geschlossen.</p>
     `,
   },
   {
     id: 3,
-    listTitle: "03. General information and mandatory information",
+    listTitle: "03. Allgemeine Hinweise und Pflichtinformationen",
     htmlItem: `
-    <p>privacy</p>
-    <p>The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this data protection declaration.</p>
-    <p>If you use this website, various personal data will be collected. Personal data is data with which you can be personally identified. This data protection declaration explains what data we collect and what we use it for. It also explains how and for what purpose this happens.</p>
-    <p>We would like to point out that data transmission on the Internet (e.g. when communicating by e-mail) can have security gaps. A complete protection of the data against access by third parties is not possible.</p>
-    <p>We would like to point out that data transmission on the Internet (e.g. when communicating by e-mail) can have security gaps. A complete protection of the data against access by third parties is not possible.</p>
+    <p>Datenschutz</p>
+    <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+    <p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.</p>
+    <p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+    <p>Hinweis zur verantwortlichen Stelle</p>
     <p>Note on the responsible body</p>
-    <p>The responsible body for data processing on this website is:</p>
+    <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
     <p>
     autosecure GmbH <br />
     Hammer Str. 39 <br />
-    48159 Munster
+    48159 Münster
     </p>
-    <p>Email: <a href="mailto:info@autosecure.net">info@autosecure.net</a>
+    <p>E-Mail:  <a href="mailto:info@autosecure.net">info@autosecure.net</a>
     </p>
-    <p>Represented by:</p>
-    <p>Managing Director Stefan Chüo <br />
-    Telephone: +49 (0) 251 / 237337-0 <br />
-    Email: <a href="mailto:info@autosecure.net">info@autosecure.net</a>
+    <p>Vertreten durch:</p>
+    <p>Geschäftsführer Stefan Chüo <br />
+    Telefon: +49 (0) 251 / 237337-0 <br />
+    E-mail: <a href="mailto:info@autosecure.net">info@autosecure.net</a>
     </p>
-    <p>The responsible body is the natural or legal person who, alone or together with others, decides on the purposes and means of processing personal data (e.g. names, e-mail addresses, etc.).</p>
-    <p>If you have any questions about data protection, you can contact our data protection officer.</p>
+    <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
+    <p>Bei Fragen zum Datenschutz können Sie sich an unseren Datenschutzbeauftragten wenden.</p>
     <p>sdw consulting: <a href="mailto:datenschutz@sdw-consulting.de">datenschutz@sdw-consulting.de</a>
     </p>
-    <p>storage duration</p>
-    <p>Unless a specific storage period has been specified in this data protection declaration, your personal data will remain with us until the purpose for data processing no longer applies. If you submit a legitimate request for deletion or revoke your consent to data processing, your data will be deleted unless we have other legally permissible reasons for storing your personal data (e.g. tax or commercial retention periods); in the latter case, the data will be deleted once these reasons have ceased to exist.</p>
-    <p>Note on data transfer to the USA</p>
-    <p>Our website includes tools from companies based in the USA. When these tools are active, your personal data may be transferred to the US servers of the respective companies. We would like to point out that the USA is not a safe third country within the meaning of EU data protection law. US companies are obliged to release personal data to security authorities without you as the person concerned being able to take legal action against this. It can therefore not be ruled out that US authorities (e.g. secret services) will process, evaluate and permanently store your data on US servers for monitoring purposes. We have no influence on these processing activities.</p>
-    <p>Revocation of your consent to data processing</p>
-    <p>Many data processing operations are only possible with your express consent. You can revoke consent that you have already given at any time. The legality of the data processing that took place up until the revocation remains unaffected by the revocation.</p>
-    <p>Right to object to data collection in special cases and to direct advertising (Art. 21 GDPR)</p>
-    <p>IF THE DATA PROCESSING IS BASED ON ART. 6 ABS. 1 LIT. E OR F GDPR, YOU HAVE THE RIGHT TO OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA AT ANY TIME FOR REASONS ARISING FROM YOUR PARTICULAR SITUATION; THIS ALSO APPLIES TO PROFILING BASED ON THESE PROVISIONS. THE RESPECTIVE LEGAL BASIS ON WHICH A PROCESSING IS BASED CAN BE FOUND IN THIS DATA PRIVACY POLICY. IF YOU OBJECT, WE WILL NO LONGER PROCESS YOUR CONCERNED PERSONAL DATA UNLESS WE CAN PROVE COMPREHENSIVE GROUNDS FOR THE PROCESSING THAT OVERRIDE YOUR INTERESTS, RIGHTS AND FREEDOM OBJECTION ACCORDING TO ARTICLE 21 (1) GDPR). IF YOUR PERSONAL DATA IS PROCESSED FOR DIRECT ADVERTISING, YOU HAVE THE RIGHT TO OBJECT AT ANY TIME TO THE PROCESSING OF YOUR PERSONAL DATA FOR SUCH ADVERTISING PURPOSES; THIS ALSO APPLIES TO PROFILING TO THE EXTENT RELATED TO SUCH DIRECT ADVERTISING. IF YOU OBJECT, YOUR PERSONAL DATA WILL NO LONGER BE USED FOR DIRECT ADVERTISING PURPOSES (OBJECTION ACCORDING TO ART. 21 (2) GDPR).</p>
-    <p>Right of appeal to the competent supervisory authority</p>
-    <p>In the event of violations of the GDPR, those affected have the right to lodge a complaint with a supervisory authority, in particular in the Member State of their habitual residence, their place of work or the place of the alleged violation. The right to lodge a complaint is without prejudice to any other administrative or judicial remedy.</p>
-    <p>Right to data portability</p>
-    <p>You have the right to have data that we process automatically on the basis of your consent or in fulfillment of a contract handed over to you or to a third party in a common, machine-readable format. If you request the direct transfer of the data to another person responsible, this will only be done to the extent that it is technically feasible.</p>
-    <p>SSL or TLS encryption</p>
-    <p>For security reasons and to protect the transmission of confidential content, such as orders or inquiries that you send to us as the site operator, this site uses SSL or TLS encryption.</p>
-    <p>You can recognize an encrypted connection by the fact that the address line of the browser changes from "http://" to "https://" and by the lock symbol in your browser line.</p>
-    <p>If SSL or TLS encryption is activated, the data that you transmit to us cannot be read by third parties.</p>
-    <p>Information, deletion and correction</p>
-    <p>Within the framework of the applicable legal provisions, you have the right to free information about your stored personal data, its origin and recipient and the purpose of the data processing and, if necessary, a right to correction or deletion of this data at any time. You can contact us at any time at the address given in the imprint if you have any further questions on the subject of personal data.</p>
-    <p>Right to restriction of processing</p>
-    <p>You have the right to request the restriction of the processing of your personal data. You can contact us at any time at the address given in the imprint. The right to restriction of processing exists in the following cases:</p>
-    <p>If you dispute the accuracy of your personal data stored by us, we usually need time to check this. For the duration of the examination, you have the right to request that the processing of your personal data be restricted. If the processing of your personal data happened/is happening unlawfully, you can request the restriction of data processing instead of deletion. If we no longer need your personal data, but you need it to exercise, defend or assert legal claims, you have the right to demand that the processing of your personal data be restricted instead of being deleted. If you have lodged an objection in accordance with Art. 21 (1) GDPR, your interests and ours must be weighed up. As long as it has not yet been determined whose interests prevail, you have the right to demand that the processing of your personal data be restricted. If you have restricted the processing of your personal data, this data - apart from its storage - may only be used with your consent or to assert, exercise or defend legal claims or to protect the rights of another natural or legal person or for reasons of important public interest of the European Union or a Member State are processed.</p>
+    <p>Speicherdauer</p>
+    <p>Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keinen anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z.B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.</p>
+    <p>Hinweis zur Datenweitergabe in die USA</p>
+    <p>Auf unserer Website sind unter anderem Tools von Unternehmen mit Sitz in den USA eingebunden. Wenn diese Tools aktiv sind, können Ihre personenbezogenen Daten an die US-Server der jeweiligen Unternehmen weitergegeben werden. Wir weisen darauf hin, dass die USA kein sicherer Drittstaat im Sinne des EU-Datenschutzrechts sind. US-Unternehmen sind dazu verpflichtet, personenbezogene Daten an Sicherheitsbehörden herauszugeben, ohne dass Sie als Betroffener hiergegen gerichtlich vorgehen könnten. Es kann daher nicht ausgeschlossen werden, dass US-Behörden (z.B. Geheimdienste) Ihre auf US-Servern befindlichen Daten zu Überwachungszwecken verarbeiten, auswerten und dauerhaft speichern. Wir haben auf diese Verarbeitungstätigkeiten keinen Einfluss.</p>
+    <p>Widerruf Ihrer Einwilligung zur Datenverarbeitung</p>
+    <p> Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
+    <p>Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)</p>
+    <p>WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO). WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).</p>
+    <p>Beschwerderecht bei der zuständigen Aufsichtsbehörde</p>
+    <p>Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatze oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.</p>
+    <p>Recht auf Datenübertragbarkeit</p>
+    <p>Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
+    <p>SSL- bzw. TLS-Verschlüsselung</p>
+    <p>Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLSVerschlüsselung.</p>
+    <p>Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+    <p>Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.</p>
+    <p>Auskunft, Löschung und Berichtigung</p>
+    <p>Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.</p>
+    <p>Recht auf Einschränkung der Verarbeitung</p>
+    <p>Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:</p>
+    <p> Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen. Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden</p>
     `,
   },
   {
     id: 4,
-    listTitle: "04. Data collection on this website",
+    listTitle: "04. Datenerfassung auf dieser Website",
     htmlItem: `
-    <p>cookies</p>
-    <p>Our website uses so-called "cookies". Cookies are small text files and do not cause any damage to your end device. They are stored on your end device either temporarily for the duration of a session (session cookies) or permanently (permanent cookies). Session cookies are automatically deleted after your visit. Permanent cookies remain stored on your end device until you delete them yourself or until they are automatically deleted by your web browser. In some cases, cookies from third-party companies can also be stored on your end device when you enter our site (third-party cookies). These enable us or you to use certain services of the third-party company (e.g. cookies for processing payment services).</p>
-    <p>Cookies have different functions. Numerous cookies are technically necessary because certain website functions would not work without them (e.g. the shopping cart function or the display of videos). Other cookies are used to evaluate user behavior or to display advertising.</p>
-    <p>Cookies that are required to carry out the electronic communication process (necessary cookies) or to provide certain functions you want (functional cookies, e.g. for the shopping cart function) or to optimize the website (e.g. cookies for measuring the web audience). stored on the basis of Article 6 (1) (f) GDPR, unless another legal basis is specified. The website operator has a legitimate interest in the storage of cookies for the technically error-free and optimized provision of its services. If consent to the storage of cookies has been requested, the relevant cookies will be stored</p>
-    <p>Cookies exclusively on the basis of this consent (Art. 6 Para. 1 lit. a GDPR); the consent can be revoked at any time. You can set your browser so that you are informed about the setting of cookies and only allow cookies in individual cases, exclude the acceptance of cookies for certain cases or in general and activate the automatic deletion of cookies when the browser is closed. If cookies are deactivated, the functionality of this website may be restricted.</p>
-    <p>If cookies are used by third-party companies or for analysis purposes, we will inform you of this separately in this data protection declaration and, if necessary, ask for your consent.</p>
-    <p>Server log files</p>
-    <p>The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us.</p>
-    <p>These are:</p>
-    <p>• Browser type and browser version</p>
-    <p>• operating system used</p>
+    <p>Cookies</p>
+    <p> Unsere Internetseiten verwenden so genannte „Cookies“. Cookies sind kleine Textdateien und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende Ihres Besuchs automatisch gelöscht. Permanente Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese selbst löschen oder eine automatische Löschung durch Ihren Webbrowser erfolgt. Teilweise können auch Cookies von Drittunternehmen auf Ihrem Endgerät gespeichert werden, wenn Sie unsere Seite betreten (Third-Party-Cookies). Diese ermöglichen uns oder Ihnen die Nutzung bestimmter Dienstleistungen des Drittunternehmens (z.B. Cookies zur Abwicklung von Zahlungsdienstleistungen).</p>
+    <p>Cookies haben verschiedene Funktionen. Zahlreiche Cookies sind technisch notwendig, da bestimmte Websitefunktionen ohne diese nicht funktionieren würden (z.B. die Warenkorbfunktion oder die Anzeige von Videos). Andere Cookies dienen dazu, das Nutzerverhalten auszuwerten oder Werbung anzuzeigen.</p>
+    <p>Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs (notwendige Cookies) oder zur Bereitstellung bestimmter, von Ihnen erwünschter Funktionen (funktionale Cookies, z. B. für die Warenkorbfunktion) oder zur Optimierung der Website (z.B. Cookies zur Messung des Webpublikums) erforderlich sind, werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert, sofern keine andere Rechtsgrundlage angegeben wird. Der Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von Cookies zur technisch fehlerfreien und optimierten Bereitstellung seiner Dienste. Sofern eine Einwilligung zur Speicherung von Cookies abgefragt wurde, erfolgt die Speicherung der betreffenden.</p>
+    <p>Cookies ausschließlich auf Grundlage dieser Einwilligung (Art. 6 Abs. 1 lit. a DSGVO); die Einwilligung ist jederzeit widerrufbar. Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browsers aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein.</p>
+    <p>Server-Log-Dateien</p>
+    <p> Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt.</p>
+    <p>Dies sind:</p>
+    <p>• Browsertyp und Browserversion</p>
+    <p>• verwendetes Betriebssystem</p>
     <p>• Referrer URL</p>
-    <p>• Host name of the accessing computer</p>
-    <p>• IP address</p>
-    <p>This data is not merged with other data sources.</p>
-    <p>This data is collected on the basis of Article 6 (1) (f) GDPR. The website operator has a legitimate interest in the technically error-free presentation and optimization of his website - the server log files must be recorded for this purpose.</p>
-    <p>contact form</p>
-    <p>If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provided there, will be stored by us for the purpose of processing the inquiry and in the event of follow-up questions. We do not pass on this data without your consent.</p>
-    <p>This data is processed on the basis of Article 6 (1) (b) GDPR if your request is related to the fulfillment of a contract or is necessary to carry out pre-contractual measures. In all other cases, the processing is based on our legitimate interest in the effective processing of inquiries addressed to us (Art. 6 Para. 1 lit. f GDPR) or on your consent (Art. 6 Para. 1 lit. a GDPR) if this was queried. The data you enter in the contact form will remain with us until you ask us to delete it, revoke your consent to storage or the purpose for data storage no longer applies (e.g. after your request has been processed). Mandatory legal provisions - in particular retention periods - remain unaffected.</p>
-    <p>Inquiry by e-mail, telephone or fax</p>
-    <p>If you contact us by e-mail, telephone or fax, your inquiry including all resulting personal data (name, enquiry) will be stored and processed by us for the purpose of processing your request. We do not pass on this data without your consent. This data is processed on the basis of Article 6 (1) (b) GDPR if your request is related to the fulfillment of a contract or is necessary to carry out pre-contractual measures. In all other cases, the processing is based on our legitimate interest in the effective processing of inquiries addressed to us (Art. 6 Para. 1 lit. f GDPR) or on your consent (Art. 6 Para. 1 lit. a GDPR) if this was queried. The data you sent to us via contact requests remain with us, until you ask us to delete it, revoke your consent to storage or the purpose for data storage no longer applies (e.g. after your request has been processed). Mandatory legal provisions - in particular statutory retention periods - remain unaffected.</p>
+    <p>• Hostname des zugreifenden Rechners</p>
+    <p>• IP-Adresse</p>
+    <p>Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.</p>
+    <p>Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden.</p>
+    <p>Kontaktformular</p>
+    <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+    <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde. Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.</p>
+    <p>Anfrage per E-Mail, Telefon oder Telefax</p>
+    <p> Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde. Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.</p>
     `,
   },
   {
     id: 5,
-    listTitle: "05. Social Media",
+    listTitle: "05. Soziale Medien",
     htmlItem: `
-      <p>Data processing by social networks</p>
-      <p>We maintain publicly accessible profiles on social networks. The social networks we use in detail can be found below. Social networks such as Facebook, Twitter, etc. can usually analyze your user behavior comprehensively when you visit their website or a website with integrated social media content (e.g. Like buttons or advertising banners). Visiting our social media presence triggers numerous data protection-related processing operations. In detail: If you are logged into your social media account and visit our social media presence, the operator of the social media portal can assign this visit to your user account. Under certain circumstances, however, your personal data may also be collected if you are not logged in or do not have an account with the respective social media portal. In this case, this data is collected, for example, via cookies that are stored on your end device or by recording your IP address. With the help of the data collected in this way, the operators of the social media portals can create user profiles in which your preferences and interests are stored. In this way, interest-based advertising can be displayed to you both inside and outside of the respective social media presence. If you have an account with the respective social network, interest-based advertising can be displayed on all devices on which you are logged in or were logged in. Please also note that we cannot trace all processing operations on the social media portals. Depending on the provider, additional processing operations may therefore be carried out by the operators of the social media portals. Details can be found in the terms of use and data protection regulations of the respective social media portals.</p>
-      <p>legal basis</p>
-      <p>Our social media appearances should ensure the widest possible presence on the Internet. This is a legitimate interest within the meaning of Article 6 (1) (f) GDPR. The analysis processes initiated by the social networks may be based on different legal bases, which must be specified by the operators of the social networks (e.g. consent within the meaning of Art. 6 Para. 1 lit. a DSGVO).</p>
-      <p>Social media in detail:</p>
+      <p>Datenverarbeitung durch soziale Netzwerke</p>
+      <p>Wir unterhalten öffentlich zugängliche Profile in sozialen Netzwerken. Die im Einzelnen von uns genutzten sozialen Netzwerke finden Sie weiter unten. Soziale Netzwerke wie Facebook, Twitter etc. können Ihr Nutzerverhalten in der Regel umfassend analysieren, wenn Sie deren Webseite oder eine Webseite mit integrierten Social-Media-Inhalten (z. B. Like-Buttons oder Werbebannern) besuchen. Durch den Besuch unserer Social-Media-Präsenzen werden zahlreiche datenschutzrelevante Verarbeitungsvorgänge ausgelöst. Im Einzelnen: Wenn Sie in Ihrem Social-Media-Account eingeloggt sind und unsere Social-Media-Präsenz besuchen, kann der Betreiber des Social-Media-Portals diesen Besuch Ihrem Benutzerkonto zuordnen. Ihre personenbezogenen Daten können unter Umständen aber auch dann erfasst werden, wenn Sie nicht eingeloggt sind oder keinen Account beim jeweiligen Social-Media-Portal besitzen. Diese Datenerfassung erfolgt in diesem Fall beispielsweise über Cookies, die auf Ihrem Endgerät gespeichert werden oder durch Erfassung Ihrer IP-Adresse. Mit Hilfe der so erfassten Daten können die Betreiber der Social-Media-Portale Nutzerprofile erstellen, in denen Ihre Präferenzen und Interessen hinterlegt sind. Auf diese Weise kann Ihnen interessenbezogene Werbung in- und außerhalb der jeweiligen Social-Media-Präsenz angezeigt werden. Sofern Sie über einen Account beim jeweiligen sozialen Netzwerk verfügen, kann die interessenbezogene Werbung auf allen Geräten angezeigt werden, auf denen Sie eingeloggt sind oder eingeloggt waren. Bitte beachten Sie außerdem, dass wir nicht alle Verarbeitungsprozesse auf den Social-Media-Portalen nachvollziehen können. Je nach Anbieter können daher ggf. weitere Verarbeitungsvorgänge von den Betreibern der Social-Media-Portale durchgeführt werden. Details hierzu entnehmen Sie den Nutzungsbedingungen und Datenschutzbestimmungen der jeweiligen Social-Media-Portale.</p>
+      <p>Rechtsgrundlage</p>
+      <p>Unsere Social-Media-Auftritte sollen eine möglichst umfassende Präsenz im Internet gewährleisten. Hierbei handelt es sich um ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO. Die von den sozialen Netzwerken initiierten Analyseprozesse beruhen ggf. auf abweichenden Rechtsgrundlagen, die von den Betreibern der sozialen Netzwerke anzugeben sind (z. B. Einwilligung im Sinne des Art. 6 Abs. 1 lit. a DSGVO).</p>
+      <p>Soziale Medien im Einzelnen:</p>
       <p>YouTube:</p>
-      <p>We have a profile on YouTube. The provider is Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Details on how they handle your personal data can be found in YouTube's data protection declaration: <a href="https://policies.google.com/privacy?hl=de" target="_blank">https://policies.google.com/privacy?hl=de</a>.</p>
+      <p>Wir verfügen über ein Profil bei YouTube. Anbieter ist die Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Details zu deren Umgang mit Ihren personenbezogenen Daten entnehmen Sie der Datenschutzerklärung von YouTube: <a href="mailto:https://policies.google.com/privacy?hl=de">https://policies.google.com/privacy?hl=de</a>.</p>
       <p>Facebook</p>
-      <p>We have a profile on Facebook. The provider of this service is Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland. According to Facebook, the data collected is also transferred to the USA and other third countries. You can adjust your advertising settings independently in your user account. To do this, click on the following link and log in: <a href="https://www.facebook.com/settings?tab=ads" target="_blank">https://www.facebook.com/settings?tab=ads</a>. Details can be found in Facebook's data protection declaration: <a href="https://www.facebook.com/about/privacy/" target="_blank">https://www.facebook.com/about/privacy/</a>.</p>
+      <p>Wir verfügen über ein Profil bei Facebook. Anbieter dieses Dienstes ist die Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Irland. Die erfassten Daten werden nach Aussage von Facebook auch in die USA und in andere Drittländer übertragen. Sie können Ihre Werbeeinstellungen selbstständig in Ihrem Nutzer-Account anpassen. Klicken Sie hierzu auf folgenden Link und loggen Sie sich ein: <a href="mailto:https://www.facebook.com/settings?tab=ads">https://www.facebook.com/settings?tab=ads</a>. Details can be found in Facebook's data protection declaration: <a href="mailto:https://www.facebook.com/about/privacy/">https://www.facebook.com/about/privacy/</a>.</p>
     `,
   },
   {
     id: 6,
-    listTitle: "06. Analytics Tools and Advertising",
+    listTitle: "06. Analyse-Tools und Werbung",
     htmlItem: `
-      <p>WordPress statistics</p>
-      <p>This website uses "WordPress Statistics" to statistically evaluate visitor access. The provider is Automattic Inc., 60 29th Street #343, San Francisco, CA 94110-4929, USA. WordPress Statistics uses technologies that enable the user to be recognized for the purpose of analyzing user behavior (e.g. cookies or device fingerprinting). For analysis purposes, WordPress Statistics records, among other things, log files (referrer, IP address, browser, etc.), the origin of the website visitors (country, city) and what actions they have taken on the site (e.g. clicks, views, downloads). The information collected in this way about the use of this website is stored on servers in the USA. Your IP address will be anonymized after processing and before storage. This analysis tool is used on the basis of Art. 6 Para. 1 lit. f GDPR. The website operator has a legitimate interest in the anonymous analysis of user behavior in order to optimize both its website and its advertising. If a corresponding consent was requested (e.g. consent to the storage of cookies), the processing takes place exclusively on the basis of Article 6 Paragraph 1 lit. the consent can be revoked at any time.</p>
+      <p>WordPress Statistik</p>
+      <p>Diese Website nutzt „WordPress Statistik“, um Besucherzugriffe statistisch auszuwerten. Anbieter ist die Automattic Inc., 60 29th Street #343, San Francisco, CA 94110-4929, USA. WordPress Statistik verwendet Technologien, die die Wiedererkennung des Nutzers zum Zwecke der Analyse des Nutzerverhaltens ermöglichen (z.B. Cookies oder Device-Fingerprinting). WordPress Statistik erfasst zur Analyse u. a. Logdateien (Referrer, IP-Adresse, Browser u. a.), die Herkunft der Websitebesucher (Land, Stadt) und welche Aktionen sie auf der Seite getätigt haben (z.B. Klicks, Ansichten, Downloads). Die so erfassten Informationen über die Benutzung dieser Website werden auf Servern in den USA gespeichert. Ihre IP-Adresse wird nach der Verarbeitung und vor der Speicherung anonymisiert. Die Nutzung dieses Analyse-Tools erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der anonymisierten Analyse des Nutzerverhaltens, um sowohl sein Webangebot als auch seine Werbung zu optimieren. Sofern eine entsprechende Einwilligung abgefragt wurde (z. B. eine Einwilligung zur Speicherung von Cookies), erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO; die Einwilligung ist jederzeit widerrufbar.</p>
     `,
   },
   {
     id: 7,
-    listTitle: "07. Application process for filling vacancies",
+    listTitle: "07. Bewerbungsablauf bei Stellenbesetzung",
     htmlItem: `
-      <p>Please note our information on data protection and the application process:</p>
-      <p>By sending your application documents, you give us your consent to process your personal data for the purpose of carrying out the application process (cf. Article 6 GDPR; see also Section 32 BDSG). The controller within the meaning of the GDPR is autosecure GmbH, Hammer Str. 39, 48153 Münster. You can reach our data protection officer at datenschutz@sdw-consulting.de. You only need to send us the data that we need to process your application. We also need your contact details to be able to get in touch with you. Your data will only be passed on to those people who are directly involved with the job advertisement, namely the management, the human resources department, the department in which the vacancy exists, the Equal Opportunities Officer and possibly the Representative for the Severely Disabled. You can revoke your consent to the processing of your data by autosecure GmbH at any time with effect for the future (Article 7 (3) GDPR). Furthermore, you have the right to free information about your stored data (Article 15 GDPR), if necessary, a right to correction (Article 16 GDPR), blocking (Article 17 GDPR) or deletion (Article 18 GDPR). Six months after completing the application process, your documents will be returned to you or your electronically transmitted data will be deleted (see Section 15 (4) AGG), unless they are still required for the purpose of employment. In accordance with Article 21 GDPR, you can object to the processing of your data in the cases mentioned there. Of course, you can withdraw your application at any time. Please send us your request by email or post: autosecure GmbH, Hammer Str. 39, 48153 Münster info@autosecure.net.</p>
-      <p>Data protection declaration for electronically transmitted applications:</p>
-      <p>Thank you for your interest in our job posting. The protection of your personal data is very important to us. Therefore, we will inform you below about the collection, processing and use of your data in the context of the electronically transmitted application, in accordance with the relevant data protection regulations. In the course of your electronically transmitted application, we will collect and process the following personal application data from you: Last name, first name, address, telephone number, e-mail, application documents (letter of application, curriculum vitae, references, certificates, etc.)</p>
-      <p>Purpose of data collection / transfer: Your personal application data is collected and processed exclusively for the purpose of filling vacancies within our administration. In principle, your data will only be forwarded to the internal departments and departments of our administration responsible for the specific application process. Your personal application data will not be passed on to other administrations without your prior express consent. Your application data will not be used or passed on to third parties beyond this.</p>
-      <p>Duration of retention of application data: Your personal application data will generally be automatically deleted six months after completion of the application process. This does not apply if legal provisions prevent deletion, if further storage is required for the purpose of providing evidence or if you have expressly consented to longer storage.</p>
-      <p>Storage for future job advertisements: If we are unable to offer you a current vacancy, but based on your profile we believe that your application could be of interest for future job advertisements, we will store your personal application data for twelve months, provided that you consent to such storage and expressly consent to its use.</p>
-      <p>Data security: In order to protect the data collected as part of your application from manipulation and unauthorized access, we have taken various technical and organizational precautions. In particular, the transmission of your electronically transmitted application is encrypted in accordance with the currently recognized state of the art.</p>
-      <p>Right to information and revocation: If you have any questions about the collection, processing or use of your personal data, or in cases of information, correction or deletion of data, as well as revocation of granted consent, please contact our data protection officer at <a href="mailto:datenschutz@sdw-consulting.de">datenschutz@sdw-consulting.de</a></p>
+      <p>Bitte beachten Sie unsere Hinweise zum Datenschutz und Bewerbungsablauf:</p>
+      <p>Mit der Übersendung Ihrer Bewerbungsunterlagen geben Sie uns Ihre Einwilligung, Ihre von Ihnen übersendeten personenbezogenen Daten zum Zwecke der Durchführung des Bewerbungsverfahrens zu verarbeiten (vgl. Artikel 6 DSGVO; siehe auch § 32 BDSG). Verantwortlicher im Sinne der DSGVO ist die autosecure GmbH, Hammer Str. 39, 48153 Münster. Unseren Datenschutzbeauftragten erreichen Sie unter datenschutz@sdw-consulting.de. Sie brauchen uns nur diejenigen Daten zu übermitteln, die wir für die Bearbeitung Ihrer Bewerbung brauchen. Wir benötigen außerdem Ihre Kontaktdaten, um mit Ihnen in Kontakt treten zu können. Ihre Daten werden dabei nur an diejenigen Personen weitergegeben, die unmittelbar mit der Stellenausschreibung befasst sind, namentlich die Geschäftsführung, die Personalabteilung, die Abteilung, in der die freie Stelle besteht, die Gleichstellungsbeauftragte und eventuell die Schwerbehindertenvertretung. Ihre Einwilligung in die Verarbeitung Ihrer Daten durch die autosecure GmbH können Sie jederzeit mit Wirkung für die Zukunft widerrufen (Artikel 7 Abs. 3 DSGVO). Des Weiteren haben Sie ein Recht auf unentgeltliche Auskunft über Ihre gespeicherte Daten (Artikel 15 DSGVO), gegebenenfalls ein Recht auf Berichtigung (Artikel 16 DSGVO), Sperrung (Artikel 17 DSGVO) oder Löschung (Artikel 18 DSGVO). Sechs Monate nach Abschluss des Bewerbungsverfahrens werden Ihnen Ihre Unterlagen zurückgesendet bzw. Ihre elektronisch übermittelten Daten gelöscht (vgl. § 15 Abs. 4 AGG), es sei denn, sie werden zum Zwecke der Anstellung weiterhin benötigt. Sie können gemäß Artikel 21 DSGVO in den dort genannten Fällen Widerspruch gegen die Verarbeitung Ihrer Daten erheben. Ihre Bewerbung können Sie natürlich jederzeit zurückziehen. Bitte senden Sie uns Ihr Verlangen per E-Mail oder Post: autosecure GmbH, Hammer Str. 39, 48153 Münster info@autosecure.net.</p>
+      <p>Datenschutzerklärung zur elektronisch übermittelten Bewerbung:</p>
+      <p>Vielen Dank für Ihr Interesse an unserer Stellenausschreibung. Der Schutz Ihrer persönlichen Daten ist uns sehr wichtig. Daher informieren wir Sie nachfolgend über die Erhebung, Verarbeitung und Nutzung Ihrer Daten im Rahmen der elektronisch übermittelten Bewerbung, gemäß den einschlägigen Datenschutzvorschriften. Im Zuge Ihrer elektronisch übermittelten Bewerbung werden von uns die nachfolgend aufgezählten persönlichen Bewerbungsdaten von Ihnen erhoben und verarbeitet: Name, Vorname, Adresse, Telefonnummer, E-Mail, Bewerbungsunterlagen (Bewerbungsschreiben, Lebenslauf, Zeugnisse, Zertifikate u.ä.)</p>
+      <p>Zweck der Datenerfassung / Weitergabe: Die Erhebung und Verarbeitung Ihrer persönlichen Bewerbungsdaten erfolgt ausschließlich zweckgebunden für die Besetzung von Stellen innerhalb unserer Verwaltung. Ihre Daten werden grundsätzlich nur an die für das konkrete Bewerbungsverfahren zuständigen innerbetrieblichen Stellen und Sachbereiche unserer Verwaltung weitergeleitet. Eine Weitergabe Ihrer persönlichen Bewerbungsdaten an andere Verwaltungen erfolgt nicht ohne vorherige, ausdrückliche Einwilligung Ihrerseits. Eine darüber hinausgehende Nutzung oder Weitergabe Ihrer Bewerbungsdaten an Dritte erfolgt nicht.</p>
+      <p>Aufbewahrungsdauer der Bewerbungsdaten: Eine Löschung Ihrer persönlichen Bewerbungsdaten erfolgt grundsätzlich automatisch sechs Monate nach Abschluss des Bewerbungsverfahrens. Dies gilt nicht, sofern gesetzliche Bestimmungen einer Löschung entgegenstehen, die weitere Speicherung zum Zwecke der Beweisführung erforderlich ist oder Sie einer längeren Speicherung ausdrücklich zugestimmt haben.</p>
+      <p>Speicherung für zukünftige Stellenausschreibungen: Sollten wir Ihnen keine aktuell zu besetzende Stelle anbieten können, jedoch aufgrund Ihres Profils der Ansicht sein, dass Ihre Bewerbung eventuell für zukünftige Stellenangebote interessant sein könnte, werden wir Ihre persönlichen Bewerbungsdaten zwölf Monate lang speichern, sofern Sie einer solchen Speicherung und Nutzung ausdrücklich zustimmen.</p>
+      <p>Datensicherheit: Um die im Rahmen Ihrer Bewerbung erhobenen Daten vor Manipulationen und unberechtigten Zugriffen zu schützen haben wir diverse technische und organisatorische Vorkehrungen getroffen. Insbesondere erfolgt die Übertragung Ihrer elektronisch übermittelten Bewerbung verschlüsselt gemäß dem aktuell anerkannten Stand der Technik.</p>
+      <p>Auskunftsrecht und Widerruf: Sollten Sie Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten haben, oder in Fällen von Auskünften, Berichtigung oder Löschung von Daten, sowie Widerruf erteilter Einwilligungen, wenden Sie sich bitte an unseren Datenschutzbeauftragten unter datenschutz@sdw-consulting.de <a href="mailto:datenschutz@sdw-consulting.de">datenschutz@sdw-consulting.de</a></p>
     `,
   },
 ];
@@ -216,260 +214,272 @@ export const privacyList = [
 export const conditionsList = [
   {
     id: 1,
-    listTitle: "01. General",
+    listTitle: "01. Allgemeines",
     htmlItem: `
-      <p>The following conditions apply to our deliveries and services, including information, offers, advice and repairs. The customer's conditions only apply if and to the extent that we expressly acknowledge them in writing. In accordance with §33 BDSG, we would like to point out that we store and process the data of our clients electronically, insofar as this is necessary for the proper processing of the business relationship.</p>
-      <p>The assignment of claims against us to third parties is excluded. § 354 a HGB remains unaffected.</p>
+      <p>Für unsere Lieferungen und Leistungen, auch Auskünfte, Angebote, Beratungen und Reparaturen, gelten die nachstehenden Bedingungen. Bedingungen des Auftraggebers gelten nur, wenn und soweit wir sie ausdrücklich schriftlich anerkennen. Gem. §33 BDSG weisen wir darauf hin, dass Daten unserer Auftraggeber von uns EDV-mäßig gespeichert und verarbeitet werden, soweit dies zur ordnungsgemäßen Abwicklung der Geschäftsverbindung erforderlich ist.</p>
+      <p>Die Abtretung von Forderungen gegen uns an Dritte ist ausgeschlossen. § 354 a HGB bleibt unberührt.</p>
     `,
   },
   {
     id: 2,
-    listTitle: "02. Documents Provided",
+    listTitle: "02. Überlassene Unterlagen",
     htmlItem: `
       <p>
-      Documents belonging to the contractor's offer, such as illustrations and drawings, are only to be regarded as approximately accurate in terms of dimensions and weight, unless the accuracy of dimensions and weight has been expressly confirmed. We reserve the right of ownership and copyright to all documents provided to the client in connection with the placing of the order, such as calculations, drawings, etc. These documents may not be made accessible to third parties unless we give the client our express written consent. <br /> 
+      Zum Angebot des Werkunternehmers gehörige Unterlagen wie Abbildungen, Zeichnungen sind nur annähernd als maß- und gewichtsgenau anzusehen, es sei denn, die Maß- und Gewichtsgenauigkeit wurde ausdrücklich bestätigt. An allen im Zusammenhang mit der Auftragserteilung dem Auftraggeber überlassenen Unterlagen, wie z.B. Kalkulationen, Zeichnungen etc., behalten wir uns das eigentums- und Urheberrecht vor. Diese Unterlagen dürfen Dritten nicht zugänglich gemacht werden, es sei denn, wir erteilen dem Auftraggeber unsere ausdrückliche schriftliche Zustimmung. <br /> 
       <br />
       
-      If we do not accept the customer's offer within the period specified in Section III.2, these documents must be returned to us immediately. <br /> 
+      Soweit wir das Angebot des Auftraggebers nicht innerhalb der Frist von Abschnitt III .2 annehmen, sind diese Unterlagen uns unverzüglich zurückzusenden. <br /> 
       <br />
       
-      If the order is not placed, customer-specific documents must be returned without being asked and in all other cases immediately upon request.</p>
+      Wird der Auftrag nicht erteilt, so sind kundenindividuell erstellte Unterlagen unaufgefordert und in allen anderen Fällen nach Aufforderung unverzüglich zurückzusenden.</p>
       
     `,
   },
   {
     id: 3,
-    listTitle: "03. Offer and conclusion of contract",
+    listTitle: "03. Angebot und Vertragsabschluss",
     htmlItem: `
-      <p>Our offers are non-binding unless the binding nature of the offer is expressly referred to. <br /> 
+      <p>Unsere Angebote sind unverbindlich, sofern auf die Verbindlichkeit im Angebot nicht ausdrücklich hingewiesen wird. <br /> 
       <br />
-      The order signed by the client is a binding offer. We can accept this offer within two weeks by sending an order confirmation or send the ordered goods or start the services within this period. <br /> 
+      Die vom Auftraggeber unterzeichnete Bestellung ist ein bindendes Angebot. Wir können dieses Angebot innerhalb von zwei Wochen durch Zusendung einer Auftragsbestätigung annehmen oder innerhalb dieser Frist die bestellte Ware zusenden oder mit den Leistungen beginnen. <br /> 
       <br />
-      All information about our goods and services, in particular the illustrations, drawings, weight, measurement and performance information contained in our offers and publications, are to be considered as approximate average values. They are not guaranteed quality features, but descriptions or markings of the goods. Unless limits for permissible deviations are expressly specified in the order confirmation and designated as such, deviations customary in the industry are permissible in any case.</p>
+      Alle Angaben über unsere Waren und Leistungen, insbesondere die in unseren Angeboten und Druckschriften enthaltenen Abbildungen, Zeichnungen, Gewichts- Maß- und Leistungsangaben, sind als annähernd zu betrachtende Durchschnittswerte. Sie sind keine garantierten Beschaffenheitsmerkmale, sondern Beschreibungen oder Kennzeichnungen der Ware. Soweit nicht Grenzen für zulässige Abweichungen ausdrücklich in der Auftragsbestätigung festgelegt und als solche bezeichnet sind, sind in jedem Fall branchenübliche Abweichungen zulässig.</p>
     `,
   },
   {
     id: 4,
-    listTitle: "04. Prices",
+    listTitle: "04. Preise",
     htmlItem: `
       <p>
-      Only the prices stated in our order confirmation are decisive. Additional services will be charged separately. <br /><br />
+      Maßgebend sind ausschließlich die in unserer Auftragsbestätigung genannten Preise. Zusätzliche Leistungen werden gesondert berechnet. <br /><br />
       
-      Our prices are net prices without sales tax, which the customer must also pay in the respective statutory amount. Gross prices including sales tax are quoted to consumers. <br /><br />
+      Unsere Preise sind Nettopreise ohne Umsatzsteuer, die der Auftraggeber in der jeweiligen gesetzlichen Höhe zusätzlich zu entrichten hat. Gegenüber Verbrauchern werden Bruttopreise einschließlich Umsatzsteuer genannt. <br /><br />
       
-      Unless expressly agreed otherwise, our prices apply from the contractor's place of business. The client has additional freight costs, special, over the usual ones <br /><br />
+      Soweit nicht ausdrücklich etwas anderes vereinbart worden ist, gelten unsere Preise ab Betriebssitz des Auftragnehmers. Der Auftraggeber hat zusätzliche Frachtkosen, besondere, über die handelsübliche<br /><br />
       
-      Packaging costs, ancillary fees and public taxes that go beyond the packaging.</p>
+      Verpackung hinausgehende Verpackungskosten, Nebengebühren und öffentliche Abgaben zu tragen.</p>
     `,
   },
   {
     id: 5,
-    listTitle: "05. Costs for uncompleted orders",
+    listTitle: "05. Kosten für nicht durchgeführte Aufträge",
     htmlItem: `
-      <p>Since troubleshooting time is working time, if no warranty work is available, the customer will be billed for the expenses incurred and to be documented if an order cannot be carried out because: <br /><br />
-      • the fault complained of could not be determined in compliance with the rules of technology; <br /><br />
-      • the customer culpably misses the agreed date; <br /><br />
-      • the order was withdrawn during execution; <br /><br />
-      • the reception conditions are not perfect when using corresponding products from the area of ​​information technology / consumer electronics (consumer electronics).</p>
+      <p> Da Fehlersuchzeit Arbeitszeit ist, wird – im Falle, dass keine Gewährleistungsarbeiten vorliegen – der entstan- dene und zu belegende Aufwand dem Kunden in Rechnung gestellt, wenn ein Auftrag nicht durchgeführt werden kann, weil:<br /><br />
+      • der beanstandete Fehler unter Beachtung der Regeln der Technik nicht festgestellt werden konnte; <br /><br />
+      • der Kunde den vereinbarten Termin schuldhaft versäumt; <br /><br />
+      • der Auftrag während der Durchführung zurückgezogen wurde;<br /><br />
+      • die Empfangsbedingungen bei Nutzung entsprechender Produkte aus dem Bereich Informationstechnik / Unterhaltungselektronik (Consumer Electronics) nicht einwandfrei gegeben sind.</p>
     `,
   },
   {
     id: 6,
-    listTitle: "06. Delivery",
+
+    listTitle: "06. Lieferung",
     htmlItem: `
-      <p>1. Delivery periods and deadlines are only deemed to have been agreed after express written confirmation. Delivery periods (deadlines) begin with the date of our order confirmation, but not before all details of the order have been clearly clarified and any necessary certificates have been provided. They are deemed to have been met with the timely notification of readiness for dispatch if the goods cannot be dispatched on time through no fault of our own. <br /><br />
+      <p>1. Lieferfristen und Termine gelten nur nach ausdrücklicher schriftlicher Bestätigungen als vereinbart. Lieferfristen (Termine) beginnen mit dem Datum unserer Auftragsbestätigung, jedoch nicht vor eindeutiger Klärung aller Einzelheiten des Auftrages unter Beibringung etwa erforderlicher Bescheinigungen. Sie gelten mit der fristgerechten Meldung der Versandbereitschaft als eingehalten, wenn die Ware ohne unser Verschulden nicht rechtzeitig abgesendet werden kann. <br /><br />
       
-      2. In the case of deadlines and dates that are not expressly designated as fixed in the order confirmation, the customer can set us a reasonable deadline for delivery/service two weeks after their expiry. We can only be in arrears once this period of grace has expired. <br /><br />
+      2. Bei Fristen und Terminen, die in der Auftragsbestätigung nicht ausdrücklich als fest bezeichnet sind, kann uns der Auftraggeber zwei Wochen nach deren Ablauf eine angemessene Frist zur Lieferung/Leistung setzen. Erst mit Ablauf dieser Nachfrist können wir in Verzug geraten. <br /><br />
       
-      3. Deadlines and deadlines are extended without prejudice to our rights arising from the client's default by the period by which the client fails to meet his obligations to us. In the event of a breach of duty by us - for whatever reason - we are only liable for claims for damages of any kind in accordance with Section XI of these conditions. <br /><br />
+      3. Fristen und Termine verlängern sich unbeschadet unserer Rechte aus Verzug des Auftraggebers um den Zeitraum, um den der Auftraggeber seinen Verpflichtungen uns gegenüber nicht nachkommt. Im Falle einer Pflichtverletzung durch uns – gleich aus welchem Grunde – haften wir für Schadensersatzansprüche gleich welcher Art nur nach Maßgabe von Abschnitt XI dieser Bedingungen. <br /><br />
       
-      4. We reserve the right to supply ourselves. <br /><br />
+      4. Selbstbelieferung bleibt vorbehalten. <br /><br />
       
-      5. The customer is entitled to withdraw from the contract in accordance with the statutory provisions, unless the impediment is only of a temporary nature and the postponement of the performance date is reasonable for the customer. <br /><br />
+      5. Der Auftraggeber ist zum Rücktritt vom Vertrag nach den gesetzlichen Bestimmungen berechtigt, es sei denn, das das Hindernis nur vorübergehender Natur und die Verschiebung des Leistungstermins dem Auftraggeber zumutbar ist.<br /><br />
       
-      6. We are entitled to make partial deliveries and partial services if these are reasonable for the customer. <br /><br />
+      6. Wir sind zu Teillieferungen und Teilleistungen berechtigt, wenn diese dem Auftraggeber zumutbar sind.<br /><br />
       
-      7. If the customer has a contractually agreed or statutory right of withdrawal and we set the customer a reasonable deadline for exercising this right, the right of withdrawal expires if the withdrawal is not declared before the deadline has expired. <br /><br />
+      7. Steht dem Auftraggeber ein vertraglich vereinbartes oder gesetzliches Rücktrittsrecht zu und setzten wir dem Auftraggeber für dessen Ausübung eine angemessene Frist, so erlischt das Rücktrittsrecht, wenn nicht der Rücktritt vor dem Ablauf der Frist erklärt wird. <br /><br />
       
-      8. The agreed delivery or completion date is only binding if compliance is not made impossible by circumstances for which the contractor is not responsible. Such circumstances also include changes and the absence of documents (building permit, etc.) that are necessary for the execution of the order. <br /><br />
+      8. Der vereinbarte Liefer- oder Fertigstellungstermin ist nur dann verbindlich, wenn die Einhaltung nicht durch Umstände, die der Werkunternehmer nicht zu vertreten hat, unmöglich gemacht wird. Als solche Umstände sind auch Änderungen sowie Fehlen von Unterlagen (Baugenehmigung u.a.) anzusehen, die zur Auftragsdurchfrührun notwendig sind. <br /><br />
       
-      9. The customer only has the right to claim from § 8 No. 3 VOB/B in entrepreneurial transactions in cases of delay (when carrying out construction work) if a time according to the calendar was agreed in writing for the start and completion and the customer after the expiry within this time has set a reasonable grace period and declared that he will withdraw the order after the grace period has expired without result.</p>
+      9. Der Kunde hat im Unternehmerverkehr in Fällen des Verzugs (bei der Erstellung von Bauleistungen) nur dann den Anspruch aus § 8 Nr. 3 VOB/B, wenn für Beginn und Fertigstellung eine Zeit nach dem Kalender schriftlich vereinbart war und der Kunde nach Ablauf dieser Zeit eine angemessene Nachfrist gesetzt und erklärt hat, dass er nach fruchtlosem Ablauf der Frist den Auftrag entziehen wird.</p>
     `,
   },
   {
     id: 7,
-    listTitle: "07. Dispatch, Passing of Risk and Default of Acceptance",
+
+    listTitle: "07. Versand, Gefahrenübergang und Annahmeverzug",
     htmlItem: `
-      <p>Dispatch and transport are always at the customer's risk. The risk passes to the customer, even in the case of partial deliveries, as soon as the consignment has been handed over to the person carrying out the transport or has left our warehouse for the purpose of dispatch or, in the case of delivery ex works, our works. <br /><br />
+      <p>Versand und Transport erfolgen stets auf Gefahr des Auftraggebers. Die Gefahr geht, auch bei Teillieferungen, auf den Auftraggeber über, sobald die Sendung an die den Transport ausführende Person übergeben worden ist oder zwecks Versendung unser Lager oder bei Lieferung ab Werk unser Werk verlassen hat. <br /><br />
       
-      If the dispatch of the delivery is delayed for reasons that lie with the customer, the risk of accidental deterioration and accidental loss passes to the customer upon notification of readiness for dispatch. The customer bears storage costs after the transfer of risk. We are entitled to charge 1% of the gross order amount monthly for this. Further claims remain unaffected. If the customer is in default of acceptance, we are entitled to demand compensation for the expenses incurred by us. With the occurrence of default in acceptance of deliveries, the risk of accidental deterioration and accidental loss passes to the customer.</p>
+      Verzögert sich die Versendung der Lieferung aus Gründen, die beim Auftraggeber liegen, geht die Gefahr der zufälligen Verschlechterung und des zufälligen Untergangs mit Anzeige der Versandbereitschaft an den Auftraggeber über. Lagerkosten nach Gefahrenübergang trägt der Auftraggeber. Wir sind berechtigt, hierfür 1 % der Bruttoauftragssumme monatlich zu berechnen. Weitergehende Ansprüche bleiben unberührt.Kommt der Auftraggeber in Annahmeverzug so sind wir berechtigt, Ersatz der uns entstehenden Aufwendungen zu verlangen. Mit Eintritt des Annahmeverzuges bei Lieferungen geht die Gefahr der zufälligen Verschlechterung und des zufälligen Untergangs auf den Auftraggeber über.</p>
     `,
   },
   {
     id: 8,
-    listTitle: "08. Payment",
+
+    listTitle: "08. Zahlung",
     htmlItem: `
       <p>
-      Payments are to be made in euros and must be free of postage and expenses. Bills of exchange and checks only count as payment after they have been redeemed and are accepted without the obligation to present them in good time and raise a protest. <br /><br />
+      Zahlungen sind in Euro zu leisten und haben porto- und spesenfrei zu erfolgen. Wechsel und Schecks gelten erst nach Einlösung als Zahlung und werden ohne Verpflichtungen zur rechtzeitigen Vorzeigung und Protesterhebung angenommen. <br /><br />
       
-      Payments must be made net immediately after invoicing, in each case from the invoice date. If payment deadlines are exceeded, we are entitled to charge interest at the respective bank rates for overdrafts, but at least 5 percentage points above the interest rate for the marginal refinancing facility of the European Central Bank (SRF rate). Each party to the contract is entitled to prove a different interest rate disadvantage. Claims in the event of default remain unaffected. The receipt of the money and not its dispatch is decisive for the timeliness of the payment. <br /><br />
+      Zahlungen haben sofort nach Rechnungsstellung netto, jeweils ab Rechnungsdatum, zu erfolgen. Bei Überschreitung von Zahlungsfristen sind wir berechtigt, Zinsen in Höhe der jeweiligen Banksätze für Überziehungskredite, mindestens aber in Höhe von 5%-Punkten über dem Zinssatz für Spitzenrefinanzierungsfazilität der Europäischen Zentralbank (SRF-Satz) zu berechnen. Jeder Vertragsteil ist berechtigt, einen anderen Zinsnachteil nachzuweisen. Ansprüche im Verzugsfall bleiben unberührt. Für die Rechtzeitigkeit der Zahlung kommt es auf den Eingang des Geldes und nicht dessen Absendung an. <br /><br />
       
-      Insofar as costs and interest are incurred, we are entitled to offset payments first against the costs, then against the interest and finally against the main service. <br /><br />
+      Soweit Kosten und Zinsen anfallen, sind wir berechtigt, Zahlungen zunächst auf die Kosten, dann auf die Zinsen und zuletzt auf die Hauptleistung anzurechnen. <br /><br />
       
-      The customer only has the right to offset if his counterclaims have been legally established or are undisputed. The customer is only authorized to exercise a right of retention insofar as his counterclaim is based on the same contractual relationship. In the case of merchants, the customer may only withhold payments or set off against counterclaims if these counterclaims are undisputed or have been legally established. <br /><br />
+      Dem Auftraggeber steht das Recht zur Aufrechnung nur zu, wenn seine Gegenansprüche rechtskräftig festgestellt oder unbestritten sind. Zur Ausübung eines Zurückbehaltungsrechts ist der Auftraggeber nur insoweit befugt, als sein Gegenanspruch auf dem gleichen Vertragsverhältnis beruht. Bei Kaufleuten ist Zurückhaltung von Zahlungen wegen oder die Aufrechnung mit Gegenansprüchen durch den Auftraggeber nur zulässig, wenn diese Gegenansprüche unbestritten oder rechtskräftig festgestellt sind. <br /><br />
       
-      All of our claims – including those from other contracts with the client – ​​are due immediately, regardless of the term of any accepted and credited bills of exchange, in the event of default in payment, protest of bills of exchange or cessation of payment by the client or if we become aware of other circumstances that give rise to justified and significant doubts give rise to the solvency or creditworthiness of the customer. This also applies if these circumstances already existed on the part of the client when the contract was concluded, but were not known to us or should not have been known to us. In all cases mentioned, we are also entitled to make outstanding deliveries only against advance payment or security and, if the advance payment or security is not provided within two weeks, withdraw from the contract without setting a new deadline. Further claims remain unaffected.</p>
+      Alle unsere Forderungen – auch solche aus anderen Verträgen mit dem Auftraggeber – werden unabhängig von der Laufzeit etwa hereingenommener und gutgeschriebener Wechsel sofort fällig im Falle des Zahlungsverzuges, Wechselprotestes oder der Zahlungseinstellung des Auftraggeber oder wenn uns sonst Umstände bekannt werden, die zu begründeten und erheblichen Zweifeln an der Zahlungsfähigkeit oder Kreditwürdigkeit des Auftraggebers Anlasse geben. Das gilt auch dann, wenn diese Umstände auf Seiten des Auftraggebers schon bei Vertragsabschluss vorlagen, uns jedoch nicht bekannt waren oder bekannt sein mussten. In allen genannten Fällen sind wir auch berechtigt, noch ausstehende Lieferungen nur gegen Vorauszahlung oder Sicherheitsleistung auszuführen und, wenn die Vorauszahlung oder Sicherheit nicht binnen zwei Wochen geleistet wird, ohne erneute Fristsetzung vom Vertrag zurückzutreten. Weitergehende Ansprüche bleiben unberührt.</p>
     `,
   },
   {
     id: 9,
-    listTitle: "09. Retention of Title",
+
+    listTitle: " 09. Eigentumsvorbehalt",
     htmlItem: `
-      <p>All delivered goods remain our property (reserved goods) until all claims have been settled, regardless of the legal basis, including future or conditional claims, from contracts concluded at the same time or later. This also applies if payments are made on specially designated claims. <br /><br />
+      <p>Alle gelieferten Waren bleiben unser Eigentum (Vorbehaltsware) bis zur Erfüllung sämtlicher Forderungen, gleich aus welchem Rechtsgrund, einschließlich der künftig entstehenden oder bedingten Forderung, aus gleichzeitig oder später abgeschlossenen Verträgen. Das gilt auch, wenn Zahlungen auf besonders bezeichnete Forderungen geleistet werden. <br /><br />
       
-      Treatment and processing of the reserved goods are carried out for us as the manufacturer within the meaning of Section 950 of the German Civil Code, without any obligation on our part. The processed goods are considered reserved goods within the meaning of paragraph 1. If the customer processes, combines or mixes the reserved goods with other goods, we are entitled to co-ownership of the new item in the ratio of the invoice value of the reserved goods to the invoice value of the other goods used. If our ownership expires as a result of connection or mixing, the customer hereby transfers the ownership rights to which he is entitled to the new stock or the item to the extent of the invoice value of the reserved goods and stores them for us free of charge. The resulting co-ownership rights are considered reserved goods within the meaning of paragraph 1. <br /><br />
+      Be- und Verarbeitung der Vorbehaltsware erfolgen für uns als Hersteller im Sinne von § 950 BGB, ohne uns zu verpflichten. Die verarbeitete Ware gilt als Vorbehaltsware im Sinne des Abs. 1. Bei Verarbeitung, Verbindung und Vermischung der Vorbehaltsware mit anderen Waren durch den Auftraggeber steht uns das Miteigentum an der neuen Sache zu im Verhältnis des Rechnungswetes der Vorbehaltsware zum Rechnungswert der anderen verwendeten Waren. Erlischt unser Eigentum durch Verbindung oder Vermischung, so überträgt der Auftraggeber bereits jetzt die ihm zustehenden Eigentumsrechte an dem neuen Bestand oder der Sache im Umfang des Rechnungswetes der Vorbehaltsware und verwahrt sie unentgeltlich für uns. Die hiernach entstehenden Miteigentumsrechte gelten als Vorbehaltsware im Sinne des Abs. 1. <br /><br />
 
-      The customer is only entitled to resell, process or combine with other items or otherwise install the reserved goods within the framework of proper business operations and as long as he is not in default (hereinafter also referred to as resale). Any other disposal of the reserved goods is not permitted. Seizures or other access to the goods subject to retention of title by third parties must be reported to us immediately. All intervention costs shall be borne by the client, insofar as they cannot be collected by the third party (opponent of the objection action) and the third-party objection action has been legitimately raised. If the customer pays the purchase price to his customer, he has reserved title to the reserved goods under the same conditions, under which we have reserved ownership upon delivery of the reserved goods; however, the customer is not obliged to reserve ownership of the claims against his customer that will only arise in the future. Otherwise the client is not authorized to resell. <br /><br />
+      Der Auftraggeber ist nur im Rahmen eines ordnungsgemäßen Geschäftsbetriebes und solange er nicht im Verzug ist berechtigt, die Vorbehaltsware weiter zu veräußern, zu verarbeiten oder mit anderen Sachen zu verbinden oder sonst einzubauen (nachstehend auch kurz Weiterveräußerung genannt). Jede anderweitige Verfügung über die Vorbehaltsware ist unzulässig. Von dritter Seite vorgenommene Pfändungen oder sonstige Zugriffe auf die Vorbehaltsware sind uns unverzügliche anzuzeigen. Alle Interventionskosten gehen zu Lasten des Auftraggebers, soweit sie von dem Dritten (Gegner der Widerspruchsklage) nicht eingezogen werden können und die Drittwiderspruchsklage berechtigterweise erhoben worden ist. Stunden der Auftraggeber seinem Abnehmer den Kaufpreis, so hat sich gegenüber diesem das Eigentum an der Vorbehaltsware zu den gleichen Bedingungen vorbehalten, unter denen wir uns das Eigentum bei Lieferung der Vorbehaltsware vorbehalten haben; jedoch ist der Auftraggeber nicht verpflichtet, sich auch das Eigentum hinsichtlich der gegenüber seinem Abnehmer erst künftig entstehenden Forderungen vorzubehalten. Anderenfalls ist der Auftraggeber zur Weiteerveräußerung nicht ermächtigt. <br /><br />
 
-      The customer's claims from the resale of the reserved goods are hereby assigned to us. They serve as security to the same extent as the reserved goods. The customer is only entitled and authorized to resell if it is ensured that the claims to which he is entitled are transferred to us. <br /><br />
+      Die Forderungen des Auftraggebers aus der Weiterveräußerung der Vorbehaltsware werden bereits hiermit an uns abgetreten. Sie dienen in demselben Umfange zur Sicherung wie die Vorbehaltsware. Der Auftraggeber ist zu einer Weiterveräußerung nur berechtigt und ermächtigt, wenn sichergestellt ist, dass die ihm daraus zustehenden Forderungen auf uns übergeben. <br /><br />
 
-      If the customer sells the goods subject to retention of title together with other goods not supplied by us for a total price, the claim from the sale is assigned to the amount of the invoice value of our respective goods subject to retention of title sold. <br /><br />
+      Wird die Vorbehaltsware vom Auftraggeber zusammen mit anderen, nicht von uns gelieferten Waren zu einem Gesamtpreis veräußert, so erfolgt die Abtretung der Forderung aus der Veräußerung in Höhe des Rechnungswertes unserer jeweils veräußerten Vorbehaltsware. <br /><br />
 
-      If the assigned claim is included in a current account, the client hereby assigns to us a part of the balance corresponding to the amount of this claim, including the final balance from the current account. <br /><br />
+      Wird die abgetretene Forderung in eine laufende Rechnung aufgenommen, so tritt der Auftraggeber bereits hiermit einen der Höhe nach dieser Forderung entsprechenden Teil des Saldos einschließlich des Schlusssaldos aus dem Kontokorrent an uns ab.<br /><br />
 
-      The customer is authorized to collect the claims assigned to us until we revoke this. We are entitled to withdraw if the customer does not properly meet his payment obligations from the business relationship with us or if we become aware of circumstances that are likely to significantly reduce the customer's creditworthiness. If the prerequisites for exercising the right of cancellation are met, the customer must, at our request, immediately inform us of the assigned claim and its debtors, provide us with all information required for collection of the claim; to hand over the relevant documents and to notify the debtor of the assignment. We are also entitled to notify the debtor of the assignment ourselves. <br /><br />
+      Der Auftraggeber ist bis zu unserem Widerruf zur Einziehung der an uns abgetretenen Forderungen ermächtigt. Wir sind zum Widerruf berechtigt, wenn der Auftraggeber seinen Zahlungsverpflichtungen aus der Geschäftsverbindung mit uns nicht ordnungsgemäß nachkommt oder uns Umstände bekannt werden, die die Kreditwürdigkeit des Auftraggebers erheblich zu mindern geeignet sind. Liegen die Voraussetzungen für die Ausübung des Widerrufsrechtes vor, hat der Auftraggeber auf unser Verlangen hin uns unverzüglich die abgetretenen Forderung und deren Schuldner bekannt zu geben, alle zum Einzug der Forderungen erforderlichen Angaben zu machen, uns; die dazugehörigen Unterlagen auszuhändigen und dem Schuldner die Abtretung anzuzeigen. Wir sind auch selbst zur Abtretungsanzeige an den Schuldner berechtigt. <br /><br />
 
-      If the value (in the case of claims the nominal value, in the case of movable property the estimated value) of the securities existing for us exceeds the secured claims by a total of more than 50%. H., we are obliged to release securities of our choice at the request of the customer. <br /><br />
+      Übersteigt der Wert (bei Forderungen der Nennwert, bei beweglichen Sachen der Schätzwert) der für uns bestehenden Sicherheiten die gesicherten Forderungen insgesamt um mehr als 50 v. H., sind wir auf Verlangen des Auftraggebers insoweit zur Freigabe von Sicherheiten nach unsere Wahl verpflichtet. <br /><br />
 
-      If we assert the retention of title, this is only considered a withdrawal from the contract if we expressly declare this in writing. The customer's right to own the reserved goods expires if he does not fulfill his obligations from this or another contract.</p>
+      Wenn wir den Eigentumsvorbehalt geltend machen, so gilt dies nur dann als Rücktritt vom Vertrag, wenn wir dies ausdrücklich schriftlich erklären. Das Recht des Auftraggebers, die Vorbehaltsware zu besitzen, erlischt, wenn er seine Verpflichtungen aus diesem oder einem anderen Vertrage nicht erfüllt.</p>
     `,
   },
   {
     id: 10,
-    listTitle: "10. Acceptance",
+
+    listTitle: "10. Abnahme",
     htmlItem: `
-    <p>After the work has been carried out, we will carry out an acceptance test with you. <br /><br />
+    <p>Nach Durchführung der Arbeiten führen wir mit Ihnen eine Abnahme durch. <br /><br />
     
-    The work is accepted and acceptance has taken place when the work has successfully passed the acceptance test. Acceptance cannot be refused due to a defect that only slightly reduces the value or suitability for use. If you refrain from acceptance or do not attend this appointment when requested, we are entitled to carry it out without you and you are obliged to accept the results of the acceptance. You shall bear any costs incurred as a result of a delay in acceptance for which we are not responsible. In any case, the work or person is deemed to have been accepted when you have put the work or work into use.</p>
+    Die Arbeit ist abgenommen und die Abnahme ist erfolgt, wenn die Arbeit den Abnahmetest erfolgreich bestanden hat. Die Abnahme kann wegen eines Mangels, der den Wert oder die Gebrauchstauglichkeit nur unerheblich mindert, nicht verweigert werden. Wenn Sie auf eine Abnahme verzichten oder nach Aufforderung an diesem Termin nicht teilnehmen, sind wir berechtigt, diesen auch ohne Sie durchzuführen und Sie sind verpflichtet, die Resultate der Abnahme zu akzeptieren. Kosten, die durch eine von uns nicht verschuldete Verzögerung der Abnahme entstehen, sind von Ihnen zu tragen. In jedem Fall gilt die Arbeit bzw. Wer als abgenommen, wenn Sie Arbeit bzw. Werk in Gebrauch genommen haben.</p>
     `,
   },
   {
     id: 11,
-    listTitle: "11. Warranty and obligation to give notice of defects",
+
+    listTitle: "11. Gewährleistung und Rügepflicht",
     htmlItem: `
-    <p>1. If the client is a merchant, he is obliged to carefully inspect the delivered goods for completeness and correctness immediately after receipt. The complaint period within the meaning of Section 377 Paragraphs 1 and 2 of the German Commercial Code is 8 days; the receipt of a written message (also by fax) is decisive. The limitation period for claims for defects from goods is two years for consumers and one year for entrepreneurs; this does not apply to a defect that consists of a right in rem of a third party, on the basis of which the return of the item can be demanded. <br /><br />
+    <p>1. Ist der Auftraggeber ein Kaufmann, ist er verpflichtet, die gelieferten Waren unverzüglich nach Eintreffen bei Ihm auf Vollständigkeit und Ordnungsmäßigkeit sorgfältig zu untersuchen. Die Rügefrist im Sinne von § 377 Abs. 1 und 2 Handelsgesetzbuch beträgt 8 Tage; maßgeblich ist der Zugang einer schriftlichen Nachricht (auch per Telefax). Die Verjährungsfrist für Mängelansprüche aus Waren beträgt bei Verbrauchern zwei Jahre, bei Unternehmern ein Jahr; dies gilt nicht bei einem Mangel, der in einem dinglichen Recht eines Dritten besteht, auf Grund dessen Herausgabe der Sache verlangt werden kann. The complaint period within the meaning of Section 377 Paragraphs 1 and 2 of the German Commercial Code is 8 days; the receipt of a written message (also by fax) is decisive. The limitation period for claims for defects from goods is two years for consumers and one year for entrepreneurs; this does not apply to a defect that consists of a right in rem of a third party, on the basis of which the return of the item can be demanded. <br /><br />
 
-    2. The goods complained about are to be returned to us in the original or equivalent packaging for inspection. In the event of a justified and timely notice of defects, we will rectify the defects by means of supplementary performance, at our discretion, by rectifying the defect or by delivering an item free of defects. We shall bear the costs of rectifying the defect insofar as these do not increase as a result of the delivery item being sent by the customer to a party other than has been taken to the place of performance. We are entitled to refuse supplementary performance in accordance with the statutory provisions. If supplementary performance is refused, fails or is unreasonable for the client, the client is entitled to withdraw from the contract or to reduce the price (reduction of the remuneration) in accordance with the provisions of Section 3 below. <br /><br />
+    2. Die beanstandete Ware ist uns in der Original- oder einer gleichwertigen Verpackung zur Überprüfung zurückzusenden. Bei berechtigter und fristgemäßer Mängelrüge beheben wir die Mängel im Wege der Nacherfüllung nach unserer Wahl durch die Beseitigung des Mangels oder die Lieferung einer mangelfreien Sache., dabei tragen wir die Mangelbeseitigungskosten soweit sich diese nicht dadurch erhöhen, dass der Liefergegenstand vom Auftraggeber an einen anderen als den Erfüllungsort verbracht worden ist. Wir sind berechtigt, nach den gesetzlichen Bestimmungen eine Nacherfüllung zu verweigern. Im Falle der Verweigerung der Nacherfüllung, ihres Fehlschlagens oder ihrer Unzumutbarkeit für den Auftraggeber ist dieser zum Rücktritt oder zur Minderung (Herabsetzung der Vergütung) gemäß der Bestimmung der nachfolgenden Ziff. 3 berechtigt. Eine Gewährleistung für Mängel am gelieferten Produkt oder an Produktteilen, die ihre Ursache im üblichen Verschleiß haben, ist ausgeschlossen. <br /><br />
 
-    3. The customer is only entitled to withdraw from the contract – insofar as withdrawal is not legally excluded – or to reduce the purchase price after the unsuccessful expiry of a reasonable deadline set by him for supplementary performance, unless the setting of a deadline is unnecessary according to the statutory provisions ( § 323 paragraph 2; § 440 BGB, § 441 paragraph 1 BGB). In the event of withdrawal, the customer is liable for deterioration, loss and non-utilization not only for his own customary care, but for any negligent and intentional fault. <br /><br />
+    3. Zum Rücktritt vom Vertrag – soweit ein Rücktritt nicht gesetzlich ausgeschlossen ist – oder zur Minderung des Kaufpreises ist der Auftraggeber erst nach erfolglosem Ablauf einer von ihm gesetzten angemessenen Frist zur Nacherfüllung berechtigt, es sei denn, die Fristsetzung ist nach den gesetzlichen Bestimmungen entbehrlich (§ 323 abs. 2; § 440 BGB, § 441 Abs. 1 BGB). Im Fall des Rücktritts haftet der Auftraggeber für Verschlechterung, Untergang und nicht gezogene Nutzungen nicht nur für die eigenüblichen Sorgfalt, sondern für jedes fahrlässige und vorsätzliche Verschulden. <br /><br />
 
-    The provisions in Section XI apply to any claims for damages and reimbursement of expenses by the customer. <br /><br />
+    Für etwaige Schadensersatzansprüche und Aufwendungsersatzansprüche des Auftraggebers gelten die Bestimmungen in Abschnitt XI. <br /><br />
 
-    In the event of fraudulent concealment of a defect or in the event of the assumption of a guarantee of a quality of the delivered item at the time of the transfer of risk within the meaning of § 444 BGB (declaration by the seller that the object of purchase has a specific property at the transfer of risk and that the seller is independent of fault for all the consequences of their absence) the rights of the client are based exclusively on the statutory provisions. <br /><br />
+    Im Falle des arglistigen Verschweigens eines Mangels oder im Falle der Übernahme einer Garantie einer Beschaffenheit der gelieferten Sache zum Zeitpunkt des Gefahrenübergangs im Sinne von § 444 BGB (Erklärung des Verkäufers, dass der Kaufgegenstand bei Gefahrenübergang eine bestimmt Eigenschaft hat und dass der Verkäufer verschuldensunabhängig für all Folgen ihres Fehlens einstehen will) richten sich die Rechte des Auftraggeber ausschließlich nach den gesetzlichen Bestimmungen. <br /><br />
 
-    In addition to the statutory reasons for refusal, we are also entitled to refuse supplementary performance if and for as long as the customer has not sent us the goods complained about at our request; the customer is not entitled to a right of withdrawal or a right to a price reduction due to such a refusal. The customer is not entitled to rights based on defects if interventions or changes were made to the goods without our consent, unless the customer proves that the defect was not caused by these interventions or changes. <br /><br />
+    Wir sind – neben den gesetzlichen Verweigerungsgründen – zur Verweigerung der Nacherfüllung auch dann und solange berechtigt, wie uns der Auftraggeber nicht auf unsere Aufforderung hin die beanstandete Ware zugesandt hat; ein Rücktrittsrecht oder Minderungsrecht steht dem Auftraggeber wegen einer solchen Verweigerung nicht zu. Mängelrechte stehen dem Auftraggeber nicht zu, wenn ohne unsere Zustimmung Eingriffe oder Änderungen an der Ware vorgenommen wurden, es sei denn, der Auftraggeber weist nach, dass der Mangel nicht durch diese Eingriffe oder Änderungen verursacht wurde. <br /><br />
 
-    If the end customer of the object of purchase in the supply chain is a consumer, the customer is entitled to recourse under the statutory provisions (§§ 478, 479 BGTB) under the further conditions of § 377 of the German Commercial Code, but the customer is entitled to any claims for damages and Claims for reimbursement of expenses only in accordance with Section XI. <br /><br />
+    Handelt es sich bei dem Endabnehmer des Kaufgegenstandes in der Lieferkette um einen Verbrauer, so ist der Auftraggeber – unter den weiteren Voraussetzungen des § 377 Handelsgesetzbuch – zum Rückgriff nach den gesetzlichen Bestimmungen (§§ 478,479 BGTB) berechtigt, jedoch stehen dem Auftraggeber etwaige Schadensersatzansprüche und Aufwendungsersatzansprüche nur nach Maßgabe von Abschnitt XI zu. <br /><br />
 
-    A defect does not exist if the delivered goods deviate from the order confirmation as is customary in the industry. In the case of goods that have been sold as declassified or used material, the buyer is not entitled to any claims due to any defects. <br /><br />
+    Ein Mangel liegt nicht vor bei branchenüblichen Abweichungen der gelieferten Ware von der Auftragsbestätigung. Bei Waren, die als deklassiertes oder gebrachtes Material verkauft worden sind, stehen dem Käufer keine Ansprüche wegen etwaiger Mängel zu. <br /><br />
 
-    If our operating or maintenance instructions are not followed, changes are made to the deliveries or services, parts are replaced or consumables are used that do not correspond to the original specifications, all warranties are void unless the customer can prove that the defect is not based on this. <br /><br />
+    Wenn unsere Betriebs- oder Wartungsanweisungen nicht befolgt, Änderungen an den Lieferungen bzw. Leistungen vorgenommen, Teile ausgewechselt oder Verbrauchsmaterialien verwendet werden, die nicht den Originalspezifikationen entsprechen, entfällt jede Gewährleistung, es sei denn, dass der Auftraggeber nachweist, dass der Mangel hierauf nicht beruht. <br /><br />
 
-    In the case of work, we provide a guarantee by reworking the work free of charge and by reworking or replacing defective material free of charge if you can prove to us that the work was carried out defectively or not professionally. If the rectification fails twice, you have the right to demand a reduction in payment or cancellation of the order. If defects occur that are not caused by improper work, in particular defects due to natural wear and tear as a result of improper treatment or other third-party influences, these are not covered by the warranty. However, the client is only entitled to any claims for damages and reimbursement of expenses in accordance with Section XI. The statute of limitations for warranty claims is 2 years for consumers.</p>
+    Bei Arbeiten leisten wir Gewähr durch kostenlose Nachbesserung der Arbeiten sowie durch kostenlose Nachbesserung oder Austausch mangelhaften Materials, wenn Sie uns nachweisen, dass eine Arbeit mangelhaft oder nicht fachgerecht durchgeführt wurde. ‚Bei zweimaligem Fehlschalgen der Nachbesserung habe Sie das Recht, Herabsetzung der Vergütung oder Rückgängigmachung des Auftrages zu verlangen. Treten Mängel auf, die nicht durch eine unsachgemäße Arbeit verursacht sind, insbesondere also Mängel infolge natürlicher Abnutzung in Folge unsachgemäßer Behandlung oder andere Dritteinflüsse, fallen diese nicht unter die Gewährleistung. Jedoch stehen dem Auftraggeber etwaige Schadensersatzansprüche und Aufwendungsersatz-ansprüche nur nach Maßgabe von Abschnitt XI zu. Die Verjährung für Gewährleistungsansprüche beträgt bei Verbrauchern 2 Jahre. Bei Unternehmern beträgt die Verjährung für Gewährleistungsansprüche 1 Jahr.</p>
     `,
   },
   {
     id: 12,
-    listTitle: "12. Warranty and Liability",
+
+    listTitle: "12. Gewährleistung und Haftung",
     htmlItem: `
-      <p>The warranty period for all non-construction work, repairs, etc. and for built-in material is 1 year. <br /><br />
+      <p>Die Gewährleistungsfrist für alle Arbeitsleistungen, Reparaturen usw., die keine Bauleistungen sind, und für eingebautes Material beträgt 1 Jahr. <br /><br />
       
-      The VOB/B as a whole as well as excerpts of the VOB/C apply to construction work in commercial transactions. <br /><br />
+      Für Bauleistungen gilt im Unternehmerverkehr die VOB/B als Ganzes sowie auszugsweise die VOB/C.  <br /><br />
       
-      If there is a defect, the customer must set the contractor a reasonable deadline for supplementary performance. In particular, the customer must ensure that the object complained of is available to the contractor or his assignment for examination and subsequent performance. <br /><br />
+      Bei Vorliegen eines Mangels hat der Kunde dem Werkunternehmer eine angemessene Frist zur Nacherfüllung zu setzen. Der Kunde hat insbesondere dafür Sorge zu tragen, dass der beanstanden Gegenstand zur Untersuchung und Durchführung der Nacherfüllung dem Werkunternehmer oder dessen Beauftragung zur Verfügung steht.<br /><br />
       
-      If the contractor is obliged to provide supplementary performance, he can choose to do so by eliminating the defect or by reproducing the work. <br /><br />
+      Ist der Werkunternehmer zur Nacherfüllung verpflichtet, kann er diese nach eigener Wahl durch Beseitigung des Mangels oder durch Neuherstellung des Werkes erbringen. <br /><br />
       
-      If the supplementary performance fails, the customer is entitled to reduce the payment or to withdraw from the contract. Withdrawal is excluded if the breach of duty by the company is irrelevant or if the subject of the contract is construction work. <br /><br />
+      Schlägt die Nacherfüllung fehl, ist der Kunde berechtigt, die Vergütung zu mindern oder vom Vertrag zurückzutreten. Der Rücktritt ist ausgeschlossen bei Unerheblichkeit der Pflichtverletzung des Unternehmens oder wenn Gegenstand des Vertrages eine Bauleistung ist.<br /><br />
       
-      In the event of injury to life, limb or health, which is based on a negligent breach of duty by the contractor or an intentional or negligent breach of duty by his legal representative or vicarious agent, the contractor is liable in accordance with the statutory provisions. The same applies to other damage caused by a grossly negligent breach of duty by the contractor or an intentional or grossly negligent breach of duty by his legal representative or vicarious agent. For other damage based on the violation of essential obligations as a result of slight negligence on the part of the contractor, his legal representatives or vicarious agents, <br /><br />
+      Bei einer Verletzung des Lebens, des Körpers oder der Gesundheit, die auf einer fahrlässigen Pflichtverletzung des Werkunternehmers oder einer vorsätzlichen oder fahrlässigen Pflichtverletzung seines gesetzlichen Vertreters oder Erfüllungsgehilfen beruht, haftet der Werkunternehmer nach den gesetzlichen Bestimmungen .Das Gleiche gilt für sonstige Schäden, die auf einer grob fahrlässigen Pflichtverletzung des Werkunternehmers oder auf einer vorsätzlichen oder grob fahrlässigen Pflichtverletzung seines gesetzlichen Vertreters oder Erfüllungsgehilfen beruhen. Für sonstige Schäden, die auf die Verletzung wesentlicher Pflichten infolge leichter Fahrlässigkeit des Werkunternehmers seiner gesetzlichen Vertreter oder Erfüllungsgehilfen beruhen, ist die Haftung des Werkunternehmers auf den vorhersehbaren vertragstypischen Schaden bis zu maximal zum doppelten Wert des Auftragsgegenstandes begrenzt. <br /><br />
       
-      Claims for damages for other damages in the event of a breach of secondary obligations in the event of slight negligence are excluded. The contractor is not liable for other damages resulting from delay that are based on simple negligence; the statutory rights of the customer after a reasonable period of grace remain unaffected. The above exclusions and/or limitations of liability do not apply if the contractor has fraudulently concealed a defect or has assumed an independent guarantee for the quality of the item. Claims by the customer for reimbursement of futile expenses instead of claims for damages in lieu of performance remain unaffected. <br /><br />
+      Ausgeschlossen sind Schadenersatzansprüche für sonstige Schäden bei der Verletzung von Nebenpflichten im Falle leichter Fahrlässigkeit. Der Werkunternehmer haftet nicht für sonstige Schäden aus Verzug, die auf einfacher Fahrlässigkeit beruhen; die gesetzlichen Rechte des Kunden nach Ablauf einer angemessenen Nachfrist bleiben davon unberührt. Die vorstehenden Haftungsausschlüsse und/oder Beschränkungen gelten nicht, sofern der Werkunternehmer einen Mangel arglistig verschwiegen oder eine selbstständige Garantie für die Beschaffenheit der Sache übernommen hat. Ansprüche des Kunden auf Ersatz vergeblicher Aufwendungen statt des Schadenersatzanspruchs statt der Leistung bleiben unberührt. <br /><br />
       
-      Claims for defects for all new items sold expire in 2 years, for used items in 1 year after delivery of the item. Obvious defects must be reported to the seller within two weeks of delivery - based on the dispatch of the notification - otherwise the seller is released from liability for defects. <br /><br />
+      Mängelansprüche für alle verkauften neuen Gegenstände verjähren in 2 Jahren, bei gebrauchten Gegenständen in 1 Jahr seit Ablieferung der Sache. Offensichtliche Mängel müssen innerhalb von zwei Wochen nach Ablieferung – bezogen auf die Absendung der Anzeige – gegenüber dem Verkäufer gerügt werden, ansonsten ist der Verkäufer von der Mängelhaftung befreit. <br /><br />
       
-      If the delivery item is defective, the buyer has the following rights: <br /><br />
+      Ist der Liefergegenstand mangelhaft, so hat der Käufer folgende Rechte: <br /><br />
       
-      The seller is obliged to subsequent performance and will provide this by eliminating the defect or by delivering a defect-free item. If the repair fails, the buyer is entitled to withdraw from the contract or to reduce the purchase price. Withdrawal is excluded if the seller's breach of duty is only insignificant. <br /><br />
+      Der Verkäufer ist zur Nacherfüllung verpflichtet und wird diese durch Beseitigung des Mangels oder die Lieferung einer mangelfreien Sache erbringen. Schlägt die Nachbesserung fehl, so ist der Käufer berechtigt, vom Vertrag zurückzutreten oder den Kaufpreis zu mindern. Der Rücktritt ist ausgeschlossen, wenn die Pflichtverletzung des Verkäufers nur unerheblich ist. <br /><br />
       
-      There is no defect in the delivery item: in the case of errors caused by damage, incorrect connection or incorrect operation by the customer, in the event of damage caused by force majeure, e.g. B. lightning, in the case of errors resulting from overstressing of mechanical or electromechanical parts due to improper use or contamination or unusual, mechanical, chemical or atmospheric influences. In the field of entertainment electronics (consumer electronics), there is also no defect if the reception quality is impaired by unfavorable reception conditions or defective antennas or by external influences, in the event of damage caused by unsuitable or defective batteries inserted by the customer.
+      Ein Mangel des Liefergegenstandes liegt nicht vor: Bei Fehlern, die durch Beschädigung, falschen Anschluss oder falsche Bedienung durch den Kunden verursacht werden, bei Schäden durch höhere Gewalt, z. B. Blitzschlag, bei Fehlern infolge von Überbeanspruchung mechanischer oder elektromechanischer Teile durch nicht bestimmungsgemäßen Gebrauch oder durch Verschmutzung oder außergewöhnliche, mechanische, chemische oder atmosphärische Einflüsse. Im Bereich der Unterhaltungselektronik (Consumer Electronics) liegt ein Mangel auch dann nicht vor, wenn die Empfangsqualität durch ungünstige Empfangsbedingungen oder mangelhafte Antennen oder durch äußere Einflüsse beeinträchtigt ist, bei Schäden durch vom Kunden eingelegte, ungeeignete oder mangelhafte Batterien.
       </p>
     `,
   },
   {
     id: 13,
+
     listTitle:
-      "13. Extended right of lien of the work company on movable property",
+      "13. Erweitertes Pfandrecht des Werkunternehmens an beweglichen Sachen",
     htmlItem: `
       <p>
-      The contractor is entitled to a lien on the customer's item that has come into his possession as a result of the order due to his claim from the order. The right of lien can also be asserted for claims from work previously carried out, spare parts deliveries and other services, insofar as they are related to the item. For other claims from the business relationship, the right of lien only applies if these are undisputed or legally binding. <br /><br />
+      Dem Werkunternehmer steht wegen seiner Forderung aus dem Auftrag ein Pfandrecht an dem aufgrund des Auftrages in seinen Besitz gelangten Gegenstand des Kunden zu. Das Pfandrecht kann auch wegen Forderungen aus früher durchgeführten Arbeiten, Ersatzteillieferungen und sonstigen Leistungen geltend gemacht werden, soweit sie mit dem Gegenstand im Zusammenhang stehen. Für sonstige Ansprüche aus der Geschäftsverbindung gilt das Pfandrecht nur, soweit die diese unbestritten oder rechtskräftig sind. <br /><br />
       
-      If the item is not picked up within 4 weeks after the pick-up request, the contractor can charge an appropriate storage fee after this period has expired. If the collection does not take place at the latest 3 months after the collection request, the obligation for further storage and any liability for slightly negligent damage or loss is no longer applicable. A threat of sale must be sent to the customer 1 month before this period expires. The contractor is entitled to sell the item at market value after the deadline to cover his claims. Any surplus proceeds are to be reimbursed to the customer.</p>
+      Wird der Gegenstand nicht innerhalb 4 Wochen nach Abholaufforderung abgeholt, kann vom Werkunternehmer mit Ablauf dieser Frist ein angemessenes Lagergeld berechnet werden. Erfolgt nicht spätestens 3 Monate nach der Abholaufforderung die Abholung, entfällt die Verpflichtung zur weiteren Aufbewahrung und jeder Haftung für leicht fahrlässige Beschädigung oder Untergang. 1 Monat vor Ablauf dieser Frist ist dem Kunden eine Verkaufsandrohung zuzusenden. Der Werkunternehmer ist berechtigt, den Gegenstand nach Ablauf der Frist zur Deckung seiner Forderungen zum Verkehrswert zu veräußern. Ein etwaiger Mehrerlös ist dem Kunden zu erstatten.</p>
     `,
   },
   {
     id: 14,
-    listTitle: "14. Limitation of Liability",
+
+    listTitle: "14. Haftungsbegrenzung",
     htmlItem: `
-      <p>In the event of a pre-contractual and non-contractual breach of duty, including a defective delivery - including the defective delivery of a generic item - tort and producer liability, we are liable for damages and reimbursement of expenses - subject to further contractual or legal liability requirements - only in the case of intent, gross negligence negligence as well as in the case of a slightly negligent breach of an essential contractual obligation (contractual obligation whose violation jeopardizes the achievement of the purpose of the contract). However, our liability - except in the case of intent - is limited to the foreseeable damage typical of the contract. <br /><br />
+      <p>Im Falle einer vorvertraglichen, und außervertraglichen Pflichtverletzung, auch bei einer mangelhaften Lieferung – unter Einschluss der mangelhaften Lieferung einer Gattungssache – unerlaubten Handlung und Produzentenhaftung, haften wir auf Schadensersatz und Aufwendungsersatz – vorbehaltlich weiterer vertraglicher oder gesetzlicher Haftungsvoraussetzungen – nur im Falle des Vorsatzes, der groben Fahrlässigkeit sowie im Fall der leicht fahrlässigen Verletzung einer wesentlichen Vertragspflicht (Vertragspflicht, deren Verletzungen die Erreichung des Vertragszweckes gefährdet‘). Jedoch ist unsere Haftung – ausgenommen der Fall des Vorsatzes – auf den bei Vertragsschluss voraussehbaren vertragstypischen Schaden beschränkt. <br /><br />
 
-      If the delivery item cannot be used in accordance with the contract in individual cases through our fault as a result of omitted or incorrect execution of suggestions and advice given before or after conclusion of the contract or through the violation of other contractual ancillary obligations - in particular instructions for operation and maintenance of the delivery item - then to the exclusion of others Claims of the customer, Items 1 and 7, as well as the provisions under X. <br /><br />
+      Wenn der Liefergegenstand durch unser Verschulden infolge unterlassener oder fehlerhafter Ausführung von vor oder nach Vertragsschluss erfolgten Vorschlägen und Beratungen oder durch die Verletzung anderer vertraglicher nebenpflichten – insbesondere Anleitung für Bedienung und Wartung des Liefergegenstandes – im Einzelfall nicht vertragsgemäß verwendet werden kann, so gelten unter Ausschluss weiterer Ansprüche des Bestellers Ziff. 1 und 7, sowie die Regelungen unter X . <br /><br />
 
-      In the event of slight negligence, we are only liable for damage caused by delay up to 5% of the purchase price agreed with us. <br /><br />
+      Für Verzögerungsschäden haften wir bei leichter Fahrlässigkeit nur in Höhe von bis zu 5% des mit uns vereinbarten Kaufpreises. <br /><br />
 
-      Apart from the breach of essential obligations, liability for slight negligence is excluded, but in any case limited to the amount of the purchase price. Section 2 remains unaffected. <br /><br />
+      Außerhalb der Verletzung wesentlicher Pflichten ist eine Haftung für leichte Fahrlässigkeit ausgeschlossen, in jedem Fall aber auf die Höhe des Kaufpreises beschränkt Ziff. 2 bleibt unberührt.<br /><br />
 
-      The exclusions and limitations of liability contained in Sections 1-3 do not apply in the case of the assumption of a guarantee for the quality of the item within the meaning of Section 444 BGB (see Section X Section 5), in the case of fraudulent concealment of a defect, in the In the event of damage resulting from injury to life, limb or health, as well as in the event of mandatory liability under the Product Liability Act. <br /><br />
+      Die in den Ziff. 1-3 enthaltenen Haftungsausschlüsse und -beschränkungen gelten nicht im Fall der Übernahme einer Garantie für die Beschaffenheit der Sache im Sinne des § 444 BGB (siehe Abschnitt X Ziff. 5), im Fall des arglistigen Verschweigens eines Mangels, im Fall von Schäden aus der Verletzung des Lebens , des Körpers oder der Gesundheit sowie im Fall einer zwingenden Haftung nach dem Produkthaftungsgesetz. <br /><br />
 
-      All claims for damages against us, regardless of the legal reason, become time-barred no later than one year after delivery of the item to the customer if the customer is a merchant, in the case of tortious liability from knowledge or grossly negligent ignorance of the circumstances giving rise to the claim and the person liable for compensation. The provisions of this paragraph do not apply - and the statutory provisions then apply - in the event of liability for intent and in the cases specified in Section 4. Any shorter statutory limitation periods have priority. <br /><br />
+      Sämtliche Schadensersatzansprüche gegen uns, gleich aus welchem Rechtsgrund, verjähren spätestens in einem Jahr seit Ablieferung der Sache an den Auftraggeber falls dieser Kaufmann ist, im Fall der deliktischen Haftung ab Kenntnis oder grob fahrlässiger Unkenntnis von den den Anspruch begründenden Umständen und der Person des Ersatzpflichtigen. Die Regelungen dieses Absatzes gelten nicht – und es gelten dann die gesetzlichen Bestimmungen – im Fall einer Haftung für Vorsatz und in den in Ziff. 4 genannten Fällen. Etwaige kürzere gesetzliche Verjährungsfristen haben Vorrang. <br /><br />
 
-      If the customer is an intermediary for the item delivered to him and the end user of the goods is a consumer, the statutory provisions apply to the statute of limitations for any recourse claims by the customer against us. <br /><br />
+      Ist der Auftraggeber ein Zwischenhändler für die an ihn gelieferte Sache und der Endabnehmer der Ware ein Verbraucher, gelten für die Verjährung eines etwaigen Rückgriffs Anspruches des Auftraggebers gegen uns die gesetzlichen Bestimmungen. <br /><br />
 
-      When software is delivered, we, our employees and vicarious agents are liable for the loss or alteration of data caused by the program. only to the extent that would be unavoidable if the customer had complied with his data backup obligations at appropriate intervals, but at least daily.</p>
+      Bei Lieferung von Software haften wir, unsere Mitarbeiter und Erfüllungsgehilfen für den Verlust oder die Veränderung von Daten, die durch das Programm hervorgerufen worden sind. nur in dem Umfang, der auch dann unvermeidbar wäre, wenn der Auftraggeber seiner Datensicherungspflicht in adäquaten Intervallen, mindestens jedoch täglich, nachgekommen wären.</p>
     `,
   },
   {
     id: 15,
-    listTitle: "15. Manufacturing instruction of the customer",
+
+    listTitle: "15. Fertigung Anweisung des Auftraggebers",
     htmlItem: `
     <p>
     
-    In the case of production according to the customer's drawings, samples and other instructions from the customer, we assume no guarantee or liability for the functionality of the product and for other defects, insofar as these circumstances are based on the customer's instructions. <br /><br />
+    Bei der Fertigung nach Auftraggeber Zeichnungen, Mustern und sonstigen Anweisungen des Auftraggebers übernehmen wir für die Funktionstauglichkeit des Produktes und für sonstige Mängel, soweit diese Umstände auf den Auftraggeber Anweisungen beruhen, keine Gewähr und Haftung.<br /><br />
     
-    The customer shall indemnify us against any third-party claims, including product liability claims, due to damage caused by the goods, unless we caused the damage intentionally or through gross negligence. <br /><br />
+    Der Auftraggeber stellt uns von etwaigen Ansprüchen Dritter, auch aus Produkthaftung, gegen uns wegen durch die Ware verursachter Schäden frei, es sei denn, dass wir den Schaden vorsätzlich oder grob fahrlässig verursacht haben. <br /><br />
     
-    The client warrants to us that the manufacture and delivery of the goods manufactured according to his instructions do not infringe any property rights of third parties. In the event that property rights are asserted against us, we are entitled to withdraw from the contract after hearing the customer without a legal examination of any third-party claims, unless the third party is entitled to withdraw from the contract after hearing the customer, unless the third party withdraws the assertion of property rights within 8 days by means of a written declaration to us. The client has to compensate us for any damage caused by the assertion of property rights. In the event of withdrawal, the work previously performed by us must be remunerated. <br /><br />
+    Der Auftraggeber übernimmt uns gegenüber die Gewähr, dass die Herstellung und Lieferung der nach seinen Anweisungen gefertigten Ware keine Schutzrechte Dritter verletzt. Im Falle der Geltendmachung von Schutzrechten uns gegenüber sind wir ohne rechtliche Prüfung der etwaigen Ansprüche Dritter berechtigt, nach Anhörung des Auftraggebers vom Vertrag zurückzutreten, es sei denn, dass der Dritte berechtigt, nach Anhörung des Auftraggebers vom Vertrag zurückzutreten , es sei denn, dass der Dritte die Geltendmachung der Schutzrechte innerhalb von 8 Tagen durch schriftliche Erklärung uns gegenüber zurückzieht. Der Auftraggeber hat uns durch die Geltendmachung der Schutzrechte etwa entstandene Schäden zu ersetzen. Im Falle des Rücktritts sind die von uns bisher geleisteten Arbeiten zu vergüten. Weitergehende Rechte nach den gesetzlichen Bestimmungen bleiben unberührt.<br /><br />
     
-    The moulds, tools and construction documents manufactured by us for the execution of the order are exclusively our property. The client is not entitled to any claims in this regard. even if he contributes to the costs for the production of moulds, tools and construction documents, unless expressly agreed otherwise.
+    Die für die Durchführung des Auftrages von uns gefertigten Formen, Werkzeuge und Konstruktionsunterlagen sind ausschließlich unser Eigentum. Ansprüche hierauf stehen dem Auftraggeber nicht zu. auch wenn er sich an den Kosten für die Herstellung von Formen, Werkzeugen und Konstruktionsunterlagen beteiligt, es sei denn dass ausdrücklich anderes vereinbart worden ist.
     </p>
     `,
   },
   {
     id: 16,
-    listTitle: "16. Confidentiality",
+
+    listTitle: "16. Geheimhaltung",
     htmlItem: `
-    <p>Unless otherwise expressly agreed in writing, the information submitted to us in connection with orders is not considered confidential unless the confidentiality is obvious.
+    <p>Falls nicht ausdrücklich schriftlich etwas anderes vereinbart ist, gelten die uns im Zusammenhang mit Bestellungen unterbreiteten Informationen nicht als vertraulich, es sei denn die Vertraulichkeit ist offenkundig.
     </p>
     `,
   },
   {
     id: 17,
-    listTitle: "17. Place of Performance, Jurisdiction and Applicable Law",
+
+    listTitle: "17. Erfüllungsort, Gerichtsstand und anzuwendendes Recht",
     htmlItem: `
     <p>
-      The place of performance for our deliveries is the supplying plant for deliveries ex works, and the customer's registered office for services. <br /><br />
+    Erfüllungsort für unsere Lieferungen ist bei Lieferung ab Werk das Lieferwerk, bei den Leistungen der Sitz des Auftraggebers. <br /><br />
       
-      The place of jurisdiction for all disputes arising from this contract is, at our option, our registered office or the customer's registered office, for claims by the customer our registered office. Statutory regulations on exclusive jurisdiction remain unaffected.
+    Gerichtsstand für alle Streitigkeiten aus diesem Vertrag ist nach unserer Wahl unser Sitz oder der Sitz des Auftraggebers, für Klagen des Auftraggebers ausschließlich unser Sitz. Gesetzliche Regelungen über ausschließliche Zuständigkeiten bleiben unberührt.
     </p>
     `,
   },
@@ -478,210 +488,227 @@ export const conditionsList = [
 export const conditionList2 = [
   {
     id: 1,
-    listTitle: "01. General Service Execution",
+
+    listTitle: " 01. Allgemeine Dienstausführung",
     htmlItem: `
       <p>
-      (1) According to Article 34a of the Trade Regulations, the security trade is a trade that requires a license and carries out its security services as a district guard, separate guard or special service. <br /><br />
+      (1) Das Wach- und Sicherheitsgewerbe ist gemäß § 34 a Gewerbeordnung ein erlaubnispflichtiges Gewerbe und übt seine Sicherheitsdienstleistung als Revierwach-, Separatwach- oder Sonderdienst aus. <br /><br />
       
-      a) The area security service is carried out in uniform by individual patrols or radio patrol drivers. Unless otherwise agreed, checks are carried out on the guard objects grouped into guard areas at times that are as irregular as possible during each tour. <br /><br />
+      a) Der Revierwachdienst erfolgt in Dienstkleidung durch Einzelstreifen oder Funkstreifenfahrer. Es werden dabei – soweit nichts anderes vereinbart ist – bei jedem Rundgang Kontrollen der in Wachrevieren zusammengefassten Wachobjekte zu möglichst unregelmäßigen Zeiten vorgenommen. <br /><br />
       
-      b) The separate security service is usually carried out by one or more security guards or porters who are deployed specifically for one or a few security objects in a spatial context. The individual activities are specified in special service instructions. <br /><br />
+      b) Der Separatwachdienst erfolgt in der Regel durch eine(n) oder mehrere Wachmann/Wachmänner/-frau(en) oder Pförtner/innen, die eigens für ein bzw. wenige in einem räumlichen Zusammenhang stehende Wachobjekte eingesetzt sind. Die einzelnen Tätigkeiten werden in besonderen Dienstanweisungen festgelegt.<br /><br />
       
-      c) The special services include, for example, personnel checks, personal escort and security services, money and valuables services, DB AG security posts, the operation of alarm and emergency call centers (service centres) and the implementation of cash desk, security and supervisory services for exhibitions, trade fairs, events and other services. <br /><br />
+      c) Zu den Sonderdiensten gehören z.B. Personalkontrollen, Personenbegleit- und Schutzdienste, Geld- und Wertdienste, Sicherungsposten der DB AG, der Betrieb von Alarm- und Notrufzentralen (Dienstleistungszentralen) sowie die Durchführung von Kassen-, Ordnungs- und Aufsichtsdiensten für Ausstellungen, Messen, Veranstaltungen und andere Dienste. <br /><br />
       
-      (2) The mutual obligations of the client and the guard and security company are agreed in special contracts. <br /><br />
+      (2) Die gegenseitigen Verpflichtungen von Auftraggeber und Wach- und Sicherheitsunternehmen werden in besonderen Verträgen vereinbart. <br /><br />
       
-      (3) The guard and security company provides its activity as a service (no temporary employment in accordance with the law on commercial temporary employment dated August 7, 1972, in the version published on February 3, 1995, last amended by the first law for modern services on the labor market dated December 23, 2002 (Federal Law Gazette I, p. 4607), whereby it uses its staff as vicarious agents. <br /><br />
+      (3) Das Wach- und Sicherheitsunternehmen erbringt seine Tätigkeit als Dienstleistung (keine Arbeitnehmerüberlassung gemäß Gesetz über gewerbsmäßige Arbeitnehmerüberlassung vom 7.August 1972, in der Fassung der Bekanntmachung vom 3. Februar 1995, zuletzt geändert durch das Erste Gesetz für moderne Dienstleistungen am Arbeitsmarkt vom 23. Dezember 2002 (BGBl l, S. 4607), wobei es sich seines Personals als Erfüllungsgehilfen bedient. Die Auswahl des beschäftigten Personals und das Weisungsrecht liegt – ausgenommen bei Gefahr im Verzuge – bei dem beauftragten Wach- und Sicherheitsunternehmen. <br /><br />
       
-      (4) It is solely responsible for fulfilling all legal, official, social and trade association obligations towards its employees.
+      (4) Es ist zur Erfüllung aller gesetzlichen, behördlichen, sozial- rechtlichen und berufsgenossenschaftlichen Verpflichtungen gegenüber seinen Mitarbeitern allein verantwortlich.
       </p>
     `,
   },
   {
     id: 2,
-    listTitle: "02. Rules of inspection",
+    listTitle: "02. Begehungsvorschrift",
     htmlItem: `
       <p>
-      In individual cases, the written inspection regulations / alarm plan alone are decisive for the execution of the service. In accordance with the client's instructions, it contains the more detailed provisions on rounds, checks and other work that must be carried out. Changes and additions to the inspection regulations/the alarm plan require written agreement. Insofar as unforeseeable emergencies require it, planned checks, rounds and other work can be refrained from in individual cases.
+      Im Einzelfall ist für die Ausführung des Dienstes allein die schriftliche Begehungsvorschrift / der Alarmplan maßgebend. Sie ent- hält den Anweisungen des Auftraggebers entsprechend die näheren Bestimmungen über die Rundgänge, Kontrollen und die sonstigen Dienstverrichtungen, die vorgenommen werden müssen. Änderungen und Ergänzungen der Begehungsvorschrift /des Alarmplanes bedürfen der schriftlichen Vereinbarung. Soweit unvorhersehbare Notstände es erfordern, kann in Einzelfällen von vorgesehenen Kontrollen, Rundgängen und sonstigen Dienstverrichtungen Abstand genommen werden.
       </p>
     `,
   },
   {
     id: 3,
-    listTitle: "03. Keys and emergency addresses",
+
+    listTitle: "03. Schlüssel und Notfallanschriften",
     htmlItem: `
       <p>
-      (1) The keys required for the service are to be made available by the client in good time and free of charge. <br /> <br />
+      (1) Die für den Dienst erforderlichen Schlüssel sind vom Auftraggeber rechtzeitig und kostenlos zur Verfügung zu stellen. <br /> <br />
 
-      (2) The entrepreneur shall be liable for lost keys and for damage to keys caused intentionally or negligently by the service staff within the scope of clause 10. The customer shall inform the entrepreneur of the addresses that can also be notified by telephone at night if the property is at risk. Changes of address must be communicated to the entrepreneur immediately. In cases in which the entrepreneur has to carry out the alarm tracking via activated alarm systems, the order of notification is to be arranged by the client.
+      (2) Für Schlüsselverluste und für vorsätzlich oder fahrlässig durch das Dienstpersonal herbeigeführte Schlüsselbeschädigungen haftet der Unternehmer im Rahmen der Ziffer 10. Der Auftraggeber gibt dem Unternehmer die Anschriften bekannt, die bei einer Gefährdung des Objektes auch nachts telefonisch benachrichtigt werden können. Anschriftenänderungen müssen dem Unternehmer umgehend mitgeteilt werden. In den Fällen, in denen der Unternehmer über aufgeschaltete Alarmanlagen die Alarmverfolgung durchzuführen hat, ist vom Auftraggeber die Benachrichtigungsreihenfolge anzuordnen.
       </p>
     `,
   },
   {
     id: 4,
-    listTitle: "04. Complaints",
+
+    listTitle: "04. Beanstandungen",
     htmlItem: `
       <p>
-      (1) Complaints of any kind that relate to the performance of the service or other irregularities must be reported in writing to the company management immediately after discovery for the purpose of remedy. If notification is not made in good time, rights arising from such complaints cannot be asserted. <br /> <br />
+      (1) Beanstandungen jeder Art, die sich auf die Ausführung des Dienstes oder sonstige Unregelmäßigkeiten beziehen, sind unverzüglich nach Feststellung schriftlich der Betriebsleitung des Unternehmens zwecks Abhilfe mitzuteilen. Bei nicht rechtzeitiger Mitteilung können Rechte aus solchen Beanstandungen nicht geltend gemacht werden.<br /> <br />
       
-      (2) Repeated or gross violations in the execution of the service only entitle the customer to terminate the contract without notice if the entrepreneur does not remedy the situation after written notification within a reasonable period of time - at the latest within seven working days.
+      (2) Wiederholte oder grobe Verstöße in der Ausführung des Dienstes berechtigen nur dann zur fristlosen Kündigung des Vertrages, wenn der Unternehmer nach schriftlicher Benachrichtigung nicht in angemessener Frist – spätestens innerhalb von sieben Werktagen – für Abhilfe sorgt.
       </p>
     `,
   },
   {
     id: 5,
-    listTitle: "05. Order Duration",
+
+    listTitle: "05. Auftragsdauer",
     htmlItem: `
       <p>
-      Unless otherwise agreed in writing, the contract runs for one year. If it is not terminated three months before the end of the initial term, the contract will be extended by a further year and then again by a further year, etc.</p>
+      Der Vertrag läuft – soweit nichts Abweichendes schriftlich vereinbart ist – ein Jahr. Wird er nicht drei Monate vor Ablauf der Erstlaufzeit gekündigt, so verlängert sich der Vertrag jeweils um ein weiteres Jahr und danach wieder um ein weiteres Jahr usw.</p>
     `,
   },
   {
     id: 6,
-    listTitle: "06. Execution by other entrepreneurs",
+
+    listTitle: "06. Ausführung durch andere Unternehmer",
     htmlItem: `
-      <p>The entrepreneur is entitled, in agreement with the client, to use approved and reliable companies to fulfill his obligations in accordance with § 34 a GewO.</p>
+      <p>Der Unternehmer ist berechtigt, in Übereinstimmung mit dem Auftraggeber, sich zur Erfüllung seiner Verpflichtungen gemäß § 34 a GewO zugelassener und zuverlässiger Unternehmen zu bedienen..</p>
     `,
   },
   {
     id: 7,
-    listTitle: "07. Interruption of surveillance",
+
+    listTitle: " 07. Unterbrechung der Überwachung",
     htmlItem: `
       <p>
-      (1) In the event of war or strikes, riots and other cases of force majeure, the contractor may interrupt the service to the extent that it is impossible to carry it out or rearrange it appropriately. <br /> <br />
+      (1) (1) Im Kriegs- oder Streikfalle, bei Unruhen und anderen Fällen höherer Gewalt kann der Unternehmer den Dienst, soweit dessen Ausführung unmöglich wird, unterbrechen oder zweckentsprechend umstellen. <br /> <br />
       
-      (2) In the event of an interruption, the entrepreneur is obliged to reduce the remuneration in accordance with the wages saved for the time of the interruption.</p>
+      (2) Im Falle der Unterbrechung ist der Unternehmer verpflichtet, das Entgelt entsprechend den etwa ersparten Löhnen für die Zeit der Unterbrechung zu ermäßigen.</p>
     `,
   },
   {
     id: 8,
-    listTitle: "08. Premature Order Termination",
+
+    listTitle: "08. Vorzeitige Auftragsauflösung",
     htmlItem: `
       <p>
-      (1) If the customer moves, or if the contractual object or object is sold or otherwise given up, the customer can terminate the contractual relationship with a notice period of one month. <br /> <br />
-      (2) If the entrepreneur gives up the hunting ground, he is also entitled to terminate the contract early by giving one month's notice.
+    (1) Bei Umzug des Auftraggebers sowie bei Verkauf oder sonstiger Aufgabe des Vertragsobjektes oder –gegenstandes kann der Auftraggeber das Vertragsverhältnis mit einer Frist von einem Monat kündigen.<br /> <br />
+(2) Gibt der Unternehmer das Revier auf, so ist er ebenfalls zu einer vorzeitigen Lösung des Vertrages unter Einhaltung einer Kündigungsfrist von einem Monat berechtigt.
       </p>
     `,
   },
   {
     id: 9,
-    listTitle: "09. Legal Succession",
+
+    listTitle: "09. Rechtsnachfolge",
     htmlItem: `
-      <p>In the event of the death of the customer, the legal successor enters into the contract, unless the subject matter of the contract was primarily geared towards personal interests, in particular the protection of the person of the customer. The contract is not affected by the death, other legal succession or legal change of the entrepreneur.
+      <p> Bei Tod des Auftraggebers tritt der Rechtsnachfolger in den Vertrag ein, es sei denn, dass der Gegenstand des Vertrages hauptsächlich auf persönliche Belange, insbesondere den Schutz der Person des Auftraggebers, abgestellt war. Durch Tod, sonstige Rechtsnachfolge oder Rechtsveränderung des Unternehmers wird der Vertrag nicht berührt.
       </p>
     `,
   },
   {
     id: 10,
-    listTitle: "10. Liability and Limitation of Liability",
+
+    listTitle: "10. Haftung und Haftungsbegrenzung",
     htmlItem: `
       <p>
-      (1) The entrepreneur's liability for damage to property and financial losses culpably caused by himself, his legal representatives or his vicarious agents is limited to the maximum amounts specified in paragraph (3) if the damage was not caused by intent or gross negligence by the entrepreneur himself, his legal representatives or his vicarious agents or by culpable violation of essential contractual obligations. <br /><br />
+      (1) Die Haftung des Unternehmers für Sach- und Vermögensschäden, die von ihm selbst, seinen gesetzlichen Vertretern oder seinen Erfüllungsgehilfen schuldhaft verursacht werden, ist auf die in Abs. (3) genannten Höchstsummen beschränkt, wenn der Schaden nicht durch Vorsatz oder grobe Fahrlässigkeit des Unternehmers selbst, seiner gesetzlichen Vertreter oder seiner Erfüllungsgehilfen oder durch schuldhafte Verletzung wesentlicher Vertragspflichten verursacht worden ist. <br /><br />
       
-      (2) In any case of slight negligence, the entrepreneur's liability is limited to the typical and foreseeable damage in comparable transactions of this type. <br /><br />
+      (2) In jedem Fall leichter Fahrlässigkeit ist die Haftung des Unternehmers auf den bei vergleichbaren Geschäften dieser Art typischen und vorhersehbaren Schaden beschränkt. <br /><br />
       
-      (3) The maximum limits specified in paragraph (1) are: <br /><br />
+      (3) Die in Absatz (1) genannten Höchstgrenzen betragen: <br /><br />
       
-      a) €250,000 for property damage <br /><br />
+      a) 250.000 € für Sachschäden <br /><br />
       
-      b) €15,000 for the loss of guarded items <br /><br />
+      b) 15.000 € für das Abhandenkommen bewachter Sachen <br /><br />
       
-      c) €12,500 for purely financial losses. <br /><br />
-      (4) Claims for compensation for property damage and financial losses directly against the employees are excluded, unless they have caused the damage intentionally or through gross negligence or by breaching essential contractual obligations. In any case of negligent causation of damage, the liability of the employees is limited to the typical and foreseeable damage in comparable transactions. <br /><br />
+      c) 12.500 € für reine Vermögensschäden.<br /><br />
+      (4) Ansprüche auf Ersatz von Sach- und Vermögensschäden direkt gegen die Mitarbeiter sind ausgeschlossen, sofern diese den Schaden nicht vorsätzlich oder grob fahrlässig oder durch Verletzung wesentlicher Vertragspflichten herbeigeführt haben. In jedem Fall fahrlässiger Schadensverursachung ist die Haftung der Mitarbeiter auf den bei vergleichbaren Geschäften typischen und vorhersehbaren Schaden beschränkt. <br /><br />
       
-      (5) In accordance with Article 6 of the Guarding Ordinance, the company has liability insurance. The insurance contract is based without restriction on the general liability insurance conditions (AHB) and the conditions for the liability insurance of security companies. In particular, this insurance cover excludes damage that is not related to the actual security service, such as the assumption of the obligation to spread in the event of black ice, the operation of sun protection devices, or the operation and maintenance of machines, boilers, heating devices, electrical or similar systems.
+      (5) Gemäß § 6 Bewachungsverordnung besteht eine Haftpflichtversicherung des Unternehmens. Dem Versicherungsvertrag liegen die Allgemeinen Haftpflichtversicherungsbedingungen (AHB) und die Bedingungen für die Haftpflichtversicherung von Bewachungsunternehmen uneingeschränkt zu Grunde. Von diesem Versicherungsschutz ausgeschlossen sind insbesondere Schäden, die mit der eigentlichen Sicherheitsdienstleistung nicht in Zusammenhang stehen, wie die Übernahme der Streupflicht bei Glatteis, bei Bedienung von Sonnenschutzeinrichtungen, oder bei der Bedienung und Betreuung von Maschinen, Kesseln, Heizvorrichtungen, elektrischen oder ähnlichen Anlagen.
       </p>
     `,
   },
   {
     id: 11,
-    listTitle: "11. Asserting Liability Claims",
+
+    listTitle: "11. Geltendmachung von Haftpflichtansprüchen",
     htmlItem: `
-      <p>(1) Claims for damages must be asserted against the company within a period of 4 weeks after the person entitled, their legal representatives or vicarious agents have become aware of the damaging event. If the amount of the damage cannot be determined within this period, it is sufficient, but also necessary, for the damage to be asserted on the merits. <br /><br />
+      <p>(1) Schadensersatzansprüche müssen innerhalb einer Frist von 4 Wochen, nachdem der Anspruchsberechtigte, seine gesetzlichen Vertreter oder Erfüllungsgehilfen von dem schädigenden Ereignis Kenntnis erlangt haben, gegenüber dem Unternehmen geltend gemacht werden. Kann innerhalb dieser Frist die Höhe des Schadens noch nicht bestimmt werden, so ist es ausreichend, aber auch erforderlich, dass der Schaden dem Grunde nach geltend gemacht wird.<br /><br />
 
-      Claims for damages that are not asserted within this period are excluded. <br /><br />
+      Schadensersatzansprüche, die nicht innerhalb dieser Frist gel- tend gemacht werden, sind ausgeschlossen.<br /><br />
 
-      (2) The client is also obliged to give the contractor the opportunity to make all necessary determinations about the cause of the damage, the course of the damage and the amount of the damage himself or through an agent. Expenses for damages resulting from the fact that the customer does not meet his above obligations or does not do so immediately shall be at his expense.
+      (2) Der Auftraggeber ist ferner verpflichtet, dem Unternehmer un- verzüglich Gelegenheit zu geben, alle erforderlichen Feststellun- gen zur Schadensverursachung, Schadensverlauf und Schadenshöhe selbst oder durch Beauftragte zu treffen. Scha- densaufwendungen, die dadurch entstehen, dass der Auftragge- ber seinen vorstehenden Verpflichtungen nicht oder nicht unver- züglich nachkommt, gehen zu seinen Lasten.
       </p>
     `,
   },
   {
     id: 12,
-    listTitle: "12. Liability Insurance and Proof",
+
+    listTitle: "12. Haftpflichtversicherung und Nachweis",
     htmlItem: `
-      <p>The entrepreneur is obliged to take out liability insurance within the scope of the assumed liability, the limits of which are set out in Section 10. The customer can request proof of the conclusion of such an insurance. These amounts of the insurance sums are specified in the regulation on the security industry in the version of July 23, 2002 (Federal Law Gazette I p. 2724).
+      <p>Der Unternehmer ist verpflichtet, eine Haftpflichtversicherung im Rahmen der übernommenen Haftung, deren Grenzen sich aus Ziffer 10 ergeben, abzuschließen. Der Auftraggeber kann den Nachweis über den Abschluss einer solchen Versicherung verlangen. Diese Höhen der Versicherungssummen sind festgelegt in der Verordnung über das Bewachungsgewerbe in der Fassung vom 23. Juli 2002 (BGBl. I S. 2724).
       </p>
     `,
   },
   {
     id: 13,
-    listTitle: "13. Payment of the Fee",
+
+    listTitle: "13. Zahlung des Entgelts",
     htmlItem: `
       <p>
-      (1) Unless otherwise agreed, the fee for the contract is to be paid monthly in advance. <br /><br />
+      (1) Das Entgelt für den Vertrag ist, soweit nichts anderes verein- bart ist, monatlich im Voraus zu zahlen. <br /><br />
       
-      (2) Offsetting and retention of the payment are not permitted, unless in the case of an undisputed or legally established claim. <br /><br />
+      (2) Aufrechnung und Zurückbehaltung des Entgelts sind nicht zu- lässig, es sei denn im Falle einer unbestrittenen oder rechtskräftig festgestellten Forderung.<br /><br />
       
-      (3) In the event of a delay in payment despite a reminder, the contractor's obligation to perform is suspended along with his liability, without the client being released from payment for the contract period or from the contract at all. For the rest, § 286 Para. 3 BGB applies.
+      (3) Bei Zahlungsverzug trotz Mahnung ruht die Leistungsverpflichtung des Unternehmers nebst seiner Haftung, ohne dass der Auftraggeber von der Zahlung für die Vertragszeit oder vom Vertrag überhaupt entbunden ist. Im Übrigen gilt § 286 Abs. 3 BGB.
       </p>
     `,
   },
   {
     id: 14,
-    listTitle: "14. Price Change",
+
+    listTitle: "14. Preisänderun",
     htmlItem: `
       <p>
-      In the event of a change/introduction of statutory taxes, duties, insurance premiums, vehicle operating costs, wage costs and ancillary wage costs, in particular due to the conclusion of new wage, general or other collective agreements, the remuneration must be changed in the same way by the amount by which the the hourly rate for the execution of the order has changed due to the change in wage costs, ancillary wage costs and other above-mentioned costs, plus the applicable statutory taxes and duties. A corresponding confirmation from the BDWS is sufficient for the assertion of changed wage costs.
+      Im Falle der Veränderung/Neueinführung von gesetzlichen Steuern, Abgaben, Versicherungsprämien, Kfz-Betriebskosten, Lohnkosten und Lohnnebenkosten, insbesondere durch den Abschluss neuer Lohn-, Mantel- oder sonstiger Tarifverträge, ist das Entgelt um den Betrag in gleicher Weise zu verändern, um den sich durch die Veränderung der Lohnkosten, Lohnnebenkosten und sonstigen o.g. Kosten der Stundenverrechnungssatz für die Ausführung des Auftrages geändert hat, zuzüglich der jeweils gültigen gesetzlichen Steuern und Abgaben. Ausreichend für die Geltendmachung veränderter Lohnkosten ist eine entsprechende Bestätigung des BDWS.
       </p>
     `,
   },
   {
     id: 15,
-    listTitle: "15. Commencement of contract, contract changes",
+
+    listTitle: "15. Vertragsbeginn, Vertragsänderungen",
     htmlItem: `
       <p>
-      (1) The contract is binding for the entrepreneur from the point at which the customer receives the written order confirmation. <br /><br />
+      (1) Der Vertrag ist für den Unternehmer von dem Zeitpunkt an verbindlich, zu dem dem Auftraggeber die schriftliche Auftragsbestätigung zugeht.<br /><br />
       
-      (2) Ancillary agreements, changes, additions or restrictions to the contract must be in writing.
+      (2) Nebenabreden, Änderungen, Ergänzungen oder Einschrän- kungen des Vertrages bedürfen der Schriftform.
       </p>
     `,
   },
   {
     id: 16,
-    listTitle: "16. Non-solicitation clause and contractual penalty",
+    listTitle: "16. Abwerbungsverbot und Vertragsstrafe",
     htmlItem: `
-      <p>(1) The client is not permitted to cause employees of the entrepreneur to terminate their employment and to establish a new service or employment relationship as self-employed or dependent employees of the client. This provision also applies six months after the end of the contract. <br /><br />
+      <p>(1) Dem Auftraggeber ist es nicht gestattet, Mitarbeiter des Unternehmers zur Auflösung ihres Arbeitsverhältnisses und zur Begründung eines neuen Dienst- oder Arbeitsverhältnisses als selbständige oder unselbständige Mitarbeiter des Auftraggebers zu veranlassen. Diese Bestimmung gilt auch noch sechs Monate nach Beendigung des Vertrages.<br /><br />
 
-      (2) If the customer culpably violates the provisions of paragraph 1, he is obliged to pay six times the monthly fee as a contractual penalty.
+      (2) Verstößt der Auftraggeber schuldhaft gegen die Bestimmungen des Absatz 1, so ist er verpflichtet, die sechsfache Monatsgebühr als Vertragsstrafe zu zahlen.
       </p>
     `,
   },
   {
     id: 17,
-    listTitle: "17. Privacy",
+
+    listTitle: "17. Datenschutz",
     htmlItem: `
-      <p>(1) The provisions of the Federal Data Protection Act (BDSG) apply to data protection, in particular §§ 27 et seq. BDSG for non-public bodies in its currently valid version. <br /><br />
-      (2) Section 5 BDSG (data secrecy) applies in particular. <br /><br />
-      (3) In the event of non-compliance with data protection regulations, the liability provisions of Section 10 apply.
+      <p>(1) Für den Datenschutz gelten die Bestimmungen des Bundesdatenschutzgesetzes (BDSG), vor allem die §§ 27 ff. BDSG für nicht-öffentliche Stellen in seiner jeweils gültigen Fassung. <br /><br />
+      (2) Insbesondere gilt § 5 BDSG (Datengeheimnis).<br /><br />
+      (3) Bei Nichteinhaltung der datenschutzrechtlichen Bestimmungen finden die Haftungsregelungen der Ziffer 10. Anwendung.
       </p>
     `,
   },
   {
     id: 18,
-    listTitle: "18. Jurisdiction and place of performance",
-    htmlItem: `
-      <p>If the customer is a merchant, a legal entity under public law or a special fund under public law, the place of performance and jurisdiction is the headquarters of the company's management. This jurisdiction agreement also applies expressly in the event that <br /><br />
-      a) the party to be sued in the legal action relocates its registered office, place of residence and/or habitual abode after conclusion of the contract. <br /><br />
 
-      b) Claims from the contractual relationship are asserted by way of dunning procedures.
+    listTitle: "18. Gerichtsstand und Erfüllungsort",
+    htmlItem: `
+      <p>Ist der Auftraggeber Kaufmann, eine juristische Person des öffentlichen Rechts oder handelt es sich um öffentlich-rechtliches Sondervermögen, so ist Erfüllungsort und Gerichtsstand der Sitz der Betriebsleitung des Unternehmens. Diese Gerichtsstand- Vereinbarung gilt ausdrücklich auch für den Fall, dass <br /><br />
+      a) die im Klagewege in Anspruch zu nehmende Partei nach Vertragsabschluss ihren Sitz, Wohnort und / oder gewöhnlichen Aufenthaltsort verlegt. <br /><br />
+
+      b) Ansprüche aus dem Vertragsverhältnis im Wege des Mahnverfahrens geltend gemacht werden.
       </p>
     `,
   },
   {
     id: 19,
-    listTitle: "19. Final Provision",
+
+    listTitle: "19. Schlussbestimmung",
     htmlItem: `
-      <p>If individual provisions of this contract should be legally ineffective, they should be reinterpreted in such a way that the economic purpose associated with the invalid provision is achieved. This does not affect the validity of all other provisions.
+      <p>Falls einzelne Bestimmungen dieses Vertrages rechtsunwirksam sein sollten, so sollen sie so umgedeutet werden, dass der mit der ungültigen Bestimmung verbundene wirtschaftliche Zweck erreicht wird. Die Gültigkeit aller übrigen Bestimmungen wird dadurch nicht berührt.
       </p>
     `,
   },

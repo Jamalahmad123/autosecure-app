@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import Wrapper from "./ui/Wrapper";
 import { logo } from "../assets/images";
-import { navLinks, solutionsDropdownLinks } from "../data/constantData";
+import { legals, navLinks, solutionsDropdownLinks } from "../data/constantData";
 import { styles } from "../Styles";
 import { useEffect, useRef, useState } from "react";
 
@@ -27,7 +27,7 @@ const Nav = () => {
     setToggle(false);
   }, [location]);
 
-  const legals = ["imprint", "privacy", "conditions"];
+  // const legals = ["imprint", "privacy", "conditions"];
 
   return (
     <nav className="bg-white z-[999]">
@@ -45,11 +45,11 @@ const Nav = () => {
           <ul className="menu menu-horizontal p-0 z-[999]">
             <li
               tabIndex={solutionsDropdownLinks.id}
-              className="group nav-link z-[999] capitalize"
+              className="group nav-link z-[999]"
             >
               <NavLink
                 to="/solutions"
-                className="text-clrPrimary font-semibold relative hover:bg-transparent smooth group-hover:text-clrSky capitalize"
+                className="text-clrPrimary font-semibold relative hover:bg-transparent smooth group-hover:text-clrSky"
               >
                 {solutionsDropdownLinks.name}
                 <FaCaretDown />
@@ -59,7 +59,7 @@ const Nav = () => {
                   <li
                     key={item.id}
                     tabIndex={item.id}
-                    className="hover:bg-clrSky capitalize"
+                    className="hover:bg-clrSky"
                   >
                     <label
                       className={`hover:bg-clrSky smooth hover:text-white relative z-[999]`}
@@ -67,12 +67,9 @@ const Nav = () => {
                       {item.name}
                       <FaCaretDown />
                     </label>
-                    <ul className="bg-white w-full p-0 shadow">
+                    <ul className="bg-white w-full p-0 shadow lg:w-[15rem]">
                       {item.subPages.map((item) => (
-                        <li
-                          key={item.id}
-                          className="hover:bg-clrSky capitalize"
-                        >
+                        <li key={item.id} className="hover:bg-clrSky">
                           <NavLink
                             to={item.link}
                             className="text-clrPrimary hover:bg-transparent hover:bg-clrSky smooth hover:text-white relative z-[999]"
@@ -92,11 +89,11 @@ const Nav = () => {
               <li
                 tabIndex={item.id}
                 key={item.id}
-                className="group nav-link z-[999] capitalize"
+                className="group nav-link z-[999]"
               >
                 <NavLink
                   to={`/${item.link}`}
-                  className="text-clrPrimary font-semibold relative hover:bg-transparent smooth group-hover:text-clrSky capitalize"
+                  className="text-clrPrimary font-semibold relative hover:bg-transparent smooth group-hover:text-clrSky"
                 >
                   {item.name}
                   <FaCaretDown />
@@ -187,7 +184,7 @@ const Nav = () => {
                       {item.subPages.map((item) => (
                         <li
                           key={item.id}
-                          className="hover:bg-clrSky capitalize w-full grid place-content-center"
+                          className="hover:bg-clrSky w-full grid place-content-center"
                         >
                           <NavLink
                             to={item.link}
@@ -231,16 +228,16 @@ const Nav = () => {
                 className="text-lg font-semibold text-clrPrimary text-center inline-block"
                 ref={navRef}
               >
-                legal
+                Rechtliches
               </NavLink>
               <div className="flex flex-col gap-5">
-                {legals.map((legal, i) => (
+                {legals.map((item) => (
                   <NavLink
-                    to={`/legal/${legal}`}
+                    to={`/${item.link}`}
                     className="text-clrPrimary text-center bg-gray-50 p-2 hover:bg-white smooth"
-                    key={i}
+                    key={item.id}
                   >
-                    {legal}
+                    {item.name}
                   </NavLink>
                 ))}
               </div>

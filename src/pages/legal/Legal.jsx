@@ -2,25 +2,26 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Wrapper from "../../components/ui/Wrapper";
 import { useTitle } from "../../hooks/customHooks";
+import { legals } from "../../data/constantData";
 import { styles } from "../../Styles";
 
-const legals = [
-  {
-    id: 2,
-    name: "imprint",
-    link: "legal/imprint",
-  },
-  {
-    id: 3,
-    name: "privacy",
-    link: "legal/privacy",
-  },
-  {
-    id: 4,
-    name: "conditions",
-    link: "legal/conditions",
-  },
-];
+// const legals = [
+//   {
+//     id: 2,
+//     name: "imprint",
+//     link: "legal/imprint",
+//   },
+//   {
+//     id: 3,
+//     name: "privacy",
+//     link: "legal/privacy",
+//   },
+//   {
+//     id: 4,
+//     name: "conditions",
+//     link: "legal/conditions",
+//   },
+// ];
 
 const Legal = () => {
   useTitle("Legal – autosecure |  Safe.  Scan.  locate.");

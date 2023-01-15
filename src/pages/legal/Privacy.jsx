@@ -4,7 +4,7 @@ import AccordionList from "../../components/ui/AccordionList";
 import { privacyList } from "./accordionData";
 import { useTitle } from "../../hooks/customHooks";
 
-const title = "privacy";
+const title = "Datenschutz";
 
 const Privacy = () => {
   useTitle("Legal | Privacy – autosecure |  Safe.  Scan.  locate.");
