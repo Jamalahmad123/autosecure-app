@@ -71,16 +71,19 @@ export const solutionsDropdownLinks = {
       subPages: [
         {
           id: 1,
-          name: "active video surveillance",
+          // active video surveillance
+          name: "aktive videoüberwachung",
           link: "/solutions/security-solutions/active-video-surveillance",
         },
         {
           id: 2,
+          //  Mobiler Sicherheitsturm
           name: "mobile security tower",
           link: "/solutions/security-solutions/mobile-security",
         },
         {
           id: 3,
+          //
           name: "wireless in & Outdoor",
           link: "/solutions/security-solutions/wireless-in-and-outdoor",
         },
@@ -92,11 +95,13 @@ export const solutionsDropdownLinks = {
       subPages: [
         {
           id: 1,
+          // autosecure scanner
           name: "autosecure scanner",
           link: "/solutions/scanner-solutions/scan",
         },
         {
           id: 2,
+          // digital gatekeeper
           name: "digital gatekeeper",
           link: "/solutions/scanner-solutions/digital-gate-keeper",
         },

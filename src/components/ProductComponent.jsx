@@ -31,8 +31,15 @@ import AnimatedTower from "./ui/AnimatedTower";
 import AnimatedRouter from "./ui/AnimatedRouter";
 import MultiStepForm from "./ui/MultiStepForm";
 
-const { outDoor, fencedArea, cenimaWeb, smartTracking, monitoringCenter } =
-  data;
+const {
+  outDoor,
+  fencedArea,
+  cenimaWeb,
+  smartTracking,
+  bigThermal,
+  licenseCamera,
+  monitoringCenter,
+} = data;
 
 const ProductComponent = ({ scrollIntoView }) => {
   return (
@@ -42,8 +49,10 @@ const ProductComponent = ({ scrollIntoView }) => {
           <h2
             className={`${styles.headingSecondary} leading-[2.8rem] text-white lg:leading-[3.8rem]`}
           >
-            Visual and audible warning.{" "}
-            <span className="text-clrSky lg:block">Up to full automation.</span>
+            Visuelle und akustische Warnung.{" "}
+            <span className="text-clrSky lg:block">
+              Bis zur Vollautomatisierung.
+            </span>
           </h2>
           <SplitContainer>
             <FeaturesList data={outDoor} style="text-clrSky" />
@@ -57,24 +66,25 @@ const ProductComponent = ({ scrollIntoView }) => {
             <h2
               className={`${styles.headingSecondary} leading-[2.8rem] text-white lg:leading-[3.8rem]`}
             >
-              Mobile security.{" "}
-              <span className="text-clrSky lg:block">Reimagined.</span>
+              Mobile Sicherheit.{" "}
+              <span className="text-clrSky lg:block">Neu konzipiert.</span>
             </h2>
           </header>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 py-20">
             <AnimatedRouter />
             <div className="flex-1 space-y-10">
               <p className="text-white text-xl lg:text-2xl">
-                With our mobile security towers, you get maximum security, even
-                for property areas that are only used temporarily. With our
-                configurable camera equipment, you receive a tailor-made mobile
-                security solution for your individual requirements.
+                Mit unseren mobilen Security-Türmen verschaffen Sie sich
+                maximale Sicherheit auch bei nur temporär genutzten
+                Grundstückarealen. Mit unserer konfigurierbaren Kamerabestückung
+                erhalten Sie eine maßgeschneiderte mobile Sicherheitslösung für
+                Ihre individuellen Anforderungen.
               </p>
               <button
                 onClick={scrollIntoView}
                 className="btn text-base md:text-xl font-semibold text-white lowercase border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular"
               >
-                request a quote <FaChevronRight size={20} className="ml-4" />
+                Angebot anfordern <FaChevronRight size={20} className="ml-4" />
               </button>
             </div>
           </div>
@@ -82,14 +92,15 @@ const ProductComponent = ({ scrollIntoView }) => {
             <h2
               className={`${styles.headingSecondary} leading-[2.8rem] text-white lg:leading-[3.8rem]`}
             >
-              Latest technology.{" "}
-              <span className="text-clrSky lg:block">smart intelligence.</span>
+              Neueste Technologie.{" "}
+              <span className="text-clrSky lg:block">Smarte Intelligenz.</span>
             </h2>
             <p className="text-white text-xl lg:text-2xl mt-8 max-w-xl">
-              With our mobile security towers, you get maximum security, even
-              for property areas that are only used temporarily. With our
-              configurable camera equipment, you receive a tailor-made mobile
-              security solution for your individual requirements.
+              Mit unseren mobilen Security-Türmen verschaffen Sie sich maximale
+              Sicherheit auch bei nur temporär genutzten Grundstückarealen. Mit
+              unserer konfigurierbaren Kamerabestückung erhalten Sie eine
+              maßgeschneiderte mobile Sicherheitslösung für Ihre individuellen
+              Anforderungen.
             </p>
             <SplitContainer style="py-10">
               <div>
@@ -124,7 +135,7 @@ const ProductComponent = ({ scrollIntoView }) => {
                   className="w-full"
                 />
               </figure>
-              <FeaturesList data={cenimaWeb} style="text-white" />
+              <FeaturesList data={bigThermal} style="text-white" />
             </div>
             <div>
               <figure>
@@ -134,14 +145,14 @@ const ProductComponent = ({ scrollIntoView }) => {
                   className="w-full"
                 />
               </figure>
-              <FeaturesList data={smartTracking} style="text-white" />
+              <FeaturesList data={licenseCamera} style="text-white" />
             </div>
           </SplitContainer>
           <div className="pt-24 space-y-8">
             <h2
               className={`${styles.headingSecondary} leading-[2.8rem] text-white lg:leading-[3.8rem]`}
             >
-              live stream. <span className="text-clrSky lg:block">24/7</span>
+              Livestream.<span className="text-clrSky lg:block">24/7.</span>
             </h2>
             <SplitContainer>
               <figure className="flex-1">
@@ -153,13 +164,13 @@ const ProductComponent = ({ scrollIntoView }) => {
               </figure>
               <div className="flex-1">
                 <p className="text-white text-xl lg:text-2xl mt-8 w-full">
-                  With our mobile security towers, you get maximum security,
-                  even for property areas that are only used temporarily. With
-                  our configurable camera equipment, you receive a tailor-made
-                  mobile security solution for your individual requirements.
+                  Der autosecure Mobile Security Tower verfügt über eine
+                  integrierte LTE-Datenkarte mit unbegrenztem Datenvolumen –
+                  damit ermöglichen wir Ihnen auch vollen Zugriff auf Ihre
+                  Live-Streams und Aufzeichnungen.
                 </p>
                 <p className="flex-1 text-white text-xl lg:text-2xl mt-8">
-                  Stay up to date 24/7.
+                  Bleiben Sie 24/7 auf dem Laufenden.
                 </p>
               </div>
             </SplitContainer>
@@ -172,14 +183,12 @@ const ProductComponent = ({ scrollIntoView }) => {
             <h2
               className={`${styles.headingSecondary} leading-[2.8rem] text-clrPrimary lg:leading-[3.8rem]`}
             >
-              nationwide.
-              <span className="text-clrSky lg:block">
-                Delivered in 48 hours.
-              </span>
+              Bundesweit.
+              <span className="text-clrSky lg:block">In 48h geliefert.</span>
             </h2>
             <p className="text-xl lg:text-2xl text-clrPrimary">
-              Rely on fast and reliable delivery{" "}
-              <br className="hidden md:block" /> within Germany.
+              Verlassen Sie sich auf schnelle und zuverlässige Lieferung
+              <br className="hidden md:block" /> innerhalb Deutschlands.
             </p>
           </header>
           <figure className="p-4">
@@ -196,7 +205,7 @@ const ProductComponent = ({ scrollIntoView }) => {
             >
               <FaPhoneVolume size={20} className="ml-4" />
               <span className="flex-1 text-lg md:text-xl lg:text-xl">
-                call us directly.
+                Rufen Sie uns direkt an.
               </span>
             </a>
             <a
@@ -205,7 +214,7 @@ const ProductComponent = ({ scrollIntoView }) => {
             >
               <FaRegEnvelope size={20} className="ml-4" />
               <span className="flex-1 text-lg md:text-xl lg:text-xl">
-                Write us.
+                Schreiben Sie uns.
               </span>
             </a>
           </div>
@@ -216,43 +225,44 @@ const ProductComponent = ({ scrollIntoView }) => {
           <h2
             className={`${styles.headingSecondary} leading-[2.8rem] text-white lg:leading-[3.8rem]`}
           >
-            secured.
-            <span className="text-clrSky lg:block">areas of application.</span>
+            Abgesichert.
+            <span className="text-clrSky lg:block">Einsatzgebiete.</span>
           </h2>
           <SplitContainer style="py-14">
             <div className="flex-1 space-y-5">
               <h2 className="text-2xl md:text-3xl lg:text-3xl font-AllianceBold font-bold text-clrSky">
-                construction site
+                Baustelle
               </h2>
               <p className="text-white text-base md:text-lg">
-                100% safety for your construction site thanks to the latest
-                generation of mobile safety solutions.
+                100% Sicherheit für Ihre Baustelle durch mobile
+                Sicherheitslösungen der neuesten Generation.
               </p>
             </div>
             <div className="flex-1 space-y-5">
               <h2 className="text-2xl md:text-3xl lg:text-3xl font-AllianceBold font-bold text-clrSky">
-                Line/road construction
+                Trassen-/ Straßenbau
               </h2>
               <p className="text-white text-base md:text-lg">
-                Securing vehicles, machines, tools and delivered materials
-                against theft and vandalism to avoid unnecessary costs and
-                construction delays. With long-distance thermal technology, even
-                very long distances can be covered with just a few monitoring
-                points.
+                Sicherung der Fahrzeuge, Maschinen, Werkzeuge und eingelieferter
+                Materialien gegen Diebstahl und Vandalismus zur Vermeidung
+                unnötiger Kosten und Bauverzögerungen. Mit
+                Langstrecken-Thermaltechnik auch sehr große Strecken mit nur
+                wenigen Überwachungspunkten realisierbar.
               </p>
             </div>
           </SplitContainer>
           <SplitContainer style="py-10">
             <div className="flex-1 space-y-5">
               <h2 className="text-2xl md:text-3xl lg:text-3xl font-AllianceBold font-bold text-clrSky">
-                Automobile & Mobility
+                Automobil & Mobilität
               </h2>
               <p className="text-white text-base md:text-lg">
-                100% mobile protection of temporarily rented compensation areas
-                or properties without the appropriate infrastructure for
-                permanent surveillance. Thanks to the live view function, it can
-                also be viewed from anywhere without the need for time-consuming
-                travel times for vehicle checks. Security on the premises.
+                100% mobile Absicherung von temporär angemieteten
+                Ausgleichsflächen oder Liegenschaften ohne entsprechende
+                Infrastruktur für eine Permentbewachung. Durch die Live-View
+                Funktion auch von überall einsehbar, ohne das zeitaufwendige
+                Fahrtzeiten für Fahrzeugkontrollen notwendig werden. Sicherheit
+                auf dem Betriebsgelände.
               </p>
             </div>
             <div className="flex-1 space-y-5">
@@ -260,21 +270,21 @@ const ProductComponent = ({ scrollIntoView }) => {
                 Events
               </h2>
               <p className="text-white text-base md:text-lg">
-                100% protection and overview of events at events. Cooperation
-                with the police and private security services to provide a
-                picture of the situation and to identify dangers for the
-                targeted introduction of intervention measures
+                100% Absicherung und Überblick der Ereignisse bei Events.
+                Kooperation mit Polizei und privaten Sicherheitsdiensten zur
+                Verschaffung eines Lagebildes und zur Erkennung von Gefahren zur
+                gezielten Einleitung von Interventionsmaßnahmen
               </p>
             </div>
           </SplitContainer>
 
           <div className="max-w-md space-y-5">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-AllianceBold font-bold text-clrSky">
-              vacancy protection
+              Leerstandssicherung
             </h2>
             <p className="text-white text-base md:text-lg">
-              Temporary surveillance of vacant properties against vandalism and
-              burglary/theft.
+              Temporäre Überwachung von leerstehenden Liegenschaften gegen
+              Vandalismus und Einbruch/Diebstahl
             </p>
           </div>
         </Wrapper>
@@ -284,24 +294,24 @@ const ProductComponent = ({ scrollIntoView }) => {
           <h2
             className={`${styles.headingSecondary} leading-[2.8rem] text-white lg:leading-[3.8rem]`}
           >
-            State-of-the-art in-house
+            Hochmodernes hauseigenes
             <span className="text-clrSky lg:block">
-              Alarm & Monitoring Center.
+              Alarm- & Monitoring Center.
             </span>
           </h2>
           <SplitContainer style="py-14">
             <div className="flex-1 space-y-8">
               <p className="text-xl lg:text-2xl text-white">
-                Effective burglary and damage prevention with the support of
-                artificial intelligence and an individual 360° security concept
-                from autosecure - this is how we achieve 100% protection for
-                your valuables.
+                Effektive Einbruch- und Schadenabwendung mit Unterstützung von
+                künstlicher Intelligenz und einem individuellen
+                360°-Sicherheits-Konzept von autosecure – so erreichen wir 100%
+                Schutz für Ihre Werte.
               </p>
               <button
                 onClick={scrollIntoView}
                 className="btn text-base md:text-xl font-semibold text-white lowercase border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular"
               >
-                request a quote <FaChevronRight size={20} className="ml-4" />
+                Angebot anfordern <FaChevronRight size={20} className="ml-4" />
               </button>
             </div>
             <ul className="flex-1 space-y-4">
@@ -338,7 +348,7 @@ const ProductComponent = ({ scrollIntoView }) => {
           <h2
             className={`${styles.headingSecondary} leading-[2.8rem] text-clrPrimary lg:leading-[3.8rem]`}
           >
-            Technical specifications.
+            Technische Daten.
             <span className="text-clrSky lg:block">Mobile Security Tower.</span>
           </h2>
           <div className="py-24 flex flex-col gap-8 justify-center items-center lg:flex-row">
@@ -364,7 +374,7 @@ const ProductComponent = ({ scrollIntoView }) => {
                 onClick={scrollIntoView}
                 className="btn text-base md:text-xl font-semibold text-white lowercase border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular"
               >
-                request a quote <FaChevronRight size={20} className="ml-4" />
+                Angebot anfordern <FaChevronRight size={20} className="ml-4" />
               </button>
             </div>
           </div>
@@ -472,7 +482,7 @@ const ProductComponent = ({ scrollIntoView }) => {
           <h2
             className={`${styles.headingSecondary} leading-[2.8rem] text-clrSky lg:leading-[3.8rem]`}
           >
-            More Applications.
+            Weitere Anwendungen.
           </h2>
           <SplitContainer style="py-14">
             <video
@@ -487,35 +497,38 @@ const ProductComponent = ({ scrollIntoView }) => {
             <div className="flex-1 space-y-16">
               <div>
                 <h2 className="text-2xl md:text-3xl lg:text-3xl font-AllianceBold font-bold text-clrPrimary">
-                  Impressive time-lapse movies and webcams
+                  Beeindruckende Zeitrafferfime und Webcams
                 </h2>
                 <p className="text-clrPrimary text-xl lg:text-2xl mt-8">
-                  We create high-quality time-lapse films with impressive image
-                  effects for your project. You can also use our documentary
-                  cameras as webcams for your public relations work.
+                  Wir erstellen für Ihr Projekt hochwertige Zeitrafferfilme mit
+                  beeindruckenden Bildeffekten. Ebenso können Sie unsere
+                  Doku-Kameras als Webcam einsetzen und für Ihre
+                  Öffentlichkeitsarbeit nutzen.
                 </p>
               </div>
               <div>
                 <h2 className="text-2xl md:text-3xl lg:text-3xl font-AllianceBold font-bold text-clrPrimary">
-                  Digital gate book with automatic license plate recognition
+                  Digitales Pfortenbuch mit automatischer Kennzeichenerfassung
                 </h2>
                 <p className="text-clrPrimary text-xl lg:text-2xl mt-8">
-                  With our ecosystem feature "digital gate book" you receive a
-                  complete documentation of entering vehicles and the
-                  possibility to control and track your gate processes
-                  completely digitally. This way you can see which vehicles
-                  drove onto your property today, yesterday or 3 months ago.
+                  Mit unserem Ecosystem-Feature „Digitales Pfortenbuch“ erhalten
+                  Sie eine lückenlose Dokumentation von Einfahrenden Fahrzeugen
+                  und die Möglichkeit, Ihre Pfortenabläufe komplett digital zu
+                  steuern und nachzuhalten. So können Sie nachvollziehen, welche
+                  Fahrzeuge heute, gestern oder auch vor 3 Monaten auf Ihr
+                  Grundstück gefahren sind.
                 </p>
               </div>
               <div>
                 <h2 className="text-2xl md:text-3xl lg:text-3xl font-AllianceBold font-bold text-clrPrimary">
-                  Digital guard book
+                  Digitales Wachbuch
                 </h2>
                 <p className="text-clrPrimary text-xl lg:text-2xl mt-8">
-                  With our digital watch log, you receive the events of the
-                  night in a clear form every morning and via cloud-based web
-                  access in our autosecure ecosystem. This way you keep full
-                  control over your project.
+                  Mit unserem digitalen Wachbuch erhalten Sie vollautomatisiert
+                  jeden Morgen und über einen cloudbasierten Webzugriff in
+                  unserem autosecure Ecosystem die Vorkommnisse der Nacht in
+                  übersichtlicher Form zur Einsicht. So behalten Sie die volle
+                  Kontrolle über Ihr Projekt.
                 </p>
               </div>
             </div>
@@ -528,7 +541,7 @@ const ProductComponent = ({ scrollIntoView }) => {
             className={`${styles.headingSecondary} leading-[2.8rem] text-white lg:leading-[3.8rem]`}
           >
             Mobile Security Tower.
-            <span className="text-clrSky lg:block">Rent now!</span>
+            <span className="text-clrSky lg:block">Jetzt mieten!</span>
           </h2>
           <div className="flex items-center justify-center flex-col gap-10 lg:flex-row">
             <div className="hidden w-[35%] lg:flex items-center justify-center">
@@ -536,9 +549,10 @@ const ProductComponent = ({ scrollIntoView }) => {
             </div>
             <div className="w-full lg:w-[65%] space-y-8">
               <p className="text-white text-xl lg:text-2xl mt-8">
-                Rent your individually configured autosecure Mobile Security
-                Tower. Start your inquiry and we will contact you immediately
-                and make you our offer.
+                Mieten Sie Ihren individuell konfigurierten autosecure Mobile
+                Security Tower. Starten Sie Ihre Anfrage und wir werden uns
+                umgehend mit Ihnen in Verbindung setzen und Ihnen unser Angebot
+                unterbreiten.
               </p>
               <MultiStepForm />
             </div>

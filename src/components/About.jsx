@@ -84,8 +84,8 @@ const About = ({ scrollToView }) => {
           <TypeWriter width={140} labels={labels} hasStyle />
           <header>
             <h2 className={`${styles.headingSecondary} text-white`}>
-              Active mobile video surveillance of the{" "}
-              <span className="text-clrSky">latest generation.</span>
+              Aktive mobile Videoüberwachung der{" "}
+              <span className="text-clrSky">neuesten Generation.</span>
             </h2>
           </header>
           <div className="flex justify-center items-center flex-col gap-10 lg:flex-row lg:justify-evenly mt-10">
@@ -97,21 +97,21 @@ const About = ({ scrollToView }) => {
               <div className="space-y-5">
                 <p className="text-xl text-white lg:text-2xl font-bold">
                   <FaChevronRight className="inline-block text-clrSky" /> 100%
-                  sure.
+                  sicher.
                 </p>
                 <p className="text-xl text-white lg:text-2xl font-bold">
                   <FaChevronRight className="inline-block text-clrSky" /> 100%
-                  flexible.
+                  flexibel.
                 </p>
                 <p className="text-xl text-white lg:text-2xl font-bold">
                   <FaChevronRight className="inline-block text-clrSky" /> 100%
-                  configurable.
+                  konfigurierbar.
                 </p>
                 <button
                   className="btn text-white btn-lg gap-4 md:gap-8 border-none bg-clrSkyDark hover:bg-clrSky"
                   onClick={scrollToView}
                 >
-                  Rent Now
+                  Jetzt mieten
                   <FaChevronRight />
                 </button>
               </div>
@@ -122,25 +122,25 @@ const About = ({ scrollToView }) => {
               <div className="flex gap-3">
                 <FaCheck className="text-clrSky min-w-[25px]" />
                 <p className="text-lg font-medium lg:text-xl text-white flex-shrink">
-                  Active mobile video surveillance with live perpetrator address
-                  to reduce access time to a minimum for maximum deterrence and
-                  minimum damage expenditure
+                  Aktive mobile Videoüberwachung mit Live-Täteransprache zur
+                  Reduktion der Zugriffszeit auf ein Minimum für maximale
+                  Abschreckung und minimale Schadenaufwendung
                 </p>
               </div>
 
               <div className="flex gap-3">
                 <FaCheck className="text-clrSky min-w-[25px]" />
                 <p className="text-lg font-medium lg:text-xl text-white flex-shrink">
-                  Configurable camera equipment, variable and individual
-                  depending on the requirement
+                  Konfigurierbare Kamerabestückung, variabel und individuell je
+                  nach Anforderung
                 </p>
               </div>
 
               <div className="flex gap-3">
                 <FaCheck className="text-clrSky min-w-[25px]" />
                 <p className="text-lg font-medium lg:text-xl text-white flex-shrink">
-                  Precise alarm thanks to artificial intelligence in the cameras
-                  with a real alarm rate of 95%
+                  Präziser Alarm dank künstlicher Intelligenz in den Kameras mit
+                  95% Echtalarm-Quote
                 </p>
               </div>
             </div>

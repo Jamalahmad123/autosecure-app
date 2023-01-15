@@ -67,7 +67,7 @@ const Nav = () => {
                       {item.name}
                       <FaCaretDown />
                     </label>
-                    <ul className="bg-white w-full p-0 shadow lg:w-[15rem]">
+                    <ul className="bg-white w-full p-0 shadow lg:w-[17rem]">
                       {item.subPages.map((item) => (
                         <li key={item.id} className="hover:bg-clrSky">
                           <NavLink

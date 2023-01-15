@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const MultiStepForm = () => {
   const [step, setStep] = useState(1);
@@ -45,7 +46,7 @@ const MultiStepForm = () => {
           formData={formData}
         />
         <span className="text-sm text-[#3a3a3c] inline-block">
-          * Please fill out fields marked with *.
+          * Bitte mit * markierte Felder ausfüllen.
         </span>
       </form>
     </>
@@ -124,7 +125,7 @@ const FormUserDetails = ({
     <div className="space-y-8">
       <input
         type="text"
-        placeholder="Company *"
+        placeholder="Unternehmen *"
         className="bg-white text-clrPrimary input w-full text-lg lg:text-2xl py-2 min-h-[60px]"
         id="company"
         onChange={handleChange}
@@ -133,7 +134,7 @@ const FormUserDetails = ({
       <div className="flex items-center flex-col gap-5 lg:flex-row">
         <input
           type="text"
-          placeholder="first name"
+          placeholder="Vorname *"
           className="bg-white text-clrPrimary input w-full text-lg lg:text-2xl py-2 min-h-[60px]"
           id="firstName"
           onChange={handleChange}
@@ -141,7 +142,7 @@ const FormUserDetails = ({
         />
         <input
           type="text"
-          placeholder="Surname *"
+          placeholder="Nachname *"
           className="bg-white text-clrPrimary input w-full text-lg lg:text-2xl py-2 min-h-[60px]"
           id="lastName"
           onChange={handleChange}
@@ -153,7 +154,7 @@ const FormUserDetails = ({
         className="btn p-8 text-xl text-white border-none bg-clrSky w-full mt-8 lg:text-2xl font-bold flex-nowrap capitalize hover:opacity-80 hover:bg-clrSky"
         onClick={next}
       >
-        Continue
+        Weiter
       </button>
     </div>
   );
@@ -163,7 +164,7 @@ const NumberOfTowers = ({ prev, next, handleChange, quantity }) => {
   return (
     <div className="space-y-8">
       <h2 className="text-2xl md:text-3xl lg:text-3xl font-AllianceBold font-bold text-clrSky">
-        How many towers would you like to rent?
+        Wie viele Türme möchten Sie mieten?
       </h2>
       <select
         className="select w-full bg-white py-2 text-xl font-AllianceRegular"
@@ -171,7 +172,7 @@ const NumberOfTowers = ({ prev, next, handleChange, quantity }) => {
         defaultValue={quantity}
         onChange={handleChange}
       >
-        <option>I don't no yet</option>
+        <option>Ich weiß es noch nicht</option>
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -189,14 +190,14 @@ const NumberOfTowers = ({ prev, next, handleChange, quantity }) => {
           className="btn p-8 text-xl text-clrSky border-none bg-transparent mt-8 lg:text-2xl font-bold flex-nowrap capitalize hover:opacity-80 flex-1"
           onClick={prev}
         >
-          Return
+          Zurück
         </button>
         <button
           type="button"
           className="btn p-8 text-xl text-white border-none bg-clrSky mt-8 lg:text-2xl font-bold flex-nowrap capitalize hover:opacity-80 hover:bg-clrSky flex-1"
           onClick={next}
         >
-          Continue
+          Weiter
         </button>
       </div>
     </div>
@@ -207,11 +208,11 @@ const RentPeriod = ({ next, prev, handleChange, startDate, lastDate }) => {
   return (
     <div className="space-y-8">
       <h2 className="text-2xl md:text-3xl lg:text-3xl font-AllianceBold font-bold text-clrSky">
-        Determine your desired rental period:
+        Bestimmen Sie Ihren gewünschten Mietzeitraum:
       </h2>
       <div>
         <label htmlFor="date" className="text-white">
-          Of:
+          Von:
         </label>
         <input
           type="date"
@@ -223,7 +224,7 @@ const RentPeriod = ({ next, prev, handleChange, startDate, lastDate }) => {
       </div>
       <div>
         <label htmlFor="date" className="text-white">
-          On:
+          Bis:
         </label>
         <input
           type="date"
@@ -239,14 +240,14 @@ const RentPeriod = ({ next, prev, handleChange, startDate, lastDate }) => {
           className="btn p-8 text-xl text-clrSky border-none bg-transparent mt-8 lg:text-2xl font-bold flex-nowrap capitalize hover:opacity-80 flex-1"
           onClick={prev}
         >
-          Return
+          Zurück
         </button>
         <button
           type="button"
           className="btn p-8 text-xl text-white border-none bg-clrSky mt-8 lg:text-2xl font-bold flex-nowrap capitalize hover:opacity-80 hover:bg-clrSky flex-1"
           onClick={next}
         >
-          Continue
+          Weiter
         </button>
       </div>
     </div>
@@ -259,12 +260,12 @@ const Contact = ({ next, prev, email, phone, handleChange }) => {
   return (
     <div className="space-y-8">
       <h2 className="text-2xl md:text-3xl lg:text-3xl font-AllianceBold font-bold text-clrSky">
-        How can we contact you?
+        Wie können wir Sie kontaktieren?
       </h2>
       <input
         type="email"
         id="email"
-        placeholder="your email*"
+        placeholder="Ihre E-Mail *"
         className="bg-white text-clrPrimary input w-full text-lg lg:text-2xl py-2 min-h-[60px]"
         defaultValue={email}
         onChange={handleChange}
@@ -272,7 +273,7 @@ const Contact = ({ next, prev, email, phone, handleChange }) => {
       <input
         type="tel"
         id="phone"
-        placeholder="your phone number*"
+        placeholder="Ihre Telefon-Nummer *"
         className="bg-white text-clrPrimary input w-full text-lg lg:text-2xl py-2 min-h-[60px]"
         defaultValue={phone}
         onChange={handleChange}
@@ -283,14 +284,14 @@ const Contact = ({ next, prev, email, phone, handleChange }) => {
           className="btn p-8 text-xl text-clrSky border-none bg-transparent mt-8 lg:text-2xl font-bold flex-nowrap capitalize hover:opacity-80 flex-1"
           onClick={prev}
         >
-          Return
+          Zurück
         </button>
         <button
           type="button"
           className="btn p-8 text-xl text-white border-none bg-clrSky mt-8 lg:text-2xl font-bold flex-nowrap capitalize hover:opacity-80 hover:bg-clrSky flex-1"
           onClick={next}
         >
-          Continue
+          Weiter
         </button>
       </div>
     </div>
@@ -310,18 +311,30 @@ const Message = ({ prev, message, handleChange }) => {
       <div className="form-control mt-8">
         <label className="label justify-start gap-2 sm:gap-4 cursor-pointer">
           <input type="checkbox" className="toggle" />
-          <span className="text-xs">
-            Yes, I agree to the <b>data protection</b> agreements of autosecure
-            GmbH.
+          <span className="text-xs text-white">
+            Ja, ich stimme den {/* /legal/conditions */}
+            <Link
+              to="/legal/privacy"
+              className="font-semibold hover:opacity-60"
+            >
+              Datenschutzvereinbarungen
+            </Link>{" "}
+            der autosecure GmbH
           </span>
         </label>
       </div>
       <div className="form-control">
         <label className="label justify-start gap-2 sm:gap-4 cursor-pointer">
           <input type="checkbox" className="toggle" />
-          <span className="text-xs">
-            Yes, I agree to the <b>general</b> terms and conditions of
-            autosecure GmbH.
+          <span className="text-xs text-white">
+            Ja, ich stimme den{" "}
+            <Link
+              to="/legal/conditions"
+              className="font-semibold hover:opacity-60"
+            >
+              allgemeinen Geschäftsbedingungen
+            </Link>
+            der autosecure GmbH zu.
           </span>
         </label>
       </div>
@@ -331,13 +344,13 @@ const Message = ({ prev, message, handleChange }) => {
           className="btn p-8 text-xl text-clrSky border-none bg-transparent mt-8 lg:text-2xl font-bold flex-nowrap capitalize hover:opacity-80 flex-1"
           onClick={prev}
         >
-          Return
+          Zurück
         </button>
         <button
           type="submit"
           className="btn p-8 text-xl text-white border-none bg-clrSky mt-8 lg:text-2xl font-bold flex-nowrap capitalize hover:opacity-80 hover:bg-clrSky flex-1"
         >
-          request a qoute
+          Angebot anfordern
         </button>
       </div>
     </div>

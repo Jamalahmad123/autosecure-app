@@ -16,25 +16,27 @@ const ApplyForm = () => {
       <Wrapper className="px-4 space-y-12">
         <header>
           <h1 className={`${styles.headingPrimary} text-clrPrimary`}>
-            Apply now.
+            Jetzt bewerben.
           </h1>
           <p className={`${styles.textPrimary} text-clrPrimary mt-8`}>
-            Use our application form and start your application process at
-            autosecure GmbH now.
+            Nutzen Sie unser Bewerbungsformular und starten Sie jetzt Ihren
+            Bewerbungsprozess bei der autosecure GmbH.
           </p>
         </header>
         <form className="space-y-12">
           <div className="space-y-6">
             <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold text-clrPrimary">
-              Select vacancy and location
+              Offene Stelle und Standort wählen
             </h2>
             <div className={`flex gap-4 flex-col lg:flex-row lg:items-center`}>
               <div className="flex-1 space-y-4">
                 <p className="text-clrPrimary font-light">
-                  Please select an open position.
+                  Bitte wählen Sie eine offene Stelle.
                 </p>
                 <select className="select w-full bg-white text-clrPrimary text-xl font-normal font-AllianceRegular h-14 input rounded-none focus:outline-none focus:shadow-inputShadow">
-                  <option value="choose position">– Select Position – *</option>
+                  <option value="choose position">
+                    – Offene Stellen wählen – *
+                  </option>
                   {positions.map((pos) => (
                     <option value={pos} key={pos}>
                       {pos}
@@ -44,24 +46,24 @@ const ApplyForm = () => {
               </div>
               <div className="flex-1 space-y-4">
                 <p className="text-clrPrimary font-light">
-                  Please select a location.
+                  Bitte wählen Sie einen Standort.
                 </p>
                 <select className="select w-full bg-white text-clrPrimary text-xl font-normal font-AllianceRegular h-14 input rounded-none focus:outline-none focus:shadow-inputShadow">
-                  <option value="choose location">– Choose location – *</option>
-                  <option value="muenster">muenster</option>
-                  <option value="nationwide">nationwide</option>
+                  <option value="choose location">– Standort wählen – *</option>
+                  <option value="muenster">Münster</option>
+                  <option value="nationwide">Bundesweit</option>
                 </select>
               </div>
             </div>
           </div>
           <div className="space-y-6">
             <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold text-clrPrimary">
-              Personal Information
+              Persönliche Informationen
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <input
                 type="text"
-                placeholder="First name *"
+                placeholder="Vorname *"
                 className="bg-white text-clrPrimary input w-full h-14 rounded-none focus:outline-none focus:shadow-inputShadow"
                 name="company"
                 // value={company}
@@ -69,7 +71,7 @@ const ApplyForm = () => {
               />
               <input
                 type="text"
-                placeholder="Surname *"
+                placeholder="Name *"
                 className="bg-white text-clrPrimary input h-14 w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                 name="name"
                 // value={name}
@@ -77,7 +79,7 @@ const ApplyForm = () => {
               />
               <input
                 type="email"
-                placeholder="Email *"
+                placeholder="E-Mail Adresse *"
                 className="bg-white text-clrPrimary input h-14 w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                 name="email"
                 // value={email}
@@ -85,7 +87,7 @@ const ApplyForm = () => {
               />
               <input
                 type="tel"
-                placeholder="Phone number. *"
+                placeholder="Telefon-Nr. *"
                 className="bg-white text-clrPrimary input h-14 w-full rounded-none focus:outline-none focus:shadow-inputShadow"
                 name="phoneNo"
                 // value={phoneNo}
@@ -95,22 +97,24 @@ const ApplyForm = () => {
           </div>
           <div className="space-y-6">
             <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold text-clrPrimary">
-              Upload or create a new CV
+              Lebenslauf uploaden oder neu erstellen
             </h2>
-            <p className="text-clrPrimary font-light">(max. 3MB file size).</p>
+            <p className="text-clrPrimary font-light">
+              (max. 32MB Dateigröße).
+            </p>
             <input type="file" className="file-input w-full max-w-xs" />
           </div>
           <div className="space-y-6">
             <h2 className="text-xl lg:text-3xl font-bold font-AllianceBold text-clrPrimary">
-              Why do you want to work at autosecure?
+              Warum möchten Sie bei autosecure arbeiten?
             </h2>
             <p className="text-clrPrimary font-light">
-              Tell us why autosecure is the right employer for you and what
-              motivates you to shape your future with us.
+              Teilen Sie uns mit, warum autosecure der richtige Arbeitgeber für
+              Sie ist und was Sie motiviert, Ihre Zukunft bei uns zu gestalten.
             </p>
             <textarea
               className="textarea text-lg font-AllianceRegular box-border w-full h-[200px] bg-white text-clrPrimary focus:outline-none focus:shadow-inputShadow"
-              placeholder="your description of interest"
+              placeholder="Ihre Interessenbeschreibung"
               name="message"
               // value={message}
               // onChange={onChange}
@@ -118,16 +122,17 @@ const ApplyForm = () => {
             <label className="label items-start gap-2 sm:gap-4 cursor-pointer">
               <input type="checkbox" className="toggle" />
               <span className="text-lg text-clrPrimary">
-                I agree that my data may be used for evaluation within the
-                application process. I am aware that I have the right of
-                withdrawal at any time to have my data deleted at any time. You
-                can find more information on how we handle your personal data in
-                our{" "}
+                Ich bin damit einverstanden, dass meine Daten zur Auswertung
+                innerhalb des Bewerbungsprozesses verwendet werden dürfen. Mir
+                ist bewusst, dass mir ein jederzeitiges Widerrufsrecht
+                ermöglicht, meine Daten jederzeit löschen zu lassen. Weitere
+                Informationen zum Umgang mit Ihren persönlichen Daten finden Sie
+                in unserer our{" "}
                 <Link
                   to="/legal/privacy"
                   className="font-bold hover:opacity-80 text-black"
                 >
-                  privacy policy
+                  Datenschutzerklärung
                 </Link>{" "}
                 .
               </span>
@@ -137,17 +142,12 @@ const ApplyForm = () => {
             type="submit"
             className="btn text-white text-xl lg:text-3xl border-none bg-clrPrimary h-20 font-normal capitalize w-full mt-8 rounded-none"
           >
-            Send application now
+            Bewerbung jetzt senden
           </button>
         </form>
       </Wrapper>
     </section>
   );
 };
-
-/*
-                  
-                  
-                   */
 
 export default ApplyForm;
