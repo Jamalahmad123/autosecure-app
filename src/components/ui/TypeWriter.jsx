@@ -74,7 +74,9 @@ const TypeWriter = ({ width, labels, hasStyle }) => {
     <>
       {playAnimation && (
         <div
-          className={`border-r-2 inline-block animated-text ${hasStyle}`}
+          className={`border-r-2 inline-block animated-text ${
+            hasStyle ? "border-clrSky" : "border-clrPrimary"
+          }`}
           ref={textContainerRef}
           style={{ overflow: "hidden", transition: "all 300ms linear" }}
         >

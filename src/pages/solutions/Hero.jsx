@@ -17,11 +17,7 @@ const Hero = ({ title, desc, benefit1, benefit2, videoPath, isAssist }) => {
             Sorry, your browser doesn't support videos.
           </video>
           <div className="card-body justify-start items-start flex-1">
-            <TypeWriter
-              width={120}
-              labels={labels}
-              hasStyle="text-clrPrimary"
-            />
+            <TypeWriter width={120} labels={labels} />
             <h1 className={`${styles.headingPrimary} text-clrPrimary mt-0`}>
               {title}
             </h1>

@@ -63,13 +63,13 @@ const AnimatedCircle = () => {
   }, []);
 
   return (
-    <div className="bdt-ep-circle-info bg-clrVeryLightGray">
-      <div className="bdt-ep-circle-info-wrap">
+    <div className="container mx-auto bdt-ep-circle-info bg-clrVeryLightGray overflow-hidden">
+      <div className="bdt-ep-circle-info-wrap h-[300px] w-[300px] md:h-[600px] md:w-[600px] lg:h-[800px] lg:w-[800px]">
         <div className="bdt-ep-circle-info-inner" ref={circleRef}>
           <div
             className="bdt-ep-circle-info-sub-circle"
             data-circle-index="1"
-            style={{ transform: "translate3d(200px, -346.41px, 0px)" }}
+            // style={{ transform: "translate3d(200px, -346.41px, 0px)" }}
           >
             <div
               ref={virusRef}
@@ -78,13 +78,13 @@ const AnimatedCircle = () => {
                 transition: "all 2s ease 0s",
               }}
             >
-              <FaShieldVirus size={30} aria-hidden="true" />
+              <FaShieldVirus aria-hidden="true" />
             </div>
           </div>
           <div
             className="bdt-ep-circle-info-sub-circle"
             data-circle-index="2"
-            style={{ transform: "translate3d(-200px, -346.41px, 0px)" }}
+            // style={{ transform: "translate3d(-200px, -346.41px, 0px)" }}
           >
             <div
               ref={euroRef}
@@ -99,7 +99,7 @@ const AnimatedCircle = () => {
           <div
             className="bdt-ep-circle-info-sub-circle"
             data-circle-index="3"
-            style={{ transform: "translate3d(-400px, 0px, 0px)" }}
+            // style={{ transform: "translate3d(-400px, 0px, 0px)" }}
           >
             <div
               ref={videoRef}
@@ -114,7 +114,7 @@ const AnimatedCircle = () => {
           <div
             className="bdt-ep-circle-info-sub-circle"
             data-circle-index="4"
-            style={{ transform: "translate3d(-200px, 346.41px, 0px)" }}
+            // style={{ transform: "translate3d(-200px, 346.41px, 0px)" }}
           >
             <div
               ref={clockRef}
@@ -129,7 +129,7 @@ const AnimatedCircle = () => {
           <div
             className="bdt-ep-circle-info-sub-circle"
             data-circle-index="5"
-            style={{ transform: "translate3d(200px, 346.41px, 0px)" }}
+            // style={{ transform: "translate3d(200px, 346.41px, 0px)" }}
           >
             <div
               ref={cloudRef}
@@ -144,7 +144,7 @@ const AnimatedCircle = () => {
           <div
             className="bdt-ep-circle-info-sub-circle"
             data-circle-index="6"
-            style={{ transform: "translate3d(400px, 0px, 0px)" }}
+            // style={{ transform: "translate3d(400px, 0px, 0px)" }}
           >
             <div
               ref={cogRef}
@@ -158,9 +158,11 @@ const AnimatedCircle = () => {
           </div>
         </div>
 
-        <div className="bdt-ep-circle-info-content">
-          <div className="bdt-ep-circle-info-item">
-            <span className="bdt-ep-circle-info-title">{label}</span>
+        <div className="bdt-ep-circle-info-content h-1/2 w-1/2 md:h-4/6 md:w-4/6 lg:h-[70%] lg:w-[70%]">
+          <div className="bdt-ep-circle-info-item p-4">
+            <span className="bdt-ep-circle-info-title text-sm md:text-2xl lg:text-3xl font-bold">
+              {label}
+            </span>
           </div>
         </div>
       </div>
