@@ -139,7 +139,7 @@ const ScanSolutions = () => {
             </h2>
             <Link
               to="/company/contact"
-              className="btn btn-xl text-white capitalize font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular"
+              className="btn btn-xl text-white normal-case font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular"
             >
               Termin vereinbaren <FaCalendarCheck size={20} className="ml-5" />
             </Link>

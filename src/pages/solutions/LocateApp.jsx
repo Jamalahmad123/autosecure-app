@@ -53,8 +53,8 @@ const LocateApp = () => {
               Orten und vereinfachen Sie Übergabe- und Übernahmeprozesse im
               Handumdrehen. Einfach, schnell und sicher.
             </p>
-            <Link className="btn text-white md:text-xl font-AllianceBold font-semibold py-4 lg:px-8 flex-nowrap border-none bg-clrSky hover:bg-clrPrimary capitalize">
-              Probieren Sie es jetzt
+            <Link className="btn text-white md:text-xl font-AllianceBold font-semibold py-4 lg:px-8 flex-nowrap border-none bg-clrSky hover:bg-clrPrimary normal-case">
+              Probieren Sie es Jetzt
             </Link>
           </div>
         </Wrapper>
@@ -140,7 +140,7 @@ const LocateApp = () => {
               to="/solutions/localization-solutions/gps-tracker"
               className="btn text-white md:text-xl gap-2 lg:gap-5 flex-nowrap px-6 py-4 border-none bg-clrSky hover:bg-clrPrimary capitalize"
             >
-              Lies meh
+              Lies mehr
               <FaChevronRight />
             </Link>
           </div>

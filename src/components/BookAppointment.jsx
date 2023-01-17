@@ -35,7 +35,7 @@ const BookAppointment = () => {
             <div className="card-actions mt-6 lg:mt-0">
               <Link
                 to="/company/contact"
-                className="btn capitalize bg-clrSky text-white border-none hover:bg-clrPrimary lg:text-lg font-normal"
+                className="btn normal-case bg-clrSky text-white border-none hover:bg-clrPrimary lg:text-lg font-normal"
               >
                 Termin vereinbaren{" "}
                 <FaCalendarCheck size={20} className="ml-5" />

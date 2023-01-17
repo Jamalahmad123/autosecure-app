@@ -31,7 +31,7 @@ const Hero = ({ title, desc, promise, isLink }) => {
           ) : (
             <Link
               to="/company/contact"
-              className="btn text-white capitalize font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular"
+              className="btn text-white font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular normal-case"
             >
               Termin vereinbaren <FaCalendarCheck size={20} className="ml-5" />
             </Link>

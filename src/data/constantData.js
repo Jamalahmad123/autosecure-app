@@ -19,7 +19,8 @@ import {
 export const securityPages = [
   {
     id: 1,
-    name: "active video surveillance",
+    // active video surveillance
+    name: "aktive Videoüberwachung",
     link: "/solutions/security-solutions/active-video-surveillance",
   },
   {
@@ -29,7 +30,7 @@ export const securityPages = [
   },
   {
     id: 3,
-    name: "wireless in & Outdoor",
+    name: "wireless In- & Outdoor Alarmsystem",
     link: "/solutions/security-solutions/wireless-in-and-outdoor",
   },
 ];
@@ -72,7 +73,7 @@ export const solutionsDropdownLinks = {
         {
           id: 1,
           // active video surveillance
-          name: "aktive videoüberwachung",
+          name: "aktive Videoüberwachung",
           link: "/solutions/security-solutions/active-video-surveillance",
         },
         {
@@ -84,7 +85,7 @@ export const solutionsDropdownLinks = {
         {
           id: 3,
           //
-          name: "wireless in & Outdoor",
+          name: "wireless In- & Outdoor Alarmsystem",
           link: "/solutions/security-solutions/wireless-in-and-outdoor",
         },
       ],

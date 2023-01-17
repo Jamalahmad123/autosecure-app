@@ -90,23 +90,32 @@ const Contact = () => {
                 autosecure GmbH Hammer Straße 39 48153 Münster
               </p>
               <div className="flex flex-col gap-6">
-                <a
-                  href="telto:+49 (0) 251 - 2373 37 - 0"
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = "tel:+49 (0) 251 - 2373 37 - 0";
+                  }}
                   className="btn text-white border-none hover:bg-clrPrimary flex-nowrap justify-start bg-clrSky sm:text-lg font-bold w-full max-w-xs gap-3 sm:gap-8"
                 >
                   <FaPhoneVolume className="flex-0" />
                   +49 (0) 251 - 2373 37 - 0
-                </a>
-                <a
-                  href="telto:+49 (0) 251 - 2373 37 - 7"
+                </button>
+                <button
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = "tel:+49 (0) 251 - 2373 37 - 7";
+                  }}
                   className="btn text-white border-none hover:bg-clrPrimary flex-nowrap justify-start bg-clrSky sm:text-lg font-bold w-full max-w-xs gap-3 sm:gap-8"
                 >
                   <FaBuilding />
                   +49 (0) 251 - 2373 37 - 7
-                </a>
+                </button>
                 <a
-                  href="mailto:info@autosecure.net"
-                  className="btn text-white border-none hover:bg-clrPrimary flex-nowrap justify-start bg-clrSky sm:text-lg font-bold w-full max-w-xs gap-3 sm:gap-8"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = "mailto:info@autosecure.net";
+                  }}
+                  className="btn text-white border-none hover:bg-clrPrimary flex-nowrap justify-start bg-clrSky sm:text-lg font-bold w-full max-w-xs gap-3 sm:gap-8 normal-case"
                 >
                   <FaAt />
                   info@autosecure.net
@@ -213,7 +222,7 @@ const Contact = () => {
                 </div>
                 <button
                   type="submit"
-                  className="btn text-white border-none hover:bg-clrPrimary bg-clrSky w-full mt-8"
+                  className="btn text-white border-none hover:bg-clrPrimary bg-clrSky w-full mt-8 normal-case"
                 >
                   Anfrage jetzt senden
                 </button>

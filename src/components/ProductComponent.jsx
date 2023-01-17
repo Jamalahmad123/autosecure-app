@@ -82,7 +82,7 @@ const ProductComponent = ({ scrollIntoView }) => {
               </p>
               <button
                 onClick={scrollIntoView}
-                className="btn text-base md:text-xl font-semibold text-white lowercase border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular"
+                className="btn text-base md:text-xl font-semibold text-white border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular normal-case"
               >
                 Angebot anfordern <FaChevronRight size={20} className="ml-4" />
               </button>
@@ -309,7 +309,7 @@ const ProductComponent = ({ scrollIntoView }) => {
               </p>
               <button
                 onClick={scrollIntoView}
-                className="btn text-base md:text-xl font-semibold text-white lowercase border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular"
+                className="btn text-base md:text-xl font-semibold text-white border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular normal-case"
               >
                 Angebot anfordern <FaChevronRight size={20} className="ml-4" />
               </button>
@@ -372,7 +372,7 @@ const ProductComponent = ({ scrollIntoView }) => {
               </ul>
               <button
                 onClick={scrollIntoView}
-                className="btn text-base md:text-xl font-semibold text-white lowercase border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular"
+                className="btn text-base md:text-xl font-semibold text-white border-none bg-clrSky py-4 h-auto justify-center hover:bg-white hover:text-clrPrimary font-AllianceRegular normal-case"
               >
                 Angebot anfordern <FaChevronRight size={20} className="ml-4" />
               </button>

@@ -103,9 +103,9 @@ const GpsTracker = () => {
                 </div>
                 <Link
                   to="/company/contact"
-                  className="btn text-white md:text-xl font-AllianceBold font-semibold md:btn-lg gap-2 border-none bg-clrSky hover:bg-clrPrimary capitalize"
+                  className="btn text-white md:text-xl font-AllianceBold font-semibold md:btn-lg gap-2 border-none bg-clrSky hover:bg-clrPrimary normal-case"
                 >
-                  Eine Beratung anfordern
+                  Termin vereinbaren
                   <FaChevronRight />
                 </Link>
               </div>
@@ -208,7 +208,7 @@ const GpsTracker = () => {
               to="/solutions/localization-solutions/locate-app"
               className="btn text-white md:text-xl gap-2 border-none bg-clrSky hover:bg-clrPrimary capitalize"
             >
-              Lies meh
+              Lies mehr
               <FaChevronRight />
             </Link>
           </div>

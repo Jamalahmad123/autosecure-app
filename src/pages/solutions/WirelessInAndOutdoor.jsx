@@ -97,14 +97,16 @@ const WirelessInAndOutdoor = () => {
   );
   const qoute =
     "Zertifizierte Sender im Einklang mit dem autosecure-Überwachungszentrum in Münster";
+
   const labels = [
-    "Rent flexibly.",
-    "Immediate contact with the perpetrator.",
-    "Maximum configurable.",
-    "Latest technology.",
+    "Flexibel mieten.",
+    "Sofortige Täteransprache.",
+    "Maximal konfigurierbar.",
+    "Neueste Technologie.",
     "Autonomous operation.",
-    "24/7 live stream.",
-    "Unlimited data volume.",
+    "Autarker Betrieb.",
+    "24/7 LiveStream.",
+    "Unbegrenztes Datenvolumen.",
   ];
 
   useEffect(() => {
@@ -159,7 +161,7 @@ const WirelessInAndOutdoor = () => {
               </p>
               <Link
                 to="/company/contact"
-                className="btn text-white md:text-xl font-AllianceBold font-semibold btn-lg gap-2 border-none bg-clrSky hover:bg-clrSky capitalize"
+                className="btn text-white md:text-xl font-AllianceBold font-semibold btn-lg gap-2 border-none bg-clrSky hover:bg-clrSky normal-case"
               >
                 Angebot anfordern
                 <FaChevronRight />
@@ -471,7 +473,7 @@ const WirelessInAndOutdoor = () => {
           <img src={wirless_vds} alt="wireless vds" className="mx-auto" />
           <div className="space-y-12">
             <h2 className={`${styles.headingSecondary} text-[#0b3f87]`}>
-              EN-Standards für Sender (Vds)
+              EN-Standards für Sender (VdS)
             </h2>
             <p className="text-lg md:text-2xl text-clrPrimary">
               EN-Standards sind technische freiwillige Spezifikationen, die

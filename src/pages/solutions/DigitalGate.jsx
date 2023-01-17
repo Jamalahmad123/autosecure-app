@@ -65,8 +65,8 @@ const DigitalGate = () => {
               />
               <div className="space-y-8">
                 <h1 className={`${styles.headingPrimary} text-white`}>
-                  Digitaler <br className="hidden md:block" />
-                  Türsteher
+                  Digital <br className="hidden md:block" />
+                  Gatekeeper
                 </h1>
                 <p
                   className={`text-white ${styles.textSecondary} lg:max-w-2xl`}
@@ -87,9 +87,9 @@ const DigitalGate = () => {
                 </div>
                 <Link
                   to="/company/contact"
-                  className="btn text-white md:text-xl font-AllianceBold font-semibold btn-lg gap-2 border-none bg-clrSky hover:bg-clrSky capitalize"
+                  className="btn text-white md:text-xl font-AllianceBold font-semibold btn-lg gap-2 border-none bg-clrSky hover:bg-clrSky normal-case"
                 >
-                  Eine Beratung anfordern
+                  Termin vereinbaren
                   <FaChevronRight />
                 </Link>
               </div>
@@ -101,7 +101,7 @@ const DigitalGate = () => {
             />
           </div>
           <p className={`${styles.textSecondary} text-clrLightGray`}>
-            Der autosecure Gatekeeper ist Ihr digitaler Türsteher für die
+            Der autosecure Gatekeeper ist Ihr digitaler Pförtner für die
             Erreichung einheitlicher Torgänge und die Reduzierung manueller
             Prozessaufwände. Einschließlich eines digitalen Verkaufsautomaten in
             Ihrem Eingangsbereich oder einer Verarbeitung über das
@@ -121,7 +121,7 @@ const DigitalGate = () => {
             <h2
               className={`flex-1 text-2xl md:text-3xl lg:text-4xl font-AllianceBold font-bold text-clrPrimary`}
             >
-              Überblick über die wichtigsten Vorteile des Digitalen Türstehers
+              Überblick über die wichtigsten Vorteile des Digital Gatekeeper
             </h2>
             <FeatureList list={featuresList} />
           </div>
@@ -181,9 +181,9 @@ const DigitalGate = () => {
               </div>
               <Link
                 to="/company/contact"
-                className="btn text-white md:text-xl font-AllianceBold font-semibold btn-lg gap-2 border-none bg-clrSky hover:bg-clrSky capitalize"
+                className="btn text-white md:text-xl font-AllianceBold font-semibold btn-lg gap-2 border-none bg-clrSky hover:bg-clrSky normal-case"
               >
-                Eine Beratung anfordern
+                Termin vereinbaren
               </Link>
             </div>
             <div className="max-w-xl">

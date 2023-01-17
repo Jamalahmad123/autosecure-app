@@ -45,7 +45,7 @@ const Hero = ({ title, desc, benefit1, benefit2, videoPath, isAssist }) => {
                   </p>
                   <Link
                     to="/company/contact"
-                    className="btn btn-xl text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular"
+                    className="btn btn-xl text-white normal-case font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular"
                   >
                     Termin vereinbaren{" "}
                     <FaCalendarCheck size={20} className="ml-5" />
@@ -55,7 +55,7 @@ const Hero = ({ title, desc, benefit1, benefit2, videoPath, isAssist }) => {
             ) : (
               <Link
                 to="/company/contact"
-                className="btn btn-xl text-white lowercase font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular mt-6"
+                className="btn btn-xl text-white normal-case font-normal text-base border-none bg-clrSky py-4 h-auto justify-center md:text-lg hover:bg-clrPrimary font-AllianceRegular mt-6"
               >
                 Termin vereinbaren{" "}
                 <FaCalendarCheck size={20} className="ml-5" />

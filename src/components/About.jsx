@@ -68,14 +68,16 @@ const options = {
 
 const About = ({ scrollToView }) => {
   const labels = [
-    "Rent flexibly.",
-    "Immediate contact with the perpetrator.",
-    "Maximum configurable.",
-    "Latest technology.",
+    "Flexibel mieten.",
+    "Sofortige Täteransprache.",
+    "Maximal konfigurierbar.",
+    "Neueste Technologie.",
     "Autonomous operation.",
-    "24/7 live stream.",
-    "Unlimited data volume.",
+    "Autarker Betrieb.",
+    "24/7 LiveStream.",
+    "Unbegrenztes Datenvolumen.",
   ];
+
   return (
     <>
       <section className="pt-20 gradient-animation relative z-[1]">
