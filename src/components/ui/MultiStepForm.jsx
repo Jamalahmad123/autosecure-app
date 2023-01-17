@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const MultiStepForm = () => {
@@ -30,14 +30,14 @@ const MultiStepForm = () => {
   return (
     <>
       <form className="space-y-8">
-        <div className="w-full bg-clrPrimary overflow-hidden smooth transition-all">
-          <div
-            className={`h-full bg-clrSky text-white text-right pr-4 text-sm smooth`}
+        {/* <div className="w-full bg-clrPrimary overflow-hidden smooth transition-all">
+          <span
+            className={`h-full bg-clrSky text-white text-right pr-4 smooth inline-block`}
             style={{ width: 20 * step + "%" }}
           >
             {20 * step}%
-          </div>
-        </div>
+          </span>
+        </div> */}
         <FormContainer
           step={step}
           next={nextStep}
@@ -76,6 +76,7 @@ const FormContainer = ({ step, next, prev, handleChange, formData }) => {
           company={company}
           firstName={firstName}
           lastName={lastName}
+          step={step}
         />
       );
     case 2:
@@ -85,6 +86,7 @@ const FormContainer = ({ step, next, prev, handleChange, formData }) => {
           next={next}
           handleChange={handleChange}
           quantity={quantity}
+          step={step}
         />
       );
     case 3:
@@ -95,6 +97,7 @@ const FormContainer = ({ step, next, prev, handleChange, formData }) => {
           handleChange={handleChange}
           startDate={startDate}
           lastDate={lastDate}
+          step={step}
         />
       );
     case 4:
@@ -105,11 +108,17 @@ const FormContainer = ({ step, next, prev, handleChange, formData }) => {
           handleChange={handleChange}
           email={email}
           phone={phone}
+          step={step}
         />
       );
     case 5:
       return (
-        <Message prev={prev} handleChange={handleChange} message={message} />
+        <Message
+          prev={prev}
+          handleChange={handleChange}
+          message={message}
+          step={step}
+        />
       );
   }
 };
@@ -120,9 +129,18 @@ const FormUserDetails = ({
   company,
   firstName,
   lastName,
+  step,
 }) => {
   return (
     <div className="space-y-8">
+      <div className="w-full bg-clrPrimary overflow-hidden smooth transition-all">
+        <span
+          className={`h-full bg-clrSky text-white text-right pr-4 smooth inline-block`}
+          style={{ width: 20 * step + "%" }}
+        >
+          {20 * step}%
+        </span>
+      </div>
       <input
         type="text"
         placeholder="Unternehmen *"
@@ -160,9 +178,17 @@ const FormUserDetails = ({
   );
 };
 
-const NumberOfTowers = ({ prev, next, handleChange, quantity }) => {
+const NumberOfTowers = ({ step, prev, next, handleChange, quantity }) => {
   return (
     <div className="space-y-8">
+      <div className="w-full bg-clrPrimary overflow-hidden smooth transition-all">
+        <span
+          className={`h-full bg-clrSky text-white text-right pr-4 smooth inline-block`}
+          style={{ width: 20 * step + "%" }}
+        >
+          {20 * step}%
+        </span>
+      </div>
       <h2 className="text-2xl md:text-3xl lg:text-3xl font-AllianceBold font-bold text-clrSky">
         Wie viele Türme möchten Sie mieten?
       </h2>
@@ -204,9 +230,24 @@ const NumberOfTowers = ({ prev, next, handleChange, quantity }) => {
   );
 };
 
-const RentPeriod = ({ next, prev, handleChange, startDate, lastDate }) => {
+const RentPeriod = ({
+  next,
+  prev,
+  handleChange,
+  startDate,
+  lastDate,
+  step,
+}) => {
   return (
     <div className="space-y-8">
+      <div className="w-full bg-clrPrimary overflow-hidden smooth transition-all">
+        <span
+          className={`h-full bg-clrSky text-white text-right pr-4 smooth inline-block`}
+          style={{ width: 20 * step + "%" }}
+        >
+          {20 * step}%
+        </span>
+      </div>
       <h2 className="text-2xl md:text-3xl lg:text-3xl font-AllianceBold font-bold text-clrSky">
         Bestimmen Sie Ihren gewünschten Mietzeitraum:
       </h2>
@@ -256,9 +297,17 @@ const RentPeriod = ({ next, prev, handleChange, startDate, lastDate }) => {
 
 //
 
-const Contact = ({ next, prev, email, phone, handleChange }) => {
+const Contact = ({ next, prev, email, phone, handleChange, step }) => {
   return (
     <div className="space-y-8">
+      <div className="w-full bg-clrPrimary overflow-hidden smooth transition-all">
+        <span
+          className={`h-full bg-clrSky text-white text-right pr-4 smooth inline-block`}
+          style={{ width: 20 * step + "%" }}
+        >
+          {20 * step}%
+        </span>
+      </div>
       <h2 className="text-2xl md:text-3xl lg:text-3xl font-AllianceBold font-bold text-clrSky">
         Wie können wir Sie kontaktieren?
       </h2>
@@ -298,9 +347,17 @@ const Contact = ({ next, prev, email, phone, handleChange }) => {
   );
 };
 
-const Message = ({ prev, message, handleChange }) => {
+const Message = ({ prev, message, handleChange, step }) => {
   return (
-    <div>
+    <div className="space-y-8">
+      <div className="w-full bg-clrPrimary overflow-hidden smooth transition-all">
+        <span
+          className={`h-full bg-clrSky text-white text-right pr-4 smooth inline-block`}
+          style={{ width: 20 * step + "%" }}
+        >
+          {20 * step}%
+        </span>
+      </div>
       <textarea
         className="textarea w-full bg-white text-clrPrimary focus:outline-none focus:shadow-inputShadow "
         placeholder="Your Message *"
@@ -308,35 +365,37 @@ const Message = ({ prev, message, handleChange }) => {
         defaultValue={message}
         onChange={handleChange}
       ></textarea>
-      <div className="form-control mt-8">
-        <label className="label justify-start gap-2 sm:gap-4 cursor-pointer">
-          <input type="checkbox" className="toggle" />
-          <span className="text-xs text-white">
-            Ja, ich stimme den {/* /legal/conditions */}
-            <Link
-              to="/legal/privacy"
-              className="font-semibold hover:opacity-60"
-            >
-              Datenschutzvereinbarungen
-            </Link>{" "}
-            der autosecure GmbH
-          </span>
-        </label>
-      </div>
-      <div className="form-control">
-        <label className="label justify-start gap-2 sm:gap-4 cursor-pointer">
-          <input type="checkbox" className="toggle" />
-          <span className="text-xs text-white">
-            Ja, ich stimme den{" "}
-            <Link
-              to="/legal/conditions"
-              className="font-semibold hover:opacity-60"
-            >
-              allgemeinen Geschäftsbedingungen
-            </Link>
-            der autosecure GmbH zu.
-          </span>
-        </label>
+      <div>
+        <div className="form-control mt-8">
+          <label className="label justify-start gap-2 sm:gap-4 cursor-pointer">
+            <input type="checkbox" className="toggle" />
+            <span className="text-xs text-white">
+              Ja, ich stimme den {/* /legal/conditions */}
+              <Link
+                to="/legal/privacy"
+                className="font-semibold hover:opacity-60"
+              >
+                Datenschutzvereinbarungen
+              </Link>{" "}
+              der autosecure GmbH
+            </span>
+          </label>
+        </div>
+        <div className="form-control">
+          <label className="label justify-start gap-2 sm:gap-4 cursor-pointer">
+            <input type="checkbox" className="toggle" />
+            <span className="text-xs text-white">
+              Ja, ich stimme den{" "}
+              <Link
+                to="/legal/conditions"
+                className="font-semibold hover:opacity-60"
+              >
+                allgemeinen Geschäftsbedingungen
+              </Link>
+              der autosecure GmbH zu.
+            </span>
+          </label>
+        </div>
       </div>
       <div className="flex items-center gap-4">
         <button
